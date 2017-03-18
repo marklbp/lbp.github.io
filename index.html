@@ -7,7 +7,11 @@
     var i = 0;
     setInterval(function(){
       if(i>arr.length - 1)i=0;
-      document.title = arr[i++];
+      var t = arr[i++];
+      document.title = t;
+      if(document.getElementById('text')){
+        document.getElementById('text').innerHTML = t; 
+      }
     },1000)
     </script>
     <title></title>
@@ -16,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/3.3.5/css/bootstrap.min.css"> -->
   </head>
   <body>
-    <p style='text-align:center'>注意关注微信标题变化</p>
+    <p style='text-align:center;padding:10px'>注意关注微信标题变化</p>
+    <p id='text' style='text-align:center;padding:10px;'></p>
 <!--    <ul>
      <li><a href="demo1.html" target="_blank">折纸效果原理</a></li>
    </ul>

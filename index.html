@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <script>
     var arr = ["我","是","愉","快","又","欢","乐","的","标","题","我的中文名叫标题","Come on, call me title","Now, one more times"];
-    var i = 0;
+    var count = 0;
+    function setTitle(t) {
+        document.title = t;
+        var i = document.createElement('iframe');
+        i.src = '//m.baidu.com/favicon.ico';
+        i.style.display = 'none';
+        i.onload = function() {
+          setTimeout(function(){
+            i.remove();
+          }, 9)
+        }
+        document.body&&document.body.appendChild(i);
+      }
+
     setInterval(function(){
-      if(i>arr.length - 1)i=0;
-      var t = arr[i++];
-      document.title = t;
+      if(count > arr.length - 1)count=0;
+      var t = arr[count++];
+      setTitle(t)
       if(document.getElementById('text')){
         document.getElementById('text').innerHTML = t; 
       }
@@ -21,7 +34,7 @@
   </head>
   <body>
     <p style='text-align:center;padding:10px'>注意关注微信标题变化</p>
-    <p id='text' style='text-align:center;padding:10px;'></p>
+    <p id='text' style='text-align:center;padding:10px;font-size:16px;'></p>
 <!--    <ul>
      <li><a href="demo1.html" target="_blank">折纸效果原理</a></li>
    </ul>

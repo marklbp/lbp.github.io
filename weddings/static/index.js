@@ -13973,15 +13973,15 @@ webpackJsonp([5], [function(e, t, i) {
                     borderBottom: "solid 1px white"
                 });
                 for (var d = {
-                    text: "免费创建我的MAKA",
+                    text: "感谢您的收看",
                     color: "#18ccc0",
-                    url: "http://mp.weixin.qq.com/s?__biz=MjM5ODc3OTM5Mw==&mid=529386470&idx=1&sn=56d5dfda1537850929462ec517661168&scene=0#wechat_redirect"
+                    url: ""
                 }, f = [{
                     rate: 40,
-                    url: "http://wapstore.maka.im/series/15"
+                    url: ""
                 }, {
                     rate: 60,
-                    url: "http://mp.weixin.qq.com/s/6mrc2XIlLNSvj0OHjUK2Ew"
+                    url: ""
                 }], h = 100 * Math.random(), m = 0, b = 0; b < f.length; b++) {
                     if (h < f[b].rate + m) {
                         d.url = f[b].url;
@@ -14018,10 +14018,7 @@ webpackJsonp([5], [function(e, t, i) {
                     display: "inline-block"
                 }),
                 k.on(w, function() {
-                    var e = 102;
-                    g["default"].send("makaAD", e),
-                    window.statisticSDK.countTailAd(),
-                    window.location.href = d.url
+                    e.replay()
                 }),
                 y.append(k);
                 var A = (0,
@@ -14038,8 +14035,7 @@ webpackJsonp([5], [function(e, t, i) {
                 A.on(w, function() {
                     e.replay()
                 });
-                var x = (0,
-                s["default"])("<div>举报</div>");
+                /*var x = (0,s["default"])("<div>举报</div>");
                 x.css({
                     position: "absolute",
                     top: p["default"].scale(46),
@@ -14057,10 +14053,10 @@ webpackJsonp([5], [function(e, t, i) {
                     top: "50%",
                     marginTop: p["default"].scale(-14),
                     height: p["default"].scale(24)
-                }),
-                x.prepend(C),
+                }),*/
+                //x.prepend(C),
                 o.append(A),
-                o.append(x),
+                //o.append(x),
                 o.append(a),
                 o.append(r),
                 o.append(l),

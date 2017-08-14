@@ -4202,6 +4202,7 @@ webpackJsonp([5], [function(e, t, i) {
             key: "loadFont",
             value: function(e, t, i) {
                 //e = e.replace("http://fontservice.oss-cn-beijing.aliyuncs.com", "http://font.maka.im");
+                e = "static/" + e;
                 var n = t.fontId;
                 return t.fontVersion && 10 == t.fontVersion && (n = "maka" + e.replace(/[\/:._]/g, "")),
                 new c["default"](function(i) {

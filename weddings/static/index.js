@@ -184,8 +184,9 @@ webpackJsonp([5], [function(e, t, i) {
                 var n = void 0
                   , o = t ? t : "src"
                   , a = i ? i + "w_" : "";
+
                 return e.indexOf("aliyuncs") >= 0 || !this.isAppNormalMode() ? e : (n = this.isIOS() || this.isFF() ? "80Q." + o : ".webp",
-                e + "@" + a + n)
+                e /*+ "@" + a + n*/)
             }
         }, {
             key: "getUid",

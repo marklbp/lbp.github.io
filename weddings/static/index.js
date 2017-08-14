@@ -14204,7 +14204,7 @@ webpackJsonp([5], [function(e, t, i) {
                 this.hideADreplay(),
                 this.options.replay()
             }
-        }, {
+        }/*, {
             key: "showAD",
             value: function(e) {
                 this.options = e;
@@ -14271,7 +14271,7 @@ webpackJsonp([5], [function(e, t, i) {
                 }),
                 e.removeAttr("page-showded")
             }
-        }]),
+        }*/]),
         e
     }();
     t["default"] = new b,

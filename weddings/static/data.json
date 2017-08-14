@@ -4264,7 +4264,8 @@
 			}],
 			"music": {
 				"name": "Jason Mraz - I'm Yours_C40kbps.mp3",
-				"id": "music.mp3",
+				"id": "music",
+				"path": "static/music.mp3",
 				"version": 1
 			},
 			"menu": {

@@ -10,7 +10,7 @@
 				"bgpictop": "0",
 				"effect": "scaleup",
 				"content": [{
-					"fontUrl": "http://font.maka.im/maka_font/3753880/T_FA8OLG7P/1498180037877-ze6mz0.ttf",
+					"fontUrl": "/3753880/T_FA8OLG7P/1498180037877-ze6mz0.ttf",
 					"con": "幸",
 					"border-color": "#000000",
 					"prepara": "0",
@@ -1670,7 +1670,7 @@
 					"fontitalic": false
 				}, {
 					"fontUrl": "http://font.maka.im/maka_font/3753880/T_FA8OLG7P/1498182953715-hjaq0z.ttf",
-					"con": "而在与两人\n相爱，尊重对方并爱你\n如生命",
+					"con": "而在与两人\n相爱，尊重对方并爱你\n如命",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",

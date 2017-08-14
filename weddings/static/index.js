@@ -395,7 +395,8 @@ webpackJsonp([5], [function(e, t, i) {
         }, {
             key: "getMusicUrl",
             value: function(e) {
-                return 1 === parseInt(e.version) && ("" + e.id).indexOf("/") > 0 ? this.isHttpHead(e.id) ? e.id.indexOf("res.maka.im") > 0 ? e.id.replace("res.maka.im", "res3.maka.im") : e.id : "production" === this.getEnvironment() ? "http://res3.maka.im/" + e.id : "http://maka-test.oss-cn-beijing.aliyuncs.com/" + e.id : "http://res2.maka.im/gfilemusic/" + e.id + ".mp3"
+                //return 1 === parseInt(e.version) && ("" + e.id).indexOf("/") > 0 ? this.isHttpHead(e.id) ? e.id.indexOf("res.maka.im") > 0 ? e.id.replace("res.maka.im", "res3.maka.im") : e.id : "production" === this.getEnvironment() ? "http://res3.maka.im/" + e.id : "http://maka-test.oss-cn-beijing.aliyuncs.com/" + e.id : "http://res2.maka.im/gfilemusic/" + e.id + ".mp3"
+                return e.path;
             }
         }, {
             key: "getContentJSONUrl",
@@ -13417,7 +13418,7 @@ webpackJsonp([5], [function(e, t, i) {
         delete e.height,
         e.rotate = parseInt(e.rotate),
         e.shape && "0" !== e.shape || (e.shape = "1.svg"),
-        e.shape.indexOf("/SVG/") < 0 && e.shape.indexOf("<svg") < 0 && (e.shape = "svg/Default/SVG/" + e.shape),
+        e.shape.indexOf("/SVG/") < 0 && e.shape.indexOf("<svg") < 0 && (e.shape),
         e.h = e.h < 0 ? 0 : e.h,
         e.shapecolor && (e.colorScheme = {
             color1: e.shapecolor

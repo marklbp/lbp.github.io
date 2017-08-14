@@ -13438,7 +13438,7 @@ webpackJsonp([5], [function(e, t, i) {
         delete e.height,
         e.rotate = parseInt(e.rotate),
         e.shape && "0" !== e.shape || (e.shape = "1.svg"),
-        e.shape.indexOf("/SVG/") < 0 && e.shape.indexOf("<svg") < 0 && (e.shape = "svg/Default/SVG/" + e.shape),
+        e.shape.indexOf("/SVG/") < 0 && e.shape.indexOf("<svg") < 0 && e.shape,
         e.h = e.h < 0 ? 0 : e.h,
         e.shapecolor && (e.colorScheme = {
             color1: e.shapecolor

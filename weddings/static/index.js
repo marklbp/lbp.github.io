@@ -326,7 +326,7 @@ webpackJsonp([5], [function(e, t, i) {
             key: "getImgUrl",
             value: function(e) {
                 //return e ? 0 === e.trim().toLowerCase().indexOf("http://") || 0 === e.trim().toLowerCase().indexOf("https://") ? 0 === e.indexOf("http://test.img1.maka.im") ? e : e.indexOf("img1.maka.im") > 0 ? e.replace("img1.maka.im", "img2.maka.im") : e : "aliyun" === s["default"].getUrlParameter("env") ? "http://makapicture.oss-cn-beijing-internal.aliyuncs.com/" + e : this.isNodeProxy() ? "http://img1.61xiangce.com/" + e : "production" === window.viewerConfig.env ? "http://img2.maka.im/" + e : e.indexOf("user/") > -1 ? "http://test.img1.maka.im/" + e : "http://img1.maka.im/" + e : "http://img1.maka.im"
-                return 'static/'+e;
+                return 'static/' + e;
             }
         }, {
             key: "addCrop",
@@ -360,7 +360,7 @@ webpackJsonp([5], [function(e, t, i) {
         }, {
             key: "getShapeUrl",
             value: function(e) {
-                return "static/" + e
+                return "static/"+e
             }
         }, {
             key: "getPhoneCallUrl",
@@ -395,36 +395,12 @@ webpackJsonp([5], [function(e, t, i) {
         }, {
             key: "getMusicUrl",
             value: function(e) {
-                return e.path
+                return 1 === parseInt(e.version) && ("" + e.id).indexOf("/") > 0 ? this.isHttpHead(e.id) ? e.id.indexOf("res.maka.im") > 0 ? e.id.replace("res.maka.im", "res3.maka.im") : e.id : "production" === this.getEnvironment() ? "http://res3.maka.im/" + e.id : "http://maka-test.oss-cn-beijing.aliyuncs.com/" + e.id : "http://res2.maka.im/gfilemusic/" + e.id + ".mp3"
             }
         }, {
             key: "getContentJSONUrl",
             value: function() {
-                var e = void 0
-                  , t = ""
-                  , i = this.getProjectId()
-                  , n = this.getEnvironment()
-                  , o = c["default"].getUid();
-                if (t = this.isAppNormalMode() ? window.projectVersion.p_version : (new Date).getTime(),
-                this.isTemplate()) {
-                    if (this.isStoreTemplatePreview() || this.isRemoveDesignerAd())
-                        e = "/api/storeTemplate/" + i + "?dataType=pdata&v=" + t;
-                    else {
-                        if (!this.isVersionedTemplatePreview())
-                            return e = "/user/" + o + "/template/" + i + "/" + i + "_v" + t + ".json",
-                            "test" === n || "development" === n ? e = "http://maka-test.oss-cn-beijing.aliyuncs.com" + e : "production" === n && (e = "http://res.maka.im" + e),
-                            e;
-                        var a = s["default"].getUrlParameter("version");
-                        a = a ? "&version=" + a : "",
-                        e = "/api/requestVersionedTemplate/" + i + "?dataType=pdata&v=" + t + a
-                    }
-                    return "aliyun" !== s["default"].getUrlParameter("env") && ("test" === n ? e = "http://test.api.maka.im" + e : "production" === n && (e = "http://api.maka.im" + e)),
-                    e
-                }
-                return this.isAppNormalMode() ? (e = "/user/" + o + "/event/" + i + "/" + i + "_v" + t + ".json",
-                "test" === n || "development" === n ? e = "http://maka-test.oss-cn-beijing.aliyuncs.com" + e : "production" === n && (e = "http://res.maka.im" + e)) : (e = "/api/event/" + i + "?dataType=all&ts=" + t,
-                "test" === n ? e = "http://test.api.maka.im" + e : "production" === n && (e = "http://api.maka.im" + e)),
-                e
+                return 'static/data.json?t='+$.now()
             }
         }, {
             key: "getEnvironment",
@@ -721,7 +697,7 @@ webpackJsonp([5], [function(e, t, i) {
                 configUrl: "",
                 success: function() {
                     "undefined" != typeof DS && DS.sendRepost("appMessage"),
-                    window.statisticSDK.countShare("appMessage"),
+                    //window.statisticSDK.countShare("appMessage"),
                     b["default"].ADTansGuide()
                 },
                 cancel: function() {}
@@ -2177,7 +2153,7 @@ webpackJsonp([5], [function(e, t, i) {
                     s["default"].ajax({
                         type: "GET",
                         dataType: "json",
-                        url: "static/data.json?t=" + $.now(),
+                        url: window.Config.getContentJSONUrl(),
                         success: function(i) {
                             if (e.pdata = i.data.pdata,
                             e.contentJSON = i.data.pdata.json,
@@ -3879,7 +3855,7 @@ webpackJsonp([5], [function(e, t, i) {
                             s["default"])(o.shape);
                             break
                         }
-                        o.shape.indexOf("/SVG/") < 0 && o.shape;
+                        o.shape.indexOf("/SVG/") < 0 && (o.shape);
                         var g = y.loadSvgImg(window.Config.getShapeUrl(o.shape));
                         g = g.then(function(e) {
                             var t = (0,
@@ -4224,6 +4200,7 @@ webpackJsonp([5], [function(e, t, i) {
         }, {
             key: "loadFont",
             value: function(e, t, i) {
+                //e = e.replace("http://fontservice.oss-cn-beijing.aliyuncs.com", "http://font.maka.im");
                 var n = t.fontId;
                 return t.fontVersion && 10 == t.fontVersion && (n = "maka" + e.replace(/[\/:._]/g, "")),
                 new c["default"](function(i) {
@@ -4236,7 +4213,7 @@ webpackJsonp([5], [function(e, t, i) {
                         void i("fontUrl" + e)
                     }
                     var r = new XMLHttpRequest;
-                    r.open("GET", 'static/'+e, !0),
+                    r.open("GET", e, !0),
                     r.responseType = "blob";
                     var s = setTimeout(function() {
                         i()
@@ -5165,7 +5142,8 @@ webpackJsonp([5], [function(e, t, i) {
                         Ie.showArrow(),
                         Ie.option.pageChangeCallback && Ie.option.pageChangeCallback(),
                         e && e()
-                    })
+                    }),
+                    window.statisticSDK.countPv(n)
                 }() : this.option.lastCallback && this.option.lastCallback())
             }
         }, {
@@ -13439,7 +13417,7 @@ webpackJsonp([5], [function(e, t, i) {
         delete e.height,
         e.rotate = parseInt(e.rotate),
         e.shape && "0" !== e.shape || (e.shape = "1.svg"),
-        e.shape.indexOf("/SVG/") < 0 && e.shape.indexOf("<svg") < 0 && e.shape,
+        e.shape.indexOf("/SVG/") < 0 && e.shape.indexOf("<svg") < 0 && (e.shape = "svg/Default/SVG/" + e.shape),
         e.h = e.h < 0 ? 0 : e.h,
         e.shapecolor && (e.colorScheme = {
             color1: e.shapecolor
@@ -13974,7 +13952,7 @@ webpackJsonp([5], [function(e, t, i) {
                     borderBottom: "solid 1px white"
                 });
                 for (var d = {
-                    text: "感谢您的收看",
+                    text: "谢谢您的收看",
                     color: "#18ccc0",
                     url: ""
                 }, f = [{
@@ -14036,7 +14014,8 @@ webpackJsonp([5], [function(e, t, i) {
                 A.on(w, function() {
                     e.replay()
                 });
-                /*var x = (0,s["default"])("<div>举报</div>");
+                /*var x = (0,
+                s["default"])("<div>举报</div>");
                 x.css({
                     position: "absolute",
                     top: p["default"].scale(46),

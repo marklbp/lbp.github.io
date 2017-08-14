@@ -325,7 +325,8 @@ webpackJsonp([5], [function(e, t, i) {
         }, {
             key: "getImgUrl",
             value: function(e) {
-                return e ? 0 === e.trim().toLowerCase().indexOf("http://") || 0 === e.trim().toLowerCase().indexOf("https://") ? 0 === e.indexOf("http://test.img1.maka.im") ? e : e.indexOf("img1.maka.im") > 0 ? e.replace("img1.maka.im", "img2.maka.im") : e : "aliyun" === s["default"].getUrlParameter("env") ? "http://makapicture.oss-cn-beijing-internal.aliyuncs.com/" + e : this.isNodeProxy() ? "http://img1.61xiangce.com/" + e : "production" === window.viewerConfig.env ? "http://img2.maka.im/" + e : e.indexOf("user/") > -1 ? "http://test.img1.maka.im/" + e : "http://img1.maka.im/" + e : "http://img1.maka.im"
+                //return e ? 0 === e.trim().toLowerCase().indexOf("http://") || 0 === e.trim().toLowerCase().indexOf("https://") ? 0 === e.indexOf("http://test.img1.maka.im") ? e : e.indexOf("img1.maka.im") > 0 ? e.replace("img1.maka.im", "img2.maka.im") : e : "aliyun" === s["default"].getUrlParameter("env") ? "http://makapicture.oss-cn-beijing-internal.aliyuncs.com/" + e : this.isNodeProxy() ? "http://img1.61xiangce.com/" + e : "production" === window.viewerConfig.env ? "http://img2.maka.im/" + e : e.indexOf("user/") > -1 ? "http://test.img1.maka.im/" + e : "http://img1.maka.im/" + e : "http://img1.maka.im"
+                return 'static/'+e;
             }
         }, {
             key: "addCrop",

@@ -5128,7 +5128,7 @@ webpackJsonp([5], [function(e, t, i) {
                         Ie.showArrow(),
                         Ie.option.pageChangeCallback && Ie.option.pageChangeCallback(),
                         e && e()
-                    }),
+                    })
                     //window.statisticSDK.countPv(n)
                 }() : this.option.lastCallback && this.option.lastCallback())
             }

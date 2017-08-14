@@ -13920,7 +13920,7 @@ webpackJsonp([5], [function(e, t, i) {
                 this.hasLoad || (this.hasLoad = !0,
                 this.initSwiper())
             }
-        }, {
+        }/*, {
             key: "initSwiper",
             value: function() {
                 var e = this
@@ -14198,7 +14198,7 @@ webpackJsonp([5], [function(e, t, i) {
                 });
                 var A = !1
             }
-        }, {
+        }*/, {
             key: "replay",
             value: function() {
                 this.hideADreplay(),

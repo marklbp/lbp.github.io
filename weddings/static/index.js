@@ -396,7 +396,7 @@ webpackJsonp([5], [function(e, t, i) {
             key: "getMusicUrl",
             value: function(e) {
                 //return 1 === parseInt(e.version) && ("" + e.id).indexOf("/") > 0 ? this.isHttpHead(e.id) ? e.id.indexOf("res.maka.im") > 0 ? e.id.replace("res.maka.im", "res3.maka.im") : e.id : "production" === this.getEnvironment() ? "http://res3.maka.im/" + e.id : "http://maka-test.oss-cn-beijing.aliyuncs.com/" + e.id : "http://res2.maka.im/gfilemusic/" + e.id + ".mp3"
-                return e.path;
+                return 'static/' + e.id;
             }
         }, {
             key: "getContentJSONUrl",

@@ -594,7 +594,7 @@
 				"bgcolor": "#ffffff"
 			}, {
 				"bgpicwidth": 671,
-				"bgpic": "static/b0deef41edf3b7568d4544e97454d423.jpg",
+				"bgpic": "b0deef41edf3b7568d4544e97454d423.jpg",
 				"opacity": 1,
 				"bgpicheight": 1008,
 				"bgpicleft": -16,
@@ -1222,7 +1222,7 @@
 					"orgWidth": 685,
 					"inh": 914,
 					"editable": true,
-					"picid": "static/94d60b50fb9539a3bc135ac0fdfff8e1.jpg",
+					"picid": "94d60b50fb9539a3bc135ac0fdfff8e1.jpg",
 					"left": 15.5,
 					"h": 609,
 					"opacity": 1,
@@ -1285,7 +1285,7 @@
 					"orgWidth": 689,
 					"inh": 306,
 					"editable": true,
-					"picid": "static/81aa04722cc8af3f35f8650df8363366.jpg",
+					"picid": "81aa04722cc8af3f35f8650df8363366.jpg",
 					"left": 218,
 					"h": 204,
 					"opacity": 1,
@@ -1322,7 +1322,7 @@
 					"orgWidth": 689,
 					"inh": 70,
 					"editable": true,
-					"picid": "static/81aa04722cc8af3f35f8650df8363366.jpg",
+					"picid": "81aa04722cc8af3f35f8650df8363366.jpg",
 					"left": 34,
 					"h": 47,
 					"opacity": 1,
@@ -2837,7 +2837,7 @@
 					"orgWidth": 689,
 					"inh": 1045,
 					"editable": true,
-					"picid": "static/81aa04722cc8af3f35f8650df8363366.jpg",
+					"picid": "81aa04722cc8af3f35f8650df8363366.jpg",
 					"left": 438,
 					"h": 1038,
 					"opacity": 1,
@@ -3285,7 +3285,7 @@
 				"bgcolor": "#ffffff"
 			}, {
 				"bgpicwidth": 671,
-				"bgpic": "static/81aa04722cc8af3f35f8650df8363366.jpg",
+				"bgpic": "81aa04722cc8af3f35f8650df8363366.jpg",
 				"opacity": 1,
 				"bgpicheight": 1008,
 				"bgpicleft": -16,
@@ -3672,7 +3672,7 @@
 				"bgcolor": " rgba(250,250,250,1)"
 			}, {
 				"bgpicwidth": 671,
-				"bgpic": "static/b0deef41edf3b7568d4544e97454d423.jpg",
+				"bgpic": "b0deef41edf3b7568d4544e97454d423.jpg",
 				"opacity": 1,
 				"bgpicheight": 1008,
 				"bgpicleft": -16,
@@ -3998,8 +3998,7 @@
 			}],
 			"music": {
 				"name": "Jason Mraz - I'm Yours_C40kbps.mp3",
-				"id": "music",
-				"path": "static/music.mp3",
+				"id": "music.mp3",
 				"version": 1
 			},
 			"menu": {

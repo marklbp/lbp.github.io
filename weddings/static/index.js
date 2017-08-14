@@ -3757,7 +3757,7 @@ webpackJsonp([5], [function(e, t, i) {
                             a = e.bgpic;
                         else if (0 === e.bgpic.indexOf("user/"))
                             a = window.Config.getImgUrl(e.bgpic);
-                        else if (e.bgpic.indexOf("static") > 0)
+                        else if (e.bgpic.indexOf("static") > -1)
                             a = e.bgpic;
                         else {
                             var l = /id\/[A-Z0-9]{0,40}/

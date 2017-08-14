@@ -3755,20 +3755,8 @@ webpackJsonp([5], [function(e, t, i) {
                         if (console.log("log" + e.bgpic),
                         "texture" === e.bgpictype)
                             a = e.bgpic;
-                        else if (0 === e.bgpic.indexOf("user/"))
-                            a = window.Config.getImgUrl(e.bgpic);
-                        else if (e.bgpic.indexOf("static") > -1)
+                        else
                             a = e.bgpic;
-                        else {
-                            var l = /id\/[A-Z0-9]{0,40}/
-                              , u = l.exec(e.bgpic)
-                              , f = /\.jpg|\.png|\.jpeg|\.gif/i
-                              , h = f.exec(e.bgpic)
-                              , m = "";
-                            h && (m = h[0]);
-                            var w = u[0].substr(3) + m;
-                            a = window.Config.getImgUrl(w)
-                        }
                         e.bgpicCropData && !window.Config.isGif(e.bgpic) && window.Config.isAppNormalMode() ? a = window.Config.addCrop(a, e.bgpicCropData) : window.Config.isGif(e.bgpic) || (a = b["default"].addTail(a)),
                         r.inw = e.bgpicwidth;
                         var k = y.loadImage(a, r, e);

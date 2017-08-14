@@ -338,7 +338,7 @@ webpackJsonp([5], [function(e, t, i) {
                   , r = void 0;
                 return e.indexOf("aliyuncs") >= 0 && (e = e.replace("maka-test.oss-cn-beijing.aliyuncs.com", "test.img.maka.im")),
                 r = c["default"].isIOS() || c["default"].isFF() ? ".src" : ".webp",
-                e + "@" + i + "-" + n + "-" + o + "-" + a + "a_90Q" + r
+                e //+ "@" + i + "-" + n + "-" + o + "-" + a + "a_90Q" + r
             }
         }, {
             key: "isGif",

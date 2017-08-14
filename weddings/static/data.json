@@ -166,7 +166,7 @@
 					"borderradius": 0,
 					"fontitalic": false
 				}, {
-					"shape": "svg/Default/SVG/shape07.svg",
+					"shape": "shape07.svg",
 					"left": 53.5,
 					"h": 501,
 					"colorScheme": {
@@ -192,7 +192,7 @@
 					"selfH": 501,
 					"borderradius": 0
 				}, {
-					"shape": "svg/Default/SVG/shape07.svg",
+					"shape": "shape07.svg",
 					"left": 54,
 					"h": 501,
 					"colorScheme": {
@@ -218,7 +218,7 @@
 					"selfH": 501,
 					"borderradius": 0
 				}, {
-					"shape": "svg/Default/SVG/shape07.svg",
+					"shape": "shape07.svg",
 					"left": 190.5,
 					"h": 244,
 					"colorScheme": {
@@ -244,7 +244,7 @@
 					"selfH": 244,
 					"borderradius": 0
 				}, {
-					"shape": "svg/Default/SVG/shape07.svg",
+					"shape": "shape07.svg",
 					"left": 91.5,
 					"h": 431,
 					"colorScheme": {
@@ -270,7 +270,7 @@
 					"selfH": 431,
 					"borderradius": 0
 				}, {
-					"shape": "svg/Default/SVG/shape07.svg",
+					"shape": "shape07.svg",
 					"left": -228,
 					"h": 1034,
 					"colorScheme": {
@@ -333,7 +333,7 @@
 					"selfH": 1030,
 					"borderradius": 0
 				}, {
-					"shape": "svg/Default/SVG/shape01.svg",
+					"shape": "shape01.svg",
 					"left": 54,
 					"h": 359,
 					"colorScheme": {
@@ -793,7 +793,7 @@
 					"fontitalic": false
 				}, {
 					"fontUrl": "1498181702773-x3qxa4.ttf",
-					"con": "席设湖北省荆州市监利县程集镇砖桥村廖兵鹏家",
+					"con": "席设\n湖北省荆州市监利县程集镇砖桥村廖兵鹏家",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",
@@ -832,7 +832,7 @@
 					"fontitalic": false
 				}, {
 					"fontUrl": "1498181712765-a0eojq.ttf",
-					"con": "时间\n2017年9月16日（七月廿六）13：14",
+					"con": "时间\n2017年9月16日（七月廿六）13:14",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",
@@ -1030,7 +1030,7 @@
 					"selfH": 609,
 					"borderradius": 0
 				}, {
-					"shape": "svg/Default/SVG/shape05.svg",
+					"shape": "shape05.svg",
 					"left": 211,
 					"h": 218,
 					"colorScheme": {
@@ -1255,7 +1255,7 @@
 					"selfH": 609,
 					"borderradius": 0
 				}, {
-					"shape": "svg/Default/SVG/shape05.svg",
+					"shape": "shape05.svg",
 					"left": 211,
 					"h": 218,
 					"colorScheme": {
@@ -2948,7 +2948,7 @@
 					"borderradius": 0,
 					"fontitalic": false
 				}, {
-					"shape": "svg/Default/SVG/shape01.svg",
+					"shape": "shape01.svg",
 					"left": 455,
 					"h": 836,
 					"colorScheme": {

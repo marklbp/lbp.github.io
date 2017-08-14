@@ -359,7 +359,7 @@ webpackJsonp([5], [function(e, t, i) {
         }, {
             key: "getShapeUrl",
             value: function(e) {
-                return "http://res2.maka.im/shapeSVG/" + e
+                return "static/" + e
             }
         }, {
             key: "getPhoneCallUrl",
@@ -3878,7 +3878,7 @@ webpackJsonp([5], [function(e, t, i) {
                             s["default"])(o.shape);
                             break
                         }
-                        o.shape.indexOf("/SVG/") < 0 && (o.shape = "svg/Default/SVG/" + o.shape);
+                        o.shape.indexOf("/SVG/") < 0 && o.shape;
                         var g = y.loadSvgImg(window.Config.getShapeUrl(o.shape));
                         g = g.then(function(e) {
                             var t = (0,

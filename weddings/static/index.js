@@ -13920,7 +13920,7 @@ webpackJsonp([5], [function(e, t, i) {
                 this.hasLoad || (this.hasLoad = !0,
                 this.initSwiper())
             }
-        }/*, {
+        }, {
             key: "initSwiper",
             value: function() {
                 var e = this
@@ -14198,13 +14198,13 @@ webpackJsonp([5], [function(e, t, i) {
                 });
                 var A = !1
             }
-        }*/, {
+        }, {
             key: "replay",
             value: function() {
                 this.hideADreplay(),
                 this.options.replay()
             }
-        }/*, {
+        }, {
             key: "showAD",
             value: function(e) {
                 this.options = e;
@@ -14271,7 +14271,7 @@ webpackJsonp([5], [function(e, t, i) {
                 }),
                 e.removeAttr("page-showded")
             }
-        }*/]),
+        }]),
         e
     }();
     t["default"] = new b,

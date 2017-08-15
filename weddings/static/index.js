@@ -5481,7 +5481,7 @@ webpackJsonp([5], [function(e, t, i) {
                     "font-family": e.fontId
                 }),
                 e.fontUrl && e.fontVersion && 10 == e.fontVersion && n.css({
-                    "font-family": "maka" + e.fontUrl.replace(/[\/:._]/g, "")
+                    "font-family": "static/" + e.fontUrl.replace(/[\/:._]/g, "")
                 }),
                 n.append(e.con.replace(/<script.*?>.*?<\/script>/gi, "")),
                 i.append(n),

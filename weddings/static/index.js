@@ -4188,7 +4188,7 @@ webpackJsonp([5], [function(e, t, i) {
                 //e = e.replace("http://fontservice.oss-cn-beijing.aliyuncs.com", "http://font.maka.im");
                 e = "static/" + e;
                 var n = t.fontId;
-                return t.fontVersion && 10 == t.fontVersion && (n = "maka" + e.replace(/[\/:._]/g, "")),
+                return t.fontVersion && 10 == t.fontVersion && (n = e.replace(/[\/:._]/g, "")),
                 new c["default"](function(i) {
                     var o = window.URL || window.webkitURL;
                     if (!o) {
@@ -4210,7 +4210,7 @@ webpackJsonp([5], [function(e, t, i) {
                             var i = this.response
                               , a = o.createObjectURL(i)
                               , r = ".bmp" != e.slice(-4) ? "truetype" : "woff"
-                              , l = '@font-face {font-family: "' + n + '";' + ("src: url(" + a + ') format("' + r + '")') + ";font-weight: normal; font-style: normal;}";
+                              , l = '@font-face {font-family: "' + n + '";' + ("src: url(" + e + ') format("' + r + '")') + ";font-weight: normal; font-style: normal;}";
                             t.fontError = 0,
                             (0,
                             v["default"])(l)

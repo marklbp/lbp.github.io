@@ -14000,37 +14000,12 @@ webpackJsonp([5], [function(e, t, i) {
                 A.on(w, function() {
                     e.replay()
                 });
-                /*var x = (0,
-                s["default"])("<div>举报</div>");
-                x.css({
-                    position: "absolute",
-                    top: p["default"].scale(46),
-                    left: p["default"].scale(40),
-                    fontSize: p["default"].scale(25),
-                    lineHeight: p["default"].scale(24),
-                    padding: p["default"].scale(24),
-                    color: "#EBEBEB"
-                });
-                var C = (0,
-                s["default"])('<img src="' + i(103) + '" alt="" />');
-                C.css({
-                    position: "absolute",
-                    left: p["default"].scale(-5),
-                    top: "50%",
-                    marginTop: p["default"].scale(-14),
-                    height: p["default"].scale(24)
-                }),*/
-                //x.prepend(C),
                 o.append(A),
-                //o.append(x),
                 o.append(a),
                 o.append(r),
                 o.append(l),
                 o.append(u),
-                (window.projectVersion.vip_config.show_makalogo || !v["default"].isStoreTemplatePreview() && v["default"].isTemplate()) && o.append(y),
-                x.on(w, function() {
-                    e.showReport()
-                })
+                (window.projectVersion.vip_config.show_makalogo || !v["default"].isStoreTemplatePreview() && v["default"].isTemplate()) && o.append(y)
             }
         }, {
             key: "showReport",

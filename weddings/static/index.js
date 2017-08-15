@@ -4718,7 +4718,6 @@ webpackJsonp([5], [function(e, t, i) {
                     Ie.showPageInAnimation(e),
                     Ie.showBackgroundMusic()
                 }
-                window.projectVersion && 0 != window.projectVersion.viplevel && Ie.showBottomMenu(),
                 Ie.onPageChange(0),
                 (0,
                 s["default"])(".maka-page-0").show(),
@@ -4763,24 +4762,7 @@ webpackJsonp([5], [function(e, t, i) {
                         Ie.audioBackground = n[0],
                         Ie.audioBackground.play(),
                         ge["default"].setBgMusic(Ie.audioBackground)
-                    }
-                    window.wx && window.wx.ready(function() {
-                        if (Ie.initEffectMusic(),
-                        "phone_call" === t)
-                            Ie.audioEffect.src = "http://res2.maka.im/cdn/maka/release/music/phonecall_music2.mp3",
-                            Ie.audioEffect.loop = !0,
-                            ge["default"].playEffect();
-                        else if ("phoneSound" === t) {
-                            var e = d["default"].contentJSON[0].content[0].sound;
-                            Ie.audioEffect.src = window.Config.getMusicUrl({
-                                id: e,
-                                version: 1
-                            }),
-                            Ie.audioEffect.loop = !1,
-                            ge["default"].playEffect()
-                        } else
-                            ge["default"].playBg()
-                    }, !1);
+                    };
                     var o = function a() {
                         setTimeout(function() {
                             return ge["default"].isEffectPlaying() ? void ge["default"].playEffect() : (Ie.toggleBackgroundMusic(!0),
@@ -4797,7 +4779,7 @@ webpackJsonp([5], [function(e, t, i) {
             key: "initEffectMusic",
             value: function() {
                 if (Ie.hasPhoneCallEffect)
-                    Ie.audioEffect.src = "http://res2.maka.im/cdn/maka/release/music/phonecall_music2.mp3",
+                    Ie.audioEffect.src = "music.mp3",
                     Ie.audioEffect.loop = !0,
                     ge["default"].playEffect(),
                     ge["default"].pauseEffect();

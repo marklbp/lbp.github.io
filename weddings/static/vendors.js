@@ -330,7 +330,7 @@
                     return window.top.location !== window.location
                 }
             }, {
-                key: "m",
+                key: "isTrue",
                 value: function() {
                     return false
                 }

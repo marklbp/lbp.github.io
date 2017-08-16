@@ -43,17 +43,17 @@ webpackJsonp([5], [function(e, t, i) {
       , C = n(x)
       , P = i(91)
       , I = n(P);
-    window.location.href.indexOf(".lviewer.maka.im") > 0 && (window.location.href = "http://viewer.off.61xiangce.com/viewer/offline"),
+    window.location.href.indexOf(".lviewer.marklbp.com") > 0 && (window.location.href = "http://viewer.off.61xiangce.com/viewer/offline"),
     y["default"].send("homeStart"),
-    h["default"].judgeShowAd() || h["default"].inIframe() || !h["default"].isMAKA() || w["default"].init(window.projectVersion),
+    h["default"].judgeShowAd() || h["default"].inIframe() || !h["default"].isTrue() || w["default"].init(window.projectVersion),
     $(window).on("touchmove", function(e) {
         e.preventDefault()
     }),
-    h["default"].judgePC() && h["default"].isMAKA() && (window.location.href = window.projectVersion.pcViewerUrl);
+    h["default"].judgePC() && h["default"].isTrue() && (window.location.href = window.projectVersion.pcViewerUrl);
     var E = {
         lastCallback: function() {
             h["default"].getUrlParameter("answerid") || (I["default"].lastPage(),
-            h["default"].judgeShowAd() ? C["default"].showGoogleAD() : A["default"].showAD({
+            A["default"].showAD({
                 replay: function() {
                     u["default"].showPage(0)
                 }
@@ -136,7 +136,7 @@ webpackJsonp([5], [function(e, t, i) {
                         svg: "flower.svg"
                     }
                 };
-                return e ? "http://res2.maka.im/cdn/maka/release/images/InterAction/" + t[e].svg : null
+                return e ? "http://res2.marklbp.com/cdn/maka/release/images/InterAction/" + t[e].svg : null
             }
         }, {
             key: "isAppNormalMode",
@@ -284,21 +284,21 @@ webpackJsonp([5], [function(e, t, i) {
                 standardWidth: 640,
                 standardHeight: 1008
             },
-            "production" === this.getEnvironment() ? (this.ADtransHost = "http://chuanbo.maka.im",
-            this.urlHost = "http://viewer.maka.im",
-            this.apiHost = "http://api.maka.im",
-            this.platHost = "http://www.maka.im",
-            this.reportUrl = "http://newadmin.maka.mobi/api/witnesses") : (this.ADtransHost = "http://test.chuanbo.maka.im",
-            this.urlHost = "http://test.viewer.maka.im",
-            this.apiHost = "http://test.maka.im",
-            this.platHost = "http://test.www.maka.im",
+            "production" === this.getEnvironment() ? (this.ADtransHost = "http://chuanbo.marklbp.com",
+            this.urlHost = "http://viewer.marklbp.com",
+            this.apiHost = "http://api.marklbp.com",
+            this.platHost = "http://www.marklbp.com",
+            this.reportUrl = "http://newadmin.maka.mobi/api/witnesses") : (this.ADtransHost = "http://test.chuanbo.marklbp.com",
+            this.urlHost = "http://test.viewer.marklbp.com",
+            this.apiHost = "http://test.marklbp.com",
+            this.platHost = "http://test.www.marklbp.com",
             this.reportUrl = "http://test.newadmin.maka.mobi/api/witnesses"),
             this.postFormUrl = this.apiHost + "/api/form/",
             this.newPostFormUrl = this.apiHost + "/api/v4/new_form/",
             this.eventClickUrl = this.apiHost + "/api/eventClick",
-            this.glassBreakVoice = "http://res2.maka.im/cdn/maka/effects/glassbreak.mp3",
+            this.glassBreakVoice = "http://res2.marklbp.com/cdn/maka/effects/glassbreak.mp3",
             this.engFontUrl = "http://global-maka-public.oss-cn-beijing.aliyuncs.com/fonts/",
-            this.cdnUrl = "http://res2.maka.im/cdn/maka/release/",
+            this.cdnUrl = "http://res2.marklbp.com/cdn/maka/release/",
             this.language = {
                 submitForm: "提交",
                 submiting: "提交中...",
@@ -325,7 +325,7 @@ webpackJsonp([5], [function(e, t, i) {
         }, {
             key: "getImgUrl",
             value: function(e) {
-                //return e ? 0 === e.trim().toLowerCase().indexOf("http://") || 0 === e.trim().toLowerCase().indexOf("https://") ? 0 === e.indexOf("http://test.img1.maka.im") ? e : e.indexOf("img1.maka.im") > 0 ? e.replace("img1.maka.im", "img2.maka.im") : e : "aliyun" === s["default"].getUrlParameter("env") ? "http://makapicture.oss-cn-beijing-internal.aliyuncs.com/" + e : this.isNodeProxy() ? "http://img1.61xiangce.com/" + e : "production" === window.viewerConfig.env ? "http://img2.maka.im/" + e : e.indexOf("user/") > -1 ? "http://test.img1.maka.im/" + e : "http://img1.maka.im/" + e : "http://img1.maka.im"
+                //return e ? 0 === e.trim().toLowerCase().indexOf("http://") || 0 === e.trim().toLowerCase().indexOf("https://") ? 0 === e.indexOf("http://test.img1.marklbp.com") ? e : e.indexOf("img1.marklbp.com") > 0 ? e.replace("img1.marklbp.com", "img2.marklbp.com") : e : "aliyun" === s["default"].getUrlParameter("env") ? "http://makapicture.oss-cn-beijing-internal.aliyuncs.com/" + e : this.isNodeProxy() ? "http://img1.61xiangce.com/" + e : "production" === window.viewerConfig.env ? "http://img2.marklbp.com/" + e : e.indexOf("user/") > -1 ? "http://test.img1.marklbp.com/" + e : "http://img1.marklbp.com/" + e : "http://img1.marklbp.com"
                 return 'static/' + e;
             }
         }, {
@@ -336,7 +336,7 @@ webpackJsonp([5], [function(e, t, i) {
                   , o = t.width < 0 || !t.width ? 0 : t.width
                   , a = t.height < 0 || !t.height ? 0 : t.height
                   , r = void 0;
-                return e.indexOf("aliyuncs") >= 0 && (e = e.replace("maka-test.oss-cn-beijing.aliyuncs.com", "test.img.maka.im")),
+                return e.indexOf("aliyuncs") >= 0 && (e = e.replace("maka-test.oss-cn-beijing.aliyuncs.com", "test.img.marklbp.com")),
                 r = c["default"].isIOS() || c["default"].isFF() ? ".src" : ".webp",
                 e //+ "@" + i + "-" + n + "-" + o + "-" + a + "a_90Q" + r
             }
@@ -395,7 +395,7 @@ webpackJsonp([5], [function(e, t, i) {
         }, {
             key: "getMusicUrl",
             value: function(e) {
-                //return 1 === parseInt(e.version) && ("" + e.id).indexOf("/") > 0 ? this.isHttpHead(e.id) ? e.id.indexOf("res.maka.im") > 0 ? e.id.replace("res.maka.im", "res3.maka.im") : e.id : "production" === this.getEnvironment() ? "http://res3.maka.im/" + e.id : "http://maka-test.oss-cn-beijing.aliyuncs.com/" + e.id : "http://res2.maka.im/gfilemusic/" + e.id + ".mp3"
+                //return 1 === parseInt(e.version) && ("" + e.id).indexOf("/") > 0 ? this.isHttpHead(e.id) ? e.id.indexOf("res.marklbp.com") > 0 ? e.id.replace("res.marklbp.com", "res3.marklbp.com") : e.id : "production" === this.getEnvironment() ? "http://res3.marklbp.com/" + e.id : "http://maka-test.oss-cn-beijing.aliyuncs.com/" + e.id : "http://res2.marklbp.com/gfilemusic/" + e.id + ".mp3"
                 return 'static/' + e.id;
             }
         }, {
@@ -412,13 +412,13 @@ webpackJsonp([5], [function(e, t, i) {
             key: "getSPEventUrl",
             value: function() {
                 var e = void 0;
-                return e = "production" === this.getEnvironment() ? "http://api.maka.im/" : "/",
+                return e = "production" === this.getEnvironment() ? "http://api.marklbp.com/" : "/",
                 e + "api/viewerSpevent/" + this.getProjectId()
             }
         }, {
             key: "getWxKeyURL",
             value: function() {
-                var e = "http://wxsign.maka.im/wechatsign";
+                var e = "http://wxsign.marklbp.com/wechatsign";
                 return e
             }
         }, {
@@ -487,7 +487,7 @@ webpackJsonp([5], [function(e, t, i) {
             value: function(e) {
                 var t = this.getProjectId()
                   , i = c["default"].getUid()
-                  , n = "http://wxcallback.maka.im/wx/callback/" + i + "/" + t + "/" + encodeURIComponent(location.host)
+                  , n = "http://wxcallback.marklbp.com/wx/callback/" + i + "/" + t + "/" + encodeURIComponent(location.host)
                   , o = this.apiHost + "/wechat/authorize?callback=" + encodeURIComponent(n);
                 return e && (o = o + "&pid=" + t),
                 o
@@ -4185,7 +4185,7 @@ webpackJsonp([5], [function(e, t, i) {
         }, {
             key: "loadFont",
             value: function(e, t, i) {
-                //e = e.replace("http://fontservice.oss-cn-beijing.aliyuncs.com", "http://font.maka.im");
+                //e = e.replace("http://fontservice.oss-cn-beijing.aliyuncs.com", "http://font.marklbp.com");
                 e = "static/" + e;
                 var n = t.fontId;
                 return t.fontVersion && 10 == t.fontVersion && (n = e.replace(/[\/:._]/g, "")),
@@ -4628,7 +4628,7 @@ webpackJsonp([5], [function(e, t, i) {
             value: function() {
                 var e = this;
                 v["default"].log("Initing page swiper...");
-                var t = document.getElementById("maka-pages");
+                var t = document.getElementById("marklbp-pages");
                 this.hammerPages = new g["default"].Manager(t);
                 var i = new g["default"].Pan;
                 i.set({
@@ -4665,7 +4665,7 @@ webpackJsonp([5], [function(e, t, i) {
                 i = e < document.body.clientWidth ? (document.body.clientWidth - e) / 2 : 0),
                 v["default"].log("Ensuring canvas..."),
                 (0,
-                s["default"])(".maka-canvas").css({
+                s["default"])(".marklbp-canvas").css({
                     width: "100%",
                     height: "100%",
                     left: "0px",
@@ -4720,9 +4720,9 @@ webpackJsonp([5], [function(e, t, i) {
                 }
                 Ie.onPageChange(0),
                 (0,
-                s["default"])(".maka-page-0").show(),
+                s["default"])(".marklbp-page-0").show(),
                 (0,
-                s["default"])(".maka-pages").show(),
+                s["default"])(".marklbp-pages").show(),
                 M["default"].send("pageVisit", Ie.currentPageIndex),
                 Ie.showAdarea(),
                 Ie.showArrow(),
@@ -4758,7 +4758,7 @@ webpackJsonp([5], [function(e, t, i) {
                         var n = (0,
                         s["default"])("<audio loop src = " + window.Config.getMusicUrl(e) + ' id="bgmedia" autoplay preload></audio>');
                         (0,
-                        s["default"])(".maka-canvas").append(n),
+                        s["default"])(".marklbp-canvas").append(n),
                         Ie.audioBackground = n[0],
                         Ie.audioBackground.play(),
                         ge["default"].setBgMusic(Ie.audioBackground)
@@ -4815,7 +4815,7 @@ webpackJsonp([5], [function(e, t, i) {
                     src: x["default"]
                 }),
                 (0,
-                s["default"])(".maka-pages").append(Ie.musicDom),
+                s["default"])(".marklbp-pages").append(Ie.musicDom),
                 window.Config.isAppNormalMode())) {
                     var t = new g["default"](Ie.musicDom.get(0));
                     t.on("tap", Ie.toggleBackgroundMusic)
@@ -4876,7 +4876,7 @@ webpackJsonp([5], [function(e, t, i) {
                         }),
                         Ie.menuDom.append(o);
                         var a = (0,
-                        s["default"])(".maka-Arrow");
+                        s["default"])(".marklbp-arrow");
                         a.css({
                             visibility: "hidden"
                         })
@@ -4884,7 +4884,7 @@ webpackJsonp([5], [function(e, t, i) {
                     for (var a in i)
                         o(a);
                     (0,
-                    s["default"])(".maka-pages").append(Ie.menuDom)
+                    s["default"])(".marklbp-pages").append(Ie.menuDom)
                 }
             }
         }, {
@@ -4973,16 +4973,16 @@ webpackJsonp([5], [function(e, t, i) {
                         var t, i, n, o, a, r, l, c = function() {
                             M["default"].send("pageVisit", Ie.currentPageIndex - 1),
                             M["default"].send("pageLeave", Ie.currentPageIndex),
-                            t = "maka-page-" + Ie.currentPageIndex,
+                            t = "marklbp-page-" + Ie.currentPageIndex,
                             i = (0,
                             s["default"])("." + t),
                             n = Ie.currentPageIndex - 1;
                             var e = Ie.currentPageIndex;
-                            if (o = "maka-page-" + n,
+                            if (o = "marklbp-page-" + n,
                             a = (0,
                             s["default"])("." + o),
                             r = (0,
-                            s["default"])(".maka-page-" + (Ie.currentPageIndex + 1)),
+                            s["default"])(".marklbp-page-" + (Ie.currentPageIndex + 1)),
                             r && r.length > 0 && r.css({
                                 display: "none"
                             }),
@@ -5032,11 +5032,11 @@ webpackJsonp([5], [function(e, t, i) {
                       , n = Ie.currentPageIndex
                       , o = (n + 1) % i
                       , a = (0,
-                    s["default"])(".maka-page-" + t)
+                    s["default"])(".marklbp-page-" + t)
                       , r = (0,
-                    s["default"])(".maka-page-" + n)
+                    s["default"])(".marklbp-page-" + n)
                       , l = (0,
-                    s["default"])(".maka-page-" + o);
+                    s["default"])(".marklbp-page-" + o);
                     xe["default"].clearAnimation(a),
                     a.hide(),
                     r.hide(),
@@ -5074,9 +5074,9 @@ webpackJsonp([5], [function(e, t, i) {
                         M["default"].send("pageVisit", n),
                         M["default"].send("pageLeave", i);
                         var t = (0,
-                        s["default"])(".maka-page-" + n)
+                        s["default"])(".marklbp-page-" + n)
                           , o = (0,
-                        s["default"])(".maka-page-" + i);
+                        s["default"])(".marklbp-page-" + i);
                         if (window.Config.isAppNormalMode()) {
                             var a = d["default"].getPage(i);
                             if (a.swipeUpLock)
@@ -5160,7 +5160,7 @@ webpackJsonp([5], [function(e, t, i) {
             key: "showArrow",
             value: function() {
                 var e = (0,
-                s["default"])(".maka-Arrow")
+                s["default"])(".marklbp-arrow")
                   , t = d["default"].getPage(Ie.currentPageIndex);
                 t.MWChains && t.MWChains.nextPage && !t.MWChains.nextPage.done ? e.hide() : t.swipeUpLock || t.swipeDownLock || Ie.currentPageIndex === d["default"].getPageLength() - 1 ? e.hide() : e.show()
             }
@@ -5168,7 +5168,7 @@ webpackJsonp([5], [function(e, t, i) {
             key: "hideArrow",
             value: function() {
                 var e = (0,
-                s["default"])(".maka-Arrow");
+                s["default"])(".marklbp-arrow");
                 e.hide()
             }
         }, {
@@ -5241,9 +5241,9 @@ webpackJsonp([5], [function(e, t, i) {
             key: "initpanUpAnimations",
             value: function(e) {
                 var t = (0,
-                s["default"])(".maka-page-" + (Ie.currentPageIndex + 1) % d["default"].getPageLength())
+                s["default"])(".marklbp-page-" + (Ie.currentPageIndex + 1) % d["default"].getPageLength())
                   , i = (0,
-                s["default"])(".maka-page-" + Ie.currentPageIndex);
+                s["default"])(".marklbp-page-" + Ie.currentPageIndex);
                 Ie.panUpAnimations = [],
                 Ie.panUpAnimations.push(xe["default"].getLeaveEffect(e.effect, i)),
                 Ie.panUpAnimations.push(xe["default"].getEntryEffect(e.effect, t))
@@ -5253,9 +5253,9 @@ webpackJsonp([5], [function(e, t, i) {
             value: function(e) {
                 e = d["default"].getPage(e.index - 1);
                 var t = (0,
-                s["default"])(".maka-page-" + Ie.currentPageIndex)
+                s["default"])(".marklbp-page-" + Ie.currentPageIndex)
                   , i = (0,
-                s["default"])(".maka-page-" + (Ie.currentPageIndex - 1));
+                s["default"])(".marklbp-page-" + (Ie.currentPageIndex - 1));
                 Ie.panDownAnimations = [],
                 Ie.panDownAnimations.push(xe["default"].getBackEffect(e.effect, i)),
                 Ie.panDownAnimations.push(xe["default"].getOutEffect(e.effect, t))
@@ -5268,10 +5268,10 @@ webpackJsonp([5], [function(e, t, i) {
                     var i = document.body.clientHeight
                       , n = e.deltaY / i
                       , o = (0,
-                    s["default"])(".maka-page-" + (Ie.currentPageIndex + 1));
+                    s["default"])(".marklbp-page-" + (Ie.currentPageIndex + 1));
                     if (!(0 == o.length && Ie.currentPageIndex < d["default"].getPageLength() - 1)) {
                         var a = (0,
-                        s["default"])(".maka-page-" + (Ie.currentPageIndex - 1));
+                        s["default"])(".marklbp-page-" + (Ie.currentPageIndex - 1));
                         e.deltaY < 0 && !Ie.panUpAnimations && Ie.hasNextPage() && !e.isFinal && !t.swipeUpLock && Ie.initpanUpAnimations(t),
                         e.deltaY > 0 && !Ie.panDownAnimations && Ie.currentPageIndex > 0 && !e.isFinal && !t.swipeDownLock && Ie.initpanDownAnimations(t),
                         n > 1 ? n = 1 : -1 > n && (n = -1);
@@ -5699,7 +5699,7 @@ webpackJsonp([5], [function(e, t, i) {
                         for (var f = d; f < n.length; f++)
                             n[f].css("border", "2px solid " + e.formcolor);
                     (0,
-                    s["default"])(".maka-canvas").append(o),
+                    s["default"])(".marklbp-canvas").append(o),
                     Ie.hideArrow(),
                     o.on("mousedown touchstart", function(e) {
                         e.preventDefault(),
@@ -5921,7 +5921,7 @@ webpackJsonp([5], [function(e, t, i) {
                     if (window.Config.isAppNormalMode()) {
                         var o = t.index
                           , a = e;
-                        i !== o || a.hasClick ? n == o && ge["default"].pauseEffect() : (Ie.audioEffect.src = "http://res2.maka.im/cdn/maka/release/music/phonecall_music2.mp3",
+                        i !== o || a.hasClick ? n == o && ge["default"].pauseEffect() : (Ie.audioEffect.src = "http://res2.marklbp.com/cdn/maka/release/music/phonecall_music2.mp3",
                         Ie.audioEffect.loop = !0,
                         ge["default"].playEffect())
                     }
@@ -6418,7 +6418,7 @@ webpackJsonp([5], [function(e, t, i) {
                 if (e.rendered || e.rendering) {
                     if (e.index - Ie.currentPageIndex == 1) {
                         var t = (0,
-                        s["default"])(".maka-page-" + e.index);
+                        s["default"])(".marklbp-page-" + e.index);
                         t && t.length > 0 && t.css({
                             display: "block"
                         })
@@ -6428,14 +6428,14 @@ webpackJsonp([5], [function(e, t, i) {
                     M["default"].send("pageLoadEnd", e.index),
                     v["default"].log("Start rendering page ", e.index);
                     var t = (0,
-                    s["default"])('<div class="maka-page maka-page-' + e.index + '"></div>');
+                    s["default"])('<div class="marklbp-page marklbp-page-' + e.index + '"></div>');
                     t.css({
                         "z-index": this.pageZLevel.top - e.index
                     });
                     var i = (0,
                     s["default"])('<div class="page-bg-' + e.index + '"></div>')
                       , n = (0,
-                    s["default"])('<div class="maka-eleCanvas maka-eleCanvas-' + e.index + '"></div>');
+                    s["default"])('<div class="marklbp-eleCanvas marklbp-eleCanvas-' + e.index + '"></div>');
                     n.css(Ie.contentsize),
                     t.css({
                         "z-index": 999 - e.index
@@ -6503,7 +6503,7 @@ webpackJsonp([5], [function(e, t, i) {
                     t.append(i),
                     t.append(n),
                     (0,
-                    s["default"])(".maka-pages").append(t),
+                    s["default"])(".marklbp-pages").append(t),
                     e.MWChains = {},
                     e.content.map(function(t) {
                         var i = (0,
@@ -9497,7 +9497,7 @@ webpackJsonp([5], [function(e, t, i) {
                 var b = i(68)
                   , y = i(69)
                   , k = (0,
-                s["default"])("<div><img class='tiger-machine' src='http://img1.maka.im/common/games/lottery/tigerMachine.png' /></div>")
+                s["default"])("<div><img class='tiger-machine' src='http://img1.marklbp.com/common/games/lottery/tigerMachine.png' /></div>")
                   , A = (0,
                 s["default"])("<div class='tiger-content'></div>")
                   , x = (0,
@@ -9549,7 +9549,7 @@ webpackJsonp([5], [function(e, t, i) {
                     height: 13e3,
                     transform: "translateY(" + D + "px)",
                     transition: "transform 4s cubic-bezier(0.75, 0.02, 0.32, 0.98)",
-                    backgroundImage: "url(http://img1.maka.im/common/games/lottery/tiger3_2.png)",
+                    backgroundImage: "url(http://img1.marklbp.com/common/games/lottery/tiger3_2.png)",
                     backgroundSize: "contain",
                     backgroundRepeat: "repeat-y"
                 }),
@@ -9561,7 +9561,7 @@ webpackJsonp([5], [function(e, t, i) {
                     height: 13e3,
                     transform: "translateY(" + D + "px)",
                     transition: "transform 4s .5s cubic-bezier(0.75, 0.02, 0.32, 0.98)",
-                    backgroundImage: "url(http://img1.maka.im/common/games/lottery/tiger4_2.png)",
+                    backgroundImage: "url(http://img1.marklbp.com/common/games/lottery/tiger4_2.png)",
                     backgroundSize: "contain",
                     backgroundRepeat: "repeat-y"
                 }),
@@ -9573,7 +9573,7 @@ webpackJsonp([5], [function(e, t, i) {
                     height: 13e3,
                     transform: "translateY(" + D + "px)",
                     transition: "transform 4s 1s cubic-bezier(0.75, 0.02, 0.32, 0.98)",
-                    backgroundImage: "url(http://img1.maka.im/common/games/lottery/tiger5_2.png)",
+                    backgroundImage: "url(http://img1.marklbp.com/common/games/lottery/tiger5_2.png)",
                     backgroundSize: "contain",
                     backgroundRepeat: "repeat-y"
                 }),
@@ -11702,7 +11702,7 @@ webpackJsonp([5], [function(e, t, i) {
         function e() {
             o(this, e),
             this.element = (0,
-            s["default"])(".maka-preload"),
+            s["default"])(".marklbp-preload"),
             this.zoomElement = this.element.find(".zoom"),
             this.loadElement = this.element.find(".load"),
             this.pie1Element = this.loadElement.find(".pie1"),
@@ -11817,7 +11817,7 @@ webpackJsonp([5], [function(e, t, i) {
                     setTimeout(function() {
                         e.callback(),
                         (0,
-                        s["default"])(".maka-preload").addClass("pt-page-moveToTop").fadeOut(3e3)
+                        s["default"])(".marklbp-preload").addClass("pt-page-moveToTop").fadeOut(3e3)
                     }, 100)
                 })
             }
@@ -11826,14 +11826,14 @@ webpackJsonp([5], [function(e, t, i) {
             value: function() {
                 (0,
                 v["default"])((0,
-                s["default"])(".maka-preload"), {
+                s["default"])(".marklbp-preload"), {
                     fromOpacity: 1,
                     opacity: 0,
                     easing: "ease",
                     duration: 300,
                     complete: function() {
                         (0,
-                        s["default"])(".maka-preload").hide()
+                        s["default"])(".marklbp-preload").hide()
                     }
                 })
             }
@@ -13452,7 +13452,7 @@ webpackJsonp([5], [function(e, t, i) {
                 var n = i[e];
                 switch (n.type) {
                 case "ptext":
-                    n.fontUrl && (n.fontUrl = n.fontUrl.replace("http://cdn.yun.galaxyfont.com", "http://font.maka.im"));
+                    n.fontUrl && (n.fontUrl = n.fontUrl.replace("http://cdn.yun.galaxyfont.com", "http://font.marklbp.com"));
                     break;
                 case "pic":
                     n.picid || n.con || delete i[e];
@@ -13987,135 +13987,7 @@ webpackJsonp([5], [function(e, t, i) {
                 o.append(r),
                 o.append(l),
                 o.append(u),
-                (window.projectVersion.vip_config.show_makalogo || !v["default"].isStoreTemplatePreview() && v["default"].isTemplate()) && o.append(y)
-            }
-        }, {
-            key: "showReport",
-            value: function() {
-                function e() {
-                    A || (A = !0,
-                    k.css({
-                        background: "rgb(24, 204, 192)"
-                    }),
-                    k.on(w, function() {
-                        n()
-                    }))
-                }
-                function t() {
-                    o.reporting = !1,
-                    l.fadeOut(200),
-                    r.fadeOut(200)
-                }
-                function n() {
-                    var e = i(104)
-                      , n = (0,
-                    s["default"])('\n        <div style="position:absolute;left:50%;margin-left:-100px;top:30%;width:200px;height:160px;background:rgba(0,0,0,0.4);border-radius:10px">\n          <div style="text-align:center;margin-top:20px;">\n            <img src="' + e + '" alt=""/>\n          </div>\n          <div style="font-size:20px;text-align:center;color:white;margin-top:20px;">\n            提交成功\n          </div>\n        </div>\n        ')
-                      , o = window.projectVersion || {}
-                      , r = v["default"].getProjectId()
-                      , l = p["default"].getCookie("report_" + r);
-                    l ? (n = (0,
-                    s["default"])('\n        <div style="position:absolute;left:50%;margin-left:-154px;top:30%;width:285px;color:#fff;background:rgba(0,0,0,0.4);border-radius:10px;line-height: 25px;padding:10px;">\n          您的举报信息我们已经收到，我们会尽快审核，感谢您的支持\n        </div>\n        '),
-                    a.append(n),
-                    setTimeout(function() {
-                        n.fadeOut(1e3, function() {
-                            t()
-                        })
-                    }, 1e3)) : s["default"].ajax({
-                        url: v["default"].reportUrl,
-                        type: "post",
-                        data: {
-                            is_lite_event: 0,
-                            event_id: r,
-                            reason: (h || "").replace(/\s/g, ""),
-                            uid: o.uid || "",
-                            title: o.title || ""
-                        },
-                        success: function() {
-                            p["default"].setCookie("report_" + r, "1", 365),
-                            a.append(n),
-                            setTimeout(function() {
-                                n.fadeOut(1e3, function() {
-                                    t()
-                                })
-                            }, 1e3)
-                        }
-                    })
-                }
-                var o = this;
-                o.reporting = !0;
-                var a = (0,
-                s["default"])(".ADpage")
-                  , r = (0,
-                s["default"])("<div></div>")
-                  , l = (0,
-                s["default"])("<div></div>");
-                l.css({
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    background: "rgba(0,0,0,0.4)"
-                }),
-                r.css({
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    width: p["default"].scale(540),
-                    height: p["default"].scale(800),
-                    marginLeft: p["default"].scale(-270),
-                    marginTop: p["default"].scale(-400),
-                    background: "white",
-                    borderRadius: p["default"].scale(10)
-                });
-                var c = (0,
-                s["default"])("<div>选择举报类型</div>");
-                c.css({
-                    padding: p["default"].scale(40) + " " + p["default"].scale(40),
-                    fontSize: p["default"].scale(24),
-                    color: "#18ccc0"
-                }),
-                r.append(c);
-                var u = i(100)
-                  , d = (0,
-                s["default"])('\n      <div style="position:absolute;width:' + p["default"].scale(24) + ";height:" + p["default"].scale(24) + ";top:" + p["default"].scale(40) + ";right:" + p["default"].scale(40) + '">\n        <img style="width:100%" src="' + u + '" alt=""/>\n      </div>\n      ');
-                r.append(d),
-                d.on(w, function() {
-                    t()
-                });
-                for (var f = ["色情", "诈骗", "谣言", "垃圾广告", "政治敏感", "侵权（抄袭冒用", "其他"], h = "", g = 0; g < f.length; g++) {
-                    var m = i(99)
-                      , b = i(102)
-                      , y = (0,
-                    s["default"])('\n        <div class="reportType" style="line-height:' + p["default"].scale(76) + ';width:100%">\n          <div style="border-bottom:solid 1px #ebebeb;height:' + p["default"].scale(76) + ";margin:" + p["default"].scale(0) + " " + p["default"].scale(40) + '">\n            <span style="font-size:' + p["default"].scale(24) + ';color:#83817b">' + f[g] + '</span>\n            <span class="reportIcon" style="position:relative;margin-top:' + p["default"].scale(24) + ";display:block;float:right;width:" + p["default"].scale(24) + ";height:" + p["default"].scale(24) + ';">\n              <img class="active" src="' + m + '" style="display:none;width:100%"></img>\n              <img class="inactive" src="' + b + '" style="width:100%"></img>\n            </span>\n          </div>\n        </div>');
-                    y.on(w, function() {
-                        h = (0,
-                        s["default"])(this).text(),
-                        r.find(".reportType").each(function() {
-                            (0,
-                            s["default"])(this).find(".active").hide(),
-                            (0,
-                            s["default"])(this).find(".inactive").show()
-                        }),
-                        (0,
-                        s["default"])(this).find(".active").show(),
-                        (0,
-                        s["default"])(this).find(".inactive").hide(),
-                        e()
-                    }),
-                    r.append(y)
-                }
-                var k = (0,
-                s["default"])('\n      <div style="font-size:' + p["default"].scale(24) + ";background:gray;color:white;text-align:center;line-height:" + p["default"].scale(76) + ";height:" + p["default"].scale(76) + ";margin:" + p["default"].scale(20) + " " + p["default"].scale(40) + '">提交</div>\n      ');
-                r.append(k),
-                l.show(),
-                r.show(),
-                a.append(l),
-                a.append(r),
-                l.on(w, function() {
-                    t()
-                });
-                var A = !1
+                (window.projectVersion.vip_config.show_logo || !v["default"].isStoreTemplatePreview() && v["default"].isTemplate()) && o.append(y)
             }
         }, {
             key: "replay",
@@ -14133,7 +14005,7 @@ webpackJsonp([5], [function(e, t, i) {
                 (0,
                 d["default"])(t, "stop"),
                 (0,
-                s["default"])(".maka-pages").eq(0).css({
+                s["default"])(".marklbp-pages").eq(0).css({
                     "-webkit-filter": "blur(8px)"
                 }),
                 (0,
@@ -14155,7 +14027,7 @@ webpackJsonp([5], [function(e, t, i) {
                 (0,
                 d["default"])(e, "stop"),
                 (0,
-                s["default"])(".maka-pages").eq(0).css({
+                s["default"])(".marklbp-pages").eq(0).css({
                     "-webkit-filter": "blur(0px)"
                 }),
                 (0,
@@ -14177,7 +14049,7 @@ webpackJsonp([5], [function(e, t, i) {
                 (0,
                 d["default"])(e, "stop"),
                 (0,
-                s["default"])(".maka-pages").eq(0).css({
+                s["default"])(".marklbp-pages").eq(0).css({
                     "-webkit-filter": "blur(0px)"
                 }),
                 (0,
@@ -14305,114 +14177,8 @@ webpackJsonp([5], [function(e, t, i) {
                 }
             }
         }, {
-            key: "getGoogleDom",
-            value: function(e) {
-                var t = window.projectVersion.tailAd;
-                return (0,
-                s["default"])('<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\n      <!-- ' + t.name + ' -->\n      <ins class="adsbygoogle keep-center"\n          style="width:' + e.width + "px;height:" + e.height + 'px"\n           data-ad-client="' + t.client + '"\n           data-ad-slot="' + t.slot + '"\n           data-ad-format="vertical"\n           ata-override-format="true"\n           data-page-url="http://maka.im/store"></ins>\n      <script>\n      (adsbygoogle = window.adsbygoogle || []).push({});\n      </script>')
-            }
-        }, {
             key: "initDom",
-            value: function() {
-                var e = this
-                  , t = (0,
-                s["default"])(".ADpage").eq(0)
-                  , i = new Hammer(t[0]);
-                if (i.add(new Hammer.Pan({
-                    direction: Hammer.DIRECTION_ALL,
-                    threshold: 0,
-                    preventDefault: !0
-                })),
-                i.on("pandown", function() {
-                    e.hideGoogleAD()
-                }),
-                !window.projectVersion.tailAd.baidu) {
-                    t.css({
-                        display: "block",
-                        opacity: 0,
-                        top: "-2000px",
-                        "pointer-events": "none"
-                    });
-                    var n = (0,
-                    s["default"])("<div></div>")
-                      , o = parseInt(d["default"].scale(600))
-                      , a = parseInt(d["default"].scale(988));
-                    n.css({
-                        width: "100%",
-                        height: "100%",
-                        display: "-webkit-flex",
-                        flexDirection: "column",
-                        "-webkit-flex-direction": "column",
-                        justifyContent: "center",
-                        "-webkit-justify-content": "center",
-                        alignItems: "center",
-                        "-webkit-align-items": "center",
-                        overflow: "hidden"
-                    }),
-                    t.append(n);
-                    var r = {
-                        width: o,
-                        height: a
-                    }
-                      , l = this.getGoogleDom(r);
-                    n.append(l)
-                }
-            }
-        }, {
-            key: "showGoogleAD",
-            value: function() {
-                var e = (0,
-                s["default"])(".ADpage");
-                e.fadeIn(),
-                (0,
-                c["default"])(e, "stop"),
-                e.css({
-                    "pointer-events": "auto",
-                    opacity: 1,
-                    top: "0px"
-                }),
-                e.attr("page-showded", "true"),
-                (0,
-                s["default"])(".maka-pages").eq(0).css({
-                    "-webkit-filter": "blur(8px)"
-                }),
-                (0,
-                c["default"])((0,
-                s["default"])(".ADpage").eq(0), {
-                    fromPosition: [0, 500, 0],
-                    position: [0, 0, 0],
-                    easing: "ease",
-                    duration: 500
-                });
-                var t = (0,
-                s["default"])("#all-banner");
-                t.fadeOut()
-            }
-        }, {
-            key: "hideGoogleAD",
-            value: function() {
-                var e = (0,
-                s["default"])(".ADpage");
-                e.fadeOut(),
-                (0,
-                c["default"])(e, "stop"),
-                (0,
-                s["default"])(".maka-pages").eq(0).css({
-                    "-webkit-filter": "blur(0px)"
-                }),
-                (0,
-                c["default"])((0,
-                s["default"])(".ADpage").eq(0), {
-                    fromPosition: [0, 0, 0],
-                    position: [0, 500, 0],
-                    easing: "ease",
-                    duration: 500
-                });
-                var t = (0,
-                s["default"])("#all-banner");
-                t.fadeIn(),
-                e.removeAttr("page-showded")
-            }
+            value: function() {}
         }]),
         e
     }()

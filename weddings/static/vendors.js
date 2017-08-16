@@ -81,7 +81,7 @@
     ,
     t.m = e,
     t.c = r,
-    t.p = "http://res.maka.im/cdn/maka/release/"
+    t.p = "http://www.marklbp.com/weddings"
 }(function(e) {
     for (var t in e)
         if (Object.prototype.hasOwnProperty.call(e, t))
@@ -193,8 +193,7 @@
                 value: function(e, t, n) {
                     var r = new Date;
                     r.setDate(r.getDate() + n);
-                    var i = window.location.host.indexOf("maka.im") >= 0 ? "domain=maka.im;" : "";
-                    i || (i = window.location.host.indexOf("maka.io") >= 0 ? "domain=maka.io;" : ""),
+                    var i = window.location.host.indexOf("www.marklbp.com") >= 0 ? "domain=www.marklbp.com;" : "";
                     document.cookie = e + "=" + escape(t) + (null == n ? "" : ";expires=" + r.toGMTString()) + ";path=/;" + i
                 }
             }, {
@@ -217,7 +216,7 @@
             }, {
                 key: "judgeShowAd",
                 value: function() {
-                    return !(!window.Config.isAppNormalMode() || !window.projectVersion.showad && 4 != window.projectVersion.status)
+                    return false
                 }
             }, {
                 key: "viewerGetTail",
@@ -331,9 +330,9 @@
                     return window.top.location !== window.location
                 }
             }, {
-                key: "isMAKA",
+                key: "m",
                 value: function() {
-                    return window.location.href.indexOf("maka.im") >= 0 || window.location.href.indexOf("h5.") >= 0 || window.location.href.indexOf("h5a.") >= 0
+                    return false
                 }
             }, {
                 key: "abs",

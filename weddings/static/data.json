@@ -3,11 +3,11 @@
 	"data": {
 		"pdata": {
 			"json": [{
-				"bgpicwidth": "640",
+				"bgpicwidth": 671,
 				"bgpic": "",
-				"bgpicheight": "1010",
-				"bgpicleft": "0",
-				"bgpictop": "0",
+				"bgpicheight": 1008,
+				"bgpicleft": -16,
+				"bgpictop": 0,
 				"effect": "scaleup",
 				"content": [{
 					"fontUrl": "1498180037877-ze6mz0.ttf",
@@ -314,11 +314,11 @@
 					},
 					"selfW": 660,
 					"boxshadow": 0,
-					"inleft": -12.976066597294391,
+					"inleft": 0,
 					"intop": 0,
 					"stylecolor": "rgba(0,0,0,0)",
 					"inw": 685.9521331945888,
-					"top": -11,
+					"top": 0,
 					"w": 660,
 					"version": 1,
 					"styleopacity": 0,
@@ -477,7 +477,7 @@
 					"fontitalic": false
 				}, {
 					"fontUrl": "1498180896991-tt1z38.ttf",
-					"con": "2017/9/16 13:14",
+					"con": "2017/9/15 13:14",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",
@@ -516,7 +516,7 @@
 					"fontitalic": false
 				}, {
 					"fontUrl": "1498180911781-n19l2y.ttf",
-					"con": "湖北省荆州市监利县程集镇砖桥村",
+					"con": "荆州市石首市小河口镇",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",
@@ -793,7 +793,7 @@
 					"fontitalic": false
 				}, {
 					"fontUrl": "1498181702773-x3qxa4.ttf",
-					"con": "席设\n湖北省荆州市监利县程集镇砖桥村",
+					"con": "席设\n荆州市石首市小河口镇",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",
@@ -832,7 +832,7 @@
 					"fontitalic": false
 				}, {
 					"fontUrl": "1498181712765-a0eojq.ttf",
-					"con": "时间\n2017年9月16日（七月廿六）13:14",
+					"con": "时间\n2017年9月15日（七月廿五）13:14",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",
@@ -3406,7 +3406,7 @@
 					"borderradius": 0
 				}, {
 					"fontUrl": "1498185841610-yecvtf.ttf",
-					"con": "湖北省荆州市监利县程集镇砖桥村",
+					"con": "荆州市石首市小河口镇",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",
@@ -3445,7 +3445,7 @@
 					"fontitalic": false
 				}, {
 					"fontUrl": "1498185845409-td6ipn.ttf",
-					"con": "2017年9月16日（七月廿六）13:14",
+					"con": "2017年9月15日（七月廿五）13:14",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",
@@ -3599,8 +3599,8 @@
 					"fontitalic": false
 				}, {
 					"latlng": {
-						"lat": 29.9130952775,
-						"lng": 112.6582717896
+						"lat": 29.7724800000,
+						"lng": 112.6239500000
 					},
 					"left": 121,
 					"h": 116,
@@ -3614,7 +3614,7 @@
 					},
 					"selfW": 400,
 					"boxshadow": 0,
-					"addr": "湖北省荆州市监利县程集镇砖桥村",
+					"addr": "荆州市石首市小河口镇",
 					"zoom": 16,
 					"top": 530,
 					"setZoom": 0,
@@ -3911,9 +3911,9 @@
 					"orgWidth": 1000,
 					"inh": 203,
 					"editable": true,
-					"picid": "p101.jpg",
-					"left": 218,
-					"h": 203,
+					"picid": "p102.jpg",
+					"left": 230,
+					"h": 180,
 					"opacity": 1,
 					"orgHeight": 665,
 					"elementAnimations": {
@@ -3930,7 +3930,7 @@
 					"stylecolor": "rgba(0,0,0,0)",
 					"inw": 304,
 					"top": 459,
-					"w": 203,
+					"w": 180,
 					"version": 1,
 					"styleopacity": 0,
 					"cropData": {
@@ -3945,7 +3945,7 @@
 					"borderradius": 100
 				}, {
 					"fontUrl": "1498185830578-ffgsiw.ttf",
-					"con": "LET'S PARTY FOR THIS",
+					"con": "PARTY FOR THIS",
 					"border-color": "#000000",
 					"prepara": "0",
 					"border-width": "0px",
@@ -3967,7 +3967,7 @@
 					"ftsize": 24,
 					"border-style": "none",
 					"fontbold": false,
-					"top": 662,
+					"top": 652,
 					"ftcolor": "#000",
 					"w": 521,
 					"version": 1,
@@ -3987,9 +3987,9 @@
 					"orgWidth": 1000,
 					"inh": 203,
 					"editable": true,
-					"picid": "p101.jpg",
-					"left": 218,
-					"h": 190,
+					"picid": "p103.jpg",
+					"left": 238,
+					"h": 160,
 					"opacity": 1,
 					"orgHeight": 665,
 					"elementAnimations": {
@@ -4006,7 +4006,7 @@
 					"stylecolor": "rgba(0,0,0,0)",
 					"inw": 304,
 					"top": 697,
-					"w": 190,
+					"w": 160,
 					"version": 1,
 					"styleopacity": 0,
 					"cropData": {

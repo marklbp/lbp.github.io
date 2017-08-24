@@ -2,197 +2,633 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>五险一金税</title>
 	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style type="text/css">
+		.row-normal{
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.table-cs .form-control{
+			display: inline-block;
+			width: 50%;
+			color: #f00;
+		}
+		.table-cs .form-control.percent{
+			width: 40%;
+			background-color: transparent;
+			border: 0;
+			box-shadow: none;
+		}
+	</style>
 </head>
 <body>
-	<table cellpadding="0" cellspacing="0" width="700" style="width: 668px;" align="center">
-		<colgroup><col width="46" span="15" style=";width:47px"></colgroup>
-		<tbody>
-			<tr height="16" style=";height:16px" class="firstRow">
-				<td height="16" width="47" align="center" valign="middle" style="word-break: break-all;"><strong>缴费基数</strong></td>
-				<td colspan="7" width="327" style="border-left-style: none;" align="center" valign="middle"><strong>单位</strong></td>
-				<td colspan="6" width="280" style="border-left-style: none;" align="center" valign="middle"><strong>个人</strong></td>
-				<td width="47" style="border-left-style: none; word-break: break-all;" align="center" valign="middle"><strong>缴纳比例</strong></td>
+	<div class="row row-normal">
+		<div class="col-xs-12">
+			<div class="h4 text-center">薪资计算</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">税前薪资</span>
+					<input class="form-control" type="text" id="input1">
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-success" id="btn1">确定</button>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">社保缴费</span>
+					<input class="form-control" type="text" id="input2" readonly>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">公积金费</span>
+					<input class="form-control" type="text" id="input3" readonly>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">个人税费</span>
+					<input class="form-control" type="text" id="input4" readonly>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">税后薪资</span>
+					<input class="form-control" type="text" id="input5" readonly>
+				</div>
+			</div>
+
+			<table class="table table-striped table-bordered table-responsive table-condensed table-hover">
+				<caption>2017年4月1日起上海市社保缴费基数范围3902～19512（元），2017年7月1日起上海市公积金个人和单位的缴费比例均为7%，缴费额度范围306～2732（元）</caption>
+				<tbody>
+					<tr>
+						<td colspan="3" class="text-center"><strong>五险一金缴纳比例对照表</strong></td>
+					</tr>
+					<tr>
+						<td><strong>项目</strong></td>
+						<td><strong>单位</strong></td>
+						<td><strong>个人</strong></td>
+					</tr>
+					<tr>
+						<td>养老保险</td><td>21.00%</td><td >8.00%</td>
+					</tr>
+					<tr><td>医疗保险</td><td>11.00%</td><td >2.00%</td>
+					</tr>
+					<tr><td>工伤保险</td><td>0.50%</td><td >0</td>
+					</tr>
+					<tr><td>生育保险</td><td>1.00%</td><td >0</td>
+					</tr>
+					<tr><td>失业保险</td><td>1.50%</td><td >0.50%</td>
+					</tr>
+					<tr>
+						<td>残保金</td><td>1.60%</td><td >0</td>
+					</tr>
+					<tr>
+						<td>小计</td><td>36.60%</td><td >10.50%</td>
+					</tr>
+					<tr>
+						<td>合计</td><td colspan="2">47.10%</td>
+					</tr>
+				</tbody>
+			</table>
+		
+			<table class="table table-striped table-bordered table-responsive table-condensed table-hover">
+		        <caption>个人所得税税率表（一），征税点：3500（元）</caption>
+		        <tbody>
+		            <tr>
+		                <th>级数</th><th>应纳税所得额(含税)</th><th>应纳税所得额(不含税)</th><th>税率(%)</th><th>速算扣除数</th>
+		            </tr>
+		            <tr><td>1</td><td>不超过1,500元的</td><td>不超过1,455元的</td><td>3</td><td>0</td>
+		            </tr>
+		            <tr><td>2</td><td>超过1,500元至4,500元的部分</td><td>超过1,455元至4,155元的部分</td><td>10</td><td>105</td>
+		            </tr>
+		            <tr><td>3</td><td>超过4,500元至9,000元的部分</td><td>超过4,155元至7,755元的部分</td><td>20</td><td>555</td>
+		            </tr>
+		            <tr><td>4</td><td>超过9,000元至35,000元的部分</td><td>超过7,755元至27,255元的部分</td><td>25</td><td>1,005</td>
+		            </tr>
+		            <tr><td>5</td><td>超过35,000元至55,000元的部分</td><td>超过27,255元至41,255元的部分</td><td>30</td><td>2,755</td>
+		            </tr>
+		            <tr><td>6</td><td>超过55,000元至80,000元的部分</td><td>超过41,255元至57,505元的部分</td><td>35</td><td>5,505</td>
+		            </tr>
+		            <tr><td>7</td><td>超过80,000元的部分</td><td>超过57,505的部分</td><td>45</td><td>13,505</td>
+		            </tr>
+		        </tbody>
+		    </table>
+
+
+			<table class="table table-bordered table-cs">
+			<tbody>
+			
+			<tr>
+				<td colspan="4">
+					<h4>2017上海市四金及税后工资计算器(最新)</h4>
+				</td>
+				
+				<td rowspan="23">
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<th colspan="2">2017年度</th>
+							</tr>
+							<tr>
+								<td rowspan="2" width="92">
+									三金汇缴基数
+								</td>
+								<td width="110">
+									<strong>上限</strong>
+									<input id="TxtSJHJJSMAX" readonly class="form-control" type="text" name="TxtSJHJJSMAX" value="19512">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>下限</strong>
+									<input id="TxtSJHJJSMIN" readonly class="form-control" type="text" name="TxtSJHJJSMIN" value="3902">
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2">
+										基本
+										<br>
+										公积金汇缴额
+								</td>
+								<td>
+									<strong>上限</strong>
+									<input id="TxtGJJHJMAX" readonly class="form-control" type="text" name="TxtGJJHJMAX" value="2732">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>下限</strong>
+									<input id="TxtGJJHJMIN" readonly class="form-control" type="text" name="TxtGJJHJMIN" value="282">
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2">补充<br>公积金汇缴额</td>
+								<td>
+									<strong>上限</strong>
+									<input id="TxtGJJHJMAX" readonly class="form-control" type="text" name="TxtGJJHJMAX" value="1952">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>下限</strong>(无限制)
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									注:三金每年04月01日调整,公积金每年07月01日调整.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<th colspan="4">个人所得税--税率表</th>
+							</tr>
+							<tr>
+								<td width="30"><strong>级数</strong></td>
+								<td width="90"><strong>累进区间</strong></td>
+								<td width="28"><strong>税率</strong></td>
+								<td width="42"><strong>扣除数</strong></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>&lt;1500</td>
+								<td>3%</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>1500-4500</td>
+								<td>10%</td>
+								<td>105</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4500-9000</td>
+								<td>20%</td>
+								<td>555</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>9000-35000</td>
+								<td>25%</td>
+								<td>1005</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>35000-55000</td>
+								<td>30%</td>
+								<td>2755</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>55000-80000</td>
+								<td>35%</td>
+								<td>5505</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>&gt;80000</td>
+								<td>45%</td>
+								<td>13505</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									注:税前扣除额3,500.00,自2011年09月01日开始实行.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
 			</tr>
-			<tr height="16" style=";height:16px">
-				<td rowspan="2" height="32" width="47" style="border-top-style: none;">3902～19512</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">养老保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">医疗保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">工伤保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">生育保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">失业保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">残保金</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">单位小计</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">养老保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">医疗保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">工伤保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">生育保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">失业保险</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">个人小计</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">合计</td>
+			<tr>
+				<td>
+					税前月薪:
+				</td>
+				<td>
+					<p>
+						<input type="text" name="pre-tax" id="pre-tax" class="form-control" onkeyup="changValue(this.value)">
+						(录入)
+					</p>
+				</td>
+				<td colspan="2" rowspan="5">
+					<input class="btn btn-success" id="Submit" value="提交" name="Submit" type="submit" onclick="return subCacu(0)">
+					<input class="btn btn-default" id="Clear" value="清除" name="Clear" type="submit" onclick="return changValue(0)">
+				</td>
 			</tr>
-			<tr height="16" style="height:16px">
-				<td height="16" width="47" style="border-top-style: none; border-left-style: none;">21.00%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">11.00%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">0.50%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">1.00%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">1.50%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">1.60%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">36.60%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">8.00%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">2.00%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">0</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">0</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">0.50%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">10.50%</td>
-				<td width="47" style="border-top-style: none; border-left-style: none;">47.10%</td>
+			<tr>
+				<td colspan="2">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					三金汇缴基数:
+				</td>
+				<td>
+					<input id="txtshebao" type="text" name="txtshebao" class="form-control">
+					(可调)
+				</td>
+			</tr>
+			<tr>
+				<td>
+					公积金汇缴基数:
+				</td>
+				<td>
+					<input id="txtgjj" type="text" name="txtgjj" readonly class="form-control">
+					(可调)
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input checked="checked" name="CheckBoxGJJ" type="checkbox" id="CheckBoxGJJ" value="汇缴公积金" onclick="checkGjj(this)">汇缴公积金
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="4">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+					<div>
+						<b>单位应缴部分</b>
+					</div>
+				</td>
+				<td colspan="2">
+					<div>
+						<b>个人应缴部分</b>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					养老保险金:
+				</td>
+				<td>
+					<input id="TxtDWYL" readonly class="form-control" type="text" name="TxtDWYL">
+					<input id="TxtDWYLBL" readonly class="form-control percent" type="text" name="TxtDWYLBL" value="20%">
+				</td>
+				<td colspan="2">
+					<input id="TxtGYYL" readonly class="form-control" type="text" name="TxtGYYL">
+						<input id="TxtGYYLBL" readonly class="form-control percent" type="text" name="TxtGYYLBL" value="8%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					医疗保险金:
+				</td>
+				<td>
+					<input id="TxtDWYB" readonly class="form-control" type="text" name="TxtDWYB">
+						<input id="TxtDWYBBL" readonly class="form-control percent" type="text" name="TxtDWYBBL" value="10%">
+				</td>
+				<td colspan="2">
+					<input id="TxtGYYB" readonly class="form-control" type="text" name="TxtGYYB">
+					<input id="TxtGYYBBL" readonly class="form-control percent" type="text" name="TxtGYYBBL" value="2%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					失业保险金:
+				</td>
+				<td>
+					<input id="TxtDWSY" readonly class="form-control" type="text" name="TxtDWSY">
+					<input id="TxtDWSYBL" readonly class="form-control percent" type="text" name="TxtDWSYBL" value="1%">
+				</td>
+				<td colspan="2">
+					<input id="TxtGYSY" readonly class="form-control" type="text" name="TxtGYSY">
+					<input id="TxtGYSYBL" readonly class="form-control percent" type="text" name="TxtGYSYBL" value="0.5%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					基本住房公积金:
+				</td>
+				<td>
+					<input id="TxtDWGJJ" readonly class="form-control" type="text" name="TxtDWGJJ">
+					<input id="TxtDWGJJBL" readonly class="form-control percent" type="text" name="TxtDWGJJBL" value="7%">
+				</td>
+				<td colspan="2">
+					<input id="TxtGYGJJ" readonly class="form-control" type="text" name="TxtGYGJJ">
+					<input id="TxtGYGJJBL" readonly class="form-control percent" type="text" name="TxtGYGJJBL" value="7%">
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">
+					补充住房公积金:
+					<br>
+					<font color="#008080">(非政策强制)</font>
+				</td>
+				<td>
+					<p>
+						<input name="CheckBoxBCGJJ" type="checkbox" id="CheckBoxBCGJJ" onclick="checkbcGjj(this)" value="是否汇缴补充住房公积金">
+					</p>
+				</td>
+				<td>
+					单位或个人汇缴比例:
+				</td>
+				<td>
+					<p>
+						<select id="DropDownBCBL" name="DropDownBCBL" onchange="changebcGjj(this.value)" readonly class="form-control">
+							<option value="0%" selected="selected">
+								0%
+							</option>
+							<option value="1%">
+								1%
+							</option>
+							<option value="2%">
+								2%
+							</option>
+							<option value="3%">
+								3%
+							</option>
+							<option value="4%">
+								4%
+							</option>
+							<option value="5%">
+								5%
+							</option>
+							<option value="6%">
+								6%
+							</option>
+							<option value="7%">
+								7%
+							</option>
+							<option value="8%">
+								8%
+							</option>
+
+						</select>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="TxtDWBCGJJ" readonly class="form-control" type="text" name="TxtDWBCGJJ">
+					<input id="TxtDWBCGJJBL" readonly class="form-control percent" type="text" name="TxtDWBCGJJBL" value="0%">
+				</td>
+				<td colspan="2">
+					<input id="TxtGYBCGJJ" readonly class="form-control" type="text" name="TxtGYBCGJJ">
+					<input id="TxtGYBCGJJBL" readonly class="form-control percent" type="text" name="TxtGYBCGJJBL" value="0%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					工伤保险金:
+				</td>
+				<td>
+					<input id="TxtGS" readonly class="form-control" type="text" name="TxtGS">
+					<input id="TxtGSBL" readonly class="form-control percent" type="text" name="TxtGSBL" value="0.5%">
+				</td>
+				<td rowspan="2" colspan="2">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					生育保险金:
+				</td>
+				<td>
+					<input id="TxtSY" readonly class="form-control" type="text" name="TxtSY">
+					<input id="TxtSYBL" readonly class="form-control percent" type="text" name="TxtSYBL" value="1%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>
+						<b>缴费合计:</b>
+					</p>
+				</td>
+				<td>
+					<input id="TxtDWTOTAL" readonly class="form-control" type="text" name="TxtDWTOTAL">
+					<input id="TxtDWTOTALBL" readonly class="form-control percent" type="text" name="TxtDWTOTALBL" value="39.5%">
+				</td>
+				<td colspan="2">
+					<input id="TxtGYTOTAL" readonly class="form-control" type="text" name="TxtGYTOTAL">
+					<input id="TxtGYTOTALBL" readonly class="form-control percent" type="text" name="TxtGYTOTALBL" value="17.5%">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					扣除四金后月薪:
+				</td>
+				<td colspan="3">
+					<input id="TxtK4J" readonly class="form-control" type="text" name="TxtK4J">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					个人所得税:
+				</td>
+				<td colspan="3">
+					<input id="TxtSDS" readonly class="form-control" type="text" name="TxtSDS">
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="4">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>
+						<b>支出总额:</b>
+					</p>
+				</td>
+				<td>
+					<input id="TxtDWTOTAL1" readonly class="form-control" type="text" name="TxtDWTOTAL1">
+					<input id="TxtDWTOTAL1BL" readonly class="form-control percent" type="text" name="TxtDWTOTAL1BL" value="139.5%">
+				</td>
+				<td colspan="2">
+					<input id="TxtGYTOTAL1" readonly class="form-control" type="text" name="TxtGYTOTAL1">
+					<input id="TxtGYTOTAL1BL" readonly class="form-control percent" type="text" name="TxtGYTOTAL1BL" value="18%">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>税后月薪:</b>
+				</td>
+				<td colspan="3">
+					<input id="TxtHGZ" readonly class="form-control" type="text" name="TxtHGZ">
+				</td>
 			</tr>
 		</tbody>
-	</table>
-	<p>2017.7.1上海市公积金个人和单位的缴费比例均为7%，缴费范围306～2732（元）</p>
-	<div>
-		<table class="shuilv">
-            <caption>个人所得税税率表（一），征税点：3500（元）</caption>
-	        <tbody align="center">
-	            <tr>
-	                <th style="width: 30px;">
-	                    级数
-	                </th>
-	                <th>
-	                    应纳税所得额(含税)
-	                </th>
-	                <th>
-	                    应纳税所得额(不含税)
-	                </th>
-	                <th style="width: 80px;">
-	                    税率(%)
-	                </th>
-	                <th style="width: 80px;">
-	                    速算扣除数
-	                </th>
-	            </tr>
-	            <tr>
-	                <td>
-	                    1
-	                </td>
-	                <td>
-	                    不超过1500元的
-	                </td>
-	                <td>
-	                    不超过1455元的
-	                </td>
-	                <td>
-	                    3
-	                </td>
-	                <td>
-	                    0
-	                </td>
-	            </tr>
-	            <tr>
-	                <td>
-	                    2
-	                </td>
-	                <td>
-	                    超过1500元至4,500元的部分
-	                </td>
-	                <td>
-	                    超过1455元至4,155元的部分
-	                </td>
-	                <td>
-	                    10
-	                </td>
-	                <td>
-	                    105
-	                </td>
-	            </tr>
-	            <tr>
-	                <td>
-	                    3
-	                </td>
-	                <td>
-	                    超过4,500元至9,000元的部分
-	                </td>
-	                <td>
-	                    超过4,155元至7,755元的部分
-	                </td>
-	                <td>
-	                    20
-	                </td>
-	                <td>
-	                    555
-	                </td>
-	            </tr>
-	            <tr>
-	                <td>
-	                    4
-	                </td>
-	                <td>
-	                    超过9,000元至35,000元的部分
-	                </td>
-	                <td>
-	                    超过7,755元至27,255元的部分
-	                </td>
-	                <td>
-	                    25
-	                </td>
-	                <td>
-	                    1,005
-	                </td>
-	            </tr>
-	            <tr>
-	                <td>
-	                    5
-	                </td>
-	                <td>
-	                    超过35,000元至55,000元的部分
-	                </td>
-	                <td>
-	                    超过27,255元至41,255元的部分
-	                </td>
-	                <td>
-	                    30
-	                </td>
-	                <td>
-	                    2,755
-	                </td>
-	            </tr>
-	            <tr>
-	                <td>
-	                    6
-	                </td>
-	                <td>
-	                    超过55,000元至80,000元的部分
-	                </td>
-	                <td>
-	                    超过41,255元至57,505元的部分
-	                </td>
-	                <td>
-	                    35
-	                </td>
-	                <td>
-	                    5,505
-	                </td>
-	            </tr>
-	            <tr>
-	                <td>
-	                    7
-	                </td>
-	                <td>
-	                    超过80,000元的部分
-	                </td>
-	                <td>
-	                    超过57,505的部分
-	                </td>
-	                <td>
-	                    45
-	                </td>
-	                <td>
-	                    13,505
-	                </td>
-	            </tr>
-	        </tbody>
-        </table>
+		</table>
+
+		</div>
 	</div>
+	<script src="plugins/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+	<script src="pay.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$("#btn1").on("click",function() {
+			var v1 = $("#input1").val();
+			var data = getCalSalary(v1);
+
+			$("#input2").val(data.socialInsurance.sum);
+			$("#input3").val(data.accumulationFund);
+			$("#input4").val(data.personalTaxes);
+			$("#input5").val(data.personalPaid);
+		})
+
+		function getCalSalary(v){
+			var data = {
+				personalPay: v,
+				socialInsurance: {
+					pension: 0,
+					medicare: 0,
+					injury: 0,
+					medicare: 0,
+					unemployment: 0,
+					sum: 0
+				},
+				accumulationFund: 0,
+				personalTaxes: 0,
+				personalPaid: 0
+			}
+			,v0 = 0;
+
+			if(v <= 3902){
+				v0 = 3902
+			}else if(v > 3902 && v <= 19512){
+				v0 = v;
+			}else{
+				v0 = 19512
+			}
+
+			var p = data.socialInsurance.pension = parseFloat(toFixed(v0 * 8/100,2));
+			var m = data.socialInsurance.medicare = parseFloat(toFixed(v0 * 2/100,2));
+			var e = data.socialInsurance.unemployment = parseFloat(toFixed(v0 * .5/100,2));
+
+			data.socialInsurance.sum = toFixed((p + m + e),2);
+
+			if(v <= 306/2/7*100){
+				v0 = 306/2/7*100
+			}else if( v > 306/2/7*100 && v <= 2732/2/7*100){
+				v0 = v
+			}else{
+				v0 = 2732/2/7*100
+			}
+
+			var a = data.accumulationFund = toFixed((v0 * 7 / 100),2);
+
+			v0 = v - a - (p + m + e) - 3500;
+
+			if(v0 > 0 && v0 <= 1500){
+				v0 = parseFloat(toFixed(v0 * 3 / 100,2))
+			}else if(v0 > 1500 && v0 <= 4500){
+				v0 = parseFloat(toFixed(v0 * 10 / 100 - 105,2))
+			}else if(v0 > 4500 && v0 <= 9000){
+				v0 = parseFloat(toFixed(v0 * 20 / 100 - 555,2))
+			}else if(v0 > 9000 && v0 <= 35000){
+				v0 = parseFloat(toFixed(v0 * 25 / 100 - 1005,2))
+			}else if(v0 > 35000 && v0 <= 55000){
+				v0 = parseFloat(toFixed(v0 * 30 / 100 - 2755,2))
+			}else if(v0 > 55000 && v0 <= 80000){
+				v0 = parseFloat(toFixed(v0 * 35 / 100 - 5505,2))
+			}else if(v0 > 80000){
+				v0 = parseFloat(toFixed(v0 * 45 / 100 - 13505,2))
+			}
+
+			data.personalTaxes = v0 > 0 ? v0 : 0;
+
+			data.personalPaid = parseFloat(toFixed(v - a - (p + m + e) - v0,2));
+
+			return data;
+		}
+		
+		var toFixed = 'function' == typeof Number.prototype.toFixed ? function(fen,n){
+			n = isNaN(parseInt(n)) ? 0 : Math.abs(parseInt(n));
+			fen = isNaN(parseFloat(fen)) ? 0 : parseFloat(fen);
+			//var m = fen/Math.pow(10,n);
+			//return m.toFixed(n) 
+			return fen.toFixed(n)
+		}: function(fen,n){
+			n = isNaN(parseInt(n)) ? 0 : Math.abs(parseInt(n));
+			fen = isNaN(parseFloat(fen)) ? 0 : parseFloat(fen);
+			//var arr = (fen/Math.pow(10,n)+'').split(".");
+			var arr = (fen + '').split(".");
+			var int = Number(arr[0]);
+			var decimal = arr[1];
+			//保留0位小数
+			if(n <= 0)return decimal&&decimal[0] >= 5 ?  int + 1 : int;
+			
+			//没有小数点
+			if(decimal === undefined)return int + '.' + new Array(n).join("0") + "0";
+
+			var _arr = decimal.match(/\d/g);
+			if(_arr.length <= n){
+				//不够，后导补零
+				_arr.push(new Array(n-_arr.length).join("0") + n == _arr.length ? "" : "0");
+				return int + '.' + _arr.join("");
+			}else{
+				//够位数，看第n+1位与5的大小
+				if(_arr[n] < 5)return int + '.' + _arr.slice(0,n).join("");
+
+				_arr = Number(_arr.slice(0,n).join("")) + 1;
+
+				if(_arr >= Math.pow(10,n)){
+
+					return (int + 1) + '.' + (_arr + '').substring(1);
+
+				}else{
+					_arr += '';
+					//前导补零
+					_arr = new Array(n - _arr.length).join("0") + (n == _arr.length ? '' : '0') + _arr; 
+					return int + '.' + _arr;
+				}
+			}
+		}
+		
+	</script>
 </body>
 </html>

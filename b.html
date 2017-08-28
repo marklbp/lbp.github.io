@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>折纸效果布局原理 | marklbp blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="plugins/fonts/awesome/css/awesome.css">
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style type="text/css">
+      .outer{
+        width: 70%;
+        margin: 0px auto;
+        -webkit-perspective:500px;
+        -moz-perspective:500px;
+        -o-perspective:500px;
+        perspective:500px;
+        -webkit-perspective-origin: 50% 100%;
+        -moz-perspective-origin: 50% 100%;
+        -o-perspective-origin: 50% 100%;
+        perspective-origin: 50% 100%;
+      }
+      .outer .fold{
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        font-family: 'microsoft yahei';
+        font-size: 24px;
+        color: #fff;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+      }
+      
+      .outer2{
+        height: 400px;
+        margin-top: 250px;
+        border: 1px solid #000;
+        background-color: #000;      }
+      .outer2 .fold{
+        -webkit-transition: transform linear 800ms;
+        -moz-transition: transform linear 800ms;
+        -o-transition: transform linear 800ms;
+        transition: transform linear 800ms;
+      }
+      .outer1 .red{
+        background-color: #f00;
+        -webkit-transform: rotateX(50deg);
+        transform: rotateX(50deg);
+      }
+      .outer1 .yellow{
+        background-color: yellow;
+        -webkit-transform: rotateX(-120deg);
+        transform: rotateX(-120deg);
+      }
+      .outer1 .blue{
+        background-color: #00f;
+        -webkit-transform: rotateX(136deg);
+        transform: rotateX(136deg);
+      }
+      .outer1 .green{
+        background-color: #0f0;
+        -webkit-transform: rotateX(-120deg);
+        transform: rotateX(-120deg);
+      }
+
+
+      .outer2 .red{
+        background-color: #f00;
+        -webkit-transform: rotateX(90deg);
+        -moz-transform: rotateX(90deg);
+        -o-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+      }
+      .outer2 .yellow{
+        background-color: yellow;
+        -webkit-transform: rotateX(-180deg);
+        -moz-transform: rotateX(-180deg);
+        -o-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+      }
+      .outer2 .blue{
+        background-color: #00f;
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+      }
+      .outer2 .green{
+        background-color: #0f0;
+        -webkit-transform: rotateX(-180deg);
+        -moz-transform: rotateX(-180deg);
+        -o-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+      }
+      .outer2.activity .fold{
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+
+    </style>
+  </head>
+  <body>
+   <div class="container">
+   <div class="outer outer1"">
+     <div class="red fold">
+      段落1
+       <div class="yellow fold">
+         段落2
+         <div class="blue fold">
+           段落3
+           <div class="green fold">
+             段落4
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="outer outer2" id="box">
+     <div class="red fold">
+      段落1
+       <div class="yellow fold">
+         段落2
+         <div class="blue fold">
+           段落3
+           <div class="green fold">
+             段落4
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <p class="text-center"><button class="btn btn-lg" type="button" onclick="toggle(this)">展开</button></p>
+   </div>
+   <script type="text/javascript" src="plugins/jquery/1.11.3/jquery.min.js"></script>
+   <script type="text/javascript" src="plugins/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+     function toggle(btn) {
+       $("#box").toggleClass("activity");
+       btn.innerHTML = $("#box").hasClass("activity") ? '收起':'展开'
+     }
+   </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 
-#git 常用命令
+# git 常用命令
 	git init
 	git status
 	git add
@@ -18,20 +18,20 @@
 
 
 
-#一般而言，git常用流程为: git init -> git pull -> git add -> git commit -> git push
+# 一般而言，git常用流程为: git init -> git pull -> git add -> git commit -> git push
 
 
-#git init
+# git init
 	初始化一个本地git缓存
 
 
-#git status 
+# git status 
 	查看文件当前状态
 	-s 查看状态的精简版
 	--short 查看状态的精简版
 
 
-#git add <directory/file>
+# git add <directory/file>
 	添加文件到本地git缓存
 	
 	如 git add a/a.ext
@@ -41,12 +41,12 @@
 	添加当前目录以及子目录下所有文件到git缓存区
 
 
-#git commit -m '<本次提交的注释说明语句>'
+# git commit -m '<本次提交的注释说明语句>'
 	git commit -a -m '说明文本' #跳过使用暂存区域的方式，将所有已跟踪过的文件暂存起来一并提交
 	git commit --amend #尝试重新提交，为了合并漏掉前的提交，共计一次提交
 
 
-#git clone <版本库的网址>
+# git clone <版本库的网址>
 	
 	如
 	git clone https://github.com/jquery/jquery.git
@@ -56,7 +56,7 @@
 	该命令克隆已存在的url指定git仓库到当前目录，当前目录将新建名为name的仓库文件夹（所有数据）
 
 
-#git remote
+# git remote
 	
 	查看
 	git remote show <主机名>
@@ -79,7 +79,7 @@
 	该命令会重命名一个别名为origin的主机，新别名为newname	
 
 
-#git fetch
+# git fetch
 
 	默认情况下，git fetch取回所有分支（branch）的更新
 	git fetch
@@ -90,10 +90,12 @@
 	所取回的更新，在本地主机上要用"远程主机名/分支名"的形式读取，比如origin主机的master，就要用origin/master读取
 
 
-#git merge branch-name #合并分支名为branch-name的内容到当前分支
+# git merge branch-name
+
+	合并分支名为branch-name的内容到当前分支
 
 
-#git branch
+# git branch
 	
 	查看远程分支
 	git branch -r
@@ -117,7 +119,7 @@
 	git branch -u remote/branch #修改当前分支的跟踪分支（上游分支）为指定的远程分支（@{u}或者@{upstream}可替代[remote]/[branch]表示）
 
 
-#git checkout
+# git checkout
 
 	切换分支
 	git checkout <分支名>
@@ -132,19 +134,19 @@
 	上述命令会在本地创建一个新分支，名为branch_name，并跟踪远程指定仓库origin的指定master分支
 
 
-#git merge
+# git merge
 	
 	git merge origin/master
 	上述命令会在本地当前分支上合并远程origin/master分支
 
 
-#git rebase
+# git rebase
 	
 	git rebase origin/master
 	上述命令会在本地当前分支上合并远程origin/master分支
 
 
-#git pull <远程主机名> <远程分支名>:<本地分支名>
+# git pull <远程主机名> <远程分支名>:<本地分支名>
 
 	git pull origin remote_branch:local_branch
 	上述命令会拉取远程origin的remote_branch分支更新，并合并到本地的local_branch分支
@@ -169,7 +171,7 @@
 	表示在本地删除远程已删除的分支
 
 
-#git push <远程主机名> <本地分支名>:<远程分支名>
+# git push <远程主机名> <本地分支名>:<远程分支名>
 
 	git push origin local_branch:remote_branch
 	上述命令会推送本地local_branch分支到远程origin的remote_branch分支
@@ -193,37 +195,40 @@
 	如果远程主机版本比本地版本新，git报错，要先本地git pull后git push，若要强制推送可以git push --force
 
 
-#git diff 
+# git diff 
 	查看文件未暂存状态下更改的详细位置，比较当前文件和暂存区域快照间的差异（即修改后为未暂存的变化内容）
 	--cached #查看已暂存将提交的内容
 
 
-#git rm *.* #从暂存区域中移除某文件
+# git rm *.* 从暂存区域中移除某文件
 	git rm -f *.* #如删前修改过文件并已放入暂存区域则需强制删除
 	git rm --cached *.* #删除git仓库中（即暂存区域），且保留在本磁盘，但不被跟踪
 	如：git rm log/\*.log 
 
 
-#git tag #查看标签
+# git tag 查看标签
 	git tag -l 'v.x.x.*' #查看指定的标签集
 
 
-#git mv file_from file_to 移动文件，可改名
+# git mv file_from file_to 移动文件，可改名
 
 
-#git rebase [branch] #变基操作，即将指定分支应用了当前分支到其共同祖先的依次修改，然后merge切回之前的那个分支
-	git rebase --onto [basebranch] [topicbranch] [subtopicbranch] #将忽略topicbranch，并将subtopicbranch中相对topicbranch独有部分应用到basebranch中，后配合 git merge subtopicbranch使用
+# git rebase [branch] 
+	变基操作，即将指定分支应用了当前分支到其共同祖先的依次修改，然后merge切回之前的那个分支
+	git rebase --onto [basebranch] [topicbranch] [subtopicbranch] 
+	将忽略topicbranch，并将subtopicbranch中相对topicbranch独有部分应用到basebranch中，后配合 git merge subtopicbranch使用
 	git rebase [basebranch] [topicbranch] #将topicbranch的修改应用到basebranch中
 
 
-#git log [-p] [-2] [--stat] [--pretty[=[online|format:"%h - %an, %ar:%s"|]]]
+# git log [-p] [-2] [--stat] [--pretty[=[online|format:"%h - %an, %ar:%s"|]]]
 	查看日志,-p显示每次提交内容差异，-2显示近两次提交差异,--stat查看统计信息
 
 
-#git reset HEAD *.* 取消暂存某文件
+# git reset HEAD *.* 取消暂存某文件
 
 
-#.gitignore 文件配置，用于帮助git忽略某些不需要版本控制的文件  #开头的行和空行可理解为注释
+# .gitignore 
+     #文件配置，用于帮助git忽略某些不需要版本控制的文件  #开头的行和空行可理解为注释
 
      # no .a files
      *.a

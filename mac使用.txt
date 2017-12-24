@@ -1,0 +1,2 @@
+1.更新mac后使用git报“xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools)...”
+解决办法：xcode-select --install

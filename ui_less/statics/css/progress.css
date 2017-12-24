@@ -1,0 +1,167 @@
+.qb-progress {
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: #f0f2f7;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.qb-progress-6 {
+  height: 6px;
+}
+.qb-progress-6 .progress-bar {
+  line-height: 6px;
+}
+.qb-progress-4 {
+  height: 4px;
+}
+.qb-progress-4 .progress-bar {
+  line-height: 4px;
+}
+.qb-progress .progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease;
+}
+.qb-progress .progress-bar-normal {
+  background-color: #54d08e;
+}
+.qb-progress .progress-bar-ok {
+  background-color: #72d344;
+}
+.qb-progress .progress-bar .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.qb-step {
+  margin: 10px auto;
+}
+.qb-step ul {
+  padding: 0;
+}
+.qb-step ul li {
+  float: left;
+  width: 25%;
+  position: relative;
+  padding-top: 46px;
+  list-style: none;
+  text-align: center;
+  color: #bbbbbb;
+}
+.qb-step ul li.steped,
+.qb-step ul li.steping {
+  color: #333333;
+}
+.qb-step ul li b,
+.qb-step ul li span,
+.qb-step ul li i {
+  z-index: 3;
+  position: absolute;
+}
+.qb-step ul li b,
+.qb-step ul li i {
+  z-index: 2;
+  top: 21px;
+  height: 4px;
+  width: 50%;
+  background-color: #dedede;
+}
+.qb-step ul li b {
+  left: 0;
+}
+.qb-step ul li i {
+  right: 0;
+}
+.qb-step ul li span {
+  width: 24px;
+  height: 24px;
+  background-color: #dedede;
+  -webkit-border-radius: 50%;
+  -moz-border-radisu: 50%;
+  -o-border-radisu: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 11px;
+  margin-left: -12px;
+}
+.qb-step ul li span strong {
+  display: block;
+  text-align: center;
+  width: 70%;
+  height: 70%;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radisu: 50%;
+  -o-border-radisu: 50%;
+  border-radius: 50%;
+}
+.qb-step ul li.steped b,
+.qb-step ul li.steped i {
+  background-color: #54d08e;
+}
+.qb-step ul li.steped span {
+  width: 36px;
+  height: 36px;
+  top: 5px;
+  margin-left: -18px;
+  background-color: #54d08e;
+}
+.qb-step ul li.steped span strong {
+  background-color: #54d08e;
+  line-height: 25px;
+  font-size: 16px;
+}
+.qb-step ul li.steping b {
+  background-color: #54d08e;
+}
+.qb-step ul li.steping i {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, #54d08e, #dedede);
+  background-image: -moz-linear-gradient(left, #54d08e, #dedede);
+}
+.qb-step ul li.steping span {
+  width: 36px;
+  height: 36px;
+  top: 5px;
+  margin-left: -18px;
+  background-color: #54d08e;
+}
+.qb-step ul li.steping span strong {
+  background-color: #54d08e;
+  line-height: 25px;
+  font-size: 16px;
+}
+.qb-step ul li.first b {
+  display: none;
+}
+.qb-step ul li.last i {
+  display: none;
+}
+.qb-step:before,
+.qb-step:after {
+  content: " ";
+  display: table;
+}
+.qb-step:after {
+  clear: both;
+}

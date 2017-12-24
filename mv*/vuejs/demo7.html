@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue 组件属性动态绑定</title>
+</head>
+<body>
+	<div id="div1">
+	  <input v-model="parentMsg">
+	  <br>
+	  <!-- <child v-bind:my-message="parentMsg"></child> -->
+	  <child :my-message="parentMsg"></child>
+	</div>
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+		Vue.component("child",{
+			props: ["myMessage"],
+			template: "<span>{{myMessage}}</span>"
+		})
+		new Vue({
+			el:"#div1",
+			data:{
+				parentMsg: ""
+			}
+		})
+	</script>
+</body>
+</html>

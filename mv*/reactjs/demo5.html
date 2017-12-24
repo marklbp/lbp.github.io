@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>组件的子节点this.props.children</title>
+	<script src="build/react.js"></script>
+	<script src="build/react-dom.js"></script>
+	<script src="build/browser.min.js"></script>
+</head>
+<body>
+	<div id="example"></div>
+	<script type="text/babel">
+		/*var NotesList = React.createClass({
+			render:function() {
+				return (
+					<ol>
+					{
+						React.Children.map(this.props.children,function(child){
+							return <li>{child}</li>;
+						})
+					}
+					</ol>
+					);
+			}
+		});
+		ReactDOM.render(
+			<NotesList>
+				<span>hello</span>
+				<span>world</span>
+			</NotesList>,
+			document.getElementById('example')
+		);*/
+	</script>
+	<script type="text/javascript">
+		var NotesList = React.createClass({
+				render:function() {
+					return React.createElement(
+								'ol',
+								null,
+								React.Children.map(this.props.children,function(child){
+									var li =  React.createElement('li',null,child);
+									return li;
+								})
+							) 
+				}
+			});
+		ReactDOM.render(
+			React.createElement(
+				NotesList,
+				null,
+				[
+					React.createElement('span',null,'hello'),
+					React.createElement('span',null,'world')
+				]
+			),
+			document.getElementById('example'),
+			function(){
+				alert("loaded")
+			}
+		);
+	</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue 组件属性校验</title>
+</head>
+<body>
+	<div id="div1">
+	  <child prop-a='2' prop-c="1"></child>
+	</div>
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+		Vue.component("child",{
+			props: {
+				// 基础类型检测 (`null` 意思是任何类型都可以)
+			    propA: Number,
+			    // 多种类型
+			    propB: [String, Number],
+			    // 必传且是字符串
+			    propC: {
+			      type: String,
+			      required: true
+			    },
+			    // 数字，有默认值
+			    propD: {
+			      type: Number,
+			      default: 100
+			    },
+			    // 数组/对象的默认值应当由一个工厂函数返回
+			    propE: {
+			      type: Object,
+			      default: function () {
+			        return { message: 'hello' }
+			      }
+			    },
+			    // 自定义验证函数
+			    propF: {
+			      validator: function (value) {
+			        return value > 10
+			      }
+			    }
+			},
+			template: "<span>{{propA}}</span>"
+		})
+		new Vue({
+			el:"#div1",
+			data:{
+				parentMsg: ""
+			}
+		})
+	</script>
+</body>
+</html>

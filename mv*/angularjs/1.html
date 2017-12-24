@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		/*var m=angular.module('myapp',[]);
+		m.controller('Aaa',['$scope',Aaa]);
+*/		function Aaa($scope){
+			$scope.name='hello';
+		}
+	</script>
+	<div ng-controller="Aaa">
+		<p>{{name}}</p>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>无标题文档</title>
+		<style>
+			#div1 .active,
+			#div2 .active{
+				background-color: red;
+			}
+			#div1 div,
+			#div2 div{
+				display: none;
+			}
+		</style>
+		<script src="jquery-1.11.1.js"></script>
+		<script src="angular.min.js"></script>
+		<script>
+
+			angular.module("my-app",[]).controller("Ctrl",['$scope',function($scope){
+				$scope.name="test";
+				/*$scope.show=function(n){
+					alert(n);
+				}*/
+				$scope.data1=[
+					{t:"语文",name:'11111'},
+					{t:"数学",name:'22222'},
+					{t:"英语",name:'33333'}
+				];
+				$scope.data2=[
+					{t:"物理",name:"44444"},
+					{t:"化学",name:'55555'}
+				]
+			}]).directive("dict",function(){
+				return {
+					restrict:"EACM",
+					replace:true,
+					template:"<div>This is my first customed directive,call me dict;</div>"
+				}
+			}).directive("myDict",function(){
+				return {
+					restrict:"EACM",
+					replace:true,
+					template:"<div>This is my second customed directive,call me my-dict;</div>"
+				}
+			}).directive("myDict2",function(){
+				return {
+					restrict:"EACM",
+					replace:true,
+					//template:"<div>This is my second customed directive,call me my-dict;</div>"
+					templateUrl:"temp.html"
+				}
+			}).directive("myTab",function(){
+				return {
+					restrict:"E",
+					replace:true,
+					//template:"<div>This is my second customed directive,call me my-dict;</div>"
+					//scope:true, //独立作用域，为true时表示独立作用域
+					scope:{
+						//隔离作用域
+						name : "=", //传递一属性名的变量名
+						myId : "@", //传递字符串常量
+						myFn : "&", //传递函数名
+						myData : "="
+					},
+					controller:['$scope',function($scope){
+						$scope.name="这是隔离作用域";
+						$scope.show=function(n){
+							alert(n);
+						};
+					}],
+					link:function(scope,element,att,reController){
+						console.log(scope,element,att);
+						element.on("click","input",function(){
+							$(this).addClass('active').siblings('input').removeClass("active");
+							$(this).siblings("div").eq($(this).index()).show().siblings("div").hide();
+						})
+					},
+					templateUrl:"tabtpl.html"
+					//template:"<div>{{name}}</div>"
+				}
+			})
+
+
+
+		</script>
+	</head>
+
+	<body>
+		<div class="wrap" ng-app="my-app">
+			<div class="" ng-controller="Ctrl">
+				<dict>11111</dict>
+				<p dict="">1111</p>
+				<p class="dict"></p>
+				<!-- directive:dict -->
+
+				<my-dict></my-dict>
+				<p my-dict=""></p>
+				<p class="my-dict"></p>
+				<!-- directive:my-dict -->
+				<my-dict2></my-dict2>
+				<p my-dict2=""></p>
+				<p class="my-dict2"></p>
+				<!-- directive:my-dict2 -->
+
+				<my-tab name="name" my-id="div1" my-data="data1" my-fn="show(n)"></my-tab>
+				<my-tab name="name" my-data="data2" my-id="div2" my-fn="show(n)"></my-tab>
+
+			</div>
+		</div>
+	</body>
+</html>

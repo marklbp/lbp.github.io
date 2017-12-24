@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue demo3</title>
+</head>
+<body>
+	<div id="div1">
+		<p v-for="todo in todos">{{todo.text}}</p>
+		<input v-model="message">
+	</div>
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+		new Vue({
+			el:"#div1",
+			data:{
+				todos: [
+					{ text: "1"},
+					{ text: "2"},
+					{ text: "3"}
+				],
+				message: "hello Vue!"
+			}
+		})
+	</script>
+</body>
+</html>

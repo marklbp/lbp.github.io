@@ -1,0 +1,4 @@
+<div id="{{myId}}">
+	<input ng-repeat=" d in myData " type="button" ng-class="{active:$first}" ng-value="d.t" ng-click="myFn({n:123})">
+	<div ng-repeat="d in myData" ng-style="{display:$first?'block':'none'}">{{d.name}}</div>
+</div>

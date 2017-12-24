@@ -1,0 +1,45 @@
+@import "var";
+@prefix:@class-prefix;
+.font(@size:0;@font-weight:normal;@color:@header-text-color;){
+	font-weight:@font-weight;
+	font-size:@base-font-size+@size;
+	color:@color;
+}
+
+.@{prefix}{
+	&-title{
+		.font(@font-weight:bold);
+		&-lg{
+			font-size:@base-font-size+4;
+		}
+		&-md{
+			font-size:@base-font-size+2;
+		}
+	}
+	&-text,
+	&-text-subject,
+	&-text-help,
+	&-text-disabled,
+	&-text-link{
+		.font(@color:@subject-text-color);
+	}
+	&-text-help{
+		color:@help-text-color;
+	}
+	&-text-disabled{
+		color:@disabled-color;
+	}
+	&-text-link,
+	a&-text-link{
+		color:@link-text-color;
+		text-decoration:none;
+	}
+
+	&-paragraph{
+		.font(@color:@subject-text-color);
+		&-14{
+			.font(@color:@subject-text-color);
+			font-size:@base-font-size+2;
+		}
+	}	
+}

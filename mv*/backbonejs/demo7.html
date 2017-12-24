@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Backbone-Model-bind</title>
+	<script src="jq.js"></script>
+	<script src="underscore_debug.js"></script>
+	<script src="backbone_debug.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+
+	Man=Backbone.Model.extend({
+		url:"demo.php",
+		initialize:function(){
+			this.bind("change:name",function(){
+				alert("你改变了name属性为："+this.get("name"))
+			});
+			this.bind("error",function(model,error){
+				alert(error);
+			})	
+		},
+		defaults:{
+			name:"mark",
+			age :"38"
+		},
+		validate:function(attrs){
+			if(attrs.name=="")return "name不能为空";
+		}
+	});
+	var man=new Man;
+	man.set({"name":"2222"}); 
+	man.save();
+
+	var man1=new Man;
+	//man1.fetch();
+	//man1.fetch({url:"demo.php"}) //从服务器去数据
+	man1.fetch({
+		url:"demo.php",
+		success:function(model,response){
+			alert("success");
+			console.log(response);
+		},
+		error:function(){
+			alert("error");
+			console.log(arguments)
+		}
+	})
+	</script>
+</body>
+</html>

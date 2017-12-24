@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Backbone-Model-bind</title>
+	<script src="jq.js"></script>
+	<script src="underscore_debug.js"></script>
+	<script src="backbone_debug.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	var Book=Backbone.Model.extend({
+			defaults:{
+				title:"default"
+			},
+			initialize:function(){
+
+			}
+		}),
+
+		BookShelf=Backbone.Collection.extend({
+			model:Book
+		}),
+
+		book1=new Book({title:"book1"}),
+
+		book2=new Book({title:"book2"}),
+
+		book3=new Book({title:"book3"}),
+
+		bookShelf=new BookShelf;
+
+		bookShelf.add(book1);
+		bookShelf.add(book2);
+		bookShelf.add(book3);
+
+		bookShelf.each(function(book){
+			alert(book.get("title"))
+		})
+	</script>
+</body>
+</html>

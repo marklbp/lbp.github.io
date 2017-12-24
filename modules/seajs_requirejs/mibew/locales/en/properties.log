@@ -1,0 +1,516 @@
+# Sat, 27 Feb 16 03:32:04 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+admin.content.client_agents=增删公司操作员账号并且管理这些账号的权限
+# Sat, 27 Feb 16 03:33:02 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+admin.content.client_gen_button=对话按钮漂浮模板代码的生成
+# Sat, 27 Feb 16 03:35:24 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+admin.content.client_settings=影响聊天窗口和系统共通操作行为的设定选项
+# Sat, 27 Feb 16 03:36:05 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+admin.content.description=站点操作账号的可用功能
+# Sat, 27 Feb 16 03:36:44 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+agent.not_logged_in=您会话超时，请重新登录
+# Sat, 27 Feb 16 03:37:39 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+app.descr=本消息会话器是一款开源在线应用
+# Sat, 27 Feb 16 03:38:14 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+app.title=即时通讯器
+# Sat, 27 Feb 16 03:39:22 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+ban.error.duplicate=该地址已存在， 点击 <a href="ban.php?id={1}">这里</a> 修改。
+# Sat, 27 Feb 16 03:39:30 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.delete=删除
+# Sat, 27 Feb 16 03:39:47 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.enter=回车
+# Sat, 27 Feb 16 03:40:01 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.enter=回车（Enter）
+# Sat, 27 Feb 16 03:40:15 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.offline=离线（OFFLINE）
+# Sat, 27 Feb 16 03:40:32 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.offline.bottom=请留言
+# Sat, 27 Feb 16 03:40:54 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.offline.top=线上咨询
+# Sat, 27 Feb 16 03:41:08 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.online=在线（ONLINE）
+# Sat, 27 Feb 16 03:42:24 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.online.bottom=点击咨询
+# Sat, 27 Feb 16 03:42:43 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.online.top=线上咨询
+# Sat, 27 Feb 16 03:42:53 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.offline.top=线下留言
+# Sat, 27 Feb 16 03:43:04 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.save=保存
+# Sat, 27 Feb 16 03:43:10 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+button.search=搜索
+# Sat, 27 Feb 16 03:43:18 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+canned.actions=修改
+# Sat, 27 Feb 16 03:43:24 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+canned.actions.del=移除
+# Sat, 27 Feb 16 03:43:30 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+canned.actions.edit=编辑
+# Sat, 27 Feb 16 03:46:21 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+canned.add=添加消息语
+# Sat, 27 Feb 16 03:46:42 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+canned.descr=编辑常用聊天消息语
+# Sat, 27 Feb 16 03:47:11 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+canned.group=群组:
+# Sat, 27 Feb 16 03:47:20 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+canned.locale=语言:
+# Sat, 27 Feb 16 03:48:28 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+canned.title=留言信息
+# Sat, 27 Feb 16 03:48:37 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+canned.title=留言消息
+# Sat, 27 Feb 16 03:48:55 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+cannededit.descr=编辑一个已有消息
+# Sat, 27 Feb 16 03:49:04 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+cannededit.done=保存
+# Sat, 27 Feb 16 03:49:17 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+cannededit.message=消息
+# Sat, 27 Feb 16 03:49:33 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+cannededit.no_such=没有类似消息
+# Sat, 27 Feb 16 03:49:41 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+cannededit.title=编辑消息
+# Sat, 27 Feb 16 03:49:57 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+cannednew.descr=新增一条新消息
+# Sat, 27 Feb 16 03:50:03 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+cannednew.descr=添加一条新消息
+# Sat, 27 Feb 16 03:50:13 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+cannednew.title=新消息
+# Sat, 27 Feb 16 03:50:25 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+char.redirect.operator.online_suff=(在线)
+# Sat, 27 Feb 16 03:50:31 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+char.redirect.operator.away_suff=(离开)
+# Sat, 27 Feb 16 03:50:59 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.came.from=访客由来页面 {0}
+# Sat, 27 Feb 16 03:51:10 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.client.changename=改名
+# Sat, 27 Feb 16 03:51:18 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.client.name=您是
+# Sat, 27 Feb 16 03:51:28 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.client.spam.prefix=[spam]&nbsp;
+# Sat, 27 Feb 16 03:51:51 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.client.visited.page=访客浏览到 {0}
+# Sat, 27 Feb 16 03:51:59 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.default.username=访客
+# Sat, 27 Feb 16 03:52:13 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.error_page.close=关闭...
+# Sat, 27 Feb 16 03:52:32 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.error_page.head=错误出现：
+# Sat, 27 Feb 16 03:52:38 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.error_page.title=错误
+# Sat, 27 Feb 16 03:52:51 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.mailthread.sent.close=关闭...
+# Sat, 27 Feb 16 03:53:05 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.mailthread.sent.closewindow=点此关闭窗口
+# Sat, 27 Feb 16 03:53:32 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.mailthread.sent.content=您的聊天记录将发送改地址 {0}
+# Sat, 27 Feb 16 03:53:38 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.mailthread.sent.title=发送
+# Sat, 27 Feb 16 03:55:07 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.predefined_answers=您好！ 我有什么可以帮助您的吗？\n您好！ 欢迎您来访。我有什么可以帮助您的吗？
+# Sat, 27 Feb 16 03:55:15 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirect.back=返回...
+# Sat, 27 Feb 16 03:56:10 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirect.cannot=您没有及时回复访客
+# Sat, 27 Feb 16 03:56:20 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirect.choose=选择：
+# Sat, 27 Feb 16 03:56:29 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirect.group=群组：
+# Sat, 27 Feb 16 03:56:45 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirect.operator=操作员：
+# Sat, 27 Feb 16 03:57:19 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirect.title=重连接到<br/>另一个操作员
+# Sat, 27 Feb 16 03:57:29 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirect.unknown_group=未知群组
+# Sat, 27 Feb 16 03:57:39 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirect.unknown_operator=未知操作员
+# Sat, 27 Feb 16 03:57:46 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirected.close=关闭...
+# Sat, 27 Feb 16 03:57:57 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirected.closewindow=点击关闭窗口
+# Sat, 27 Feb 16 03:59:03 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirected.content=访客已经优先排队到操作 {0}的消息队列.
+# Sat, 27 Feb 16 03:59:19 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirected.content=访客已经优先排队到操作员{0}的消息队列.
+# Sat, 27 Feb 16 03:59:39 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirected.content=访客已经优先排队到操作员{0}的消息队列。
+# Sat, 27 Feb 16 04:00:03 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirected.group.content=访客已经优先排队到群组{0}的消息队列。
+# Sat, 27 Feb 16 04:00:29 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.redirected.title=访客已经重连接到另一个操作员
+# Sat, 27 Feb 16 04:01:06 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.operator.changed=操作员 {0} 替换了操作员 {1}
+# Sat, 27 Feb 16 04:03:49 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.operator.dead=您的操作员已经断线。 我们已经优先给您安排到消息队列中等待。 抱歉让您等待。
+# Sat, 27 Feb 16 04:04:08 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.operator.joined=操作员 {0} 加入聊天
+# Sat, 27 Feb 16 04:04:34 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.operator.left=操作员 {0} 离开
+# Sat, 27 Feb 16 04:05:31 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.operator.redirect=操作员 {0} 将您指派给另一个操作员了。 麻烦您稍等片刻。
+# Sat, 27 Feb 16 04:05:54 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.operator.returned=操作员 {0} 回来了
+# Sat, 27 Feb 16 04:06:51 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.user.changedname=该访客把名字由 {0} 改成了 {1}
+# Sat, 27 Feb 16 04:07:14 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.user.dead=游客关闭了聊天窗口
+# Sat, 27 Feb 16 04:07:36 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.user.left=游客 {0} 离开了聊天
+# Sat, 27 Feb 16 04:07:49 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.user.left=游客 {0} 离开了聊天窗口
+# Sat, 27 Feb 16 04:08:11 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.status.user.reopenedthread=游客再次加入聊天
+# Sat, 27 Feb 16 04:08:26 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.thread.state_chatting_with_agent=在聊天
+# Sat, 27 Feb 16 04:08:34 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.thread.state_closed=已关闭
+# Sat, 27 Feb 16 04:08:42 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.thread.state_loading=正在加载
+# Sat, 27 Feb 16 04:08:55 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.thread.state_closed=已结束
+# Sat, 27 Feb 16 04:09:04 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.thread.state_wait=排队中
+# Sat, 27 Feb 16 04:09:19 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.thread.state_wait_for_another_agent=等待操作员
+# Sat, 27 Feb 16 04:09:27 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.visitor.email=E-Mail: {0}
+# Sat, 27 Feb 16 04:09:38 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.visitor.email=邮箱: {0}
+# Sat, 27 Feb 16 04:09:47 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.visitor.email=邮箱：{0}
+# Sat, 27 Feb 16 04:10:00 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.visitor.info=信息：{0}
+# Sat, 27 Feb 16 04:10:58 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.wait=欢饮您联系我们。操作员正在接通中
+# Sat, 27 Feb 16 04:12:21 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.chatting_with=正在与您聊天的另一方
+# Sat, 27 Feb 16 04:12:35 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.close_title=结束聊天
+# Sat, 27 Feb 16 04:12:55 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.poweredby=版权所有：
+# Sat, 27 Feb 16 04:13:07 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.poweredreftext=www.makalon.com.cn
+# Sat, 27 Feb 16 04:13:37 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.predefined.select_answer=选择快捷回复消息...
+# Sat, 27 Feb 16 04:14:14 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.product_name=麦卡龙<span class="grey">即时通讯</span>
+# Sat, 27 Feb 16 04:14:23 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.send_message=发送消息
+# Sat, 27 Feb 16 04:14:31 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.send_message_short=发送 ({0})
+# Sat, 27 Feb 16 04:14:45 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.title.agent=麦卡龙即时通讯
+# Sat, 27 Feb 16 04:15:19 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.title.user=麦卡龙（Makalon）即时通讯
+# Sat, 27 Feb 16 04:15:31 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.title.agent=麦卡龙（Makalon）即时通讯
+# Sat, 27 Feb 16 04:16:05 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.toolbar.mail_history=发送聊天记录到邮箱
+# Sat, 27 Feb 16 04:16:27 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.toolbar.redirect_user=指派游客给其他操作员
+# Sat, 27 Feb 16 04:16:35 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.toolbar.refresh=刷新
+# Sat, 27 Feb 16 04:17:07 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.toolbar.toggle_sound=开启提示音 开/关
+# Sat, 27 Feb 16 04:17:43 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+clients.how_to=点击列表里游客名字回复消息
+# Sat, 27 Feb 16 04:18:35 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+clients.intro=该页显示了正在等待回复的游客列表
+# Sat, 27 Feb 16 04:19:08 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+clients.no_clients=暂无游客排队等待
+# Sat, 27 Feb 16 04:19:39 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+clients.queue.chat=对话中的游客
+# Sat, 27 Feb 16 04:20:01 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+clients.queue.prio=游客队列的优先级
+# Sat, 27 Feb 16 04:20:36 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+clients.queue.wait=首次等待操作员回复
+# Sat, 27 Feb 16 06:00:55 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.wait=欢饮您联系我们。操作员正在接通中......
+# Sat, 27 Feb 16 06:01:47 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.window.poweredreftext=www.makalon.com.cn
+# Sat, 27 Feb 16 06:03:25 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+clients.title=游客等待列表
+# Sat, 27 Feb 16 06:04:56 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+common.asterisk_explanation=<b><span style="font-size:8.0pt;color:red">*</span></b> - 必填字段
+# Sat, 27 Feb 16 06:05:22 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+company.title=麦卡龙即时通讯社区
+# Sat, 27 Feb 16 06:05:36 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+confirm.take.head=交换操作员
+# Sat, 27 Feb 16 06:07:37 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+confirm.take.message=游客 <span style="color:blue;">{0}</span> 正在和 <span style="color:green;">{1}</span>沟通.<br/> 您确定想开启和此游客的聊天吗?
+# Sat, 27 Feb 16 06:07:46 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+confirm.take.message=游客 <span style="color:blue;">{0}</span> 正在和 <span style="color:green;">{1}</span>沟通.<br/> 您确定想开启和此游客的聊天吗？
+# Sat, 27 Feb 16 06:08:17 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+confirm.take.no=不确定。 关闭窗口
+# Sat, 27 Feb 16 06:08:30 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+confirm.take.yes=是的，我确定
+# Sat, 27 Feb 16 06:09:50 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+content.blocked=您可以在这里锁定无聊游客
+# Sat, 27 Feb 16 06:10:13 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+content.history=搜索对话记录
+# Sat, 27 Feb 16 06:10:25 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+content.logoff=退出系统
+# Sat, 27 Feb 16 06:10:39 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+data.saved=更改保存
+# Sat, 27 Feb 16 06:11:46 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+demo.chat.question=众多可供选择的浏览器中，您推荐哪款浏览器？
+# Sat, 27 Feb 16 06:12:07 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+demo.chat.welcome=您好，有什么可以帮助您的吗？
+# Sat, 27 Feb 16 06:13:31 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+error.no_password=您首次登录，密码为空，出于安全原因建议您及时修改密码。
+# Sat, 27 Feb 16 06:14:17 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+error.no_password.visit_profile=浏览您的 <a href="{0}">简历页</a>.
+# Sat, 27 Feb 16 06:15:35 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.captcha=您输入的文字不匹配图片上的文字
+# Sat, 27 Feb 16 06:16:09 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.failed.uploading.file=错误上传中的文件 "{0}": {1}.
+# Sat, 27 Feb 16 06:16:40 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.file.move.error=错误移动的文件
+# Sat, 27 Feb 16 06:17:07 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.failed.uploading.file=上传文件时错误 "{0}": {1}.
+# Sat, 27 Feb 16 06:17:18 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.file.move.error=移动文件时错误
+# Sat, 27 Feb 16 06:17:25 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.file.move.error=移动文件时出错
+# Sat, 27 Feb 16 06:17:34 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.failed.uploading.file=上传文件时出错 "{0}": {1}.
+# Sat, 27 Feb 16 06:18:04 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.file.size.exceeded=上传文件大小超出限制
+# Sat, 27 Feb 16 06:18:09 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.footer=</ul>
+# Sat, 27 Feb 16 06:18:37 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.header=<b>更正错误：</b><br/><ul>
+# Sat, 27 Feb 16 06:18:51 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.invalid.file.type=无效的文件类型
+# Sat, 27 Feb 16 06:18:55 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.prefix=<li class="error">
+# Sat, 27 Feb 16 06:19:08 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.required=请输入 "{0}".
+# Sat, 27 Feb 16 06:19:30 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+errors.wrong_field=请正确输入 "{0}" 。
+# Sat, 27 Feb 16 06:19:48 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+features.saved=功能已激活
+# Sat, 27 Feb 16 06:19:57 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.address=游客地址
+# Sat, 27 Feb 16 06:20:18 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.address.description=例如： 127.0.0.1 或者 example.com
+# Sat, 27 Feb 16 06:20:36 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.agent_commonname=国际名称(Latin)
+# Sat, 27 Feb 16 06:21:14 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.agent_commonname.description=该名称对游客可见。
+# Sat, 27 Feb 16 06:21:20 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.agent_name=名称
+# Sat, 27 Feb 16 06:21:42 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.agent_name.description=该名称对游客可见。
+# Sat, 27 Feb 16 06:22:03 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.avatar.current=当前头像图片
+# Sat, 27 Feb 16 06:22:12 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.avatar.current.description=您的头像图片
+# Sat, 27 Feb 16 06:22:21 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.avatar.upload=上传头像
+# Sat, 27 Feb 16 06:23:31 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.avatar.upload.description=请选择头像文件上传。<br/>图片宽高小于 100x100 px.
+# Sat, 27 Feb 16 06:23:44 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.ban_comment=评论
+# Sat, 27 Feb 16 06:23:54 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.ban_comment.description=锁定原因
+# Sat, 27 Feb 16 06:24:07 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.ban_days=Days
+# Sat, 27 Feb 16 06:24:27 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.ban_days.description=该地址锁定天数
+# Sat, 27 Feb 16 06:24:35 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.ban_days=天
+# Sat, 27 Feb 16 06:24:43 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.email=您的邮箱
+# Sat, 27 Feb 16 06:25:55 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupcommondesc=国际描述
+# Sat, 27 Feb 16 06:26:10 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupcommondesc.description=英文描述
+# Sat, 27 Feb 16 06:26:17 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupcommonname=国际名称
+# Sat, 27 Feb 16 06:26:25 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupcommonname.description=英文名称
+# Sat, 27 Feb 16 06:26:32 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupdesc=描述
+# Sat, 27 Feb 16 06:26:41 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupdesc.description=群组描述
+# Sat, 27 Feb 16 06:27:47 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupemail.description=群组邮箱用于发送提醒邮件，留空将使用默认邮箱地址
+# Sat, 27 Feb 16 06:27:54 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupname=名称
+# Sat, 27 Feb 16 06:28:11 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupname.description=命名群组
+# Sat, 27 Feb 16 06:28:15 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.jabber=Jabber ID
+# Sat, 27 Feb 16 06:28:20 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupcommondesc=International description
+# Sat, 27 Feb 16 06:28:31 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.groupcommondesc=国际描述
+# Sat, 27 Feb 16 06:28:52 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.jabber.description=即时提醒
+# Sat, 27 Feb 16 06:29:15 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.jabbernotify=新游客提醒
+# Sat, 27 Feb 16 06:29:43 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.jabbernotify.description=通过 Jabber (instant)传输
+# Sat, 27 Feb 16 06:29:49 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.login=登录
+# Sat, 27 Feb 16 06:30:55 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.login.description=登录可以包含小写字母和下划线
+# Sat, 27 Feb 16 06:31:04 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.mail=邮箱
+# Sat, 27 Feb 16 06:31:41 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.mail.description=用于提醒消息和密码找回
+# Sat, 27 Feb 16 06:31:48 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.message=消息
+# Sat, 27 Feb 16 06:31:56 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.name=您的名称
+# Sat, 27 Feb 16 06:32:02 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.password=密码
+# Sat, 27 Feb 16 06:32:36 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.password.description=输入新密码或者留空默认为旧密码
+# Sat, 27 Feb 16 06:32:45 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.password_confirm=确认
+# Sat, 27 Feb 16 06:32:54 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.password_confirm.description=确认新密码
+# Sat, 27 Feb 16 06:33:02 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+form.field.translation=翻译
+# Sat, 27 Feb 16 06:33:17 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+harderrors.header=<b>不能执行：</b><br/><ul>
+# Sat, 27 Feb 16 06:33:52 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.0.app=应用程序路径为 {0}
+# Sat, 27 Feb 16 06:34:13 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.0.package=Mibew 包有效.
+# Sat, 27 Feb 16 06:34:23 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.0.php=PHP版本 {0}
+# Sat, 27 Feb 16 06:34:45 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.1.connected=您连接的MySQL的版本 {0}
+# Sat, 27 Feb 16 06:34:54 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.2.create=创建数据库 "{0}"
+# Sat, 27 Feb 16 06:35:10 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.2.db_exists=数据库 "{0}" 创建成功
+# Sat, 27 Feb 16 10:17:29 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.message=根据向导设置数据库
+# Sat, 27 Feb 16 10:17:49 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.license=软件许可协议
+# Sat, 27 Feb 16 10:19:02 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.kill_tables.notice=不能更新表结构，请手动更新或重建所有表（可能存在数据丢失的风险）
+# Sat, 27 Feb 16 10:19:38 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.kill_tables=从数据库中删除表
+# Sat, 27 Feb 16 10:19:45 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.err.title=问题
+# Sat, 27 Feb 16 10:20:51 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.err.back=再次尝试解决问题， 点击 <a>返回</a> 到向导
+# Sat, 27 Feb 16 10:21:01 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.done=完成：
+# Sat, 27 Feb 16 10:21:51 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.connection.error=不能建立连接，请检查服务器配置文件config.php. 错误： {0}
+# Sat, 27 Feb 16 10:22:30 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.check_permissions=文件权限不足 {0}
+# Sat, 27 Feb 16 10:22:50 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.check_files=请重新上传文件到服务器
+# Sat, 27 Feb 16 10:23:05 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.cannot_read=不能读取文件 {0}
+# Sat, 27 Feb 16 10:25:41 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.bad_checksum=校验和不同于 {0}
+# Sat, 27 Feb 16 10:26:26 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.5.text=点击检查声音：{0}和{1}
+# Sat, 27 Feb 16 10:26:35 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.5.newvisitor=新游客
+# Sat, 27 Feb 16 10:26:42 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.5.newmessage=新消息
+# Sat, 27 Feb 16 10:27:59 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.4.notice=表结构须适应新版即时通讯
+# Sat, 27 Feb 16 10:28:22 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.4.notice=表结构须匹配新版即时通讯
+# Sat, 27 Feb 16 10:28:37 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.4.done=表结构过期
+# Sat, 27 Feb 16 10:28:46 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.4.create=更新表
+# Sat, 27 Feb 16 10:29:27 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.3.tables_exist=必要的表创建成功
+# Sat, 27 Feb 16 10:29:46 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.3.create=创建必要的表
+# Sat, 27 Feb 16 10:30:53 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.2.notice=服务器端未发现数据库，如果您有权限创建，点击下面链接创建。
+# Sat, 27 Feb 16 10:33:33 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.newfeatures=恭喜您！ 您已经成功安装麦卡龙即时通讯 {1} ， 开启更多选项请点击<a href="{0}">服务选项</a> 。
+# Sat, 27 Feb 16 10:33:57 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.next=下一步：
+# Sat, 27 Feb 16 10:34:18 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.no_file=文件缺失：{0}
+# Sat, 27 Feb 16 10:34:24 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.title=安装
+# Sat, 27 Feb 16 10:35:16 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+install.updatedb=请运行<a href="{0}">更新向导</a> 更新您的数据库。
+# Sat, 27 Feb 16 10:36:18 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+installed.login_link=进入登录页
+# Sat, 27 Feb 16 10:36:37 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+installed.message=<b>应用安装成功。</b>
+# Sat, 27 Feb 16 10:38:38 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+installed.notice=您可以以 <b>admin</b>账号空密码登录<br/><br/><font color="#c13030"><b>!!! 出于安全考虑建议您即时修改密码并移除服务器上的 {0} 文件目录</b></font>
+# Sat, 27 Feb 16 10:39:00 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+lang.choose=选择您的语言
+# Sat, 27 Feb 16 10:40:01 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leavemail.body=您有一条消息来自 {0}:\n\n{2}\n\n他的邮箱：{1}\n{3}\n--- \nRegards,\nMakalon
+# Sat, 27 Feb 16 10:40:17 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leavemail.subject=问题来自{0}
+# Sat, 27 Feb 16 10:40:39 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leavemessage.close=关闭
+# Sat, 27 Feb 16 10:42:03 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leavemessage.descr=抱歉，暂时没有可用技术支持。<br/>请留言给我们，稍后会有工作人员联系您。
+# Sat, 27 Feb 16 10:42:09 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leavemessage.perform=提交
+# Sat, 27 Feb 16 10:43:22 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leavemessage.sent.message=感谢您的留言，我们会以邮件的形式尽可能第一时间回复您。
+# Sat, 27 Feb 16 10:43:33 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leavemessage.sent.title=您的留言已发送
+# Sat, 27 Feb 16 10:43:42 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leavemessage.title=请留言
+# Sat, 27 Feb 16 10:43:49 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leftMenu.client_agents=操作员
+# Sat, 27 Feb 16 10:44:07 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leftMenu.client_gen_button=一键聊天代码
+# Sat, 27 Feb 16 10:44:13 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+leftMenu.client_settings=设置
+# Sat, 27 Feb 16 10:44:19 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+license.title=许可证
+# Sat, 27 Feb 16 10:44:50 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+mail.user.history.body=您好 {0}!\n\n您的聊天记录：\n\n{1}\n--- \nRegards,\nMakalon
+# Sat, 27 Feb 16 10:45:12 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+mail.user.history.subject=Makalon：对话记录
+# Sat, 27 Feb 16 10:45:21 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+mailthread.close=结束...
+# Sat, 27 Feb 16 10:45:35 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+mailthread.enter_email=请输入您的邮箱：
+# Sat, 27 Feb 16 10:45:40 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+mailthread.perform=发送
+# Sat, 27 Feb 16 10:46:02 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+mailthread.title=发送聊天记录<br/>通过邮件
+# Sat, 27 Feb 16 10:46:14 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.agents=操作员列表
+# Sat, 27 Feb 16 10:46:27 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.blocked=锁定游客
+# Sat, 27 Feb 16 10:47:02 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.canned=留言信息
+# Sat, 27 Feb 16 10:47:43 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.goonline=您已下线。<br/><a href="{0}">连接中...</a>
+# Sat, 27 Feb 16 10:47:53 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.groups=群组
+# Sat, 27 Feb 16 10:49:16 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.groups.content=基于群组的功能或部门
+# Sat, 27 Feb 16 10:49:22 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.locale=语言
+# Sat, 27 Feb 16 10:49:40 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.locale.content=修改本地
+# Sat, 27 Feb 16 10:49:49 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.main=主页
+# Sat, 27 Feb 16 10:50:01 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.notifications=提示消息
+# Sat, 27 Feb 16 10:50:37 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.notifications.content=所有的提示消息被通讯器已发送
+# Sat, 27 Feb 16 10:50:54 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.notifications.content=通讯器已发送所有的提示消息
+# Sat, 27 Feb 16 10:51:01 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.operator=您是 {0}
+# Sat, 27 Feb 16 10:51:12 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.profile=简介
+# Sat, 27 Feb 16 10:51:32 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+menu.profile.content=您可以在此页修改您的私人信息
+# Fri, 11 Mar 16 02:36:48 +0000 by ::1 using Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.22 Safari/537.36
+chat.wait=欢迎您来到本站，操作员正在接通中......

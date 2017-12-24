@@ -1,0 +1,42 @@
+.qb-title {
+  font-weight: bold;
+  font-size: 12px;
+  color: #333333;
+}
+.qb-title-lg {
+  font-size: 16px;
+}
+.qb-title-md {
+  font-size: 14px;
+}
+.qb-text,
+.qb-text-subject,
+.qb-text-help,
+.qb-text-disabled,
+.qb-text-link {
+  font-weight: normal;
+  font-size: 12px;
+  color: #666666;
+}
+.qb-text-help {
+  color: #999999;
+}
+.qb-text-disabled {
+  color: #888888;
+}
+.qb-text-link,
+a.qb-text-link {
+  color: #5b9fe2;
+  text-decoration: none;
+}
+.qb-paragraph {
+  font-weight: normal;
+  font-size: 12px;
+  color: #666666;
+}
+.qb-paragraph-14 {
+  font-weight: normal;
+  font-size: 12px;
+  color: #666666;
+  font-size: 14px;
+}

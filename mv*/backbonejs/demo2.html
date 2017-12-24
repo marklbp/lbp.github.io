@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Backbone-Model</title>
+	<script src="jq.js"></script>
+	<script src="underscore_debug.js"></script>
+	<script src="backbone_debug.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+
+	Man=Backbone.Model.extend({
+		name:"mark"
+	});
+
+	var man=new Man;
+	alert(man.name);
+
+
+	/*
+		Backbone.Model.extend(opts)
+				↓
+			 extend函数=function(arg1,arg2,..){}
+
+		→ parent=Model;child=undefined; → child =function(){parent.apply(this,arguments)}
+
+		→ _.extend(child,Model,undefined) → for(var key in Model)child[key]=child[key]?child[key]:Model[key]
+
+		→ child.prototype.constructor=child → _.extend(child.prototype,opts) → for(var key in Model)child.prototype[key]=opts[key]
+
+			    ↓
+			 return child
+	*/
+
+	</script>
+</body>
+</html>hasOwnProperty

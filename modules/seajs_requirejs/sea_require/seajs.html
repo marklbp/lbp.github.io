@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>seajs模块加载</title>
+</head>
+<body>
+	<!-- <script type="text/javascript" src="../sea_var.js"></script>
+	<script type="text/javascript" src="../sea_fn.js"></script>
+	<script type="text/javascript" src="../module.js"></script>
+	<script type="text/javascript" src="../seajs.js"></script> -->
+	<script type="text/javascript" src="../sea.debug.js"></script>
+	<script type="text/javascript">
+		seajs.use("./main",function(main){
+			main.show(1);
+		})
+	</script>
+</body>
+</html>

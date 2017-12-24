@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue 父子组件自定义事件绑定</title>
+</head>
+<body>
+	<div id="div1">
+	  <p>{{total}}</p>
+	  <c-button v-on:increamentevt="increamentHandler"></c-button>
+	  <c-button v-on:increamentevt="increamentHandler"></c-button>
+	</div>
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+		Vue.component("c-button",{
+			data: function(){
+				return {count: 0}
+			},
+			methods: {
+				increament: function(){
+					this.count += 1;
+					this.$emit("increamentevt");
+				}
+			},
+			template: "<button v-on:click='increament'>{{count}}</button>"
+		})
+		new Vue({
+			el:"#div1",
+			data:{
+				total: 0
+			},
+			methods: {
+				increamentHandler: function(){
+					this.total += 1;
+				}
+			}
+		})
+	</script>
+</body>
+</html>

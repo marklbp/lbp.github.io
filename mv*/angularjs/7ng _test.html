@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html ng-app>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script src="angular.min.js"></script>
+<script>
+
+//angular.bind(); -> $.proxy() : 改this指向
+
+function show(n1,n2){
+	alert(n1);
+	alert(n2);
+	alert(this);
+}
+//show(1,2);
+//angular.bind(document,show,3)(4);
+
+//angular.copy();  //拷贝对象
+
+var a = {
+	name : 'hello'
+};
+var b = {
+	age : '20'
+};
+
+/*var c = angular.copy(a,b);   //a把所有值覆盖给了b,同时b和c共同引用同一个对象
+
+console.log(a,b,c);
+c.name='mark';
+console.log(a,b,c);*/
+
+//angular.extend();   //对象继承
+
+
+
+var c = angular.extend(b,a); 
+
+console.log(a,b,c);
+//a={name: "hello"}; b={age: "20", name: "hello"}; c={age: "20", name: "hello"}
+c.name='mark';
+console.log(a,b,c);
+//a={name: "hello"}; b={age: "20", name: "mark"}; c={age: "20", name: "mark"}
+</script>
+</head>
+
+<body>
+
+
+</body>
+</html>

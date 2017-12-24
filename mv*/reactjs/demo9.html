@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>组件的state属性</title>
+	<script src="build/react.js"></script>
+	<script src="build/react-dom.js"></script>
+	<script src="build/browser.min.js"></script>
+</head>
+<body>
+	<div id="example"></div>
+	<script type="text/babel">
+		var LikeButton = React.createClass({
+			getInitialState:function(){
+				return {linked:false}
+			},
+			handleClick:function(event){
+				this.setState({linked:!this.state.linked});
+			},
+			render:function() {
+				var text=this.state.linked?'like':'haven\'t liked';
+				return (
+					<p onClick={this.handleClick}>
+						You {text} this. Click to toggle.
+					</p>
+					)
+			}
+		});
+		ReactDOM.render(
+			<LikeButton />,
+			document.getElementById('example')
+		);
+	</script>
+</body>
+</html>

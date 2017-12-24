@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Backbone-Model-bind</title>
+	<script src="jq.js"></script>
+	<script src="underscore_debug.js"></script>
+	<script src="backbone_debug.js"></script>
+</head>
+<body>
+	<a href="#/manual">manual</a>
+	<script type="text/javascript">
+		var AppRouter = Backbone.Router.extend({
+			routes:{
+				"posts/:id":"getPost",
+				"manual":"manual",
+				"*actions":"defaultRoute"
+			},
+			getPost:function(id){
+				alert(id);
+			},
+			manual:function(){
+				alert("call manual");
+				app_router.navigate("/posts"+404,{trigger:true,replace:true})
+			},
+			defaultRoute:function(actions){
+				alert(actions)
+			}
+		});
+		var app_router=new AppRouter;
+		Backbone.history.start();
+	</script>
+</body>
+</html>

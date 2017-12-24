@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>font demo</title>
+	<style type="text/css">
+		/*声明 自定义字体*/
+		@font-face {
+		  font-family: 'hkgirl';
+		  src: url('hkgirl.eot');
+		  src:
+		    url('hkgirl.eot?#font-spider') format('embedded-opentype'),
+		    url('hkgirl.woff') format('woff'),
+		    url('hkgirl.ttf') format('truetype'),
+		    url('hkgirl.svg') format('svg');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+		/* flex布局demo */
+		.demo {
+		    font-family: 'hkgirl';
+		    font-size:28px;
+			width: 80%;
+			margin: 10px auto;
+			border-left: 1px solid #000;
+			border-top: 1px solid #000;
+			-webkit-transition: .5s background-color,color;
+			-moz-transition: .5s background-color,color;
+			-o-transition: .5s background-color,color;
+			transition: .5s background-color,color;
+			/*声明Flex布局，子元素的float、clear和vertical-align属性将失效*/
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: row;/*定义子元素排序方式：水平(row)|水平反转(row-reverse)|垂直(column)|垂直反转(column-reverse)*/
+
+			flex-wrap: wrap;/*定义子元素是否换行显示：换行(wrap)|不换行(no-wrap)|换行反转(wrap-reverse)*/
+
+			flex-flow: row wrap;/* flex-direction 和 flex-wrap 综合写法*/
+
+			justify-content: center;/* 定义子元素水平方向的对齐方式：左对齐(flex-start)|右对齐(flex-end)|居中(center)|两端对齐,间隔等距(space-between)|子元素间隔对齐,间隔间距为两端元素到边框距离的2倍(space-around)*/
+
+			align-items: center;/* 定义子元素垂直方向的对齐方式：上对齐(flex-start)|下对齐(flex-end)|居中(center)|子元素的文字基线对齐(baseline)|拉长对齐(stretch)如果项目未设置高度或设为auto，将占满整个容器的高度*/
+		}
+		.demo span{
+			order: 1;/*定义排列顺序，小的在前，默认值0*/
+
+			flex-grow: 1.5;/*定义放大比例，默认值0*/
+
+			flex-shrink: 0;/*定义缩小比例，默认值1*/
+
+			flex-basis: auto;/*定义元素占据的空间，默认值auto(项目本来大小)，可设具体像素值如 200px；即计算多余空间前预留多少空间作为占位
+			*/
+
+			flex: 1.5 0 auto;/*flex-grow  flex-shrink flex-basis综合*/
+
+			align-self: auto;/*定义自身纵向对齐方式，继承父元素的align-items(auto)|flex-start|flex-end|center|baseline|stretch*/
+
+			width: 11%;
+
+			text-align: center;
+
+			height: 60px;
+
+			line-height: 60px;
+
+			border-right: 1px solid #000;
+
+			border-bottom: 1px solid #000;
+		}
+		label{
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+
+<p style="text-align: center;">
+<label><input type="radio" name="color" value="#f2392b,#333" onclick="var arr = this.value.split(',');oDiv.style.color=arr[0];oDiv.style.backgroundColor=arr[1];">红色</label>
+
+<label><input type="radio" name="color" value="#fff,#666" onclick="var arr = this.value.split(',');oDiv.style.color=arr[0];oDiv.style.backgroundColor=arr[1];">白色</label>
+
+<label><input type="radio" name="color" value="#337ab7,#fff" onclick="var arr = this.value.split(',');oDiv.style.color=arr[0];oDiv.style.backgroundColor=arr[1];">蓝色</label>
+</p>
+<div class="demo" id="demo"></div>
+<script type="text/javascript">
+	var oDiv = document.querySelector("#demo");
+	var str = '';
+	for (var i = 1; i <= 99; i++) {
+		str += '<span>'+(i>=10?i:'0'+i)+'</span>'
+	}
+	oDiv.innerHTML = str;
+</script>
+	
+</body>
+</html>

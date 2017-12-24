@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Backbone-Model</title>
+	<script src="jq.js"></script>
+	<script src="underscore_debug.js"></script>
+	<script src="backbone_debug.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+
+	Man=Backbone.Model.extend({
+		initialize:function(){
+			alert("You create me!")
+		},
+		defaults:{
+			name:"mark",
+			age :"38"
+		}
+	});
+
+	/*
+		Backbone.Model.extend(opts)
+				↓
+			 extend函数=function(arg1,arg2,..){}
+
+		→ parent=Model;child=undefined; → child =function(){parent.apply(this,arguments)}
+
+		→ _.extend(child,Model,undefined) → for(var key in Model)child[key]=child[key]?child[key]:Model[key]
+
+		→ child.prototype.constructor=child → _.extend(child.prototype,opts) → for(var key in Model)child.prototype[key]=child.prototype[key]?child.prototype[key]:opts[key]
+
+			    ↓
+			 return child
+	*/
+
+	var man=new Man;
+
+	/*
+		  man=new Man
+			 ↓
+		  child=function(){parent.apply(this,arguments)}
+
+		→ Backbone.Model(attributes, options)
+
+		→ attrs= _.defaults({}, attributes||{}, _.result(this, "defaults")) → _.result(this,"defaults") → this.defaults= {"name":"mark","age":"38"}
+
+		→ this.set(attrs, options); → this.attributes={name:"mark","age":"38"}
+
+		→ this.initialize.apply(this, arguments)
+
+	*/
+
+	alert(man.get("name"));
+
+	/*
+		man.get(att) → return man.attributes[att]
+
+	*/
+	Man2=Backbone.Model.extend({
+		initialize:function(){
+			alert("You create me again!")
+		}
+	})
+	var man2=new Man2;
+	man2.set({"name":"mark2","age":"30"})
+	alert(man2.get("name"));
+	</script>
+</body>
+</html>

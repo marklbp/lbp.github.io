@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue 父子组件props传递sync修饰符</title>
+</head>
+<body>
+	<div id="div1">
+	  <p>{{bar}}</p>
+	  <child v-bind:foo.sync="bar"></child>
+	  
+	</div>
+	等同于
+	<div id="div2">
+		<p>{{bar}}</p>
+		<child v-bind:foo="bar" v-on:update:foo="fx"></child>
+	</div>
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+
+		var vc1 = Vue.component("child",{
+			
+			props: ["foo"],
+			methods: {
+				fn: function(){
+					this.foo += 1;
+					this.$emit('update:foo', this.foo)
+				}
+			},
+			template: "<button v-on:click='fn'>{{foo}}</button>"
+		});
+		var vm1 = new Vue({
+			el:"#div1",
+			data:{
+				bar: 0
+			}
+		});
+
+
+
+		var vc2 = Vue.component("child",{
+			
+			props: ["foo"],
+			methods: {
+				fn: function(){
+					this.foo += 1;
+					this.$emit('update:foo', this.foo)
+				}
+			},
+			template: "<button v-on:click='fn'>{{foo}}</button>"
+		});
+		var vm2 = new Vue({
+			el:"#div2",
+			data:{
+				bar: 0
+			},
+			methods: {
+				fx: function(val){
+					this.bar = val;
+				}
+			}
+		})
+	</script>
+</body>
+</html>

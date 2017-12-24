@@ -1,0 +1,32 @@
+.qb-avatar {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: url(../img/avatar-icons.png);
+  background-repeat: no-repeat;
+}
+.qb-avatar img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 0 none;
+}
+.qb-avatar-lg {
+  width: 100px;
+  height: 100px;
+  background-position: 0 0;
+}
+.qb-avatar-md {
+  width: 80px;
+  height: 80px;
+  background-position: -100px 50%;
+}
+.qb-avatar-sm {
+  width: 60px;
+  height: 60px;
+  background-position: -180px 50%;
+}
+.qb-avatar-xs {
+  width: 40px;
+  height: 40px;
+  background-position: -241px 50%;
+}

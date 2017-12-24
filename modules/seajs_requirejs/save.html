@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<title>麦卡龙app</title>
+	<style type="text/css">
+	* {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+	html,body{
+		background-color: #f3f3f3;
+		font-size: 14px;
+	}
+	body{
+		margin: 0;
+	}
+	.dot{
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.mod{
+		margin-bottom: .5rem;
+		background-color: #fff;
+	}
+	.mod1{
+		position: relative;
+		border-top: 0.07142857142857142rem solid #ccc;
+		border-bottom: 0.07142857142857142rem solid #ccc;
+	}
+	.mod1:before,
+	.mod1:after{
+		content: "";
+		position: absolute;
+		background-color: #ccc;
+	}
+	.mod1:before{
+		height: 100%;
+		width: 0.07142857142857142rem;
+		left: 50%;
+		top: 0;
+	}
+	.mod1:after{
+		width: 50%;
+		height: 0.07142857142857142rem;
+		top: 50%;
+		right: 0;
+	}
+	.mod1>div{
+		padding: .5rem;
+	}
+	.mod1 .big{
+		font-size: 1.2857142857142858rem;
+	}
+	.mod1 .gray{
+		color: #9b9b9b;
+	}
+	.mod1>div:first-of-type{
+		width: 50%;
+		height: 10rem;
+		text-align: center;
+		overflow: hidden;
+	}
+	.mod1>div:nth-of-type(2),
+	.mod1>div:last-of-type{
+		width: 50%;
+		height: 50%;
+		position: absolute;
+		right: 0;
+		overflow: hidden;
+	}
+	.mod1>div:nth-of-type(2){
+		top: 0;
+	}
+	.mod1>div:last-of-type{
+		bottom: 0;
+	}
+	.mod1>div:first-of-type .big{
+		color:#4b4b4b;
+		height: 20%;
+	}
+	.mod1>div:nth-of-type(2) .big,
+	.mod1>div:last-of-type .big,
+	.mod1>div:nth-of-type(2) .gray,
+	.mod1>div:last-of-type .gray{
+		height: 50%;
+		width: 70%;
+	}
+	.mod1>div:nth-of-type(2) .big{
+		color:#f5ad5b;
+	}
+	.mod1>div:last-of-type .big{
+		color:#e86268;
+	}
+	.mod1>div:first-of-type .gray{
+		height: 30%;
+	}
+	.mod1>div:first-of-type img{
+		max-width: 100%;
+	}
+	.mod1>div:nth-of-type(2) img,
+	.mod1>div:last-of-type img{
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+		width: 20%;
+	}
+	</style>
+</head>
+<body>
+	<div class="mod mod1" id="mod1">
+		<div data-url="1">
+			<div class="big dot">新用户一元购</div>
+			<div class="gray dot">价值1000元上海游泳馆游泳年卡</div>
+			<img src="http://wx.makalon.com/Public/uploads/avatar/2015/12/18/1450408328024675.jpg">		
+		</div>
+		<div data-url="2">
+			<div class="big dot">全民体验区</div>
+			<div class="gray dot">一兆韦德健身体验卷</div>
+			<img src="http://wx.makalon.com/Public/uploads/avatar/2015/12/18/1450408328024675.jpg">
+		</div>
+		<div data-url="3">
+			<div class="big dot">0元许愿</div>
+			<div class="gray dot">iPhone6 Plus一部</div>
+			<img src="http://wx.makalon.com/Public/uploads/avatar/2015/12/18/1450408328024675.jpg">
+		</div>
+
+	</div>
+	<div class="slider mod mod2" id="mod2">
+		<ul class="list">
+
+		</ul>
+		<div class="idx">
+			
+		</div>
+	</div>
+	<script src="/Public/js/plugins/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		(function(){
+			$(document.body).on("click","#mod1>div",function(){
+				var url=this.dataset&&this.dataset.url||$(this).data('url');
+				//alert(url);
+			});
+
+			var FlashSlider=function(opts){
+					var defaults={
+
+					}
+					this.settings=opts;
+					this.init();
+				}
+			FlashSlider.prototype={
+				contructor:FlashSlider
+				,init:function(){
+					if(!this.container)return;
+					var html=this.createSlider()+this.createIdx();
+					this.container.append(html);
+					this.run();
+				}
+				,createSlider:function(){
+					var html="";
+					for (var i = this.settings.sliders.length - 1; i >= 0; i--) {
+						html+="<"+this.settings.sliders[i].slider+">";
+						html+=this.settings.sliders[i].sliderHtmlStr;
+						html+="</"+this.settings.sliders[i].slider+">";
+					}
+					return html;
+				}
+				,createIdx:function(){
+					var html="";
+					for (var i = this.settings.sliders.length - 1; i >= 0; i--) {
+						html+="<"+this.settings.sliders[i].idx+">";
+						html+=this.settings.sliders[i].idxHtmlStr;
+						html+="</"+this.settings.sliders[i].idx+">";
+					}
+					return html;
+				}
+				,slider:function(){
+
+					return this;
+				}
+				,event:function(){
+					this.container.on("touchstart",function(){
+						this.
+					})
+				}
+				,run:function(){
+					var _this=this;
+					if(this.timer)clearTimeout(this.timer);
+					this.timer=setTimeout(function(){
+						_this.slider().run();
+						_this=null;
+					},this.settings.timer||1000);
+					this.event();
+				}
+			}
+
+			new FlashSlider({
+				container:$("#mod2"),
+				sliders:[
+					{
+						slider:"li"
+						sliderHtmlStr:"",
+						idx:"span",
+						idxHtmlStr:""
+					}
+				]
+			})
+		})()
+	</script>
+</body>
+</html>

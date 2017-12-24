@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript">
+		function Aaa($scope,$rootScope){
+			$scope.name='hello';
+			$rootScope.age=20;
+		} 
+		function Bbb($scope){
+			$scope.name='hi';
+			$scope.age=30;
+		}
+		/*
+		   $scope      局部作用域 , 参数名不能被修改
+		   $rootScope  angular中全局作用域 , 参数名不能被修改
+			
+			依赖注入在控制器内被调用时自动注入参数
+
+		*/ 
+	</script>
+</head>
+<body>
+
+	<div ng-controller="Aaa">
+		<p>{{name}}</p>
+		<p>{{age}}</p>
+	</div>
+	<div ng-controller="Bbb">
+		<p>{{name}}</p>
+		<p>{{age}}</p>
+	</div>
+</body>
+</html>

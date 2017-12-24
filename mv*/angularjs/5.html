@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript">
+		function Aaa($scope){
+			$scope.name='hello';
+			$scope.age=30;
+			$scope.number=12345678567;
+		} 
+		function Bbb($scope){
+			$scope.name='hi';
+			$scope.age=30;
+		}
+	</script>
+</head>
+<body>
+
+	<div ng-controller="Aaa">
+		<p>{{name}}</p>
+		<p>{{age}}</p>
+        <p>{{number|date:'yyyy-mm-dd'}}</p>
+	</div>
+
+</body>
+</html>

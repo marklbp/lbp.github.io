@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue 父子组件自定义事件的表单定制组件</title>
+</head>
+<body>
+	<div id="div1">
+	  <!-- 
+	  		<my-checkbox v-model="foo" value="some value"></my-checkbox>
+
+	  		等同于
+
+	  		<my-checkbox v-bind:checked="foo" v-on:change="val => { foo = val }" value="some value"></my-checkbox>
+	   -->
+	   <my-checkbox v-model="foo" value="some value"></my-checkbox>
+	  
+	  <p>{{ foo }}</p>
+	</div>
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+		Vue.component("my-checkbox",{
+			model: {
+			    prop: 'checked',
+			    event: 'change'
+			},
+			props: {
+			    checked: Boolean,
+			    // this allows using the `value` prop for a different purpose
+			    value: String
+			},
+			methods: {
+				updateValue: function(){
+					v = this.$el.checked ? this.$el.value : ""
+					this.$emit("change",v)
+				}
+			},
+			template: `<input ref="input" type="checkbox" v-on:change="updateValue" v-bind:value="value" value="a">`
+			//自定义的组件的属性v-model只能适用表单元素
+		})
+		new Vue({
+			el:"#div1",
+			data:{
+				foo: false
+			}
+		})
+	</script>
+</body>
+</html>

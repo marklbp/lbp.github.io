@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue 父子组件自定义事件的表单输入组件</title>
+</head>
+<body>
+	<div id="div1">
+	  <!-- 
+	  		<input v-model="sth" /> 
+
+	  		等同于
+
+	  		<input v-bind:value="sth" v-on:input="sth=$event.target.value" />
+	   -->
+	   <currency-input label="Price" v-model="price"></currency-input>
+	   <currency-input label="Shipping" v-model="shipping"></currency-input>
+	   <currency-input label="Handling" v-model="handling"></currency-input>
+	   <currency-input label="Discount" v-model="discount"></currency-input>
+	  
+	  <p>Total: ${{ total }}</p>
+	</div>
+	<script type="text/javascript" src="vue.js"></script>
+	<script type="text/javascript">
+		Vue.component("currency-input",{
+			data: function(){
+				return {count: 0}
+			},
+			methods: {
+				updateValue: function(v){
+
+					//this.$emit("input",v)
+				}
+			},
+			template: `<input ref="input" v-bind:value="value" v-on:input="updateValue($event.target.value)">`
+			//自定义的组件的属性v-model只能适用表单元素
+		})
+		new Vue({
+			el:"#div1",
+			data:{
+				price: 0,
+				shipping: 0,
+				handling: 0,
+				discount: 0
+			},
+			computed: {
+				total: function(){
+					return ((this.price * 100 + this.shipping * 100 + this.handling * 100 - this.discount * 100) / 100).toFixed(2)
+				}
+			}
+		})
+	</script>
+</body>
+</html>

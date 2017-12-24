@@ -1,0 +1,40 @@
+seajs.use(ids,callback)
+
+      ↓
+
+Module.use(ids, callback, uri=data.cwd + "_use_" + cid())<-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+                                                                                                                                                                                                                                 |
+mod=Module.get(uri,[ids]) => return cachedMods[uri] || (cachedMods[uri] = new Module(uri, deps=[ids])) =>{status:0,_entry:self,remain:1,deps:{ids:mod},dependencies:[ids],callback:{exports=mod.exec()&&callback()}}                      |
+                                                                                                                                                                                                                                 |
+      ↓                                                                                                                                                                                                                         |
+                                                                                                                                                                                                                                 |
+mod.load()  <---------------------------------------------------------------------------------------------|                                                                                                                      |
+mod.status=3;                                                                                             |                                                                                                                      |
+mod.resolve()=>uris=[url]                                                                                 |                                                                                                                      |
+mod.pass()                                                                                                |                                                                                                                      |
+           |                                                                                              |                                                                                                                      |
+           |                                                                                              |                                                                                                                      |
+           |                                                                                              |                                                                                                                      |
+           |                                                                                              |                                                                                                                      |
+           |				                                                                  |                                                                                                                      |
+	   |				                                                                  |                                                                                                                      |
+           |				                                                                  |                                                                                                                      |
+           |				                                                                  |                                                                                                                      |
+           |				                                                                  |				                                                                                         |
+           |                                                                                              |                                                                                                                      |
+           |----------------------↓(mod.status<STATUS.FETCHING)                                          |----------------|                                                                                                     |
+  				mod.fetch()->requestCache={uri:sendRequest()}->request(uri,onRequest)                      |                                                                                                     |                            										  
+                                  ↓(id===undefined)----------↓                    ↓                                     |                                                                                                     |
+ 无依赖的mod._entry.length>0    define(id,deps,fn)提取依赖->anonymousMeta=>Module.save(uri,anonymousMeta)<=>onRequest(evt)-|                                                                                                     |
+                                                                                                                                                                                                                                 |
+   ↓                                                                                                                                                                                                                            |
+  mod.onload()                                                                                                                                                                                                                   |
+   ↓                                                                                                                                                                                                                            |
+  entry.callback()                                                                                                                                                                                                               |
+   ↓                                                                                                                                                                                                                            |
+  cacheMods[uri].exec()<----------------------------------|->return mod.exports                                                                                                                                                  |
+   ↓                                                     |                                                                                                                                                                      |
+ mod.exports.factory(require,mod.exports,mod)->require()->|                                                                                                                                                                      |
+                                              ->require.async()->----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+seajs 的加载顺序和执行顺序一般相反，即先加载的后执行

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Backbone-Model-bind</title>
+	<script src="jq.js"></script>
+	<script src="underscore_debug.js"></script>
+	<script src="backbone_debug.js"></script>
+</head>
+<body>
+	<a href="#/posts/120">Post 120</a>
+	<script type="text/javascript">
+		var AppRouter = Backbone.Router.extend({
+			routes:{
+				"posts/:id":"getPost",
+				"*actions":"defaultRoute"
+			},
+			getPost:function(id){
+				alert(id);
+			},
+			defaultRoute:function(actions){
+				alert(actions)
+			}
+		});
+		var app_router=new AppRouter;
+		Backbone.history.start();
+	</script>
+</body>
+</html>

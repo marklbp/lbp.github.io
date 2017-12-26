@@ -9,46 +9,48 @@
 </head>
 <body>
 	<div id="todo"></div>
-	<script src="../jquery.js" type="text/javascript"></script>
+	<script src="build/jquery.min.js" type="text/javascript"></script>
 	<script type="text/babel">
-		var TodoList=React.createClass({
-			render:function(){
+		var TodoList = React.createClass({
+			render: function(){
 				return(
-						<ul>
-									{
-										this.props.list.map(function(val){
-											return <li>{val}</li>
-										})
-									}
-								</ul>
+					<ul>
+						{
+							this.props.list.map(function(val){
+								return <li>{val}</li>
+							})
+						}
+					</ul>
 				);
 			}
-		})
-		var Todo=React.createClass({
-					getInitialState:function(){
-						return {
-							num:0,
-							list:[]
-						}
-					}
-					,handleClick:function(e){
-						if(!$.trim($("input").val()))return ;
-						this.setState({
-							num:this.state.num+1,
-							list:this.state.list.concat($("input").val())
-						});
-						console.log(this.state);
-						$("input").val("");
-					}
-					,render:function(){
-						return (
-							<div>
-								<p><input type="text" /><button onClick={this.handleClick}>add#{this.state.num}</button></p>
-								<TodoList list={this.state.list} />
-							</div>
-						);
-					}
+		});
+
+		var Todo = React.createClass({
+			getInitialState: function(){
+				return {
+					num: 0,
+					list: []
+				}
+			}
+			,handleClick: function(e){
+				if(!$.trim($("input").val()))return ;
+				this.setState({
+					num: this.state.num + 1,
+					list: this.state.list.concat($("input").val())
 				});
+				console.log(this.state);
+				$("input").val("");
+			}
+			,render: function(){
+				return (
+					<div>
+						<p><input type="text" /><button onClick={this.handleClick}>add#{this.state.num}</button></p>
+						<TodoList list={this.state.list} />
+					</div>
+				);
+			}
+		});
+
 		ReactDOM.render(
 			<Todo  />,
 			document.getElementById('todo')

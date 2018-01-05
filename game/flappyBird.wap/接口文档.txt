@@ -1,0 +1,44 @@
+1.获取短信验证码
+请求地址:http://m-qhb.qbao.com/fly/sendVerifyCode.html
+请求方式:post,get
+
+返回结果:
+	{
+		"code":0,
+		"message":null,
+		"data":null,
+		"success":true
+	}
+
+
+2.玩游戏扣红包机会
+请求地址:http://m-qhb.qbao.com/fly/play.html
+请求方式:post 
+请求参数:password=windy1111&smsCode=656102&rememberPassword=1
+
+返回结果:
+	{
+		"code":0,
+		"message":null,
+		"data":{
+			"result":"0",
+			"username":"windy111",
+			"subId":"3",
+			"public":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCdgrgYIf8shOD70glg2mzoIIUNQVogHl7Nf86StLlETpEB3V3ri/uFVbv0TJ0MZxl+l3L2WhXJS/pIN/lsyRVGbB2RrItOAZMdhLFyR0/brsw6lqnx5s8cS/B8fsbHAvPBortT/ZjJh1x8H57vPCEIh26ra1NYh/ejv5soBrzbiQIDAQAB"
+		},
+		"success":true
+	}
+
+
+3.提交分数
+http://m-qhb.qbao.com/fly/sendUserScore.html
+请求方式:post
+请求参数:subId =5&encryScore=hyM5LAcZkn23GXVVN1fstr3G4SeyWsfpTF8VXlXGA2izX+eQuu4Gct3ty4IE41uZcWjsOYl8bk17iFWv+oHBuYNAKefZCPIbd3JNuVY+NqNvS0HFqHQrrydog30Ya/qasMk7W40MGF0JWoGvN09ywru3mCMwmTjFVG7vE4p/AAs=
+
+返回结果:
+	{
+		"code":0,
+		"message":null,
+		"data":null,
+		"success":true
+	}

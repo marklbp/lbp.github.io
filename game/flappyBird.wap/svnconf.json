@@ -1,0 +1,18 @@
+{
+    "svns": {
+        "devel": {
+            "repo": "http://192.168.7.237/ngsvnroot/crazymoney/branches/wapFrontDev/flappyBird",
+            "notes": "飞行游戏首测"
+        },
+
+        "build": {
+            "repo": "http://192.168.7.237/ngsvnroot/crazymoney/branches/wapFrontDev/flappyBird",
+            "notes": "飞行游戏首测"
+        }
+    },
+    "cdn": "//qhb.qbcdn.com",
+
+    "webpack": {
+        "switch": false
+    }
+}

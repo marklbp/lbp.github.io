@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<title>客户端热更新配置</title>
+	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="plugins/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+	<!--[if lt IE 9]>
+        <script src="plugins/html5shiv.min.js"></script>
+        <script src="plugins/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/hot-update-cfg.css" rel="stylesheet">
+</head>
+<body>
+<!-- 
+	<div class="hot-update-cfg-page container">
+		<div class="cfg-list">
+			<div class="cfg-item row">
+				<div class="col-sm-1 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							版本号
+						</div>
+						<div class="form-control col-inner">4.1.2</div>
+					</div>
+				</div>
+				<div class="col-sm-1 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							平台
+						</div>
+						<div class="form-control col-inner">ios</div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							文件包
+						</div>
+						<div class="form-control col-inner">htttp://www.qbcdn.com/</div>
+					</div>
+				</div>
+				<div class="col-sm-1 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							序列号
+						</div>
+						<div class="form-control col-inner">4.1.2-3</div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							概要
+						</div>
+						<div class="form-control col-inner">概要概要概要概要概要</div>
+					</div>
+				</div>
+				<div class="col-sm-1 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							操作人
+						</div>
+						<div class="form-control col-inner">admin</div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							操作时间
+						</div>
+						<div class="form-control col-inner">2016-07-04<br>13:01:10</div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							操作
+						</div>
+						<div class="form-control col-inner">
+							<a class="btn btn-edit">编辑</a>
+							<a class="btn btn-del">删除</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cfg-item row">
+				<div class="col-sm-1 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							版本号
+						</div>
+						<div class="form-control col-inner">4.1.2</div>
+					</div>
+				</div>
+				<div class="col-sm-1 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							平台
+						</div>
+						<div class="form-control col-inner">ios</div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							文件包
+						</div>
+						<div class="form-control col-inner">htttp://www.qbcdn.com/</div>
+					</div>
+				</div>
+				<div class="col-sm-1 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							序列号
+						</div>
+						<div class="form-control col-inner">4.1.2-3</div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							概要
+						</div>
+						<div class="form-control col-inner">概要概要概要概要概要</div>
+					</div>
+				</div>
+				<div class="col-sm-1 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							操作人
+						</div>
+						<div class="form-control col-inner">admin</div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							操作时间
+						</div>
+						<div class="form-control col-inner">2016-07-04<br>13:01:10</div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-item">
+					<div class="input-group">
+						<div class="input-group-addon transparent">
+							操作
+						</div>
+						<div class="form-control col-inner">
+							<a class="btn btn-edit">编辑</a>
+							<a class="btn btn-del">删除</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+-->     
+	<div id="update-hot-cfg-page"></div>
+	<script type="text/javascript" src="plugins/react/0.14.0/react.js"></script>
+	<script type="text/javascript" src="plugins/react/0.14.0/react-dom.js"></script>
+	<script type="text/javascript" src="plugins/react/browser.min.js"></script>
+	<script type="text/javascript" src="plugins/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="plugins/alertbox/alertbox.js"></script>
+	<script type="text/javascript" src="plugins/htmlTpl.js"></script>
+	<script type="text/template" id="add-new-form-tpl">
+		<form class="alertbox-form">
+			{{ if(id!==undefined){ }}
+			<input type="hidden" name="id" value="{{=id}}" />
+			{{ } }}
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*平台：</span>
+					<div class="form-control row">
+						<label class="col-xs-6">
+							<input type="radio" {{=platform===1?'checked':''}} data-text="请选择平台" name="platform" value="1" />ios
+						</label>
+						<label class="col-xs-6">
+							<input type="radio" {{=platform===2?'checked':''}}  data-text="请选择平台" name="platform" value="2" />android
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon transparent">&nbsp;&nbsp;*版本号：</span>
+					<input class="form-control" type="text" data-text="请填写版本号" name="mobileVer" value="{{=mobileVer}}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon transparent">&nbsp;&nbsp;*更新包：</span>
+					<input type="hidden" data-text="请上传文件包" name="file" value="{{=file}}" />
+					<div class="form-control form-control-default">
+						{{
+							if(file.length>0){ 
+						}}
+						<span class="btn">{{=file}}</span>
+						{{
+							}
+						}}
+						<a class="btn btn-upload">上传文件包</a>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon transparent">版本概要：</span>
+					<textarea class="form-control" name="fileDesc" value="{{=fileDesc}}">{{=fileDesc}}</textarea>
+				</div>
+			</div>
+			{{
+				if("edit"==type){
+			}}
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon transparent">&nbsp;&nbsp;&nbsp;序列号：</span>
+					<input class="form-control" type="text" readonly name="sequenceNum" value="{{=sequenceNum}}" />
+				</div>
+			</div>
+			{{
+				}
+			}}
+			<div class="form-group row">
+				<div class="col-sm-offset-4 col-sm-8">
+					<button class="btn btn-gray btn-save" type="submit">保存</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<button class="btn btn-default btn-cancel" type="button">取消</button>
+				</div>
+			</div>
+		</form>
+	</script>
+	<script type="text/babel">
+		var FormComp = React.createClass({
+			handleSubmit : function(e){
+				e.preventDefault();
+				var arr = $(e.target).serializeArray();
+				var param = {};
+				$.each(arr,function(i,o){
+					param[o.name]=o.value;
+				})
+				console.log(param);
+				param.pageNum  = 1;
+				param.pageSize = this.props.pagination.pageSize;
+				param.platform = parseInt(param.platform)
+				this.props.loadList(param); 
+			}
+			,render : function(){
+				return (
+					<form className="row cfg-form" onSubmit={this.handleSubmit}>
+						<div className="col-sm-5">
+							<div className="form-group">
+								<div className="input-group">
+									<span className="input-group-addon transparent">版本号：</span>
+									<input className="form-control" ref="versionInput" type="text" name="mobileVer" />
+								</div>
+							</div>
+						</div>
+						<div className="col-sm-5">
+							<div className="form-group">
+								<div className="input-group">
+									<span className="input-group-addon transparent">平&nbsp;&nbsp;&nbsp;台&nbsp;：</span>
+									<select className="form-control" ref="platformInput" name="platform">
+										<option value="0">全部</option>
+										<option value="1">android</option>
+										<option value="2">ios</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div className="col-sm-2">
+							<button className="btn btn-gray btn-block" type="submit">查询</button>
+						</div>
+					</form>
+				)
+			}
+		});
+
+		var PanelComp = React.createClass({	
+			getInitialState : function(){
+				return {
+					ios     : false,
+					android : false
+				}
+			}
+			,handleChange : function(e){
+				var name  = e.target.name;
+				var value = $(e.target).prop("checked");
+				var obj = {};
+				obj[name] = value;
+				this.setState(obj);
+			}
+			,addNew : function(e){
+				this.props.addFn({
+					type        : "add",
+					platform    : 0,
+					mobileVer   : '',
+					file        : '',
+					sequenceNum : "0.0.0",
+					fileDesc    : ''
+				})
+			}
+			,render : function (){
+				var iosSwitch     = this.state.ios     ? 'qb-switch qb-switch-rect switch on' : 'qb-switch qb-switch-rect switch off';
+				var androidSwitch = this.state.android ? 'qb-switch qb-switch-rect switch on' : 'qb-switch qb-switch-rect switch off';
+				return (
+					<div className="row cfg-panel">
+						<div className="col-xs-3 col-sm-4">
+							<button className="btn btn-gray" onClick={this.addNew}>新增</button>
+						</div>
+						<div className="col-xs-9 col-sm-4">
+							<div className="input-group">
+								<span className="input-group-addon transparent">ios更新：</span>
+								<div className={iosSwitch}>
+									<span className="on-text">开</span>
+									<span className="off-text">关</span>
+									<span className="btn-switch"></span>
+									<input type="checkbox" name="ios" onChange={this.handleChange} />
+								</div>
+							</div>
+						</div>
+						<div className="col-xs-9 col-sm-4">
+							<div className="input-group">
+								<span className="input-group-addon transparent">android更新：</span>
+								<div className={androidSwitch}>
+									<span className="on-text">开</span>
+									<span className="off-text">关</span>
+									<span className="btn-switch"></span>
+									<input type="checkbox" name="android" onChange={this.handleChange} />
+								</div>
+							</div>
+						</div>
+					</div>
+				)
+			}
+		});
+		
+		var HeaderComp = React.createClass({
+			render : function(){
+				return (
+					<div className="cfg-header row">
+						<div className="col-sm-1 col-item">
+							版本号
+						</div>
+						<div className="col-sm-1 col-item">
+							平台
+						</div>
+						<div className="col-sm-2 col-item">
+							文件包
+						</div>
+						<div className="col-sm-1 col-item">
+							序列号
+						</div>
+						<div className="col-sm-2 col-item">
+							概要
+						</div>
+						<div className="col-sm-1 col-item">
+							操作人
+						</div>
+						<div className="col-sm-2 col-item">
+							操作时间
+						</div>
+						<div className="col-sm-2 col-item">
+							操作
+						</div>
+					</div>
+				)
+			}
+		});
+
+		var ItemsComp = React.createClass({
+			editHandleFn : function(e){
+				var item = this.props.items[e.target.dataset.index];
+				this.props.editFn({
+					type        : "edit",
+					platform    : item.platform,
+					mobileVer   : item.mobileVer,
+					file        : item.fileUrl,
+					sequenceNum : item.mobileVer+'-'+item.fileVer,
+					fileDesc    : item.fileDesc,
+					id          : item.id
+				})
+			}
+			,delHandleFn : function(e){
+				var id = e.target.dataset.id;
+				this.props.delFn(id)
+			}
+			,render : function(){
+				var that  = this; 
+				var items = this.props.items.map(function(item,index){
+					var mobileVer   = item.mobileVer;
+					var platform    = item.platform == 1 ? "ios" : "android";
+					var optTimeStr  = item.optTimeStr;
+					var fileUrl     = item.fileUrl;
+					var sequenceNum = item.mobileVer+"-"+item.fileVer;
+					var fileDesc    = item.fileDesc;
+					var operator    = item.operator;
+					var id          = item.id;
+					return (
+						<div className="cfg-item row">
+							<div className="col-sm-1 col-item">
+								<div className="input-group">
+									<div className="input-group-addon transparent">
+										版本号
+									</div>
+									<div className="form-control col-inner">{mobileVer}</div>
+								</div>
+							</div>
+							<div className="col-sm-1 col-item">
+								<div className="input-group">
+									<div className="input-group-addon transparent">
+										平台
+									</div>
+									<div className="form-control col-inner">{platform}</div>
+								</div>
+							</div>
+							<div className="col-sm-2 col-item">
+								<div className="input-group">
+									<div className="input-group-addon transparent">
+										文件包
+									</div>
+									<div className="form-control col-inner">{fileUrl}</div>
+								</div>
+							</div>
+							<div className="col-sm-1 col-item">
+								<div className="input-group">
+									<div className="input-group-addon transparent">
+										序列号
+									</div>
+									<div className="form-control col-inner">{sequenceNum}</div>
+								</div>
+							</div>
+							<div className="col-sm-2 col-item">
+								<div className="input-group">
+									<div className="input-group-addon transparent">
+										概要
+									</div>
+									<div className="form-control col-inner">{fileDesc}</div>
+								</div>
+							</div>
+							<div className="col-sm-1 col-item">
+								<div className="input-group">
+									<div className="input-group-addon transparent">
+										操作人
+									</div>
+									<div className="form-control col-inner">{operator}</div>
+								</div>
+							</div>
+							<div className="col-sm-2 col-item">
+								<div className="input-group">
+									<div className="input-group-addon transparent">
+										操作时间
+									</div>
+									<div className="form-control col-inner">{optTimeStr}</div>
+								</div>
+							</div>
+							<div className="col-sm-2 col-item">
+								<div className="input-group">
+									<div className="input-group-addon transparent">
+										操作
+									</div>
+									<div className="form-control col-inner">
+										<a href="javascript:void(0)" className="btn btn-edit" data-id={id} data-index={index} onClick={that.editHandleFn}>编辑</a>
+										<a href="javascript:void(0)" className="btn btn-del" data-id={id} onClick={that.delHandleFn}>删除</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					)
+				})
+				return (<div>{items}</div>);
+			}
+		});
+
+		var PaginationComp = React.createClass({
+			page : function(e){
+				var target = e.target;
+				var nodeName = target.nodeName.toLowerCase();
+				if(nodeName == "i"){
+					target = target.parentNode;
+					nodeName = target.nodeName.toLowerCase();
+				}
+				if("a"!=nodeName||$(target).hasClass("disabled")||$(target).hasClass("active"))return;
+				var pageSize  = this.props.pagination.pageSize;
+				var pageNum   =  parseInt(target.title);
+				var platform  = this.props.platform;
+				var mobileVer = this.props.mobileVer;
+				if($(target).hasClass("prev")){
+					pageNum = this.props.pagination.pageNum-1;
+				}
+				if($(target).hasClass("next")){
+					pageNum = this.props.pagination.pageNum+1;
+				}
+				alert(pageNum);
+				/*this.props.loadList({
+					pageNum   : pageNum,
+					pageSize  : pageSize,
+					platform  : platform,
+					mobileVer : mobileVer 
+				})*/
+			}
+			,renderPage : function(pageNum,totalPage){
+				var html      = [];
+				var i         = 0;
+				var len       = 0;
+				var start     = function(){
+									return (<a href='javascript:void(0)' title='1'>1</a>)
+								}();
+				var emplisis  = function(){
+									return (<span>...</span>)
+								}();
+				var end       = function(){
+									return (<a href='javascript:void(0)' title={totalPage}>{totalPage}</a>)
+								}();
+				var fnPage    = function(pageNum,i,len){
+									var temp = [];
+									var className = ""
+									for (; i <=len;i++) {
+										className = pageNum == i ? "active" : '';
+										temp.push(function(){
+												return (
+													<a href='javascript:void(0)' className={className} title={i}>{i}</a>
+												)
+										}())
+									}
+									return temp;
+								};
+
+				if(totalPage <= 5){
+					i    = 1
+					len  = totalPage;
+					html = fnPage(pageNum,i,len);
+
+				}else{
+					if(pageNum<=3){
+						i   = 1;
+						len = 3;
+						html = fnPage(pageNum,i,len);
+						html.push(emplisis,end);
+					}else if(pageNum<=totalPage-3){
+						if(totalPage-3>3){
+							i    = pageNum-1;
+							len  = pageNum+1;
+							html = fnPage(pageNum,i,len);
+							html.unshift(start,emplisis);
+							html.push(emplisis,end);
+						}
+					}else{
+						i    = totalPage-2;
+						len  = totalPage;
+						html = fnPage(pageNum,i,len);
+						html.unshift(start,emplisis)
+					}
+				}
+				return html;
+			}
+			,render : function(){
+				var totalCount  = this.props.pagination.totalCount;
+				var totalPage   = this.props.pagination.totalPage;
+				var pageNum     = this.props.pagination.pageNum;
+				var pageSize    = this.props.pagination.pageSize;
+				var startCount  = (pageNum-1)*pageSize + 1;
+				var endCount    = pageNum == totalPage ? totalCount : (startCount + pageSize - 1);
+				var classPrev   = pageNum<=1 ? "prev disabled" : "prev";
+				var classNext   = pageNum>=totalPage ? "next disabled" : "next";
+				var pageHtml = this.renderPage(pageNum,totalPage);
+				return (
+					<div className="cfg-pagination row">
+						<div className="col-sm-4">
+							当前显示{startCount}到{endCount}条记录，总共{totalCount}条
+						</div>
+						<div className="col-sm-8 text-right">
+							<div className="qb-pagination" onClick={this.page}>
+								<a href="javascript:void(0)" className={classPrev} title="上一页"><i></i></a>
+								{pageHtml}
+								<a href="javascript:void(0)" className={classNext} title="下一页"><i></i></a>
+							</div>
+						</div>
+					</div>
+				)
+			}
+		});
+
+		var PageComp = React.createClass({
+			getInitialState : function(){
+				return {
+					"platform"   : 0,
+					"mobileVer"  : "",
+					"pagination" : {
+									"totalCount" : 67,
+									"pageSize"   : 10,
+									"totalPage"  : 7,
+									"pageNum"    : 4
+								},
+					"data" : [
+						//{}
+						{
+							"id"         : 19,
+							"platform"   : 1,
+							"mobileVer"  : "4.1.1",
+							"fileVer"    : 6,
+							"fileUrl"    : "http://www.qbcdn.com/cms/mobilefile/ios/a.sql",
+							"fileMd"     : "28b088a52daf59cc610056317150756a",
+							"fileDesc"   : "test",
+							"operator"   : "admin",
+							"optTime"    : 1467971791000,
+							"optTimeStr" : "2016-07-08 17:56:31"
+						}
+					]
+				}
+			}
+			,loadList : function(param){
+				$.ajax({
+					url : "http://cmsba.qbao.com/manage4app/file/mobile/getMobileFilesList.html",
+					type : "POST",
+					data : param
+				})
+				.always($.proxy(function(data){
+					this.setState({		
+						"pagination" : {
+							"totalCount" : data.totalCount,
+							"pageSize"   : data.pageSize,
+							"totalPage"  : data.totalPage,
+							"pageNum"    : data.pageNum
+						},
+						"data" 		     : data.data
+					})
+				},this))
+			}
+			,submitAdd2Edit : function(param,cb){
+				var that = this;
+				/*$.ajax({
+					url : "",
+					type : "POST",
+					data : data
+				}).always(function(data){
+					if(data.success){
+						//更新页面list
+						that.loadList();
+					}
+					return "function" == cb && cb(data);
+				})*/
+	
+				return "function" == typeof cb && cb({success:true});
+			}
+			,add2edit : function(param){
+				var tplFn = template($("#add-new-form-tpl").html(),{
+					evaluate: /{{([\s\S]+?)}}/g
+		            ,interpolate: /{{=([\s\S]+?)}}/g
+		            ,escape: /{{-([\s\S]+?)}}/g
+				});
+				var tpl = tplFn($.extend({
+					type : "",
+					platform : 0,
+					mobileVer : '',
+					file : '',
+					sequenceNum : "0.0.0",
+					fileDesc : ''
+				},param));
+				var that = this;
+				alertbox.dialog({
+					title : param.type == "add" ? "新增" : "编辑",
+					message : tpl
+				}).on("focus","input",function(){
+					$(this).parents(".form-group").removeClass("has-error").find(".help-block").remove();
+				})
+				.on("click",".btn-cancel",function(){
+					$(this).parents(".modal").find(".close").trigger("click");
+				})
+				.on("click",".btn-upload",function(){
+					$(this).parents(".form-group").removeClass("has-error").find(".help-block").remove();
+					//上传文件包逻辑
+				})
+				.on("click",".btn-save",function(e){
+					e.preventDefault();
+					var $btnSave = $(this);
+					var param = {};
+					
+					if(!that.validateForm(this.form,param))return;
+
+					that.submitAdd2Edit(param,function(data){
+						var message = "";
+						if(data.success){
+							message = "<p class='alertbox-ok-text text-center'>新增成功</p>";
+						}else{
+							message = "<p class='alertbox-error-text text-center'>"+(data.message?data.message:"新增失败，请稍后再试")+"</p>";
+						}
+						var tipDialog = alertbox.dialog({
+							title : "提示",
+							message : message
+						});
+						tipDialog.find(".modal-dialog").addClass("modal-sm").find(".close").hide();
+						setTimeout(function(){
+							tipDialog.find(".close").trigger("click");
+							$btnSave.parents(".modal").find(".close").trigger("click");
+							tipDialog = null;
+							$btnSave = null;
+						},1000)
+					})
+				})
+			}
+			,remove : function(id){
+				alert(id);
+			}
+			,validateForm : function(form,param){
+				var checked     = $(form.platform).prop("checked");
+				var platform    = form.platform.value;
+				var mobileVer   = $.trim(form.mobileVer.value);
+				var file        = $.trim(form.file.value);
+				var fileDesc    = $.trim(form.fileDesc.value);
+				var sequenceNum = form.sequenceNum ? $.trim(form.sequenceNum.value) :'';
+				var input;       
+				if(!checked||!mobileVer||!file){
+					if(!file)input = form.file;
+					if(!mobileVer)input = form.mobileVer
+					if(!checked)input = form.platform;
+					if($(input).parents(".form-group").hasClass("has-error"))return false;
+					var text = $(input).attr("data-text");
+					$(input).parents(".form-group").addClass("has-error").append("<span class='help-block'>"+text+"</span>");
+					return false;
+				}
+				$.extend(param,{
+					platform    : platform,
+					mobileVer   : mobileVer,
+					file        : file,
+					fileDesc 	: fileDesc,
+					sequenceNum : sequenceNum
+				})
+				return true;
+			}
+			,render : function(){
+				return (
+					<div className="hot-update-cfg-page container">
+						<FormComp loadList={this.loadList} pagination={this.state.pagination} />
+						<PanelComp addFn={this.add2edit} />
+						<div className="cfg-list">
+							<HeaderComp />
+							<ItemsComp items={this.state.data} editFn={this.add2edit} delFn={this.remove}/>
+						</div>
+						<PaginationComp pagination={this.state.pagination} platform={this.state.platform} mobileVer={this.state.mobileVer} loadList={this.loadList}  />
+					</div>
+				)
+						
+			}
+		});
+
+		ReactDOM.render(
+			<PageComp  initLoad = "" />,
+			document.getElementById("update-hot-cfg-page")
+		)
+	</script>
+</body>
+</html>

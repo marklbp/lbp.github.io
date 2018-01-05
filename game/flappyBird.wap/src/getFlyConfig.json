@@ -1,0 +1,10 @@
+{
+	"code": 0,
+	"message": null,
+	"data": {
+		"isNeedPass": 1,
+		"isNeedSMS": 1,
+		"raffleCount" :2
+	},
+	"success": true
+}

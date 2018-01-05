@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用css动画实现省略号动画</title>
+	<style type="text/css">
+		.text-loading{
+			display: inline-block;
+		}
+		.text-loading:after{
+			overflow: hidden;
+			display: inline-block;
+			vertical-align: bottom;
+			-webkit-animation: ellipsis 3s infinite;
+			-moz-animation: ellipsis 3s infinite;
+			-o-animation: ellipsis 3s infinite;
+			animation: ellipsis 3s infinite;
+			content: "\2026";
+		}
+		@-webkit-keyframes ellipsis {
+			0%{
+				width: 0px;
+			}
+			100%{
+				width: 100%;
+			}
+		}
+		@-moz-keyframes ellipsis {
+			0%{
+				width: 0px;
+			}
+			100%{
+				width: 100%;
+			}
+		}
+		@-o-keyframes ellipsis {
+			0%{
+				width: 0px;
+			}
+			100%{
+				width: 100%;
+			}
+		}
+		@keyframes ellipsis {
+			0%{
+				width: 0px;
+			}
+			100%{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="text-loading"></div>
+</body>
+</html>

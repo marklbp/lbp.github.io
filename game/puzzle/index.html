@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>puzzle game</title>
+	<script type="text/javascript" src="../flappy-bird/phaser.115.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+		}
+		.count {
+			width: 800px;
+			margin: 20px auto;
+			position: relative;
+			font-size: 36px;
+			line-height: 150px;
+			overflow: hidden;
+		}
+		.count i{
+			content: "";
+			position: absolute;
+			background-color: #000;
+			left: 0;
+			top: 0;
+			width: 50px;
+			height: 50px;
+		}
+		.count span{
+			float: left;
+			width: 200px;
+			height: 150px;
+			text-align: center;
+			position: relative;
+		}
+		
+		.box{
+			width: 800px;
+			height: 600px;
+			margin: 0 auto;
+		}
+		.success{
+			font-size: 36px;
+			color: #339a2b;
+			width: 800px;
+			margin:20px auto 0;
+			text-align: center; 
+		}
+	</style>
+</head>
+<body>
+	<div class="count">
+		<span>
+			<img src="p.png" width="200">
+			<i id="black"></i>
+		</span>
+		<span><strong id="time_count">00:00:00</strong></span>
+		<span><strong id="step_count">0</strong>步</span>
+		<span><img src="p.png" width="200"></span>
+	</div>
+	<div class="box" id="box"></div>
+	<div class="success" id="success"></div>
+	<script type="text/javascript">
+
+		var oTimes   = document.querySelector("#time_count");
+		var oSteps   = document.querySelector("#step_count");
+		var oSuccess = document.querySelector("#success");
+		var oBlack   = document.querySelector("#black");
+
+		var startTime = +new Date(),
+			endTime   = 0,
+			countTime = 0,
+			steps     = 0;
+
+		var gameTime = setInterval(function(){
+			var minus = parseInt((+new Date() - startTime) / 1000);
+			var h = parseInt(minus / 3600);
+			h = h >= 0 ? h : 0;
+			var m = parseInt((minus - h * 3600)/60);
+			m = m >= 0 ? m : 0;
+			var s = minus - h * 3600 - m * 60;
+			s = s >= 0 ? s : 0;
+			h = h > 9 ? h : '0' + h;
+			m = m > 9 ? m : '0' + m;
+			s = s > 9 ? s : '0' + s;
+			oTimes.innerHTML = h+':'+m+":"+s;
+		},999);
+
+		var game = new Phaser.Game(800,600,Phaser.CANVAS,'box',{
+			preload : preload,
+			create : create
+		});
+
+		var PIECE_WIDTH  = 200,
+			PIECE_HEIGHT = 200,
+			BOARD_COLS, BOARD_ROWS;
+		var piecesGroup,
+			piecesAmount,
+			shuffledIndexArray = [];
+
+
+		function preload() {
+			game.load.spritesheet("background", "p.png", PIECE_WIDTH, PIECE_HEIGHT);
+		}
+		function create(){
+			prepareBoard();
+		}
+
+		//设置黑块位置
+		function setBlackPos(){
+			return 11;
+			return parseInt(Math.random() * shuffledIndexArray.length)
+		}
+
+		//准备牌
+		function prepareBoard(){
+			var piecesIndex = 0,
+				blackPos,
+				posLeft, posTop,
+				i, j,
+				blackPosX,blackPosY,
+				piece;
+
+			BOARD_COLS = Math.floor(game.world.width / PIECE_WIDTH);
+
+			BOARD_ROWS = Math.floor(game.world.height / PIECE_HEIGHT);
+
+			piecesAmount = BOARD_COLS * BOARD_ROWS;
+
+			shuffledIndexArray = createShuffledIndexArray();
+			
+			piecesGroup = game.add.group();
+
+			blackPos = setBlackPos();
+
+			oBlack.style.left = parseInt(blackPos % BOARD_COLS)  * 50 + 'px';
+			oBlack.style.top  = parseInt(blackPos / BOARD_COLS) * 50 + 'px';
+
+			for (i = 0; i < BOARD_ROWS; i++) {
+		        for (j = 0; j < BOARD_COLS; j++) {
+		        	posLeft = j * PIECE_WIDTH;
+		        	posTop  = i * PIECE_HEIGHT;
+		        	/*if(i==BOARD_ROWS-1 && j==BOARD_COLS-1){
+		        		//初始化黑色牌位置
+		                piece = piecesGroup.create(posLeft, posTop);
+		                piece.black = true;
+		        	}else{
+		        		piece = piecesGroup.create(posLeft, posTop, "background", piecesIndex);
+		        	}*/
+		            /*if (shuffledIndexArray[piecesIndex]) {
+		                piece = piecesGroup.create(posLeft, posTop, "background", shuffledIndexArray[piecesIndex]);
+		            } else { 
+						//初始化黑色牌位置
+		                piece = piecesGroup.create(posLeft, posTop);
+		                piece.black = true;
+		            }*/
+		            if (shuffledIndexArray[piecesIndex] != blackPos) {
+		                piece = piecesGroup.create(posLeft, posTop, "background", shuffledIndexArray[piecesIndex]);
+		            } else { 
+						//初始化黑色牌位置
+		                piece = piecesGroup.create(posLeft, posTop);
+		                piece.black = true;
+
+		            }
+
+		            piece.name         = 'piece' + i.toString() + 'x' + j.toString();
+		            piece.currentIndex = piecesIndex;
+		            piece.destIndex    = shuffledIndexArray[piecesIndex];
+		            piece.inputEnabled = true;
+		            piece.events.onInputDown.add(selectPiece, this);
+		            piece.posX = j;
+		            piece.posY = i;
+		            piecesIndex++;
+		        }
+		    }
+		}
+
+		//选择单张牌
+		function selectPiece(piece) {
+	        var blackPiece = canMove(piece);
+	        if (blackPiece) {
+	        	steps +=1;
+	        	oSteps.innerHTML = steps;
+	            movePiece(piece, blackPiece);
+	        }
+	    }
+
+	    //检测是否可以移动牌
+	    function canMove(piece) {
+		    var foundBlackElem = false;
+		    piecesGroup._container.children.forEach(function(element) {
+		        if (element.posX === (piece.posX - 1) && element.posY === piece.posY && element.black ||
+		            element.posX === (piece.posX + 1) && element.posY === piece.posY && element.black ||
+		            element.posY === (piece.posY - 1) && element.posX === piece.posX && element.black ||
+		            element.posY === (piece.posY + 1) && element.posX === piece.posX && element.black) {
+		            foundBlackElem = element;
+		            return;
+		        }
+		    });
+		    return foundBlackElem;
+		}
+
+		//移动牌序
+		function movePiece(piece, blackPiece) {
+	        var tmpPiece = {
+	            posX: piece.posX,
+	            posY: piece.posY,
+	            currentIndex: piece.currentIndex
+	        };
+	        game.add.tween(piece).to({
+		        x: blackPiece.posX * PIECE_WIDTH,
+		        y: blackPiece.posY * PIECE_HEIGHT
+		    }, 300, Phaser.Easing.Linear.None, true);
+
+		    piece.posX = blackPiece.posX;
+		    piece.posY = blackPiece.posY;
+		    piece.currentIndex = blackPiece.currentIndex;
+		    piece.name = 'piece' + piece.posX.toString() + 'x' + piece.posY.toString();
+
+		    // previously clicked piece is the new black tile
+		    blackPiece.posX = tmpPiece.posX;
+		    blackPiece.posY = tmpPiece.posY;
+		    blackPiece.currentIndex = tmpPiece.currentIndex;
+		    blackPiece.name = 'piece' + blackPiece.posX.toString() + 'x' + blackPiece.posY.toString();
+		    checkIfFinished();
+	    }
+
+	    //检测拼图是否完成
+	    function checkIfFinished() {
+	        var isFinished = true;
+	        piecesGroup._container.children.forEach(function(element) {
+	            if (element.currentIndex !== element.destIndex) {
+	                isFinished = false;
+	                return;
+	            }
+	        });
+	        if (isFinished) {
+	        	if(gameTime)clearInterval(gameTime);
+	        	endTime = +new Date();
+	        	countTime = parseInt((endTime - startTime) / 1000);
+	            showFinishedText();
+	        }
+	    }
+
+	    //显示拼图成功提示
+	    function showFinishedText(time,step) {  
+		    /*var style = {
+		        font: "48px Microsoft yahei,heitiSC",
+		        fill: "#ff0",
+		        align: "center"
+		    };
+		    var text = game.add.text(game.world.centerX, game.world.centerY, "恭喜! \n您花了"+countTime+"秒，"+steps+"步!", style);
+		    text.anchor.set(0.5);*/
+		    oSuccess.innerHTML = "恭喜! <br>您本局花了"+countTime+"秒，"+steps+"步!"
+		}
+
+		//创建牌序
+		function createShuffledIndexArray() {
+		    var indexArray = [];
+		    for (var i = 0; i < piecesAmount; i++) {
+		        indexArray.push(i);
+		    }
+		    return shuffle(indexArray);
+		}
+
+		//洗牌
+		function shuffle(array) {
+		    var counter = array.length,
+		        temp, index;
+		    while (counter > 0) {
+		        index = Math.floor(Math.random() * counter);
+		        counter--;
+		        temp = array[counter];
+		        array[counter] = array[index];
+		        array[index] = temp;
+		    }
+		    return array;
+		}
+    </script>
+</body>
+</html>

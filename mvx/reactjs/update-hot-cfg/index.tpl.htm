@@ -1,0 +1,155 @@
+<script type="text/babel">
+	var FormComp = React.createClass({
+		handleSubmit : function(e){
+			e.preventDefault();
+			alert(1);
+		}
+		,render : function(){
+			return (
+				<form className="row cfg-form" onSubmit={this.handleSubmit}>
+					<div className="col-sm-5">
+						<div className="form-group">
+							<div className="input-group">
+								<span className="input-group-addon transparent">版本号：</span>
+								<input className="form-control" ref="versionInput" type="text" name="version" />
+							</div>
+						</div>
+					</div>
+					<div className="col-sm-5">
+						<div className="form-group">
+							<div className="input-group">
+								<span className="input-group-addon transparent">平&nbsp;&nbsp;&nbsp;台&nbsp;：</span>
+								<select className="form-control" ref="platformInput" name="platform">
+									<option value="1">android</option>
+									<option value="2">ios</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div className="col-sm-2">
+						<button className="btn btn-gray btn-block" type="submit">查询</button>
+					</div>
+				</form>
+			)
+		}
+	});
+
+	var PanelComp = React.createClass({	
+		getInitialState : function(){
+			return {
+				ios     : false,
+				android : false
+			}
+		}
+		,handleChange : function(e){
+
+		}
+		,handleClick : function(e){
+
+		}
+		,render : function (){
+			var iosSwitch     = this.state.ios     ? ' on' : ' off';
+			var androidSwitch = this.state.android ? ' on' : ' off';
+			return (
+				<div className="row cfg-panel">
+					<div className="col-xs-3 col-sm-4">
+						<button className="btn btn-gray" onClick={this.handleClick}>新增</button>
+					</div>
+					<div className="col-xs-9 col-sm-4">
+						<div className="input-group">
+							<span className="input-group-addon transparent">ios更新：</span>
+							<div className="qb-switch qb-switch-rect switch{iosSwitch}">
+								<span className="on-text">开</span>
+								<span className="off-text">关</span>
+								<span className="btn-switch"></span>
+								<input type="checkbox" onChange={this.handleChange} />
+							</div>
+						</div>
+					</div>
+					<div className="col-xs-9 col-sm-4">
+						<div className="input-group">
+							<span className="input-group-addon transparent">android更新：</span>
+							<div className="qb-switch qb-switch-rect switch{androidSwitch}">
+								<span className="on-text">开</span>
+								<span className="off-text">关</span>
+								<span className="btn-switch"></span>
+								<input type="checkbox" onChange={this.handleChange} />
+							</div>
+						</div>
+					</div>
+				</div>
+			)
+		}
+	});
+	
+	var HeaderComp = React.createClass({
+		render : function(){
+			return (
+				<div className="cfg-header row">
+					<div className="col-sm-1 col-item">
+						版本号
+					</div>
+					<div className="col-sm-1 col-item">
+						平台
+					</div>
+					<div className="col-sm-2 col-item">
+						文件包
+					</div>
+					<div className="col-sm-1 col-item">
+						序列号
+					</div>
+					<div className="col-sm-2 col-item">
+						概要
+					</div>
+					<div className="col-sm-1 col-item">
+						操作人
+					</div>
+					<div className="col-sm-2 col-item">
+						操作时间
+					</div>
+					<div className="col-sm-2 col-item">
+						操作
+					</div>
+				</div>
+			)
+		}
+	});
+
+	var ItemsComp = React.createClass({
+		render : function(){
+			return (
+				<div></div>
+			)
+		}
+	});
+
+	var PaginationComp = React.createClass({
+		render : function(){
+			return (
+				<div></div>
+			)
+		}
+	});
+
+	var PageComp = React.createClass({
+		render : function(){
+			return (
+				<div className="hot-update-cfg-page container">
+					<FormComp />
+					<PanelComp />
+					<div className="cfg-list">
+						<HeaderComp />
+						<ItemsComp />
+					</div>
+					<PaginationComp />
+				</div>
+			)
+					
+		}
+	});
+
+	ReactDOM.render(
+		<PageComp  initLoad = "" />,
+		document.getElementById("update-hot-cfg-page")
+	)
+</script>

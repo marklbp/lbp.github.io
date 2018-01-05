@@ -14,17 +14,17 @@
 	</ul>
 	<script type="text/javascript">
 		(function ($) {
-			World=Backbone.Model.extend({
+			World = Backbone.Model.extend({
 				name:null
 			});
 
-			Worlds=Backbone.Collection.extend({
+			Worlds = Backbone.Collection.extend({
 				initialize:function(models,options){
 					this.bind("add",options.view.addOneWorld);
 				}
 			})
 
-			AppView=Backbone.View.extend({
+			AppView = Backbone.View.extend({
 				el:$("body"),
 				initialize:function(){
 					this.worlds=new Worlds(null,{
@@ -44,7 +44,7 @@
 					$("#world-list").append("<li>这里是来自<b>"+model.get("name")+"</b>的问候：hello world!</li>")
 				}
 			})
-			var appview=new AppView;
+			var appview = new AppView;
 		})(jQuery)
 	</script>
 </body>

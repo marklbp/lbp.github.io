@@ -101,7 +101,8 @@
     <script type="text/javascript" src="plugins/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/marklbp.js"></script>
     <script type="text/javascript">
-    	var records = localStorage.getItem("records") == "undefined" ? [
+    	var rs = localStorage.getItem("records");
+    	var records = !rs || rs == "undefined" ? [
             {
                 d: "1.29",
                 r: [
@@ -181,7 +182,7 @@
 
     	var html = "", i = 0, j = 0, r, z, l = 0, b = 0;
     	function setRecord() {
-    		var recordss = localStorage.getItem("records") == "undefined" ? records : JSON.parse(localStorage.getItem("records"));
+    		var recordss = !rs || rs == "undefined" ? records : JSON.parse(localStorage.getItem("records"));
     		var last = recordss[recordss.length - 1];
     		var date = new Date();
     		var d = (date.getMonth() + 1) + '.' + date.getDate();

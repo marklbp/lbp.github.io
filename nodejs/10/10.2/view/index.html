@@ -1,0 +1,314 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>网页版中国象棋</title>
+		<script type="text/javascript" src="/static/js/prototype.js"></script>
+		<script type="text/javascript" src="/static/js/socket.js"></script>
+		<script type="text/javascript" src="/static/js/changeIt.js"></script>
+		<link type="text/css" href="/static/css/button.css" rel="stylesheet" />
+    </head>
+    <body>
+		<div id='msg_info'></div>
+		<div id="black">
+			<div class="black">
+				<div class="button_area" >
+					<input id="aa" type="button" class="button" onclick="changeClass('aa')" value="車"/>
+				</div>
+				<div class="button_area">
+					<input  id="ab" type="button" class="button" onClick="changeClass('ab')" value="马" />
+				</div>
+				<div class="button_area">
+					<input  id="ac" type="button" class="button" onClick="changeClass('ac')" value="象" />
+				</div>
+				<div class="button_area">
+					<input  id="ad" type="button" class="button" onClick="changeClass('ad')" value="士" />
+				</div>
+				<div class="button_area">
+					<input  id="ae" type="button" class="button" onClick="changeClass('ae')"value="将" />
+				</div>
+				<div class="button_area">
+					<input  id="af" type="button" class="button" onClick="changeClass('af')" value="士" />
+				</div>
+				<div class="button_area">
+					<input  id="ag" type="button" class="button" onClick="changeClass('ag')" value="象" />
+				</div>
+				<div class="button_area">
+					<input  id="ah" type="button" class="button" onClick="changeClass('ah')" value="马" />
+				</div>
+				<div class="button_area">
+					<input  id="ai" type="button" class="button" onClick="changeClass('ai')" value="車"/>
+				</div>
+			</div>
+			<div class="black">
+				<div class="button_area">
+					<input id="ba" type="button" class="button" onClick="changeClass('ba')" value=""/>
+				</div>
+				<div class="button_area">
+					<input  id="bb" type="button" class="button" onClick="changeClass('bb')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="bc"  type="button" class="button" onClick="changeClass('bc')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="bd"  type="button" class="button" onClick="changeClass('bd')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="be"  type="button" class="button" onClick="changeClass('be')"value="" />
+				</div>
+				<div class="button_area">
+					<input id="bf"  type="button" class="button" onClick="changeClass('bf')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="bg" type="button" class="button" onClick="changeClass('bg')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="bh" type="button" class="button" onClick="changeClass('bh')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="bi" type="button" class="button" onClick="changeClass('bi')" value="" />
+				</div>
+			</div>
+			<div class="black">
+				<div class="button_area">
+					<input  id="ca" type="button" class="button" onClick="changeClass('ca')" value=""/>
+				</div>
+				<div class="button_area">
+					<input  id="cb" type="button" class="button" onClick="changeClass('cb')" value="炮" />
+				</div>
+				<div class="button_area">
+					<input  id="cc" type="button" class="button" onClick="changeClass('cc')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="cd" type="button" class="button" onClick="changeClass('cd')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ce" type="button" class="button" onClick="changeClass('ce')"value="" />
+				</div>
+				<div class="button_area">
+					<input  id="cf" type="button" class="button" onClick="changeClass('cf')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="cg" type="button" class="button" onClick="changeClass('cg')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ch" type="button" class="button" onClick="changeClass('ch')" value="炮" />
+				</div>
+				<div class="button_area">
+					<input  id="ci" type="button" class="button" onClick="changeClass('ci')" value=""/>
+				</div>
+			</div>
+			<div class="black">
+				<div class="button_area">
+					<input   id="da" type="button" class="button" onClick="changeClass('da')" value="兵"/>
+				</div>
+				<div class="button_area">
+					<input id="db" type="button" class="button" onClick="changeClass('db')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="dc" type="button" class="button" onClick="changeClass('dc')" value="兵" />
+				</div>
+				<div class="button_area">
+					<input id="dd" type="button" class="button" onClick="changeClass('dd')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="de"  type="button" class="button" onClick="changeClass('de')"value="兵" />
+				</div>
+				<div class="button_area">
+					<input  id="df" type="button" class="button" onClick="changeClass('df')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="dg" type="button" class="button" onClick="changeClass('dg')" value="兵" />
+				</div>
+				<div class="button_area">
+					<input id="dh"  type="button" class="button" onClick="changeClass('dh')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="di"  type="button" class="button" onClick="changeClass('di')" value="兵"/>
+				</div>
+			</div>
+			<div class="black">
+				<div class="button_area">
+					<input  id="ea"  type="button" class="button" onClick="changeClass('ea')" value=""/>
+				</div>
+				<div class="button_area">
+					<input  id="eb"  type="button" class="button" onClick="changeClass('eb')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ec"  type="button" class="button" onClick="changeClass('ec')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ed"  type="button" class="button" onClick="changeClass('ed')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ee"  type="button" class="button" onClick="changeClass('ee')"value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ef"  type="button" class="button" onClick="changeClass('ef')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="eg"  type="button" class="button" onClick="changeClass('eg')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="eh"  type="button" class="button" onClick="changeClass('eh')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ei"  type="button" class="button" onClick="changeClass('ei')" value=""/>
+				</div>
+			</div>
+		</div>
+		<div id="red">
+
+			<div class="red">
+				<div class="button_area">
+					<input id="fa" type="button" class="button" onClick="changeClass('fa')" value=""/>
+				</div>
+				<div class="button_area">
+					<input  id="fb" type="button" class="button" onClick="changeClass('fb')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="fc"  type="button" class="button" onClick="changeClass('fc')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="fd"  type="button" class="button" onClick="changeClass('fd')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="fe"  type="button" class="button" onClick="changeClass('fe')"value="" />
+				</div>
+				<div class="button_area">
+					<input id="ff"  type="button" class="button" onClick="changeClass('ff')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="fg" type="button" class="button" onClick="changeClass('fg')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="fh" type="button" class="button" onClick="changeClass('fh')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="fi" type="button" class="button" onClick="changeClass('fi')" value="" />
+				</div>
+			</div>
+			<div class="red">
+				<div class="button_area">
+					<input   id="ga" type="button" class="button" onClick="changeClass('ga')" value="卒"/>
+				</div>
+				<div class="button_area">
+					<input id="gb" type="button" class="button" onClick="changeClass('gb')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="gc" type="button" class="button" onClick="changeClass('gc')" value="卒" />
+				</div>
+				<div class="button_area">
+					<input id="gd" type="button" class="button" onClick="changeClass('gd')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="ge"  type="button" class="button" onClick="changeClass('ge')"value="卒" />
+				</div>
+				<div class="button_area">
+					<input  id="gf" type="button" class="button" onClick="changeClass('gf')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="gg" type="button" class="button" onClick="changeClass('gg')" value="卒" />
+				</div>
+				<div class="button_area">
+					<input id="gh"  type="button" class="button" onClick="changeClass('gh')" value="" />
+				</div>
+				<div class="button_area">
+					<input id="gi"  type="button" class="button" onClick="changeClass('gi')" value="卒"/>
+				</div>
+			</div>
+			<div class="red">
+				<div class="button_area">
+					<input  id="ha" type="button" class="button" onClick="changeClass('ha')" value=""/>
+				</div>
+				<div class="button_area">
+					<input  id="hb" type="button" class="button" onClick="changeClass('hb')" value="包" />
+				</div>
+				<div class="button_area">
+					<input  id="hc" type="button" class="button" onClick="changeClass('hc')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="hd" type="button" class="button" onClick="changeClass('hd')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="he" type="button" class="button" onClick="changeClass('he')"value="" />
+				</div>
+				<div class="button_area">
+					<input  id="hf" type="button" class="button" onClick="changeClass('hf')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="hg" type="button" class="button" onClick="changeClass('hg')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="hh" type="button" class="button" onClick="changeClass('hh')" value="包" />
+				</div>
+				<div class="button_area">
+					<input  id="hi" type="button" class="button" onClick="changeClass('hi')" value=""/>
+				</div>
+			</div>
+
+			<div class="red">
+				<div class="button_area">
+					<input  id="ia"  type="button" class="button" onClick="changeClass('ia')" value=""/>
+				</div>
+				<div class="button_area">
+					<input  id="ib"  type="button" class="button" onClick="changeClass('ib')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ic"  type="button" class="button" onClick="changeClass('ic')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="id"  type="button" class="button" onClick="changeClass('id')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ie"  type="button" class="button" onClick="changeClass('ie')"value="" />
+				</div>
+				<div class="button_area">
+					<input  id="if"  type="button" class="button" onClick="changeClass('if')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ig"  type="button" class="button" onClick="changeClass('ig')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ih"  type="button" class="button" onClick="changeClass('ih')" value="" />
+				</div>
+				<div class="button_area">
+					<input  id="ii"  type="button" class="button" onClick="changeClass('ii')" value=""/>
+				</div>
+			</div>
+			<div class="red">
+				<div class="button_area" >
+					<input id="ja" type="button" class="button" onclick="changeClass('ja')" value="车"/>
+				</div>
+				<div class="button_area">
+					<input  id="jb" type="button" class="button" onClick="changeClass('jb')" value="馬" />
+				</div>
+				<div class="button_area">
+					<input  id="jc" type="button" class="button" onClick="changeClass('jc')" value="相" />
+				</div>
+				<div class="button_area">
+					<input  id="jd" type="button" class="button" onClick="changeClass('jd')" value="仕" />
+				</div>
+				<div class="button_area">
+					<input  id="je" type="button" class="button" onClick="changeClass('je')"value="將" />
+				</div>
+				<div class="button_area">
+					<input  id="jf" type="button" class="button" onClick="changeClass('jf')" value="仕" />
+				</div>
+				<div class="button_area">
+					<input  id="jg" type="button" class="button" onClick="changeClass('jg')" value="相" />
+				</div>
+				<div class="button_area">
+					<input  id="jh" type="button" class="button" onClick="changeClass('jh')" value="馬" />
+				</div>
+				<div class="button_area">
+					<input  id="ji" type="button" class="button" onClick="changeClass('ji')" value="车"/>
+				</div>
+			</div>
+		</div>
+		<div id="music"></div>
+    </body>
+</html>
+

@@ -1,0 +1,18 @@
+{
+    "name": "myweb",
+    "version": "0.0.1",
+    "description": "Node.js module to do some thing",
+    "preferGlobal": "true",
+    "main": "index.js",
+    "bin": { "myweb": "index.js" },
+    "author": "Danhuang",
+    "keywords": ["myweb", "nodejs", "nodejs framework"],
+    "repository" : {
+        "type": "git",
+        "url": "https://tnodejs@github.com/tnodejs/myweb-nodejs.git"
+    },
+    "dependencies": {
+        "commander": "0.5.2"
+    },
+    "engines": { "node": "*" }
+}

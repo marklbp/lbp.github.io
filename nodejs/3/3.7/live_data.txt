@@ -1,0 +1,1 @@
+<li><span  class='icon-user'></span><span class='live_user_name text-success'>[danhuang]</span><span class='live_message text-info'>开始突破。好的，2分到手！</span></li><li><span  class='icon-user'></span><span class='live_user_name text-success'>[danhuang]</span><span class='live_message text-info'>姚明那球</span></li>

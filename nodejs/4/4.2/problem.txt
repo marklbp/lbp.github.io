@@ -1,0 +1,9 @@
+problem:
+Command failed: execvp(): No such file or directory
+
+answer:
+I met the same problem...
+At last, I found the reason of that is node-imagemagick depend on the imagemagick module, unfortunately, this module is not installed in my system.
+My system is Ubuntu. just run the following command.
+sudo apt-get update
+sudo apt-get install imagemagick --fix-missing

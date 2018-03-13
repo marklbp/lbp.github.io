@@ -1,0 +1,1 @@
+<?phprequire('OperationOpent.php');$token = json_decode($_REQUEST['t'], true);$p     = json_decode($_REQUEST['p'], true);$p['type'] = 1;$ret = Core_OperationOpent::add($p, $token);echo json_encode($ret);

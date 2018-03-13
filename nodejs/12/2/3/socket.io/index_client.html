@@ -1,0 +1,11 @@
+<script src="socket.js"></script>
+<script>
+   var socket = io.connect('http://localhost:8080');
+    socket.emit('msg', { 'state': 'success' });
+	socket.on('msg', function (data) {
+		console.log(data);
+		if(data.me){
+			socket.emit('msg', {connection:'good'});
+		}
+	});
+</script>

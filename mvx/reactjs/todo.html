@@ -16,8 +16,8 @@
 				return(
 					<ul>
 						{
-							this.props.list.map(function(val){
-								return <li>{val}</li>
+							this.props.list.map(function(val,index){
+								return <li key={index}>{val}</li>
 							})
 						}
 					</ul>
@@ -29,7 +29,8 @@
 			getInitialState: function(){
 				return {
 					num: 0,
-					list: []
+					list: [],
+					n: 0
 				}
 			}
 			,handleClick: function(e){
@@ -40,6 +41,23 @@
 				});
 				console.log(this.state);
 				$("input").val("");
+			}
+			,componentWillMount(a,b,c){
+				console.log('componentWillMount',a,b,c)
+			}
+			,componentDidMount(a,b,c){
+				console.log('componentDidMount',a,b,c);
+				console.log(this.state.n);
+				this.setState({n: 2},function(){
+				console.log(this.state.n)
+			});
+				console.log(this.state.n);
+			}
+			,componentWillUpdate(a,b,c){
+				console.log('componentWillUpdate',a,b,c)
+			}
+			,componentDidUpdate(a,b,c){
+				console.log('componentDidUpdate',a,b,c)
 			}
 			,render: function(){
 				return (

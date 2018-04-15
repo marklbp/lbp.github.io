@@ -1,22 +1,21 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 Markdown syntax quick start
 
-* #xn n级标题
+#repeat n times means hn
 
-#  1级标题
-##  2级标题
-####  4级标题
+#  h1
+##  h2
+####  h4
 
-空行表示新的段落，如果不空行的话，markdown 认为是同一段落
+empty line display a paragraph，otherwise means in the same paragraph
 
-[A](B) 这样样式表示为链接，A为你想要显示的文字，B为实际的链接
+[A](B) display a link，[A] is your display text，(B) is the real link address 
 
-![A](B) 这种样式表示图片，A为图片的描述文字，B为图片链接
+![A](B) display a picture，![A] is the description for this picture，(B) is ther real link of this picture
 
-* 表示无序列表1
-* 表示无序列表2
-* 表示无序列表3
+* unorder-list 1
+* unorder-list 2
+* unorder-list 3
 
-1. 有序列表1.
-2. 有序列表2.
-3. 有序列表3.
+1. order-list 1.
+2. order-list 2.
+3. order-list 3.

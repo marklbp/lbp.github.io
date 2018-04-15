@@ -1,6 +1,6 @@
 # Mac下的常用命令行说明
 
-1 .打开指定目录
+1. 打开指定目录
 open 指定目录
 
 2. 创建指定的目录
@@ -16,19 +16,16 @@ mkdir 指定目录名
 		2. 启动终端（命令行窗口）
 		3. 指定web根目录
 			```
-
 			cd 指定的web根目录
 			```
 		4. 启动命令
 			```
-
 			python -m SimpleHTTPServer
 			```
 
 	#### 提示：
 		1. 默认启动web服务访问方式
 		```
-
 			http://localhost:8000
 			http://机器ip地址:8000
 			http://127.0.0.1:8000
@@ -37,7 +34,6 @@ mkdir 指定目录名
 		3. 在浏览器里访问时，如果在根目录下的有index.html则显示index.html,反之显示目录列表
 		4. 改变web服务的默认端口命令
 			```
-
 			python -m SimpleHTTPServer 指定端口号
 			```
 		5. 这里的“Web服务器模块”有如下三种:
@@ -55,13 +51,11 @@ mkdir 指定目录名
 		2. 启动终端界面（命令行窗口）
 		3. 安装http-server
 			```
-
 			npm install http-server -g
 			```
 
 		4. 启动命令
 			```
-
 			http-server [path] [options]
 			```
 

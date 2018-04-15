@@ -2,7 +2,7 @@
 2.vuex如何绑定到vue实现数据共享 通过>2高版本beforeCreate里调用vuexInit方法挂载store，低版本通过Vue原型上的init方法参数options下的init属性挂载vuexInit，然后以init事件形式触发
 
 3.vuex的api如何实现互相作用
-4.vue-router如何绑定到vue上实现路由跳转
+4.vue-router如何绑定到vue上实现路由跳转 beforeCreate里调用this._router.init()
 5.vue-router的api如何实现路由周期
 6.webpack工作原理
 7.git版本管理实现代码校验

@@ -10,7 +10,7 @@ new Vuex.Store({
 	actions: {}
 })
 
-1.检测局部的Vue是否赋值，在浏览器环境下执行install(window.Vue)
+1. 检测局部的Vue是否赋值，在浏览器环境下执行install(window.Vue)
 
 	a.Vue = window.Vue
 
@@ -41,14 +41,14 @@ new Vuex.Store({
 	  }
 
 
-2.解构和默认赋值操作获取插件plugins和模式strict
+2. 解构和默认赋值操作获取插件plugins和模式strict
 	const {
       plugins = [],
       strict = false
     } = options
 
 
-3.初始化store实例基本属性
+3. 初始化store实例基本属性
 	store._committing = false
     store._actions = Object.create(null)
     store._actionSubscribers = []
@@ -94,7 +94,7 @@ new Vuex.Store({
     store._watcherVM = new Vue()
 
 
-4.缓存一份副本：store = this
+4. 缓存一份副本：store = this
 
   解构操作缓存一份原型上的commit和dispatch方法：const { dispatch, commit } = this
 
@@ -111,7 +111,7 @@ new Vuex.Store({
   缓存一份顶层状态的副本 state = store._modules.root.state = options.state
 
 
-5.安装模块：installModule(store, state, path = [], module = store._modules.root)
+5. 安装模块：installModule(store, state, path = [], module = store._modules.root)
 
 	isRoot = !path.length = true
 
@@ -176,7 +176,7 @@ new Vuex.Store({
 	installModule(store, rootState, path.concat(moduleName), childModule, hot)
 
 
-6.初始化store上的Vue实例：resetStoreVM(store, state)
+6. 初始化store上的Vue实例：resetStoreVM(store, state)
 	
 	store.getters = {
 		getterKey: () => store._vm[getterKey],
@@ -198,10 +198,10 @@ new Vuex.Store({
 
 
 
-7.安装插件：plugins.forEach(plugin => plugin(this))
+7. 安装插件：plugins.forEach(plugin => plugin(this))
 
 
-8.检测是否开启了调试工具
+8. 检测是否开启了调试工具
   if (Vue.config.devtools) {
       devtoolPlugin(store)
   }

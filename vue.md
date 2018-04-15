@@ -1,3 +1,4 @@
+```javascript
 一.new Vue(options)
 
 二.调用Vue.prototype._init(options);
@@ -268,8 +269,7 @@
 				               ->callUpdatedHooks(updatedQueue) | callActivatedHooks(activatedQueue)
 				               ->callHook(vm, 'updated')        | callHook(vm, 'activated')
 
-
-																						   
+```																					   
 
 
 

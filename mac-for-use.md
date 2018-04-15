@@ -1,15 +1,15 @@
-Mac下的常用命令行说明
+# Mac下的常用命令行说明
 
-1.打开指定目录
+1 .打开指定目录
 open 指定目录
 
-2.创建指定的目录
+2. 创建指定的目录
 mkdir 指定目录名
 
-3.更新mac后使用git报“xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools)...”
+3. 更新mac后使用git报“xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools)...”
 解决办法：xcode-select --install
 
-4.Python 搭建
+4. Python 搭建
 	步骤：
 		1.全局安装python
 		2.启动终端（命令行窗口）
@@ -33,7 +33,7 @@ mkdir 指定目录名
           CGIHTTPServer ➡ ️包含处理POST请求和执行CGIHTTPRequestHandler类
 
 
-5.Node.js 搭建
+5. Node.js 搭建
 	步骤：
 		1.搭建node环境
 		2.启动终端界面（命令行窗口）
@@ -44,7 +44,7 @@ mkdir 指定目录名
 			http-server [path] [options]
 
 
-6.php + apache
+6. php + apache
 	步骤：
 		1.启动终端
 		2.启动mac自带apache服务
@@ -60,7 +60,7 @@ mkdir 指定目录名
 
 
 
-7.MAC升级Nodejs和Npm到最新版
+7. MAC升级Nodejs和Npm到最新版
 	第一步，先查看本机node.js版本：
 	node -v
 

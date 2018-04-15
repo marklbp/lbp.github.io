@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 Markdown syntax quick start
 
 * #xn n级标题

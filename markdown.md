@@ -20,7 +20,7 @@ empty line display a paragraph, otherwise means in the same paragraph
 2. order-list 2.
 3. order-list 3.
 
-#### ```生成代码块
+#### ```generate code block
 
 
 ```
@@ -31,7 +31,7 @@ empty line display a paragraph, otherwise means in the same paragraph
 </div>
 ```
 
-#### javascript代码块
+#### ```javascript code block
 
 ```javascript
 var num = 0;
@@ -41,7 +41,7 @@ for (var i = 0; i < 5; i++) {
 console.log(num);
 ```
 
-#### 多层嵌套
+#### mutiple layer nested
 
 > aaaaaaaaa
 >> bbbbbbbbb

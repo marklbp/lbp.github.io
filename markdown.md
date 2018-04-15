@@ -1,6 +1,6 @@
-Markdown 语法快速入门
+Markdown syntax quick start
 
-* # 1级标题，## 2级标题，#### 4级标题
+* #xn n级标题
 
 #  1级标题
 ##  2级标题

@@ -8,9 +8,9 @@ Markdown syntax quick start
 
 empty line display a paragraph，otherwise means in the same paragraph
 
-[A](www.marklbp.com) display a link，[A] is your display text，(B) is the real link address 
+[A](http://www.marklbp.com) display a link，[A] is your display text，(B) is the real link address 
 
-![A](/images/chocolate.jpg) display a picture，![A] is the description for this picture，(B) is ther real link of this picture
+![A](http://www.marklbp.com/images/chocolate.jpg) display a picture，![A] is the description for this picture，(B) is ther real link of this picture
 
 * unorder-list 1
 * unorder-list 2

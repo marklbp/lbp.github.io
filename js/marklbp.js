@@ -692,13 +692,16 @@
     return {
         request: {
             getSMSCode: {
-                url : "/sms/sendVerifyCode2",
-                debug : "getSMSCode.json",
+                url : "",
+                debug : "",
                 type : "get",
                 param : {
                     //smsMsg : "PAY_BUY_TREASURE_BOX" //GGL_BUY 验证码类型
                 }
             }
+        },
+        extend: $ && $.extend || function(a, b){
+            return a
         },
         //初始化
         init: function(callback) {

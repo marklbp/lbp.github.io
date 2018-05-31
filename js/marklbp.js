@@ -644,8 +644,11 @@
         var obj = $.extend({
             modalAlign: function(dialog){
                 var h  = dialog.height();
+                var w = dialog.width();
                 var vh = $(global).height();  
                 dialog.css({
+                    "with": w,
+                    "display": "block",
                     "top": ((vh - h) / 2) / vh * 100 + '%',
                     "marginTop": 0,
                     "marginBottom": 0,

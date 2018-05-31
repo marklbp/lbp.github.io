@@ -833,20 +833,20 @@
                     return 'function' == typeof fail && fail.apply(that, [{
                         key: 'unknown',
                         code: data.code || 0,
-                        value: data.message || "请求失败，请稍后再试"
+                        value: data.message || "加载失败，请稍后再试"
                     }])
                 }
             })
             .fail(function(data) {
                 var text = data && data.statusText || "unknown";
                 text = text.toLowerCase();
-                var message = "请求失败，请稍后再试";
+                var message = "加载失败，请稍后再试";
                 switch (text) {
                     case "timeout":
-                        message = "请求超时，请重新再试";
+                        message = "网络超时，请重新再试";
                         break;
                     case "not found":
-                        message = "请求未找不到，请确认地址有效性";
+                        message = "资源未找不到，请确认地址有效性";
                         break;
                     case "server error":
                         message = "服务不可用，请稍后再试";

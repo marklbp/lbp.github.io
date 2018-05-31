@@ -647,7 +647,7 @@
                 var w = dialog.width();
                 var vh = $(global).height();  
                 dialog.css({
-                    "with": w,
+                    "width": w,
                     "display": "block",
                     "top": ((vh - h) / 2) / vh * 100 + '%',
                     "marginTop": 0,

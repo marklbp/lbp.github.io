@@ -646,10 +646,10 @@
                 var h  = dialog.height();
                 var vh = $(global).height();  
                 dialog.css({
-                    "marginTop" :(vh - h) /2,
-                    "marginBottom" : 0,
-                    "marginLeft" : "auto",
-                    "marginRight" : "auto"
+                    "marginTop": ((vh - h) /2) /vh + '%',
+                    "marginBottom": 0,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
                 });
                 return this;
             },

@@ -1964,6 +1964,7 @@ var transition = Object.freeze({
    */
 
   Dep.prototype.addSub = function (sub) {
+    console.log(sub)
     this.subs.push(sub);
   };
 

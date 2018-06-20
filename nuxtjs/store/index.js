@@ -13,9 +13,19 @@ export const mutations = {
 export const actions = {
   // nuxtServerInit is called by Nuxt.js before server-rendering every page
   nuxtServerInit({ commit }, { req }) {
-    debugger
+    //debugger;
+    console.log(req.headers.cookie)
+    let cookie, usernameIndex, username;
     if (req.session && req.session.authUser) {
-      commit('SET_USER', req.session.authUser)
+      username = req.session.authUser;
+    }
+    if(req.headers.cookie && (usernameIndex = req.headers.cookie.indexOf('username')) > -1){
+      cookie = req.headers.cookie.indexOf(";", usernameIndex);
+      cookie = req.headers.cookie.substring(usernameIndex, cookie > -1 ? cookie : req.headers.cookie.length);
+      username = cookie.replace(/.+=(.+)/,"$1");
+    }
+    if(username){
+      commit('SET_USER', {username})
     }
   },
   async login({ commit }, { username, password }) {
@@ -31,7 +41,7 @@ export const actions = {
   },
 
   async logout({ commit }) {
-    await axios.post('/api/logout')
+    await axios.post('/api/logout');
     commit('SET_USER', null)
   }
 

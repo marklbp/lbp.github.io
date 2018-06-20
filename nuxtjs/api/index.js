@@ -54,6 +54,7 @@ let logout = (req, res)=>{
 export default {
   path: '/api',
   handler: function(req, res, next){
+    //debugger
     if(!req.session)req.session = {};
     if(req.url.indexOf("login") > -1){
       return login(req, res);

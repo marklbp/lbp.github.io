@@ -1,0 +1,97 @@
+@import "~assets/scss/base/_base";
+
+#sidebar {
+    //width: 200px;
+    overflow: auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 29;
+    transition: width .3s;
+    background: #fff;
+
+    .logo-con {
+        text-align: center;
+        height: $header-logocon-height;
+        line-height: $header-logocon-height;
+
+        img {
+            vertical-align: middle;
+            max-height: $header-logo-height;
+            max-width: 100%;
+            display: inline;
+            font-size: 0;
+        }
+    }
+
+    .el-aside {
+        //width: 200px !important;
+        background-color: rgb(238, 241, 246);
+        .no-menus{
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fff;
+            color: #ccc;
+            font-size: 14px;
+        }
+        .el-menu {
+            border-right: 0 none;
+            .child-sidebar{
+                .el-menu-item{
+                    padding-left: 40px !important;
+                }
+            }
+            .el-submenu__title {
+                height: auto;
+                //line-height: $sidebar-height-base;
+                font-size: $lx-title-sub-font-size;
+
+                i {
+                    font-size: $sidebar-icon-size;
+                }
+            }
+
+            .el-menu-item {
+                //height: $sidebar-height-base;
+                //line-height: $sidebar-height-base;
+                font-size: $lx-title-sm-font-size;
+
+                &.is-active {
+                    color: $lx-core-color;
+                    a{
+                        color: $lx-core-color;
+                    }
+                }
+                a{
+                    display: block;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-decoration: none;
+                    color: #333;
+                }
+            }
+
+            .el-menu--inline{
+                .el-menu-item{
+                    a{
+                        margin-left: -40px;
+                        margin-right: -45px;
+                        padding-left: 40px;
+                        padding-right: 45px;
+                    }
+                }
+                .el-menu--inline{
+                    .el-menu-item{
+                        a{
+                            margin-left: -60px;
+                            padding-left: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

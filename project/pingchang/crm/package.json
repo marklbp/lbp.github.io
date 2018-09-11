@@ -1,0 +1,57 @@
+{
+  "name": "pingchang-v2",
+  "version": "1.0.0",
+  "author": "pingchang-crm",
+  "private": true,
+  "scripts": {
+    "dev"         : "nuxt",
+    "build"       : "nuxt build",
+    "start"       : "nuxt start",
+    "pmstart"     : "pm2 start ./node_modules/nuxt/bin/nuxt-start -i max --attach",
+    "pmwatch"     : "pm2 start ./node_modules/nuxt/bin/nuxt-start -i max --attach --watch",
+    "pmreload"    : "pm2 restart all",
+    "publish"     : "nuxt build;pm2 start ./node_modules/nuxt/bin/nuxt-start -i max --attach",
+    "pm2"         : "pm2 start npm --name ./node_modules/nuxt/bin/nuxt-start -- run build",
+    "generate"    : "nuxt generate",
+    "lint"        : "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit"   : "npm run lint",
+    "localBuild"  : "npm run build;npm start",
+    "scpTest"     : "rm -r -f .nuxt;npm run build;scp -r .nuxt root@172.16.0.242:/data/pingchang/crm/;rm -r -f .nuxt;ssh root@172.16.0.242",
+    "scpPreBuild" : "rm -r -f .nuxt;npm run build;scp -r .nuxt root@120.132.7.217:/data/pingchang/;rm -r -f .nuxt;ssh root@120.132.7.217",
+    "scpBuild"    : "rm -r -f .nuxt;npm run build;scp -r package.json nuxt.config.js static assets .nuxt root@106.75.222.143:/data/pingchang/crm/;rm -r -f .nuxt",
+    "push"        : "git status;git add .;git commit -m 'update';git push"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.1.1",
+    "@nuxtjs/proxy": "^1.1.4",
+    "axios": "^0.17.1",
+    "element-ui": "^2.1.0",
+    "js-cookie": "^2.2.0",
+    "jwt-decode": "^2.2.0",
+    "node-sass": "^4.7.2",
+    "nuxt": "^1.0.0",
+    "qs": "^6.5.1",
+    "sass-loader": "^6.0.6",
+    "uuid": "^3.2.1",
+    "v-distpicker": "^1.0.16",
+    "vee-validate": "^2.0.5",
+    "vue": "^2.5.15",
+    "vue-i18n": "^7.4.2",
+    "vue-js-modal": "^1.3.12",
+    "vue-server-renderer": "^2.5.15",
+    "vue-template-compiler": "2.5.15"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "9090"
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}

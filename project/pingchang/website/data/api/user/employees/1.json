@@ -1,0 +1,37 @@
+{
+  "data" : {
+    "id" : 1,
+    "username" : "admin",
+    "displayName" : "系统管理员",
+    "createdAt" : "2017-12-12 10:52:02",
+    "updatedAt" : "2018-01-22 15:01:01",
+    "locked" : 0,
+    "tenantId" : 10000,
+    "loginTimes" : 4888,
+    "lastLoginDate" : "2018-01-22 15:01:01",
+    "lastLoginIP" : "172.16.1.122",
+    "lastLoginAPP" : "WEB",
+    "appAccessKey" : "zpazbsn2gj00",
+    "appAccessSecret" : "3832220D459EAB53E734FB37096FA56D",
+    "hasVoiceprint" : 0,
+    "userType" : "SYSTEM",
+    "number" : "00000001",
+    "gender" : "男",
+    "departmentId" : 10000,
+    "departmentName" : "联鑫",
+    "departmentPath" : "/10000/",
+    "roles" : [ {
+      "id" : 329,
+      "name" : "征信",
+      "type" : "审查审批",
+      "status" : 1,
+      "createdAt" : "2017-12-21 13:50:20",
+      "updatedAt" : "2017-12-21 13:50:20",
+      "tenantId" : 10000,
+      "departmentId" : 10000,
+      "departmentName" : "联鑫"
+    } ],
+    "director" : false
+  },
+  "code" : 200
+}

@@ -1,0 +1,12 @@
+@import "~assets/scss/base/base";
+@import "~assets/scss/base/button";
+
+.contact-table.el-table{ 
+	td{
+		vertical-align: top;
+	}
+	.is-danger.help{
+		position: static;
+		margin: auto !important;
+	}
+}

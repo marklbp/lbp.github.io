@@ -1,0 +1,28 @@
+.next-transfer-panel-item {
+  border:1px solid #ec9d00
+}
+.table-center{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.table-left{
+  float: left;
+  width: 45%;
+}
+.table-right{
+  float: right;
+  width: 45%;
+}
+.table-center-btn{
+  float: left;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  width: 60px;
+  color: #ec9d00
+  
+}
+// .next-table-fixed{
+//   border: none !important
+// }

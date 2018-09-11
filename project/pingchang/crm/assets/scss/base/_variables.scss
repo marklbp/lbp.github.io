@@ -1,0 +1,87 @@
+// Variables
+
+// Copy settings from this file into the provided `_custom.scss` to override
+// the Bootstrap defaults without modifying key, versioned files.
+// Colors
+//
+// Grayscale and brand colors for use across Hi.
+// logo主要颜色
+$lx-core-color:                                             #ec9d00 !default;
+$lx-sub-color:                                              #1AA8F0 !default;
+// 主要字体颜色
+$lx-core-font-color:                                        #1B2630 !default;
+$lx-sub-font-color:                                         #000000 !default;
+$lx-light-font-color:                                       #BAB8B5 !default;
+
+// border
+$lx-core-border-color:                                      #f6dca9 !default;
+
+
+$lx-core-font-lighter-color:                                #999999 !default;
+$lx-core-lighter-color:                                     #fff4dd !default;
+// body背景灰色
+$lx-core-bg-color:                                          #f5f5f5 !default;
+$lx-much-bg-color:                                          #ffffff !default;
+
+$lx-core-bg-lighter-color:                                  #fdf4e3 !default;
+$lx-core-nav-color:                                         #23272f !default;
+$lx-core-border-hover-color:                                #f6dca9 !default;
+$lx-core-lighter-color:                                     #3a3e4a !default;
+$lx-link-color:                                             #0f88eb !default;
+$lx-info-color:                                             #1aa8f0 !default;
+
+$lx-success-color: 											#67C23A !default;
+$lx-error-color: 											#F04E3F !default;
+$lx-wran-color: 											#FC9E25 !default;
+
+// 表格th
+$lx-table-th-color:											#f8f6f7 !default;
+// $lx-table-th-color:											#faf8f9 !default;
+$lx-table-border-color:										#ebeef5 !default;
+
+
+
+
+// Header
+$header-height-base:    									50px !default;
+$header-avatar-base:    									42px !default;
+$header-text-color:     									#fff !default;
+$header-logocon-height:     								77px !default;
+$header-logo-height:     									62px !default;
+
+
+// sidebar
+$sidebar-height-base:    									50px !default;
+$sidebar-icon-size:											14px !default;
+
+//font-size
+$lx-title-font-size:     									18px !default;
+$lx-title-sub-font-size:     								14px !default;
+$lx-title-sm-font-size:     								13px !default;
+$lx-title-base-font-size:     								12px !default;
+
+
+// 间距
+
+// 左右间距
+$lx-big-space:     										 	20px !default;
+$lx-core-space:     										15px !default;
+$lx-default-space:     										10px !default;
+
+
+// 圆角尺寸
+$lx-core-radius:											3px  !default;
+
+// button
+$lx-btn-core-bg:											$lx-core-color;
+$lx-btn-core-hover-bg:									    $lx-core-color;
+$lx-btn-core-color:											#ffffff !default;
+$lx-btn-core-hover-color:									#ffffff !default;
+
+//保存新增按钮
+$lx-btn-sub-bg:											$lx-sub-color;
+$lx-btn-sub-hover-bg:									    $lx-sub-color;
+$lx-btn-sub-color:											#ffffff !default;
+$lx-btn-sub-hover-color:									#ffffff !default;
+
+

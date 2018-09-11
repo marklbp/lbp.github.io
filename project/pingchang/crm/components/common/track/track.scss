@@ -1,0 +1,91 @@
+.track {
+    margin-top: 20px;
+    padding-left: 15px;
+    .track-time-line {
+        list-style: none;
+        .track-timeline {
+            padding-bottom: 30px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 5px;
+                top: 0;
+                z-index: 0;
+                width: 1px;
+                height: 100%;
+                background-color: #e6e6e6;
+            }
+            .track-status {
+                width: 40px;
+                height: 40px;
+                line-height: 14px;
+                font-size: 12px;
+                font-weight: 900;
+                color: #fff;
+                left: -15px;
+                position: absolute;
+                top: 0;
+                z-index: 10;
+                background-color: #fff;
+                border-radius: 50%;
+                text-align: center;
+                cursor: pointer;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -o-box;
+                display: box;
+                -webkit-box-align: center;
+                -moz-box-align: center;
+                -o-box-align: center;
+                box-align: center;
+                -webkit-box-pack: center;
+                -moz-box-pack: center;
+                -o-box-pack: center;
+                box-pack: center;  
+                &.current {
+                    background-color: #FD5848;
+                }
+                &.pass{
+                    background-color: #83BF12;
+                }
+                &.interview{
+                    background-color: #83BF12;
+                }
+                //转人工
+                &.manual{
+                    background-color: #ec9d00;
+                }
+                //拒绝
+                &.reject{
+                    background-color: #FD5848;
+                }
+                &.rollback{
+                    background-color: #FD5848;
+                }
+            }
+            .track-con{
+                padding:10px 0 0 80px;
+            }
+            .checkout-state {
+                font-size: 13px;
+                padding: 3px 0;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+            .checkout-user, .checkout-result {
+                margin-left: 20px;
+                color: #1B2630;
+                display: inline-block;
+                zoom: 1;
+                b {
+                    color: #17222B;
+                    font-size: 13px;
+                }
+            }
+            .checkout-result {
+
+            }
+        }
+    }
+}

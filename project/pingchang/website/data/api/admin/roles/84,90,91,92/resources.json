@@ -1,0 +1,725 @@
+{
+  "data" : {
+    "leaf" : [ {
+      "value" : {
+        "id" : 1,
+        "name" : "产品管理",
+        "value" : "/prod/",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 1,
+        "icon" : "&#xe603;",
+        "resourceType" : "FUNC",
+        "checked" : true
+      },
+      "leaf" : [ {
+        "value" : {
+          "id" : 10,
+          "name" : "产品新增",
+          "value" : "/prod/prod-add",
+          "type" : "MENU",
+          "parentId" : 1,
+          "permission" : "pingchang:product:create",
+          "status" : 1,
+          "sortOrder" : 1,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 11,
+          "name" : "产品查询",
+          "value" : "/prod/list",
+          "type" : "MENU",
+          "parentId" : 1,
+          "permission" : "pingchang:product:list,read",
+          "status" : 1,
+          "sortOrder" : 2,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 12,
+          "name" : "产品计算器",
+          "type" : "MENU",
+          "parentId" : 1,
+          "permission" : "pingchang:product:calculator",
+          "status" : 1,
+          "sortOrder" : 3,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      } ]
+    }, {
+      "value" : {
+        "id" : 13,
+        "name" : "资金方管理",
+        "value" : "/lender/",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 1,
+        "icon" : "&#xe609;",
+        "resourceType" : "FUNC",
+        "checked" : true
+      },
+      "leaf" : [ {
+        "value" : {
+          "id" : 106,
+          "name" : "资金方查询",
+          "value" : "/lender/list",
+          "type" : "MENU",
+          "parentId" : 13,
+          "permission" : "pingchang:enter:lender:list,read",
+          "status" : 1,
+          "sortOrder" : 1,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 93,
+          "name" : "资金方新增",
+          "value" : "/lender/add",
+          "type" : "MENU",
+          "parentId" : 13,
+          "permission" : "pingchang:lender:create",
+          "status" : 1,
+          "sortOrder" : 2,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      } ]
+    }, {
+      "value" : {
+        "id" : 14,
+        "name" : "担保方管理",
+        "value" : "/guarantor",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 1,
+        "icon" : "&#xe609;",
+        "resourceType" : "FUNC",
+        "checked" : true
+      },
+      "leaf" : [ {
+        "value" : {
+          "id" : 107,
+          "name" : "担保方查询",
+          "value" : "/guarantor/list",
+          "type" : "MENU",
+          "parentId" : 14,
+          "permission" : "pingchang:enter:bond:list",
+          "status" : 1,
+          "sortOrder" : 3,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 102,
+          "name" : "担保方新增",
+          "value" : "/guarantor/add",
+          "type" : "MENU",
+          "parentId" : 14,
+          "permission" : "pingchang:bond:create",
+          "status" : 1,
+          "sortOrder" : 4,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      } ]
+    }, {
+      "value" : {
+        "id" : 2,
+        "name" : "贷款管理",
+        "value" : "/loan/",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 2,
+        "icon" : "&#xe606;",
+        "resourceType" : "FUNC",
+        "checked" : true
+      },
+      "leaf" : [ {
+        "value" : {
+          "id" : 20,
+          "name" : "车贷申请",
+          "value" : "/loan/loan_step1",
+          "type" : "MENU",
+          "parentId" : 2,
+          "permission" : "pingchang:loan:create",
+          "status" : 1,
+          "sortOrder" : 1,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 21,
+          "name" : "车贷变更",
+          "type" : "MENU",
+          "parentId" : 2,
+          "permission" : "pingchang:loan:update",
+          "status" : 1,
+          "sortOrder" : 2,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 22,
+          "name" : "车贷查询",
+          "value" : "/loan/loan_list",
+          "type" : "MENU",
+          "parentId" : 2,
+          "permission" : "pingchang:loan:list,read",
+          "status" : 1,
+          "sortOrder" : 3,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      } ]
+    }, {
+      "value" : {
+        "id" : 3,
+        "name" : "审查审批",
+        "value" : "/audit/",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 3,
+        "resourceType" : "FUNC",
+        "checked" : false
+      },
+      "leaf" : [ ]
+    }, {
+      "value" : {
+        "id" : 4,
+        "name" : "合同管理",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 4,
+        "resourceType" : "FUNC",
+        "checked" : false
+      },
+      "leaf" : [ ]
+    }, {
+      "value" : {
+        "id" : 5,
+        "name" : "贷后管理",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 5,
+        "resourceType" : "FUNC",
+        "checked" : false
+      },
+      "leaf" : [ ]
+    }, {
+      "value" : {
+        "id" : 6,
+        "name" : "合作机构",
+        "value" : "/enter/",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 6,
+        "icon" : "&#xe60d;",
+        "resourceType" : "FUNC",
+        "checked" : true
+      },
+      "leaf" : [ {
+        "value" : {
+          "id" : 94,
+          "name" : "集团查询",
+          "value" : "/enter/group/list",
+          "type" : "MENU",
+          "parentId" : 6,
+          "permission" : "pingchang:group:list",
+          "status" : 1,
+          "sortOrder" : 5,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 86,
+          "name" : "集团准入",
+          "value" : "/enter/group/step/base",
+          "type" : "MENU",
+          "parentId" : 6,
+          "permission" : "pingchang:enter:group:create",
+          "status" : 1,
+          "sortOrder" : 6,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 104,
+          "name" : "经销商查询",
+          "value" : "/enter/channel/list",
+          "type" : "MENU",
+          "parentId" : 6,
+          "permission" : "pingchang:enter:channel:list",
+          "status" : 1,
+          "sortOrder" : 7,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 87,
+          "name" : "经销商准入",
+          "value" : "/enter/channel/step/base",
+          "type" : "MENU",
+          "parentId" : 6,
+          "permission" : "pingchang:enter:channel:create",
+          "status" : 1,
+          "sortOrder" : 8,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 105,
+          "name" : "展厅查询",
+          "value" : "/enter/store/list",
+          "type" : "MENU",
+          "parentId" : 6,
+          "permission" : "pingchang:enter:store:list",
+          "status" : 1,
+          "sortOrder" : 9,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 88,
+          "name" : "展厅准入",
+          "value" : "/enter/store/step/base",
+          "type" : "MENU",
+          "parentId" : 6,
+          "permission" : "pingchang:enter:store:create",
+          "status" : 1,
+          "sortOrder" : 10,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      } ]
+    }, {
+      "value" : {
+        "id" : 7,
+        "name" : "客户管理",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 7,
+        "resourceType" : "FUNC",
+        "checked" : false
+      },
+      "leaf" : [ ]
+    }, {
+      "value" : {
+        "id" : 9,
+        "name" : "任务处理",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 9,
+        "resourceType" : "FUNC",
+        "checked" : false
+      },
+      "leaf" : [ ]
+    }, {
+      "value" : {
+        "id" : 90,
+        "name" : "工作流管理",
+        "value" : "/wf/",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 10,
+        "icon" : "&#xe603;",
+        "resourceType" : "FUNC",
+        "checked" : true
+      },
+      "leaf" : [ {
+        "value" : {
+          "id" : 91,
+          "name" : "模型管理",
+          "value" : "/wf/model/m-list",
+          "type" : "MENU",
+          "parentId" : 90,
+          "permission" : "pingchang:wf:model:list:create:delete",
+          "status" : 1,
+          "sortOrder" : 1,
+          "icon" : "",
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      } ]
+    }, {
+      "value" : {
+        "id" : 95,
+        "name" : "审核",
+        "value" : "/audit/",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 12,
+        "icon" : "&#xe603;",
+        "resourceType" : "FUNC",
+        "checked" : true
+      },
+      "leaf" : [ {
+        "value" : {
+          "id" : 98,
+          "name" : "集团准入审核",
+          "value" : "/audit/group",
+          "type" : "MENU",
+          "parentId" : 95,
+          "permission" : "pingchang:audit:group:list",
+          "status" : 1,
+          "sortOrder" : 1,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 97,
+          "name" : "渠道准入审核",
+          "value" : "/audit/channel",
+          "type" : "MENU",
+          "parentId" : 95,
+          "permission" : "pingchang:audit:channel:list",
+          "status" : 1,
+          "sortOrder" : 2,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 96,
+          "name" : "展厅准入审核",
+          "value" : "/audit/shop",
+          "type" : "MENU",
+          "parentId" : 95,
+          "permission" : "pingchang:audit:shop:list",
+          "status" : 1,
+          "sortOrder" : 3,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 103,
+          "name" : "进件审核",
+          "value" : "/audit/loan",
+          "type" : "MENU",
+          "parentId" : 95,
+          "permission" : "pingchang:audit:loan:list",
+          "status" : 1,
+          "sortOrder" : 4,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      } ]
+    }, {
+      "value" : {
+        "id" : 8,
+        "name" : "系统配置",
+        "value" : "/admin/",
+        "type" : "MENU",
+        "parentId" : 0,
+        "status" : 1,
+        "sortOrder" : 13,
+        "icon" : "&#xe609;",
+        "resourceType" : "FUNC",
+        "checked" : true
+      },
+      "leaf" : [ {
+        "value" : {
+          "id" : 84,
+          "name" : "员工管理",
+          "value" : "/admin/employee",
+          "type" : "MENU",
+          "parentId" : 8,
+          "permission" : "pingchang:admin:user:list",
+          "status" : 1,
+          "sortOrder" : 1,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ {
+          "value" : {
+            "id" : 115,
+            "name" : "新增",
+            "type" : "BUTTON",
+            "parentId" : 84,
+            "permission" : "pingchang:admin:user:create",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 116,
+            "name" : "编辑",
+            "type" : "BUTTON",
+            "parentId" : 84,
+            "permission" : "pingchang:admin:user:update",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 117,
+            "name" : "查看",
+            "type" : "BUTTON",
+            "parentId" : 84,
+            "permission" : "pingchang:admin:user:read",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 118,
+            "name" : "导入",
+            "type" : "BUTTON",
+            "parentId" : 84,
+            "permission" : "pingchang:admin:user:import",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 119,
+            "name" : "删除",
+            "type" : "BUTTON",
+            "parentId" : 84,
+            "permission" : "pingchang:admin:user:delete",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        } ]
+      }, {
+        "value" : {
+          "id" : 100,
+          "name" : "员工角色管理",
+          "value" : "/admin/user-role",
+          "type" : "MENU",
+          "parentId" : 8,
+          "permission" : "pingchang:admin:userRole:list",
+          "status" : 1,
+          "sortOrder" : 2,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 101,
+          "name" : "员工权限管理",
+          "value" : "/admin/user-privilege",
+          "type" : "MENU",
+          "parentId" : 8,
+          "permission" : "pingchang:admin:userPrivilege:list",
+          "status" : 1,
+          "sortOrder" : 3,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 82,
+          "name" : "角色管理",
+          "value" : "/admin/role",
+          "type" : "MENU",
+          "parentId" : 8,
+          "permission" : "pingchang:admin:roles:list",
+          "status" : 1,
+          "sortOrder" : 4,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ {
+          "value" : {
+            "id" : 120,
+            "name" : "新增",
+            "type" : "BUTTON",
+            "parentId" : 82,
+            "permission" : "pingchang:admin:roles:create",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 121,
+            "name" : "查看",
+            "type" : "BUTTON",
+            "parentId" : 82,
+            "permission" : "pingchang:admin:roles:read",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 122,
+            "name" : "编辑",
+            "type" : "BUTTON",
+            "parentId" : 82,
+            "permission" : "pingchang:admin:roles:update",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 123,
+            "name" : "删除",
+            "type" : "BUTTON",
+            "parentId" : 82,
+            "permission" : "pingchang:admin:roles:delete",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        } ]
+      }, {
+        "value" : {
+          "id" : 81,
+          "name" : "角色权限管理",
+          "value" : "/admin/role-privilege",
+          "type" : "MENU",
+          "parentId" : 8,
+          "permission" : "pingchang:admin:privileges:list",
+          "status" : 1,
+          "sortOrder" : 5,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ ]
+      }, {
+        "value" : {
+          "id" : 99,
+          "name" : "机构管理",
+          "value" : "/admin/organization",
+          "type" : "MENU",
+          "parentId" : 8,
+          "permission" : "pingchang:admin:org:list",
+          "status" : 1,
+          "sortOrder" : 7,
+          "resourceType" : "FUNC",
+          "checked" : true
+        },
+        "leaf" : [ {
+          "value" : {
+            "id" : 110,
+            "name" : "新增",
+            "type" : "BUTTON",
+            "parentId" : 99,
+            "permission" : "pingchang:admin:org:create",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 111,
+            "name" : "删除",
+            "type" : "BUTTON",
+            "parentId" : 99,
+            "permission" : "pingchang:admin:org:delete",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 112,
+            "name" : "修改",
+            "type" : "BUTTON",
+            "parentId" : 99,
+            "permission" : "pingchang:admin:org:update",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        }, {
+          "value" : {
+            "id" : 113,
+            "name" : "查看",
+            "type" : "BUTTON",
+            "parentId" : 99,
+            "permission" : "pingchang:admin:org:read",
+            "status" : 1,
+            "sortOrder" : 1,
+            "resourceType" : "FUNC",
+            "checked" : true
+          },
+          "leaf" : [ ]
+        } ]
+      } ]
+    } ]
+  },
+  "code" : 200
+}

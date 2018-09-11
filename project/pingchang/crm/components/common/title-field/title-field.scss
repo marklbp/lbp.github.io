@@ -1,0 +1,33 @@
+@import "~assets/scss/base/_base";
+.title-field {
+  .pch-field {
+    border: 0;
+    margin: 0;
+    >.legend {
+      margin-left: 0;
+      padding-left: $lx-core-space;
+      padding: $lx-core-space $lx-default-space;
+      font-size: $lx-title-font-size;
+      font-weight: 500;
+      line-height: 25px;
+      width: 100%;
+      border-bottom: 1px solid $lx-core-border-color;
+      margin:0 0 $lx-core-space 0;
+      .leg-line {
+        @include display-inline-block;
+        vertical-align: top;
+        margin-right: 12px;
+        width: 4px;
+        height: 25px;
+        background-color: #ec9d00;
+      }
+      .leg-text {
+        @include display-inline-block;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        font-size: $lx-title-font-size;
+      }
+    }
+  }
+}

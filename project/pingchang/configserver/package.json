@@ -1,0 +1,91 @@
+{
+  "name": "pingchang-saas",
+  "version": "1.0.0",
+  "description": "贷前系统",
+  "title": "平常金服SAAS",
+  "author": "pingchang web group",
+  "homepage": "https://alibaba.github.io/ice/scaffold-preview/ice-design-pro.html",
+  "dependencies": {
+    "@antv/data-set": "^0.8.5",
+    "@icedesign/base": "^0.2.0",
+    "@icedesign/container": "^0.1.2",
+    "@icedesign/data-binder": "^0.1.1",
+    "@icedesign/ellipsis": "^0.1.1",
+    "@icedesign/form-binder": "^0.1.4",
+    "@icedesign/icon": "^0.1.1",
+    "@icedesign/img": "^0.1.1",
+    "@icedesign/label": "^0.1.1",
+    "@icedesign/layout": "^0.1.1",
+    "@icedesign/menu": "^0.1.1",
+    "@icedesign/skin": "^0.1.0",
+    "@icedesign/styled-menu": "^0.1.1",
+    "axios": "^0.17.1",
+    "bizcharts": "latest",
+    "classnames": "^2.2.5",
+    "core-js": "^2.5.5",
+    "deepstream.io-client-js": "^2.3.0",
+    "draft-js": "^0.10.5",
+    "draftjs-to-html": "^0.8.3",
+    "enquire-js": "^0.1.2",
+    "foundation-symbol": "^0.1.0",
+    "html-to-draftjs": "^1.4.0",
+    "immutability-helper": "^2.6.6",
+    "immutable": "^3.8.2",
+    "is-hotkey": "^0.1.1",
+    "js-base64": "^2.4.3",
+    "keymirror": "^0.1.1",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.0",
+    "prop-types": "^15.6.1",
+    "react-anything-sortable": "^1.7.4",
+    "react-dnd": "^2.6.0",
+    "react-dnd-html5-backend": "^2.6.0",
+    "react-document-title": "^2.0.3",
+    "react-draft-wysiwyg": "^1.12.13",
+    "react-redux": "^5.0.7",
+    "react-router": "^3.2.0",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "slate": "^0.32.5",
+    "slate-plain-serializer": "^0.5.6",
+    "slate-react": "^0.11.6",
+    "wangeditor": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "ice-scripts": "^1.1.1",
+    "react-anything-sortable": "^1.7.4"
+  },
+  "scripts": {
+    "start": "ice dev",
+    "prod": "rm -rf build && export NODE_ENV=production && node generate && ice build && scp -r public build",
+    "lint": "eslint . --ext '.js,.jsx' --fix",
+    "copy": "cp -R ./build/ ../saas-pro",
+    "ft1": "echo '\\033[40;32m 删除已有build目录，再次构建build目录... \\033[0m';rm -r -f build; npm run build;echo '\\033[40;32m 构建bulid目录完成，准备发布测试环境172.16.0.242/data/pingchang/saas/... \\033[0m';scp -r build/* root@172.16.0.242:/data/pingchang/saas/;echo '\\033[40;32m 发布测试环境172.16.0.242/data/pingchang/saas/完成，删除build目录... \\033[0m';rm -r -f build;echo '\\033[40;32m 发布测试完成 \\033[0m'",
+    "up": "scp -r build/* root@172.16.1.210:/data/pingchang/saas/",
+    "build": "ice build"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.com",
+    "access": "public"
+  },
+  "buildConfig": {
+    "theme": "@icedesign/skin",
+    "entry1": "src/index.js",
+    "entry": {
+      "app": "./src/index.js"
+    }
+  },
+  "scaffoldConfig": {
+    "name": "ice-design-pro",
+    "title": "Ice Design Pro",
+    "snapshot": "https://img.alicdn.com/tfs/TB1Ry02duuSBuNjy1XcXXcYjFXa-2840-1596.png"
+  }
+}

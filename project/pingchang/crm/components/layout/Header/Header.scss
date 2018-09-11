@@ -1,0 +1,48 @@
+@import "~assets/scss/base/_base";
+
+#Header {
+    background: $lx-core-color;
+    height: $header-height-base;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 28;
+    padding-left: 200px;
+
+    .pch-header {
+        background: $lx-core-color;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        li {
+            height: $header-height-base;
+            color: $header-text-color;
+            line-height: $header-height-base;
+
+            &.is-active {
+                color: $header-text-color;
+                border-bottom: none;
+            }
+
+            &:hover {
+                background: $lx-core-color;
+            }
+
+            .el-submenu__title {
+                height: $header-height-base;
+                line-height: $header-height-base;
+                color: $header-text-color;
+
+                &:hover {
+                    background: $lx-core-color;
+                }
+
+                i {
+                    color: $header-text-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "code" : 200,
+  "list" : [ {
+    "id" : 19,
+    "code" : "L0000000019",
+    "name" : "gery5",
+    "type" : "Bank",
+    "email" : "44441@1.com",
+    "bussBegin" : "2017-12-01",
+    "bussEnd" : "2017-12-15",
+    "togeBegin" : "2017-12-01",
+    "togeEnd" : "2017-12-19",
+    "regCapital" : 1,
+    "cardType" : "户口薄",
+    "cardNo" : "123",
+    "provinceId" : 110000,
+    "cityId" : 110200,
+    "areaId" : 110229,
+    "address" : "111",
+    "isDel" : false,
+    "createdUser" : "admin",
+    "createdDate" : "2017-12-06 17:23:36",
+    "updatedDate" : "2017-12-07 13:57:07",
+    "tenantId" : 0
+  } ],
+  "total" : 1,
+  "limit" : 10,
+  "page" : 1
+}

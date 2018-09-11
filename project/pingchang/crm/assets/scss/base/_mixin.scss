@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// clear float
+@mixin clearfix {
+  clear: both;
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// text overflow
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// diplay inline block
+@mixin display-inline-block {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}

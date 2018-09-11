@@ -1,0 +1,12 @@
+@import "~assets/scss/base/_base";
+.content{
+	background: $lx-much-bg-color;
+	margin:15px 0 0 0;
+	padding:10px 15px;
+	.content-search_bar{
+		width:406px;
+	}
+	.content-tab_content{
+		margin:15px 0 0 0
+	}
+}

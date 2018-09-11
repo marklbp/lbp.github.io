@@ -1,0 +1,61 @@
+{
+  "data" : {
+    "id" : 175,
+    "username" : "13800000000",
+    "displayName" : "客户经理",
+    "idNumber" : "110110000000000000",
+    "createdAt" : "2017-12-21 18:06:43",
+    "updatedAt" : "2018-01-22 13:50:26",
+    "createdBy" : "admin",
+    "locked" : 0,
+    "tenantId" : 10000,
+    "loginTimes" : 42,
+    "lastLoginDate" : "2017-12-27 13:37:48",
+    "lastLoginIP" : "180.173.65.205",
+    "lastLoginAPP" : "JinFu.UAT/1.0.0 (iPhone; iOS 9.0; Scale/2.00)",
+    "lastLoginDeviceId" : "ACDF0F39-B79C-4D3E-95E6-B9487985BB90",
+    "appAccessKey" : "rir5vwdq6pf8",
+    "appAccessSecret" : "8E0812141D0F7D22B2E01326018027AB",
+    "hasVoiceprint" : 0,
+    "userType" : "LENDER",
+    "tenantName" : "联鑫",
+    "number" : "000000001",
+    "gender" : "男",
+    "departmentId" : 10000,
+    "departmentName" : "联鑫",
+    "departmentPath" : "/10000/",
+    "roles" : [ {
+      "id" : 325,
+      "name" : "客户经理",
+      "type" : "客户经理",
+      "status" : 1,
+      "createdAt" : "2017-12-21 13:49:43",
+      "updatedAt" : "2017-12-21 13:49:43",
+      "tenantId" : 10000,
+      "departmentId" : 10000,
+      "departmentName" : "联鑫"
+    }, {
+      "id" : 327,
+      "name" : "审查",
+      "type" : "审查审批",
+      "status" : 1,
+      "createdAt" : "2017-12-21 13:49:51",
+      "updatedAt" : "2017-12-21 13:49:51",
+      "tenantId" : 10000,
+      "departmentId" : 10000,
+      "departmentName" : "联鑫"
+    }, {
+      "id" : 328,
+      "name" : "审批",
+      "type" : "审查审批",
+      "status" : 1,
+      "createdAt" : "2017-12-21 13:50:01",
+      "updatedAt" : "2017-12-21 13:50:01",
+      "tenantId" : 10000,
+      "departmentId" : 10000,
+      "departmentName" : "联鑫"
+    } ],
+    "director" : false
+  },
+  "code" : 200
+}

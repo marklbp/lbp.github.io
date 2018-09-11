@@ -1,0 +1,182 @@
+@import "base/main";
+
+.pch-page-container {
+    .pch-container {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        z-index: 20;
+        box-shadow: 0 2px 1px 1px rgba(100, 100, 100, 0.1);
+        transition: padding .3s;
+        min-height: 100vh;
+        padding: $header-height-base+10px 10px 10px 210px;
+        background: $lx-core-bg-color;
+        &.pch-empty-container {
+            padding: 0;
+            background: transparent url(/assets/img/admin-login-bg.png) center center no-repeat;
+            background-size: cover;
+        }
+        .pch-main-container {
+            padding: 0 $lx-default-space;
+            .layout-container {
+                background-color: $lx-much-bg-color;
+                padding: 0 $lx-core-space;
+                .pch-form {
+                    .pch-field {
+                        .pch-field-box {
+                            padding: 0 $lx-big-space;
+                            .el-form-item {
+                                width: 100%;
+                                .el-form-item__label {
+                                    position: absolute;
+                                }
+                                .el-form-item__content {
+                                    padding-left: 130px;
+                                    width: 100%;
+                                    height: 40.5px;
+                                    .el-select,
+                                    .el-date-editor,
+                                    .el-cascader {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .pch-area {
+                                padding-right: 0 !important;
+                                .distpicker-address-wrapper {
+                                    font-size: 0;
+                                    select {
+                                        width: 32%;
+                                        margin-right: 1%;
+                                    }
+                                }
+                            }
+                            .pch-address {
+                                padding-left: 0 !important;
+                                .el-form-item__content {
+                                    padding: 0;
+                                    .help {
+                                        left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pch-table {
+                    &.el-table {
+                        th {
+                            background-color: $lx-table-th-color;
+                            border: $lx-table-border-color solid 1px;
+                        }
+                        .el-table__body-wrapper {
+                            padding-bottom: 20px;
+                        }
+                    }
+                    .is-danger {
+                        &.help {
+                            left: 10px;
+                            margin: -12px 0 0 0;
+                            z-index: 300;
+                        }
+                    }
+                }
+                .pch-wrap-btns {
+                    margin: $lx-default-space;
+                }
+                .pch-bottom-btns {
+                    padding: $lx-big-space 0; // text-align:center;
+                }
+                .pch-upload-sign {
+                    position: relative;
+                    .help {
+                        left: 0;
+                    }
+                }
+                .pch-form-modal {
+                    .pch-modal-title {
+                        color: $lx-sub-font-color;
+                        font-size: $lx-title-font-size;
+                        text-align: center;
+                        margin: 0 0 $lx-big-space 0;
+                    }
+                    .v--modal-box {
+                        padding: 30px 50px;
+                        .el-form-item {
+                            width: 100%;
+                            .el-form-item__label {
+                                position: absolute;
+                            }
+                            &.gen-textarea {
+                                .el-form-item__content {
+                                    height: auto;
+                                }
+                            }
+                            .el-form-item__content {
+                                padding-left: 130px;
+                                width: 100%;
+                                height: 40.5px;
+                                .el-select,
+                                .el-date-editor,
+                                .el-cascader {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .pch-modal-btns {
+                            text-align: center;
+                        }
+                    }
+                }
+                .pch-transfer-modal {
+                    .pch-modal-btns {
+                        margin: $lx-big-space 0;
+                    }
+                    .el-form-item {
+                        margin-left: 50px;
+                    }
+                    .el-transfer {
+                        padding: 0 78px;
+                    }
+                }
+                &.pch-detail {
+                    .pch-detail-item {
+                        width: 100%;
+                        @include display-inline-block;
+                        margin-right: 10px;
+                        vertical-align: top;
+                        margin-bottom: 22px;
+                        @include clearfix;
+                        .pch-detail-name {
+                            width: 130px;
+                            position: absolute;
+                            @include display-inline-block;
+                            text-align: right;
+                            vertical-align: middle;
+                            font-size: 14px;
+                            color: #606266;
+                            line-height: 40px;
+                            padding: 0 12px 0 0;
+                        }
+                        .pch-detail-con {
+                            padding-left: 130px;
+                            width: 100%;
+                            height: 40.5px;
+                            display: inline-block;
+                            vertical-align: top;
+                            line-height: 40px;
+                            position: relative;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .patb {
+                    padding: $lx-core-space 0;
+                }
+            }
+            .container {
+                /*margin:10px 0 0 0;*/
+            }
+        }
+    }
+}

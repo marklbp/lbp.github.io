@@ -1,0 +1,96 @@
+
+.product-page {
+    // background: #fff;
+}
+.pch-breadcrumb {
+  background-color: #fff;
+  padding: 0 20px;
+  border-radius: 2px;
+  .layui-breadcrumb {
+      > a {
+          color: #1b2630;
+          font-size: 13px;
+          padding: 0 5px;
+          &:hover {
+              color: #ec9d00 !important;
+          }
+          > cite {
+              //color: $lx-core-font-lighter-color;
+              color: #ec9d00 !important;
+              font-style: normal;
+          }
+      }
+  }
+}
+
+.form{
+    padding-top:0px !important;
+    padding-left: 0 !important;
+}
+.select {
+    width: 174px !important;
+}
+.lx-mid-line {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    margin-right: 10px;
+    width: 10px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+.line {
+    height: 5px;
+    border: #999 1px solid;
+}
+.label-required {
+    font-size: 12px;
+    padding: 0 2px;
+    color: #dd4444;
+}
+
+.layui-textarea {
+    min-height: 100px;
+    height: auto;
+    padding: 6px 10px;
+    resize: vertical;
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    border-color: #999
+}
+
+.deleteBtn {
+    border: none;
+    border-radius: 2px;
+    background: #FF5722;
+    color: #fff;
+
+}
+
+.next-transfer-operations .next-btn-primary {
+    background: #ec9d00 !important;
+}
+.process-lable{
+    height: 34px;
+    line-height: 34px;
+}
+
+.pc-form-line{
+    background: #FFF3E4;
+    padding-top:10px;
+    height: 58px; 
+}
+.addThree-detail-btn{
+    cursor: pointer;
+    color: #1AA8F0;
+    height: 58px;
+    line-height: 35px;
+}
+.addThree-detail-btn:hover{
+    color: #1AA8F0;
+}
+.process-labe-width{
+    display: inline-block;
+    width: 400%;
+}

@@ -1,0 +1,9 @@
+.el-message{
+	min-width: auto !important;
+}
+
+.el-table::before,
+.el-table__fixed-right::before, 
+.el-table__fixed::before{
+	background-color: transparent !important;
+}

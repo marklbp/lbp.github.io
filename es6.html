@@ -100,7 +100,7 @@
                 // revert back to orig color
                 $(this).animate({color: original_color}, 2500);
               });
-              history.pushState(null, null, '#' + location.hash.split('#')[1] + '#' + this.dataset.id);
+              history.pushState(null, null, '#' + (location.hash.split('#')[1] || 'intro') + '#' + this.dataset.id);
           }).on("mouseover mouseout", this.config.content + " h2," + this.config.content + " h3," + this.config.content + " h4", function (e) {
             if (this.resetTime) clearTimeout(this.resetTime)
             if (e.type === 'mouseover') {
@@ -144,8 +144,7 @@
           })
         },
         createAnchors: function(dom){
-          var hash = location.hash.split('#')[1]
-          hash = hash || 'intro'
+          var hash = location.hash.split('#')[1] || 'intro'
           for (var i = 2, lis; i <= 4; i++) {
             if (i === 2) lis = []
             dom.find('h' + i).map(function() {

@@ -110,7 +110,7 @@
         },
         updateContent: function(){
           var file = location.hash.split("#")[1]
-          if(file.length <= 0){
+          if(!file || file.length <= 0){
             file = 'intro'
           }
           return this.renderContent(this.config.content, file)
@@ -142,6 +142,7 @@
         },
         createAnchors: function(dom){
           var hash = location.hash.split('#')[1]
+          hash = hash || 'intro'
           for (var i = 2, lis; i <= 4; i++) {
             if (i === 2) lis = []
             dom.find('h' + i).map(function() {

@@ -3,19 +3,18 @@ var koufei = 0;
 function jq(id) {
     return document[arrVar[0]](id);
 }
-;function countFun(m, n) {
+function countFun(m, n) {
     return (parseFloat(m) / 100) * n;
 }
-;function floatTwo(str) {
+function floatTwo(str) {
     var i = str.toString()[arrVar[2]](arrVar[1]);
     if (i > 0) {
         return str.toString()[arrVar[3]](0, i + 2);
-        return 
     } else {
         return str;
     }
 }
-;function subCacu(value) {
+function subCacu(value) {
     value = jq(arrVar[5])[arrVar[4]];
     var _0x4cddxc = jq(arrVar[6]);
     var _0x4cddxd = jq(arrVar[7]);
@@ -50,7 +49,7 @@ function jq(id) {
     }
     ;cacuFax(value, _0x4cddxc, _0x4cddxd);
 }
-;function changValue(_0x4cddx6) {
+function changValue(_0x4cddx6) {
     jq(arrVar[5])[arrVar[4]] = _0x4cddx6;
     var _0x4cddxc = jq(arrVar[6]);
     var _0x4cddxd = jq(arrVar[7]);
@@ -89,7 +88,7 @@ function jq(id) {
     }
     ;cacuFax(_0x4cddx6, _0x4cddxc, _0x4cddxd);
 }
-;function cacuFax(_0x4cddx6, _0x4cddxc, _0x4cddxd) {
+function cacuFax(_0x4cddx6, _0x4cddxc, _0x4cddxd) {
     jq(arrVar[13])[arrVar[4]] = floatTwo(countFun(jq(arrVar[14])[arrVar[4]], _0x4cddxc[arrVar[4]]));
     jq(arrVar[15])[arrVar[4]] = floatTwo(countFun(jq(arrVar[16])[arrVar[4]], _0x4cddxc[arrVar[4]]));
     jq(arrVar[17])[arrVar[4]] = floatTwo(countFun(jq(arrVar[18])[arrVar[4]], _0x4cddxc[arrVar[4]]));
@@ -116,7 +115,7 @@ function jq(id) {
     ;jq(arrVar[42])[arrVar[4]] = floatTwo(parseFloat(jq(arrVar[41])[arrVar[4]]) + parseFloat(jq(arrVar[23])[arrVar[4]]));
     jq(arrVar[43])[arrVar[4]] = _0x4cddx6 - parseFloat(jq(arrVar[42])[arrVar[4]]);
 }
-;function caluTaxPercent(_0x4cddx6) {
+function caluTaxPercent(_0x4cddx6) {
     if (_0x4cddx6 <= 1500) {
         koufei = 0;
         return 0.03;
@@ -158,11 +157,11 @@ function jq(id) {
     }
     ;return 0.45;
 }
-;function count() {
+function count() {
     jq(arrVar[44])[arrVar[4]] = jq(arrVar[46])[arrVar[45]];
     jq(arrVar[47])[arrVar[4]] = jq(arrVar[5])[arrVar[4]] - jq(arrVar[44])[arrVar[4]] - parseFloat(jq(arrVar[48])[arrVar[45]]);
 }
-;function checkGjj(_0x4cddx6) {
+function checkGjj(_0x4cddx6) {
     if (_0x4cddx6[arrVar[49]]) {
         jq(arrVar[7])[arrVar[50]] = false;
     } else {
@@ -171,7 +170,7 @@ function jq(id) {
     }
     ;
 }
-;function checkbcGjj(_0x4cddx6) {
+function checkbcGjj(_0x4cddx6) {
     if (_0x4cddx6[arrVar[49]]) {
         jq(arrVar[51])[arrVar[50]] = false;
         changebcGjj(jq(arrVar[51])[arrVar[4]]);
@@ -181,8 +180,7 @@ function jq(id) {
     }
     ;
 }
-;function changebcGjj(_0x4cddx6) {
+function changebcGjj(_0x4cddx6) {
     jq(arrVar[33])[arrVar[4]] = _0x4cddx6;
     jq(arrVar[22])[arrVar[4]] = _0x4cddx6;
 }
-;

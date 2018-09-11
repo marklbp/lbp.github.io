@@ -39,7 +39,7 @@ Promise.resolve = function (x) {
     });
 };
 
-
+Promise.all = function (iterable) {
     return new Promise(function (resolve, reject) {
         var count = 0, result = [];
 

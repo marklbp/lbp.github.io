@@ -280,10 +280,8 @@ console.log(insane); // 报错
 内层作用域可以定义外层作用域的同名变量。
 
 ```javascript
-{{{{
-  let insane = 'Hello World';
-  {let insane = 'Hello World'}
-}}}};
+let insane = 'Hello World';
+{let insane = 'Hello World'}
 ```
 
 块级作用域的出现，实际上使得获得广泛应用的立即执行函数表达式（IIFE）不再必要了。

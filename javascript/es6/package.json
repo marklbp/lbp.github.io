@@ -1,0 +1,18 @@
+{
+  "name": "es6-syntax-book",
+  "version": "0.0.0",
+  "description": "this is a book about ecmascript version 6",
+  "main": "es6.ruanyifeng.com.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "d": "node es6.ruanyifeng.com.js"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "marklbp",
+  "license": "ISC",
+  "devDependencies": {
+    "request": "^2.88.0"
+  }
+}

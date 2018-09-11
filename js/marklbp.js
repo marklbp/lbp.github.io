@@ -832,8 +832,7 @@
                 return 'function' == typeof always && always.apply(that, [data])
             })
             .done(function(data) {
-                if (data && data.success) {
-                    data = data.data;
+                if (data) {
                     if (option.name && that.request[option.name]) that.request[option.name].data = data;
                     return 'function' == typeof done && done.apply(that, [data, fail])
                 } else {

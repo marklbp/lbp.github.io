@@ -15,6 +15,7 @@
       return this
     },
     initEvents: function (){
+      var click = 'ontouchstart' in document ? 'touchend' : 'click'
       var that = this
       var $backTop = $(that.config.backTop)
       var showBackTop = false
@@ -22,7 +23,7 @@
         var sT = $(this).scrollTop()
         $backTop[sT > 0 ? 'show' : 'hide']()
       })
-      $(document).on('click', 'a.section-link', function(e){
+      $(document).on(click, 'a.section-link', function(e){
         e.preventDefault();
         var hash = this.dataset.hash
         var content = this.dataset.content
@@ -30,16 +31,19 @@
         $('html, body').animate({
           scrollTop: $('#' + content).offset().top
         }, 300);
-      }).on("click","a.go-top, #back_top", function(e){
+      }).on(click,"a.go-top, #back_top", function(e){
         e.preventDefault()
         that.goTop()
-      }).on("click", "#btn_menu", function(e){
+      }).on(click, "#btn_menu", function(e){
         e.preventDefault()
         $(that.config.aside).parent().toggleClass("show")
-      }).on("click", "#page_prev, #page_next", function(){
+      }).on(click, "#page_prev, #page_next", function(){
         var list = that.config.list
         var current = location.hash.split("#")[1] || list[0]
         var to
+        if (list.length <= 0) {
+          list = [].slice.call($(that.config.aside).find("a").map(function(){return this.href.split("#")[1]}))
+        }
         if (this.id === 'page_prev') {
           to = list[list.indexOf(current) - 1] || list[0]
         } else{
@@ -47,7 +51,7 @@
         }
         if (current === to) return
         return location.hash = to
-      }).on("click", "li.link[data-id]", function(e){
+      }).on(click, "li.link[data-id]", function(e){
           e.preventDefault();
           var header = $("h2#" + this.dataset.id)
           var original_color = header.css("color")
@@ -133,13 +137,22 @@
     updateCache: function(opt){
       var storeCache = localStorage.getItem(this.config.cacheKey)
       if(!storeCache){
-        localStorage.setItem(this.config.cacheKey, JSON.stringify(this.config.cache))
+        try{
+          localStorage.setItem(this.config.cacheKey, JSON.stringify(this.config.cache))
+        } catch (e) {
+          // ios private mode browser will throw quotaExceededException error(in safari)
+        }
         storeCache = '{}'
       }
       storeCache = JSON.parse(storeCache)
       if (opt && typeof opt === 'object') storeCache[opt.key] = opt.value || storeCache[opt.key]
       this.config.cache = storeCache
-      localStorage.setItem(this.config.cacheKey, JSON.stringify(storeCache))
+      try {
+        localStorage.setItem(this.config.cacheKey, JSON.stringify(storeCache))
+      } catch (e) {
+        // ios private mode browser will throw quotaExceededException error(in safari)
+      }
+
       return this
     }
   }).init()

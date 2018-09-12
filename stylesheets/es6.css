@@ -231,7 +231,11 @@ body {
   transform: translateX(-50%)
 }
 .page-box a{
-  margin: 0 20px;
+  text-decoration: none;
+  margin: 0 30px;
+}
+.page-box a:hover{
+  text-decoration: none;
 }
 
 /* Large screens (1024px) */
@@ -279,6 +283,9 @@ body {
   border-radius: 50%;
   opacity: .5;
   transition: .5s
+}
+#btn_menu:hover{
+  text-decoration: none;
 }
 @media (max-width:750px){
   #btn_menu{

@@ -117,6 +117,7 @@
 	git push origin :branch-name #删除远程分支
 	git branch --merged|no-merged #查看已合并或未合并的分支列表
 	git branch -u remote/branch #修改当前分支的跟踪分支（上游分支）为指定的远程分支（@{u}或者@{upstream}可替代[remote]/[branch]表示）
+	git branch branch-name HEAD@{n} #恢复已删除的分支
 
 
 # git checkout
@@ -223,8 +224,13 @@
 # git log [-p] [-2] [--stat] [--pretty[=[online|format:"%h - %an, %ar:%s"|]]]
 	查看日志,-p显示每次提交内容差异，-2显示近两次提交差异,--stat查看统计信息
 
+# git reflog
+	查看具体分支提交日志
 
 # git reset HEAD *.* 取消暂存某文件
+
+# git reset --hard HEAD~[n]
+  重置到某次commit记录
 
 
 # .gitignore 

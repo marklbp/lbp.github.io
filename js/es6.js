@@ -11,6 +11,7 @@
       cache: {},
       cacheKey: 'MARKLBP_ES6_HANDBOOK',
       list: [],
+      videos: ["intro","let","const","array-destructuring","object-destructuring","argument-destructuring","string-api","tagged-templates","template-string","argument-default-value","rest-argument","arrow-function","function-name-attr","set","map","get-set","object-setPrototypeOf","__proto__","object-assign","object-attr","object-expression","object-is","iterator","generator","spread-operator","class","staitc","class-extends","super","module","export-import-as","export-import-default"],
       events: {
         click: 'ontouchstart' in document ? 'touchend' : 'click',
         mouseover: 'ontouchstart' in document ? 'touchstart' : 'mouseover',
@@ -105,7 +106,7 @@
         return this
       }
       return this.ajax({
-        url: (file === 'es6' ? '/javascript/es6/' : '/javascript/es6/docs/') + file + '.md',
+        url: '/study/es6/'+ file + '.md',
         type: 'get',
         always: function () {
           this.toggleLoad(0)

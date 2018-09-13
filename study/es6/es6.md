@@ -27,3 +27,4 @@
 1. [ArrayBuffer](#arraybuffer)
 1. [最新提案](#proposals)
 1. [参考链接](#reference)
+1. [视频学习](#video)

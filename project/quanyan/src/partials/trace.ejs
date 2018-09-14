@@ -1,0 +1,12 @@
+<!-- tracking -->
+<script>
+  var yhy_tracing_buffer = yhy_tracing_buffer || [];
+  yhy_tracing_buffer.push({"account": "<%= htmlWebpackPlugin.options.cnzzsiteid %>"});
+  yhy_tracing_buffer.push({auto: false});
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.async = true;
+  script.charset = 'utf-8';
+  script.src = '//shadow.yingheying.com/lib/yhy-tracking@0.0.19/yhytracking.js';
+  document.getElementsByTagName("head")[0].appendChild(script);
+</script>

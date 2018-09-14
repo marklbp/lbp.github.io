@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g transform="translate(1.000000, 1.000000)" stroke="#575555" stroke-width="0.75">
+            <polygon id="Stroke-1" fill="#FFFFFF" points="3.9221 13.1957 0.6501 13.6397 1.0941 10.3677 8.2181 3.2437 11.0461 6.0717"></polygon>
+            <path d="M13.8288,3.2908 L11.9188,5.2008 L9.0928,2.3728 L11.0008,0.4628 C11.0778,0.3858 11.1668,0.3748 11.2138,0.3748 C11.2618,0.3748 11.3508,0.3858 11.4278,0.4628 L13.8288,2.8638 C13.9058,2.9398 13.9168,3.0298 13.9168,3.0768 C13.9168,3.1248 13.9058,3.2138 13.8288,3.2908 Z" id="Stroke-3" fill="#FFFFFF"></path>
+            <g id="Group-7" transform="translate(0.000000, 14.565300)">
+                <path d="M0.375,0.625 L13.478,0.625" id="Stroke-5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

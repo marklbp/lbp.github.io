@@ -1,0 +1,130 @@
+/* 常用图片(大小不合适请用覆盖样式的方式，颜色默认会采用继承的方式) */
+/* 布局位置不合适，需要自己手动布局 */
+/* 右箭头 */
+.right-icon {
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+  transform: rotate(45deg);
+}
+
+/* 上箭头 */
+.top-icon {
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+  transform: rotate(-45deg);
+}
+
+/* 下箭头 */
+.bottom-icon {
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+  transform: rotate(135deg);
+}
+
+/* 左箭头 */
+.left-icon {
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+  border-top-color: currentColor;
+  border-left-color: currentColor;
+  transform: rotate(-45deg);
+}
+
+.substract-icon {
+  width: 20px;
+  height: 20px;
+  padding: 10px 0;
+  background-clip: border-box;
+  position: relative;
+
+  &::before {
+    content: '' !important;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: translateY(-50%);
+  }
+}
+
+/* 加号 */
+.add-icon {
+  width: 20px;
+  height: 20px;
+  padding: 10px 0;
+  background-clip: border-box;
+  position: relative;
+
+  &::before {
+    content: '' !important;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: '' !important;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+  }
+}
+
+/* 对号 勾 */
+.ok-icon {
+  width: 25px;
+  height: 18px;
+  border: 1px solid transparent;
+  border-bottom-color: currentColor;
+  border-left-color: currentColor;
+  transform: rotate(-45deg);
+}
+
+/* 叉 */
+.shut-icon {
+  width: 21.21px;
+  height: 21.21px;
+  position: relative;
+
+  &::before {
+    content: '' !important;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) rotate(-45deg);
+    background-color: currentColor;
+  }
+
+  &::after {
+    content: '' !important;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background-color: currentColor;
+  }
+}

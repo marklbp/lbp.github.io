@@ -1,0 +1,32 @@
+const apiCodes = {
+  '-380': '用户被锁定',
+  '-370': '用户被锁定',
+  '-360': 'token错误',
+  '-340': '不是激活设备(用户在其他地方登录)',
+  '-320': '不是用户的受信设备',
+  '-300': 'token已过期',
+  '-280': '应用id不存在',
+  '-270': '上行短信尚未收到',
+  '-260': '手机动态密码错误',
+  '-250': '手机号未绑定',
+  '-220': '接口已升级',
+  '-200': '请求解析错误',
+  '-180': '签名错误',
+  '-164': 'UNKNOW_TOKEN_DENIED',
+  '-161': 'USER_CHECK_FAILED',
+  '-160': '访问被拒绝',
+  '-140': '参数错误',
+  '-120': 'mt参数服务端无法识别',
+  '-108': 'DUBBO_SERVICE_TIMEOUT_ERROR',
+  '-107': 'DUBBO_SERVICE_NOTFOUND_ERROR',
+  '-106': 'SECURITY_SERVICE_ERROR',
+  '-105': 'WEB_ACCESS_FAILED',
+  '-104': 'FATAL_ERROR',
+  '-103': 'IP_DENIED',
+  '-102': 'SERIALIZE_FAILED',
+  '-101': 'INTERNAL_SERVER_ERROR',
+  '-100': '服务端返回未知错误',
+  '-2147483648': '未分配返回值'
+}
+
+export default apiCodes

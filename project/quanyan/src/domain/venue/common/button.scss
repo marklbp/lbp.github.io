@@ -1,0 +1,21 @@
+input[type=radio]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 36px;
+  height: 36px;
+  background: url("../assets/uncheckbox.png")no-repeat 100% 100%;
+  background-size: 100% 100%;
+  outline: none;
+  &:checked{
+    background: url("../assets/checkbox.png")no-repeat 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+.right{
+  display: inline-block;
+  background: url("../assets/right.png")no-repeat 100% 100%;
+  background-size: 100% 100%;
+  width: 28px;
+  height: 28px;
+}

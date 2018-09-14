@@ -1,0 +1,104 @@
+html,body{
+  height: 100%;
+  background-color: rgba(249,249,249,1);
+}
+.place-imgs{
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  .img{
+    overflow: hidden;
+    font-size: 0;
+    img{
+      max-width: 100%;
+    }
+  }
+  .num{
+    position: absolute;
+    width: 80px;
+    height: 44px;
+    background-color: rgba(0,0,0, .5);
+    right: 30px;
+    bottom: 20px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    .cur{}
+  }
+}
+.mod{
+  margin-top: 20px;
+  padding: 40px 30px;
+  background-color: #fff;
+  .title{
+    color: #282828;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .content{
+    color: #4a4a4a;
+  }
+  &.name-overview{
+    margin-top: 0;
+    >.title{
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+    .overview{
+      font-size: 26px;
+    }
+  }
+  &.store{
+    padding-top: 28px;
+    padding-bottom: 28px;
+    >.title{
+      position: relative;
+      margin-bottom: 0;
+      >.btn-icon{
+        position: absolute;
+        right: 0;
+        top: 8px;
+        width: 28px;
+        height: 28px;
+        background: url(../assets/btn-right.png) no-repeat center center;
+        background-size: 100%;
+      }
+    }
+  }
+  &.address{
+    .text{
+      position: relative;
+      padding-right: 132px
+    }
+    .addr{
+      position: relative;
+      padding-left: 48px;
+      .icon{
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 28px;
+        height: 28px;
+        background: url(../assets/address-icon.png) no-repeat center;
+        background-size: 100%;
+      }
+      .first-addr{
+        font-size: 32px;
+      }
+      .second-addr{
+        color: #999;
+        font-size: 26px;
+      }
+    }
+    .phone{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 44px;
+      height: 44px;
+      background: url(../assets/phone.png) no-repeat center;
+      background-size: 100%;
+    }
+  }
+}

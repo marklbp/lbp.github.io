@@ -1,0 +1,265 @@
+// color
+.c-0, .c-t1, .c-c1 { color: $color-0}
+.c-3 { color: $color-3}
+.c-6, .c-t5 { color: $color-6}
+.c-8 { color: $color-8}
+.c-9, .c-t2 { color: $color-9}
+.c-c, .c-t3 { color: $color-c}
+.c-d { color: $color-d}
+.c-e { color: $color-e}
+.c-f, .c-t4, .c-c3 { color: $color-f}
+
+.c-c2 {
+  color: $color-c2;
+}
+
+.c-f1 {
+  color: $color-f1;
+}
+
+.c-f2 {
+  color: $color-f2;
+}
+
+.c-f3 {
+  color: $color-f3;
+}
+
+.c-l1 {
+  color: $color-l1;
+}
+
+.c-b1 {
+  color: $color-b1;
+}
+.c-b2 {
+  color: $color-b2;
+}
+.c-f {
+  color: $color-f;
+}
+.c-b9{
+  color: $color-b9;
+}
+// font
+.font-bold, .font-b {
+  font-weight: bold;
+}
+.font-normal, .font-n {
+  font-weight: normal;
+}
+
+.f-20 { font-size: 20px; }
+.f-22 { font-size: 22px; }
+.f-24 { font-size: 24px; }
+.f-26 { font-size: 26px; }
+.f-28 { font-size: 28px; }
+.f-30 { font-size: 30px; }
+.f-34 { font-size: 34px; }
+.f-40 { font-size: 40px; }
+.f-44 { font-size: 44px; }
+.f-80 { font-size: 80px; }
+
+.f-60 { font-size: 60px; }
+
+// heights
+.h-88 { height: 88px; }
+.h-100p { height: 100%; }
+
+// page margin / padding
+.margin-all { margin: $gap-common; }
+.margin-lr { margin-left: $gap-common; margin-right: $gap-common; }
+.margin-t { margin-top: $gap-common; }
+.margin-r { margin-right: $gap-common; }
+.margin-b { margin-bottom: $gap-common; }
+.margin-l { margin-left: $gap-common; }
+
+.padding-all { padding: $gap-common; }
+.padding-lr { padding-left: $gap-common; padding-right: $gap-common; }
+.padding-t { padding-top: $gap-common; }
+.padding-r { padding-right: $gap-common; }
+.padding-b { padding-bottom: $gap-common; }
+.padding-l { padding-left: $gap-common; }
+
+// border radius
+.radius-s {
+  border-radius: 3px; /* no */
+}
+.page-main-container{
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  max-height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling : touch;
+}
+// center vertical / horizontal
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-flex-v {
+  display: flex;
+  align-items: center;
+}
+
+.center-hv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-h {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-v {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center-txt {
+  text-align: center;
+}
+
+::placeholder {
+  color: $color-t3;
+  font-weight: 300;
+}
+
+.bg-gray {
+  background: $color-b2;
+}
+.bg-f {
+  background: $color-f;
+}
+.flex{
+  display: flex;
+  align-content: flex-start;
+}
+
+.flex-v-b {
+  display: flex;
+  align-content: space-between;
+}
+
+.center-flex-h{
+  display: flex;
+  justify-content: center;
+}
+.flex-wa-yc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-wa-ch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-wa-cv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-wa{
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-nowrap{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+.flex-b{
+  display: flex;
+  justify-content: space-between;
+}
+.flex-b-yc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-start-end{
+  display: flex;
+  justify-content: flex-end;
+}
+.background-f{
+  background: #ffffff;
+}
+.full-width{
+  width: 100%;
+}
+.text-ellipsis{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.flex-full{
+  flex: 1;
+}
+.overflow_y_a{
+  overflow-y: auto;
+  -webkit-overflow-scrolling : touch;
+}
+
+.hide {
+  display: none;
+}
+.float-l {
+  float: left;
+}
+
+.van-button--danger {
+  background-color: $color-l1;
+}
+.van-button--disabled {
+  background: #e5e5e5;
+}
+
+// mixins
+@mixin wrap-l($lines) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  overflow: hidden;
+  white-space: normal;
+}
+
+.wrap-l-1 {
+  @include wrap-l(1)
+}
+
+.wrap-l-2 {
+  @include wrap-l(2)
+}
+
+.iphonex {
+  padding-bottom: 60px;
+  .van-submit-bar {
+    margin-bottom: 60px;
+  }
+}
+.margin-b-10{
+  margin-bottom: 10px;
+}

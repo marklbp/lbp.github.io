@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F7BD1C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(2.000000, 0.000000)">
+            <path d="M18.4070588,0.176470588 L1.34235294,0.176470588 C0.596470588,0.176470588 0,0.772941176 0,1.51882353 L0,21.3105882 C0,22.0564706 0.596470588,22.6529412 1.34235294,22.6529412 L18.4070588,22.6529412 C19.1529412,22.6529412 19.7494118,22.0564706 19.7494118,21.3105882 L19.7494118,1.54 C19.7705882,0.794117647 19.1529412,0.176470588 18.4070588,0.176470588" id="Fill-1" fill="url(#linearGradient-1)"></path>
+            <path d="M4.28635294,8.55623529 L15.6722353,8.55623529" id="Stroke-4" stroke="#FEFEFE" stroke-linecap="round"></path>
+            <path d="M4.28635294,4.40376471 L15.6722353,4.40376471" id="Stroke-6" stroke="#FEFEFE" stroke-linecap="round"></path>
+            <path d="M7.74788235,12.7087059 L8.99611765,12.7087059" id="Stroke-8" stroke="#FEFEFE" stroke-linecap="round"></path>
+            <path d="M11.2094118,12.7087059 L12.4576471,12.7087059" id="Stroke-10" stroke="#FEFEFE" stroke-linecap="round"></path>
+            <path d="M4.28635294,12.7087059 L5.53458824,12.7087059" id="Stroke-12" stroke="#FEFEFE" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

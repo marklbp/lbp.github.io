@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(1.000000, 0.000000)" stroke="#575555" stroke-width="0.75">
+            <path d="M13.7219,4.824 L12.8319,4.824 L12.8319,2.155 C12.8309,1.172 12.0349,0.376 11.0529,0.375 L2.1549,0.375 C1.1719,0.376 0.3759,1.172 0.3749,2.155 L0.3749,14.612 C0.3759,15.594 1.1719,16.39 2.1549,16.391 L13.7219,16.391 C14.7039,16.39 15.5009,15.594 15.5019,14.612 L15.5019,6.604 C15.5009,5.621 14.7039,4.825 13.7219,4.824 Z" id="Stroke-1" fill="#FFFFFF"></path>
+            <path d="M2.9237,4.7328 L10.2677,4.7328" id="Stroke-3" stroke-linecap="round"></path>
+            <path d="M2.9237,8.4834 L10.2677,8.4834" id="Stroke-5" stroke-linecap="round"></path>
+            <path d="M2.9237,12.234 L10.2677,12.234" id="Stroke-7" stroke-linecap="round"></path>
+            <path d="M12.8248,4.9426 L12.8248,16.4306" id="Stroke-9"></path>
+        </g>
+    </g>
+</svg>

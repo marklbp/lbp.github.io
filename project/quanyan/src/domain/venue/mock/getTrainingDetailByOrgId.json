@@ -1,0 +1,128 @@
+{
+	"content":[{
+		"collectFlg": false,
+		"courseTotal": 0,
+		"placeCategoryList": [
+			{
+				"priority": 0,
+				"categoryName": "其它",
+				"categoryId": 20
+			}
+	  ],
+		"placeTrainingCourse": [
+			{
+				"courseImg": ["http://tx.haiqq.com/uploads/allimg/170510/0RSQ4G-9.jpg"],
+				"courseName": "[回龙观] 点众羽毛球馆",
+				"trainingCourseId": 0,
+				"price": 0,
+				"coursePeriod": "",
+				"discountPrice": 0,
+				"courseOverview": "仅售72元，价值80元周二至周五套餐 节假日不可用！",
+				"courseDescription": ""
+			},
+			{
+				"courseImg": ["http://tx.haiqq.com/uploads/allimg/170510/0RSQ4G-9.jpg"],
+				"courseName": "[回龙观] 点众羽毛球馆",
+				"trainingCourseId": 0,
+				"price": 0,
+				"coursePeriod": "",
+				"discountPrice": 0,
+				"courseOverview": "仅售72元，价值80元周六日高峰段套餐！",
+				"courseDescription": " "
+			},
+			{
+				"courseImg": ["http://tx.haiqq.com/uploads/allimg/170510/0RSQ4G-9.jpg"],
+				"courseName": "[回龙观] 点众羽毛球馆",
+				"trainingCourseId": 0,
+				"price": 0,
+				"coursePeriod": "",
+				"discountPrice": 0,
+				"courseOverview": "仅售50元，价值80元周一特惠套餐 节假日不可用！",
+				"courseDescription": "每张团购券仅供开设1块场地,1个小时.活动期间,每次每块场地最多使用1张团购券,需您当日一次性体验完毕所有项目 "
+			},
+			{
+				"courseImg": ["http://tx.haiqq.com/uploads/allimg/170510/0RSQ4G-9.jpg"],
+				"courseName": "[回龙观] 点众羽毛球馆",
+				"trainingCourseId": 0,
+				"price": 0,
+				"coursePeriod": "",
+				"discountPrice": 0,
+				"courseOverview": "仅售50元，价值80元周六日早中套餐！",
+				"courseDescription": " "
+			}
+	  ],
+		"coaches": [
+			{
+				"url": "http://tx.haiqq.com/uploads/allimg/170510/0RSQ4G-9.jpg",
+				"name": "张三",
+				"mark": ["蛙泳", "自由泳", "仰泳", "花泳", "潜泳"],
+				"age": "4年教龄"
+			},{
+				"url": "http://tx.haiqq.com/uploads/allimg/170510/0RSQ4G-9.jpg",
+				"name": "张三",
+				"mark": ["蛙泳", "自由泳", "仰泳", "花泳", "潜泳"],
+				"age": "4年教龄"
+			},{
+				"url": "http://tx.haiqq.com/uploads/allimg/170510/0RSQ4G-9.jpg",
+				"name": "张三",
+				"mark": ["蛙泳", "自由泳", "仰泳", "花泳", "潜泳"],
+				"age": "4年教龄"
+			}
+	  ],
+		"placeImageList": [{
+			"url": "http://c.hiphotos.baidu.com/image/pic/item/4bed2e738bd4b31ccda81d7a8bd6277f9f2ff85f.jpg"
+		},{
+			"url": "http://c.hiphotos.baidu.com/image/pic/item/f9198618367adab4b025268587d4b31c8601e47b.jpg"
+		},{
+			"url": "http://b.hiphotos.baidu.com/image/pic/item/d52a2834349b033bda94010519ce36d3d439bdd5.jpg"
+		}],
+		"place": {
+			"parkNum": 0,
+			"placeId": 897694,
+			"isContainStorage": 1,
+			"isContainWater": 1,
+			"price": 0,
+			"isContainBath": 1,
+			"lat": 34.376562,
+			"area": 0,
+			"isPrimeLocation": 0,
+			"lng": 107.160012,
+			"isSign": 1,
+			"orgEnterId": 0,
+			"isContainWifi": 1,
+			"isContainAc": 1,
+			"courseCount": 0,
+			"phone": "",
+			"name": "谭高鹏武馆",
+			"isOwnBuild": 0,
+			"code": "BJ897694",
+			"districtCode": "610303",
+			"supplierId": 0,
+			"isParkFree": 1,
+			"cityCode": "610300",
+			"isShelves": 1,
+			"phones": ["18717111253", "13817171122"],
+			"isContainHeating": 1,
+			"orgId": 0,
+			"uid": 0,
+			"isContainSlippers": 1,
+			"cityName": "宝鸡市",
+			"businessMode": 100,
+			"collectFlg": false,
+			"address": "宝鸡渭滨区人民街永兴巷45号",
+			"districtName": "金台区",
+			"cooperationStatus": 0,
+			"provinceCode": "610000",
+			"isVip": 0,
+			"isLockerRoom": 0,
+			"isVipHouse": 0,
+			"isContainAdArea": 0,
+			"categoryId": 0,
+			"isTrain": 0,
+			"businessTime": [
+				{"time":"08:30-13:30,08:29-13:30,08:30-12:30,13:30-20:30","week":"周一,周二,周三,周四,周五"},
+				{"time":"08:00-20:00","week":"周六,周日"}
+			]
+		}
+	}]
+}

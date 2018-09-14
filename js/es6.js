@@ -118,7 +118,6 @@
       })
       return this
     },
-
     updateContent: function(){
       var file = location.hash.split("#")[1]
       if (!file || file.length <= 0) {
@@ -161,10 +160,14 @@
       })
     },
     toggleVideo: function (b) {
-      this.config.elements.video[b ? 'show' : 'hide']()
       var videoFile = this.config.elements.videoFile
       if (!videoFile) {
        videoFile = this.config.elements.videoFile = this.config.elements.video.find("video")
+      }
+      this.config.elements.video[b ? 'show' : 'hide']()
+      if (!b) {
+        videoFile[0].pause()
+        return this
       }
       this.loadVideo(videoFile, this.config.videos[0])
       return this

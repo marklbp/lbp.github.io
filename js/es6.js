@@ -1,12 +1,21 @@
 (function(context){
   return context.extend(context,{
     config: {
+      docsUrl: '/study/es6/${file}.md',
+      videoUrl: 'study/es6/${video}.mp4',
       elements: {
         aside: $('#aside_content'),
         content: $('#main_content'),
         backTop: $('#back_top'),
         loadText: $("#load_text"),
-        progress: $("#progress")
+        progress: $("#progress"),
+        video: $("#video")
+      },
+      template: {
+        anchors: '<a style="display: none" href="#<%=file%>#<%=item%>" class="section-link" data-content="<%=item%>" data-hash="<%=file%>">🔗</a> <a href="javascript:void(0)" style="display: none" class="go-top">👆</a>',
+        item: '<li data-id="<%=id%>" class="link"><a href="#<%=file%>#<%=item%>"><%=item%></a></li>',
+        items: '<ol id="content-toc"><%=item%></ol>',
+        marked: '<div class="marked-text"><%=str%></div>'
       },
       cache: {},
       cacheKey: 'MARKLBP_ES6_HANDBOOK',
@@ -78,7 +87,7 @@
           header.animate({ color: "#ED1C24", }, 500, function() {
             $(this).animate({color: original_color}, 2500);
           });
-          history.pushState(null, null, '#' + (location.hash.split('#')[1] || 'intro') + '#' + this.dataset.id);
+          history.pushState(null, null, '#' + (that.getFileName()) + '#' + this.dataset.id);
       }).on(mouseover + " " + mouseout, "#main_content h2,#main_content h3,#main_content h4", function (e) {
         e.preventDefault()
         if (this.resetTime) clearTimeout(this.resetTime)
@@ -87,17 +96,39 @@
         } else {
           this.resetTime = setTimeout($.proxy(function(){$(this).find("a").hide()}, this), e.type.indexOf("touch") > -1 ? 3000 : 300);
         }
+      }).on(click, "#video span", function (e) {
+        e.preventDefault()
+        var className = this.className
+        switch (className) {
+          case 'prev':
+            that.config.videos.unshift(that.config.videos.pop())
+            that.toggleVideo(1)
+            break;
+          case 'next':
+            that.config.videos.push(that.config.videos.shift())
+            that.toggleVideo(1)
+            break;
+          case 'backward':
+            that.playVideo(-1)
+            break;
+          case 'forward':
+            that.playVideo(1)
+            break;
+        }
       })
       return this
     },
+
     updateContent: function(){
       var file = location.hash.split("#")[1]
-      if(!file || file.length <= 0){
+      if (!file || file.length <= 0) {
         file = 'intro'
       }
       return this.renderContent(this.config.elements.content, file)
     },
     renderContent: function(jqInstance, file){
+      if (file === 'video') return this.toggleVideo(1)
+      this.toggleVideo()
       this.toggleLoad(1)
       this.config.elements.backTop.trigger(this.config.events.click)
       if (this.config.cache[file]) {
@@ -106,14 +137,13 @@
         return this
       }
       return this.ajax({
-        url: '/study/es6/'+ file + '.md',
+        url: this.config.docsUrl.replace('${file}', file),
         type: 'get',
         always: function () {
           this.toggleLoad(0)
         },
         done: function(data){
-          var str = marked(data)
-          var dom = $('<div class="marked-text">' + str + '</div>');
+          var dom = $(this.template(this.config.template.marked, {str: marked(data)}))
           dom.find("code").map(function(){
             Prism.highlightElement(this)
           })
@@ -130,25 +160,50 @@
         }
       })
     },
+    toggleVideo: function (b) {
+      this.config.elements.video[b ? 'show' : 'hide']()
+      var videoFile = this.config.elements.videoFile
+      if (!videoFile) {
+       videoFile = this.config.elements.videoFile = this.config.elements.video.find("video")
+      }
+      this.loadVideo(videoFile, this.config.videos[0])
+      return this
+    },
+    loadVideo: function (video, v) {
+      video[0].src = this.config.videoUrl.replace('${video}', v)
+      video[0].load()
+    },
+    playVideo: function (s) {
+      var videoFile = this.config.elements.videoFile
+      if (!videoFile) {
+       videoFile = this.config.elements.videoFile = this.config.elements.video.find("video")
+      }
+      videoFile[0].currentTime += s
+    },
     toggleLoad: function (flag) {
       this.config.elements.loadText[flag ? 'show' : 'hide']()
     },
+    getFileName: function () {
+      return location.hash.split('#')[1] || 'intro'
+    },
     createAnchors: function(dom){
-      var hash = location.hash.split('#')[1] || 'intro'
+      var templateFun = this._template(this.config.template.anchors)
+      var templateItem = this._template(this.config.template.item)
+      var templateItems = this._template(this.config.template.items)
+      var hash = this.getFileName()
       for (var i = 2, lis; i <= 4; i++) {
         if (i === 2) lis = []
         dom.find('h' + i).map(function() {
           var content = $(this).text()
           this.id = content.replace(/, /g, ',').replace(/[&\/\\#,.+=$~%'":*?<>{}\ \]\[]/g, "-").replace(/[()]/g, '')
-          this.innerHTML = content +
-            ' <a style="display: none" href="#' + hash + '#' + this.id + '" class="section-link" data-content="' + this.id + '" data-hash="' + hash + '">🔗</a> <a href="javascript:void(0)" style="display: none" class="go-top">👆</a>'
+          this.innerHTML = content + " " + templateFun({file: hash, item: this.id})
           this.setAttribute('data-content', content)
           if(lis){
-            lis.push('<li data-id="' + this.id + '" class="link"><a href="#' + hash + '#' + content + '">' + content + '</a></li>')
+            lis.push(templateItem({id: this.id, file: hash, item: content}))
           }
         })
         if (lis) {
-          dom.find(">h1").eq(0).after("<ol id='content-toc'>" + lis.join('') + "</ol>")
+          dom.find(">h1").eq(0).after(templateItems({item: lis.join('')}))
           lis = null
         }
       }
@@ -158,7 +213,7 @@
       $('html, body').animate({
         scrollTop: 0
       }, 200);
-      history.pushState(null, null, '#' + (location.hash.split('#')[1] || 'intro'));
+      history.pushState(null, null, '#' + this.getFileName());
     },
     updateCache: function(opt){
       var storeCache = localStorage.getItem(this.config.cacheKey)

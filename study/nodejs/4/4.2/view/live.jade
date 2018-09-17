@@ -1,0 +1,45 @@
+include header
+        .span
+             div.navbar.navbar-inverse.navbar-fixed-top
+                div.navbar-inner
+                    div.container
+                        a.btn.btn-navbar(data-toggle="collapse",data-target=".nav-collapse")
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        a.brand(href="javascript:void(0)")  欢迎 #{user}
+                        div.nav-collapse.collapse
+                            ul.nav
+                                li
+                                    a(href="javascript:void(0)")  注销
+        .span2.offset
+            ul.nav.nav-list.online_list
+                li.nav-header
+                    h5  在线用户
+            ul.nav.nav-list.online_list.friend_list
+
+        .span8.offset
+            ul.nav.nav-tabs
+                li.active
+                    a(href="javascript:void(0)")    直播
+                li
+                    a(href="javascript:void(0)")    图片
+                li
+                    a(href="javascript:void(0)")    统计
+            div.hero-unit.live_area
+                ul
+                    li
+                        span.icon-user
+                        span.live_user_name.text-success
+                            [danhuang]
+                        span.live_message.text-info message
+            textarea.span8.offset
+            button.btn.btn-primary#send_msg  直播发送
+        div.span2.offset1
+            h5 微博分享
+            textarea.span4.weibo_share
+            div.span4
+                span.btn.btn-info   腾讯微博
+                span.btn.offset1.btn-warning   新浪微博
+        script(src="static/js/main.js")
+include footer

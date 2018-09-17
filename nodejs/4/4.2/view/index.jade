@@ -1,9 +1,0 @@
-include header
-		form.form-signin(action='upload?c=uploadAction', method='post',ENCTYPE='multipart/form-data')
-			h2.form-signin-heading IMAGE SIZE
-			input.input-block-level(type="text", placeholder="width", name="width")
-			input.input-block-level(type="text", placeholder="height", name="height")
-			input(type="file", name="image")
-			button.btn.btn-large.btn-primary(type="submit")
-				| UPLOAD IMAGE
-include footer

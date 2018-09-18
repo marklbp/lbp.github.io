@@ -231,6 +231,9 @@ body {
 }
 .page-box a{
   display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   margin: 0 20px;
   text-decoration: none;
   color: #ccc;
@@ -245,14 +248,10 @@ body {
   text-decoration: none;
 }
 #back_top,#btn_menu {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
   transition: .5s;
 }
 #btn_menu {
-  opacity: .5;
+  display: none;
 }
 #back_top {
   display: none;
@@ -293,7 +292,7 @@ body {
 
 @media (max-width:750px){
   #btn_menu{
-    opacity: 1;
+    display: inline-block;
   }
   .right-side {
       box-shadow: none;

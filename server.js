@@ -13,9 +13,9 @@ var Server = http.createServer(function(req,res){
   var pathname = url.parse(req.url).pathname;
       /*,paramStr = url.parse(req.url).query
       ,param = querystring.parse(paramStr)*/
-  if('favicon.ico' == pathname)return;
-  router(req,res,pathname);
-}).listen(port, openBrowser);
+  if('/favicon.ico' == pathname)return;
+  router(req,res,pathname)
+}).listen(port, openBrowser)
 
 function openBrowser() {
   var url = 'http://localhost' + (port == 80 ? '' : (':' + port))
@@ -29,12 +29,13 @@ function openBrowser() {
   }
   child_process.exec(cmd + url)
   console.log(('Server running at ' + url).blue);
+  watch()
 }
 
 function router(req,res,pathname){
   var staticFilePath = __dirname + pathname;
   var extname = path.extname(pathname);
-  var action = pathname.substring(pathname.lastIndexOf("/")+1);
+  var action = pathname.substring(pathname.lastIndexOf("/")+1)
   if(extname.length <= 0){
     if(actions[action])return actions[action](req,res,pathname);
     return actions['defaultIndex'](req,res,pathname)
@@ -86,7 +87,7 @@ function getStaticFile(req, res, pathname, staticFilePath){
         if (err) {
           res.writeHead(500, {'Content-Type': 'text/plain; charset=UTF-8'});
           log(req, new Date().toLocaleString(), 'GET', staticFilePath.split(__dirname)[1], 500, err)
-          res.end(err);
+          res.end(err.toString());
         } else {
           res.setHeader("Last-Modified", lastModified);
           res.writeHead(200, {'Content-Type': mineType + '; charset=UTF-8'});
@@ -100,10 +101,19 @@ function getStaticFile(req, res, pathname, staticFilePath){
 }
 
 var actions = {
-    defaultIndex: (req, res, pathname)=>{
-      var pathname = "/index.html";
-      var staticFilePath = __dirname + "/index.html";
+    defaultIndex: function (req, res, pathname) {
+      var old = pathname
+      pathname = (pathname === '/' ? '' : pathname) + "/index.html"
+      var staticFilePath = __dirname + pathname
+      return this.redirect(req, res, pathname, old)
       return getStaticFile(req, res, pathname, staticFilePath)
+    },
+    redirect: function (req, res, url, old) {
+      res.writeHead(302, {
+        'Location': url
+      })
+      log(req,  new Date().toLocaleString(), 'GET', old, 302, 'redirect ' + url)
+      res.end()
     }
   }
 
@@ -113,6 +123,19 @@ module.exports = {
 
 function log (req, time, method = 'GET', file, status = 200, msg = '') {
   var ip = req.connection.remoteAddress ||
-        req.socket.remoteAddress || '';
-  console.log((ip + ' [' + time + '] ' + method + ' ' + file + ' ' + status + ' ' + msg)[status != 200 ? 'red' : 'green'])
+        req.socket.remoteAddress || ''
+      ,color = 'green'
+  color = status == 304 ? 'gray' : color
+  color = status >= 400 ? 'red' : color
+  console.log((ip + ' [' + time + '] ' + method + ' ' + file + ' ' + status + ' ' + msg)[color])
+}
+
+
+function watch () {
+  fs.watch(__dirname, {
+    recursive: true
+  }, function (e, filename) {
+    if (/\.git/.test(filename)) return
+    console.log(e, filename)
+  })
 }

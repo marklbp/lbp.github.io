@@ -9,13 +9,24 @@ var http = require("http")
   ,port = process.argv.slice(2)[0] || 80;
 require("./nodejs/colors")()
 
-var Server = http.createServer(function(req,res){
-  var pathname = url.parse(req.url).pathname;
-      /*,paramStr = url.parse(req.url).query
+boot()
+
+function boot() {
+  var Server = http.createServer(function(req,res){
+    var pathname = url.parse(req.url).pathname
+    /*var params = ''
+    req.setEncoding('utf8')
+    req.on('data', c => params += c)
+    req.on('end', () => {
+      console.log('接收内容：', typeof params)
+    })*/
+    /*,paramStr = url.parse(req.url).query
       ,param = querystring.parse(paramStr)*/
-  if('/favicon.ico' == pathname)return;
-  router(req,res,pathname)
-}).listen(port, openBrowser)
+    if('/favicon.ico' == pathname)return;
+    router(req,res,pathname)
+  }).listen(port, openBrowser)
+  return Server
+}
 
 function openBrowser() {
   var url = 'http://localhost' + (port == 80 ? '' : (':' + port))
@@ -27,8 +38,8 @@ function openBrowser() {
   } else if (process.platform == 'darwin') {
     cmd = 'open ';
   }
-  child_process.exec(cmd + url)
-  console.log(('Server running at ' + url).blue);
+  // child_process.exec(cmd + url)
+  console.log(('Server running at ' + url).cyan);
   watch()
 }
 
@@ -130,12 +141,21 @@ function log (req, time, method = 'GET', file, status = 200, msg = '') {
   console.log((ip + ' [' + time + '] ' + method + ' ' + file + ' ' + status + ' ' + msg)[color])
 }
 
-
 function watch () {
-  fs.watch(__dirname, {
-    recursive: true
-  }, function (e, filename) {
-    if (/\.git/.test(filename)) return
-    console.log(e, filename)
+  /*fs.watchFile(__dirname + '/server.js', {
+    interval: 6000
+  }, function (currentFileStat, previousFileStat) {
+    if (currentFileStat.mtime !== previousFileStat.mtime) {
+      console.log(currentFileStat)
+    }
+  })*/
+
+  var fsWatcher = fs.watch(__dirname, {
+    recursive: true // 是否递归监听子目录
+  }, function (eventType, filename) {
+    if (eventType === 'change' && !/\.git/.test(filename)) {
+      console.log(filename + ' changed ' + Date.now())
+      // if ()
+    }
   })
 }

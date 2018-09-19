@@ -29,13 +29,20 @@ var r = [
   "http://es6.ruanyifeng.com/docs/reference.md"
 ]
 
-var rq = require('request')
+var http = require('http')
 var fs = require('fs')
 
 r.forEach(p => {
   var f = p.substring(p.lastIndexOf('/')+1)
   var file = './docs/' + f
-  rq(p).pipe(fs.createWriteStream(file, 'utf8')).on("close", function (err) {
-    console.log("文件[" + file + "]下载完毕");
+  http.get(p, res => {
+    res.setEncoding('utf8')
+    var rawData = ''
+    res.on('data', c => {rawData += c})
+    res.on('end', () => {
+      console.log("文件[" + file + "]下载完毕")
+      // fs.writeFile(file, rawData, 'utf8', () => console.log("文件[" + file + "]写入完毕"))
+      fs.createWriteStream(file, 'utf8').write(rawData, 'utf8', () => console.log("文件[" + file + "]写入完毕"))
+    })
   })
 })

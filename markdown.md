@@ -24,7 +24,7 @@ empty line display a paragraph, otherwise means in the same paragraph
 
 
 ```
-<div>   
+<div>
     <div></div>
     <div></div>
     <div></div>

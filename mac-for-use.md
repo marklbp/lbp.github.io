@@ -40,10 +40,10 @@ mkdir 指定目录名
 		5. 这里的“Web服务器模块”有如下三种:
 
 		  BaseHTTPServer ➡ ️提供基本的Web服务和处理器类，分别是HTTPServer和BaseHTTPRequestHandler
-          
-          SimpleHTTPServer ➡ ️包含执行GET和HEAD请求的SimpleHTTPRequestHandler类
-          
-          CGIHTTPServer ➡ ️包含处理POST请求和执行CGIHTTPRequestHandler类
+
+      SimpleHTTPServer ➡ ️包含执行GET和HEAD请求的SimpleHTTPRequestHandler类
+
+      CGIHTTPServer ➡ ️包含处理POST请求和执行CGIHTTPRequestHandler类
 
 
 5. Node.js 搭建
@@ -91,31 +91,26 @@ mkdir 指定目录名
 
 	3. 安装 n 工具，这个工具是专门用来管理node.js版本的，别怀疑这个工具的名字，是他是他就是他，他的名字就是 "n"
 	```
-
 	sudo npm install -g n
 	```
 
 	4. 安装最新版本的node.js
 	```
-
 	sudo n stable|latest
 	```
 
 	5. 再次查看本机的node.js版本：
 	```
-
 	node -v
 	```
 
 	6. 更新npm到最新版：
 	```
-
 	$ sudo npm install npm@latest -g
 	```
 
 	7. 验证
 	```
-
 	node -v
 	npm -v
 	```

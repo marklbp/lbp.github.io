@@ -2,7 +2,7 @@
     <div class="page-messages">
       <div class="messages">
         <ul class="list">
-          <li class="has-new">
+          <router-link :to="'/contact/0'" tag="li" class="has-new">
             <div class="avatar">
             </div>
             <div class="content">
@@ -14,8 +14,8 @@
               </div>
               <div class="message">发送消息的内容，上次合作怎么样？</div>
             </div>
-          </li>
-          <li>
+          </router-link>
+          <router-link :to="'/contact/0'" tag="li">
             <div class="avatar">
             </div>
             <div class="content">
@@ -27,8 +27,8 @@
               </div>
               <div class="message">发送消息的内容，上次合作怎么样？</div>
             </div>
-          </li>
-          <li class="has-new">
+          </router-link>
+          <router-link :to="'/contact/0'" tag="li" class="has-new">
             <div class="avatar">
             </div>
             <div class="content">
@@ -40,8 +40,8 @@
               </div>
               <div class="message">发送消息的内容，上次合作怎么样？</div>
             </div>
-          </li>
-          <li>
+          </router-link>
+          <router-link :to="'/contact/0'" tag="li">
             <div class="avatar">
             </div>
             <div class="content">
@@ -53,8 +53,8 @@
               </div>
               <div class="message">发送消息的内容，上次合作怎么样？</div>
             </div>
-          </li>
-          <li class="has-new">
+          </router-link>
+          <router-link :to="'/contact/0'" tag="li" class="has-new">
             <div class="avatar">
             </div>
             <div class="content">
@@ -66,8 +66,8 @@
               </div>
               <div class="message">发送消息的内容，上次合作怎么样？</div>
             </div>
-          </li>
-          <li>
+          </router-link>
+          <router-link :to="'/contact/0'" tag="li">
             <div class="avatar">
             </div>
             <div class="content">
@@ -79,8 +79,8 @@
               </div>
               <div class="message">发送消息的内容，上次合作怎么样？</div>
             </div>
-          </li>
-          <li class="has-new">
+          </router-link>
+          <router-link :to="'/contact/0'" tag="li" class="has-new">
             <div class="avatar">
             </div>
             <div class="content">
@@ -92,8 +92,8 @@
               </div>
               <div class="message">发送消息的内容，上次合作怎么样？</div>
             </div>
-          </li>
-          <li>
+          </router-link>
+          <router-link :to="'/contact/0'" tag="li">
             <div class="avatar">
             </div>
             <div class="content">
@@ -105,8 +105,8 @@
               </div>
               <div class="message">发送消息的内容，上次合作怎么样？</div>
             </div>
-          </li>
-          <li class="has-new">
+          </router-link>
+          <router-link :to="'/contact/0'" tag="li" class="has-new">
             <div class="avatar">
             </div>
             <div class="content">
@@ -118,7 +118,7 @@
               </div>
               <div class="message">发送消息的内容，上次合作怎么样？</div>
             </div>
-          </li>
+          </router-link>
         </ul>
       </div>
       <Foot />

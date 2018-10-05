@@ -11,7 +11,7 @@
       </swipe>
       <div class="project">
         <ul class="list">
-          <li v-for="(item, i) in items" :key="i">
+          <router-link tag="li" v-for="(item, i) in items" :key="i" :to="'/cooperate/' + item.id">
             <div class="user">
               <span>{{item.nick}}&nbsp;.&nbsp;</span>
               <span>{{item.company + item.job}}</span>
@@ -21,7 +21,7 @@
               <span>【{{item.title}}】</span>
               <span>{{item.text}}</span>
             </div>            
-          </li>
+          </router-link>
         </ul>
       </div>
       <foot />

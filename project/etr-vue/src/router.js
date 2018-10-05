@@ -51,6 +51,13 @@ const router = {
     meta: {
       title: '我的'
     }
+  }, {
+    path: '/contact/:id',
+    name: 'contact',
+    component: () => asyncLoad('contact'),
+    meta: {
+      title: ''
+    }
   }]
 }
 

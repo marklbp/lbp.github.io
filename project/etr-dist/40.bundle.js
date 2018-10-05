@@ -1,2 +1,2 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[40],{sr2g:function(e,n){throw new Error('Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n> <!doctype html>\n| <html lang="en">\n| <head>')}}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[40],{LBxe:function(p,e,n){p.exports=n.p+"8c6c38a60128e83e84da1c5e0712ab03.png"}}]);
 //# sourceMappingURL=40.bundle.js.map

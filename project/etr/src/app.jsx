@@ -1,12 +1,11 @@
 import React , {Component} from 'react'
-import Footer from './footer'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import routes from './route'
+
 
 class App extends Component {
   render () {
-    return (
-      <div className="page-app">
-      </div>
-    )
+    return <Router><Switch>{routes.map((r, i)=><Route {...r} key={i} />)}</Switch></Router>
   }
 }
 

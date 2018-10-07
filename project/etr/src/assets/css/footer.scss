@@ -11,10 +11,13 @@
     margin-top: .21rem;
     width: .4rem;
     text-decoration: none;
-    color: #4B9EEA;
+    color: #ccc;
     font-size: .2rem;
     white-space: nowrap;
     text-align: center;
+    &.focus {
+      color: #4B9EEA;
+    }
     &:hover { 
       text-decoration: none;
     }

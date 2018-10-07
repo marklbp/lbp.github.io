@@ -1,5 +1,5 @@
 import React from "react";
-import './assets/css/footer'
+import './assets/css/footer.scss'
 import navLProject from './assets/img/nav-light-project.png'
 import navLResource from './assets/img/nav-light-resource.png'
 import navAdd from './assets/img/nav-add.png'

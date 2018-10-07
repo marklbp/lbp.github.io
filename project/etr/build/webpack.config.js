@@ -41,7 +41,7 @@ module.exports = {
      */
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css', '.scss', '.less', '.stylus']
+    //extensions: ['js', '.jsx', '.css', '.scss', '.less']
   },
   /**
    * for split code from bunddle by SplitChunksPlugin instead of CommonsChunkPlugin

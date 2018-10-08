@@ -1,0 +1,29 @@
+{
+    "unused": "vars",
+    "undef": true,
+    "browser": true,
+    "quotmark": "single",
+    "shadow": false,
+    "indent": false,
+    "latedef": "nofunc",
+    "strict": true,
+    "curly": true,
+    "eqeqeq": true,
+    "evil": false,
+    "forin": false,
+    "immed": true,
+    "newcap": true,
+    "noarg": true,
+    "noempty": false,
+    "nomen": true,
+    "validthis": true,
+    "white": true,
+    "node": true,
+    "maxparams": 6,
+    "jquery": true,
+    "node": true,
+    "notypeof": true,
+    "globals": {
+        "define": true
+    }
+}

@@ -1,0 +1,83 @@
+.item{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -o-box;
+	display: box;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	border-bottom: .1rem solid #cccccc;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	position: relative;
+}
+.item.active:before{
+	content: "已参与";
+	position: absolute;
+	left: 0;
+	top:0;
+	background-color: #ff3c2d;
+	color: #fff;
+	line-height: normal;
+	padding: .1rem .5rem;
+	font-size: .5rem;
+}
+.item .btn-del,
+.item .btn-go{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -o-box;
+	display: box;
+	-webkit-box-pack:center;
+	-moz-box-pack:center;
+	-o-box-pack:center;
+	box-pack:center;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-o-box-align:center;
+	box-align:center;
+	color: #4a4a4a;
+}
+.item .btn-del{
+	margin-right: .5rem;
+}
+.item .btn-go{
+	text-align: right;
+	margin-left: .5rem;
+	width: 2rem;
+	display: block;
+}
+.item.active .btn-go{
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.item .balls{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+}
+.item .balls{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -o-box;
+	display: box;
+}
+.item .balls:first-child~.balls{
+	margin-top: .25rem;
+}
+
+.item .balls .ball:last-child{
+	-webkit-box-flex: 2;
+	-moz-box-flex: 2;
+	-o-box-flex: 2;
+	box-flex: 2;
+	text-align: right;
+}
+.item .balls .red.ball span{
+	background-color: transparent;
+	color: #ff3c3d
+}
+.item .balls .blue.ball span{
+	background-color: transparent;
+	color: #00b2ff
+}

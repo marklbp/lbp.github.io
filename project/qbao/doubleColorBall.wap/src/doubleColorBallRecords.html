@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('publicFront.app/src/meta.html',{"title":"往期开奖"})
+    <link rel="stylesheet" type="text/css" href="{{domains.sld}}/publicFront/css/marklbp.min.css">
+    <link rel="stylesheet" href="{{domains.scdn}}/wap/css/reset.min.css">
+    <!-- build:css css/indexB.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/indexB.css">
+    <!-- endbuild -->
+</head>
+<body>
+	<div class="list">
+		<!-- <div class="item active">
+			<span class="btn-del">第20161023期</span>
+			<div class="balls">
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball blue">02</span>
+			</div>
+			<span class="btn-go"><i class="fa fa-angle-right"></i></span>
+		</div> -->
+		<p class="ajax-loading text-center">
+			<span><img src="{{domains.sld}}/publicFront/img/abs_load_33X33.gif">玩命加载中...</span>
+			<span></span>
+		</p> 
+	</div>
+    @@include("publicFront.app/src/wap.script.html")
+    <script type="text/template" id="item-tpl">
+    	<%
+    		var date,red,blue,classe,isPlay;
+    		$.each(data,function(i,balls){
+    			isPlay = balls.userInvolvement ? " active" : "";
+    			date   = balls.date;
+    			red    = balls.reds.split(",");
+    			blue   = ''+(balls.blues >= 10 ?"" : "0") + balls.blues;
+    	%>
+    	<div class="item<%=isPlay%>">
+			<span class="btn-del">第<%=date%>期</span>
+			<div class="balls">
+				<%
+					for(var i = 0; i < red.length; i++){
+				%>
+				<div class="ball red">
+					<span><%=''+(red[i]>=10?'':'0')+red[i]%></span>
+				</div>
+				<%
+					}
+				%>
+				<div class="ball blue"><span><%=blue%></span></div>
+			</div>
+		</div>
+		<%
+			})
+		%>
+    </script>
+    <!-- build:js js/indexB.min.js -->
+    <script type="text/javascript" src="js/cfg.js"></script>
+    <script type="text/javascript" src="js/indexB.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

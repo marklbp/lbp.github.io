@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="{{domains.scdn}}/common/img/favicon.ico" type="image/x-icon" />
+    <title>demo</title>
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/express_dialog.css">
+</head>
+
+<body>
+    <h1 class="text-center">测试用例</h1>
+    <!--快捷支付兑换框-->
+    <div class="modal modal-wap-exchange" tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close-button close" style="margin-top: -10px;">×</button>
+                    <div class='modal-exchange-dialog express-dialog'>
+                        <div class='access text-left'>
+                            <p>开通快捷兑换后，红包机会不足时，可使用<span class='red'>1000</span>宝券兑换20个抢红包机会，无需输入交易密码；每天限使用<span class='red'>10</span>次，仅限宝券支付。</p>
+                        </div>
+                        <p class='text text-left'>交易密码
+                            <input type='password' maxlength='20' />
+                        </p>
+                        <!-- <p class='text text-left'>是否关闭服务？</p> -->
+                        <div class='btns'>
+                            <button class='btn btn-express'>关闭</button>
+                            <button class='btn btn-ax'>取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exchange-express-demo">
+        <h2>1.多端快捷兑换测试用例</h2>
+        <button id="btn-express-pc">pc端快捷兑换，点我测试</button>
+        <button id="btn-express-app">app端快捷兑换，点我测试</button>
+    </div>
+    
+
+    <script type="text/javascript" src="plugins/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 弹框插件 -->
+    <script type="text/javascript" src="plugins/alertbox/alertbox.js"></script>
+    <!-- 模板插件 -->
+    <script type="text/javascript" src="plugins/htmlTpl.js"></script>
+    <!-- 主业务脚本 -->
+    <script type="text/javascript" src="js/qhb.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            /*
+                1.debug模式用于本地模拟测试，实际开发无需设置
+            */
+            Marklbp.debug = true;
+
+            //快捷兑换测试用例
+            $("#btn-express-pc").click(function(){
+                //Marklbp.exchangeExpressLoad(callback,container,modalClass);
+                Marklbp.exchangeExpressLoad(function(data){
+                    alert(JSON&&JSON.stringify(data))
+                },false,"modal-pc-express");
+            });
+            $("#btn-express-app").click(function(){
+                //Marklbp.exchangeExpressLoad(callback,container,modalClass);
+                Marklbp.exchangeExpressLoad(function(data){
+                    alert(JSON&&JSON.stringify(data))
+                },false,"modal-wap-express");
+            })
+        })
+    </script>
+</body>
+
+</html>

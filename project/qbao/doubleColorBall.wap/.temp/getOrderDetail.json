@@ -1,0 +1,21 @@
+{
+	"code": 0,
+	"message": null,
+	"data": {
+		"id": 2,
+		"parentId": 14805602128516119,
+		"orderId": 14805602203695566,
+		"userId": 626626,
+		"bettingDates": 20161130,
+		"reds": "1,2,3,4,5,6",
+		"blues": "1",
+		"bettingMutiple": 1,
+		"expendCounp": 1,
+		"paymentDate": 1480560223000,
+		"winLotteryData": null,
+		"lotteryReds": "",
+		"lotteryBlue": "",
+		"tableName": null
+	},
+	"success": true
+}

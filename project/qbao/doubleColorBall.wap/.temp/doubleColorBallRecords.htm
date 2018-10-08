@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>往期开奖</title>
+<meta name="description" content="&#x94B1;&#x5B9D;QBAO.COM - &#x4E13;&#x4E1A;&#x7684;&#x7EFC;&#x5408;&#x7F51;&#x4E0A;&#x8D2D;&#x7269;&#x5546;&#x57CE;,&#x9500;&#x552E;&#x5BB6;&#x7535;&#x3001;&#x6570;&#x7801;&#x901A;&#x8BAF;&#x3001;&#x7535;&#x8111;&#x3001;&#x5BB6;&#x5C45;&#x767E;&#x8D27;&#x3001;&#x670D;&#x88C5;&#x670D;&#x9970;&#x3001;&#x6BCD;&#x5A74;&#x3001;&#x56FE;&#x4E66;&#x3001;&#x98DF;&#x54C1;&#x7B49;&#x6570;&#x4E07;&#x4E2A;&#x54C1;&#x724C;&#x4F18;&#x8D28;&#x5546;&#x54C1;.&#x4FBF;&#x6377;&#x3001;&#x8BDA;&#x4FE1;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x4E3A;&#x60A8;&#x63D0;&#x4F9B;&#x6109;&#x60A6;&#x7684;&#x7F51;&#x4E0A;&#x8D2D;&#x7269;&#x4F53;&#x9A8C;!">
+<meta name="keywords" content="&#x5FAE;&#x5546;&#x3001;&#x7535;&#x5546;&#x3001;&#x5B9D;&#x8D2D;&#x3001;&#x96F7;&#x62CD; &#x2014; &#x94B1;&#x5B9D;&#x7F51;">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="//scdn.qbcdn.com/common/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//qhb.qbcdn.com/publicFront/css/marklbp.min.css">
+    <link rel="stylesheet" href="//scdn.qbcdn.com/wap/css/reset.min.css">
+    <!-- build:css css/indexB.min.css -->
+    <link rel="stylesheet" type="text/css" href="/css/common.css?v=1527521588282">
+    <link rel="stylesheet" type="text/css" href="/css/indexB.css?v=1527521588282">
+    <!-- endbuild -->
+</head>
+<body>
+	<div class="list">
+		<!-- <div class="item active">
+			<span class="btn-del">第20161023期</span>
+			<div class="balls">
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball red">01</span>
+				<span class="ball blue">02</span>
+			</div>
+			<span class="btn-go"><i class="fa fa-angle-right"></i></span>
+		</div> -->
+		<p class="ajax-loading text-center">
+			<span><img src="//qhb.qbcdn.com/publicFront/img/abs_load_33X33.gif">玩命加载中...</span>
+			<span></span>
+		</p> 
+	</div>
+    <script type="text/javascript" src="//scdn.qbcdn.com/wap/lib/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="//scdn.qbcdn.com/??common/core/core_sdk/coreSdk.js,/wap/core/core_setup/coreSetup.js,/wap/site/site_frame/siteFrame.js"></script>
+<script type="text/javascript" src="//qhb.qbcdn.com/publicFront/js/marklbp.min.js"></script>
+    <script type="text/template" id="item-tpl">
+    	<%
+    		var date,red,blue,classe,isPlay;
+    		$.each(data,function(i,balls){
+    			isPlay = balls.userInvolvement ? " active" : "";
+    			date   = balls.date;
+    			red    = balls.reds.split(",");
+    			blue   = ''+(balls.blues >= 10 ?"" : "0") + balls.blues;
+    	%>
+    	<div class="item<%=isPlay%>">
+			<span class="btn-del">第<%=date%>期</span>
+			<div class="balls">
+				<%
+					for(var i = 0; i < red.length; i++){
+				%>
+				<div class="ball red">
+					<span><%=''+(red[i]>=10?'':'0')+red[i]%></span>
+				</div>
+				<%
+					}
+				%>
+				<div class="ball blue"><span><%=blue%></span></div>
+			</div>
+		</div>
+		<%
+			})
+		%>
+    </script>
+    <!-- build:js js/indexB.min.js -->
+    <script type="text/javascript" src="/js/cfg.js?v=1527521588282"></script>
+    <script type="text/javascript" src="/js/indexB.js?v=1527521588282"></script>
+    <!-- endbuild -->
+</body>
+</html>

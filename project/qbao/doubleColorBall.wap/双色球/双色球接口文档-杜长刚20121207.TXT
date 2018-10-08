@@ -1,0 +1,107 @@
+用户是否确定过协议
+返回Boolean值
+http://m.qhb.qbao.com/doubleBall/isUserProtocolConfirm.html
+{"code":0,"message":null,"data":false,"success":true}
+
+获取当前双色球期号
+返回期号
+http://m.qhb.qbao.com/doubleBall/getDoubleBallCurrentDate.html
+{"code":0,"message":null,"data":20161030,"success":true}
+
+用户压注
+
+http://m.qhb.qbao.com/doubleBall/userBet.html
+post:
+{
+	"betList":[
+		{
+			"redStr":"1,2,3,4,5,6,7",
+			"blueString":"1,3",
+			"mutiple":1,
+			allDatesStr:"20161221,20160919"
+		},
+		{
+			"redStr":"1,2,3,4,5,6,7",
+			"blueString":"1,3",
+			"mutiple":1,
+			allDatesStr:"20161221,20160919"
+		}
+	]
+	"tradePassword":"asdasdasd",
+	"verifyCode":129383
+}
+返回值
+date: 数组
+[
+orderId:订单号
+bettingDates:用户压得期号
+reds:用户压注的红球
+blues:用户压注的蓝球
+bettingMutiple:压注倍数
+expendCounp：花费的宝券
+paymentDate: 支付时间
+winLotteryData: 获奖数据 [2,4,3,0,0,0,0].为4注1等奖,3注2等奖,2注未中奖
+lotteryReds: 本期开奖的红色球"1,3,5,6,7,8,10"
+lotteryBlue:本期开奖的蓝色球"1,3"
+]
+{"code":-1,"message":"用户协议没通过","data":null,"success":false}
+{"code":-1,"message":"选球数不对,红球数必须大于6,篮球必须大于1","data":null,"success":false}
+{"code":-1,"message":"您选择的期数不对","data":null,"success":false}
+
+{"code":0,"message":null,"data":[{"id":null,"parentId":14805602128516119,"orderId":14805602203695566,"userId":626626,"bettingDates":20161130,"reds":"1,2,3,4,5,6","blues":"1","bettingMutiple":1,"expendCounp":1,"paymentDate":1480560222793,"winLotteryData":null,"lotteryReds":null,"lotteryBlue":null,"tableName":0},{"id":null,"parentId":14805602128516119,"orderId":14805602335390597,"userId":626626,"bettingDates":20161129,"reds":"1,2,3,4,5,6","blues":"1","bettingMutiple":1,"expendCounp":1,"paymentDate":1480560233581,"winLotteryData":null,"lotteryReds":null,"lotteryBlue":null,"tableName":0}],"success":true}
+
+
+
+用户接受协议发送通知
+返回success
+http://m.qhb.qbao.com/doubleBall/setUserProtocolConfirm.html
+{"code":0,"message":null,"data":null,"success":true}
+
+
+获取开奖历史
+date:期号
+reds:开奖的红球
+blues:开奖的蓝球
+userInvolvement:用户是否参与了该期双色球
+http://m.qhb.qbao.com/doubleBall/getLotteryHistoryRecord.html?count=10&start=0
+{"code":0,"message":null,"data":[{"id":null,"date":20161201,"reds":"5,9,17,18,26,30","blues":"4","buyTotal":null,"awardTotal":null,"createTime":null,"userInvolvement":true}],"success":true}
+
+
+
+
+获取用户订单结果
+
+orderId:订单号
+bettingDates:用户压得期号
+reds:用户压注的红球
+blues:用户压注的蓝球
+bettingMutiple:压注倍数
+expendCounp：花费的宝券
+paymentDate: 支付时间
+winLotteryData: 获奖数据 [2,4,3,0,0,0,0].为4注1等奖,3注2等奖,2注未中奖
+lotteryReds: 本期开奖的红色球"1,3,5,6,7,8,10"
+lotteryBlue:本期开奖的蓝色球"1,3"
+
+http://m.qhb.qbao.com/doubleBall/getUserBetResult.html?orderId=14805602203695566
+{"code":0,"message":null,"data":{"id":2,"parentId":14805602128516119,"orderId":14805602203695566,"userId":626626,"bettingDates":20161130,"reds":"1,2,3,4,5,6","blues":"1","bettingMutiple":1,"expendCounp":1,"paymentDate":1480560223000,"winLotteryData":null,"lotteryReds":"","lotteryBlue":"","tableName":null},"success":true}
+
+获取用户基本数据
+mustTransactionPassword: 是否需要交易密码
+needVerifyCodeCounpCount:花费大于多少宝券需要短信验证码
+maxExpendCounpCount:单期最多花费多少宝券.
+userCounpCount:用户宝券数
+username:用户名称
+winningRule:赢得奖励奖项对应价钱[0,500000,100000,10000,1000,100,50] 代表 1等奖500000 2等奖:100000
+http://m.qhb.qbao.com/doubleBall/getDoubleBallBaseData.html
+{"code":0,"message":null,"data":{"mustTransactionPassword":false,"needVerifyCodeCounpCount":0,"maxExpendCounpCount":500000,"userCounpCount":303666946,"username":"windy111","winningRule":[0,500000,100000,10000,1000,100,50]},"success":true}
+
+获取某种选号方案需要的宝券数
+data:需要的宝券数
+http://m.qhb.qbao.com/doubleBall/getLotteryNeedExpenseCoupon.html?redStr=1,2,3,4,5,6&blueString=1&mutiple=1&allDatesStr=20161211
+{"code":0,"message":null,"data":20,"success":true}
+
+
+用户发送短信校验码
+返回success结果
+http://m.qhb.qbao.com/doubleBall/sendVerifyCode.html
+{"code":0,"message":null,"data":null,"success":true}

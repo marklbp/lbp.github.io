@@ -1,0 +1,18 @@
+{
+    "svns": {
+        "devel": {
+            "repo": "http://192.168.7.237/ngsvnroot/crazymoney/branches/wapFrontDev/doubleColorBall",
+            "notes": "规则样式微调和消耗宝券数取整"
+        },
+
+        "build": {
+            "repo": "http://192.168.7.237/ngsvnroot/crazymoney/branches/wapFrontDev/doubleColorBall",
+            "notes": "规则样式微调和消耗宝券数取整"
+        }
+    },
+    "cdn": "//qhb.qbcdn.com",
+
+    "webpack": {
+        "switch": false
+    }
+}

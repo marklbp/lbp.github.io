@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单确认</title>
+    <link rel="stylesheet" href="css/hkb_store.min.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no, email=no">
+<link rel="stylesheet" href="css/hkb_store.min.css">
+</head>
+<body>
+
+
+<!--汇卡宝商城首页-->
+
+
+<div class="pay_page_all">
+
+<!--支付时间-->
+    <div class="count_down">
+
+    <div class="down_time">
+
+        <div class="money_number">支付剩余时间</div>
+
+        <span class="number_time">26:52</span>
+
+    </div>
+
+    <div class="use_money">
+
+        <span>支付金额</span>
+
+        <div class="payment">¥<span> 600.00</span></div>
+
+    </div>
+
+</div>
+
+
+<!--支付方式-->
+    <div class="pay_first_way">
+
+    <div class="pay_way">
+        <span class="manner_way">支付方式</span>
+    </div>
+
+    <label class="bank_account">
+
+        <div class="account_name">
+
+        <img src="images/hkb_shopping/icon_shopping_04.png">
+        
+        <div class="bank_account_name">汇卡宝福利账户</div>
+
+        </div>
+
+        <label>
+            <input class="radio_all" type="checkbox" checked onclick="jdShoppingCart.checkBoxChoose(this);">
+        </label>
+
+    </label>
+
+    <label class="bank_account">
+
+        <div class="account_name">
+
+            <img src="images/hkb_shopping/icon_shopping_05.png">
+
+            <div class="bank_account_name">微信余额</div>
+
+        </div>
+
+        <label>
+            <input class="radio_all" type="checkbox" onclick="jdShoppingCart.checkBoxChoose(this);">
+        </label>
+
+    </label>
+
+</div>
+
+
+<!-- 提交订单 -->
+
+    <div class="operation_tab_b">
+
+    <div class="hkb_alignment_left">
+
+        <div class="include_left">含运费</div>
+
+        <div class="hkb_price">合计:
+            <span class="font_red">￥139.00</span>
+        </div>
+
+    </div>
+
+    <!--<a class="operation_btn" href="password_verify.htm">提交订单</a>-->
+        <button class="operation_btn" onclick="window.location.href='password_verify.htm'">提交订单</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="js/fastclick.min.js"></script>
+<script src="js/hkb_store.min.js"></script>
+<script>
+
+
+
+    var jdShoppingCart = {
+
+
+        //复选框单选
+        checkBoxChoose:function(obj) {
+
+            var allCheckBox = document.getElementsByClassName('radio_all');
+
+            for (var i = 0; i < allCheckBox.length; i++) {
+
+
+                if (allCheckBox[i] == obj && obj.checked) {
+
+                    allCheckBox[i].checked = true;
+
+                } else {
+
+                    allCheckBox[i].checked = false;
+                }
+            }
+
+        }
+
+
+    };
+
+
+
+
+
+</script>
+</body>
+</html>

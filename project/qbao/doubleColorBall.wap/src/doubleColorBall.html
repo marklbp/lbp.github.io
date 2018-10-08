@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('publicFront.app/src/meta.html',{"title":"双色球"})
+    <link rel="stylesheet" type="text/css" href="{{domains.sld}}/publicFront/css/marklbp.min.css">
+    <link rel="stylesheet" href="{{domains.scdn}}/wap/css/reset.min.css">
+    <!-- build:css css/index.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- endbuild -->
+</head>
+<body>
+	<div class="index-page" id="index_page">
+		<div class="reward-notice">
+			<a class="btn-get-reward">领奖中心</a>
+			<a class='btn-recorded'>
+				<span><em class="current-date"><img src="{{domains.sld}}/publicFront/img/abs_load_33X33.gif" width="30"></em>21:00开奖,20:30止投</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		<div class="row row-normal">
+			<p class="text-center unstyled">至少选择6个红球，1个蓝球</p>
+			<div class="text-center col-xs-12" style="padding-left: 2rem;padding-right: 2rem;">
+				<div class="balls red">
+					<div class="ball"><span>01</span></div>
+					<div class="ball"><span>02</span></div>
+					<div class="ball"><span>03</span></div>
+					<div class="ball"><span>04</span></div>
+					<div class="ball"><span>05</span></div>
+					<div class="ball"><span>06</span></div>
+					<div class="ball"><span>07</span></div>
+				</div>
+				<div class="balls red">
+					<div class="ball"><span>08</span></div>
+					<div class="ball"><span>09</span></div>
+					<div class="ball"><span>10</span></div>
+					<div class="ball"><span>11</span></div>
+					<div class="ball"><span>12</span></div>
+					<div class="ball"><span>13</span></div>
+					<div class="ball"><span>14</span></div>
+				</div>
+				<div class="balls red">
+					<div class="ball"><span>15</span></div>
+					<div class="ball"><span>16</span></div>
+					<div class="ball"><span>17</span></div>
+					<div class="ball"><span>18</span></div>
+					<div class="ball"><span>19</span></div>
+					<div class="ball"><span>20</span></div>
+					<div class="ball"><span>21</span></div>
+				</div>
+				<div class="balls red">
+					<div class="ball"><span>22</span></div>
+					<div class="ball"><span>23</span></div>
+					<div class="ball"><span>24</span></div>
+					<div class="ball"><span>25</span></div>
+					<div class="ball"><span>26</span></div>
+					<div class="ball"><span>27</span></div>
+					<div class="ball"><span>28</span></div>
+				</div>
+				<div class="balls red">
+					<div class="ball"><span>29</span></div>
+					<div class="ball"><span>30</span></div>
+					<div class="ball"><span>31</span></div>
+					<div class="ball"><span>32</span></div>
+					<div class="ball"><span>33</span></div>
+					<div class="ball unvisible"><span>00</span></div>
+					<div class="ball unvisible"><span>00</span></div>
+				</div>
+				<div class="balls blue">
+					<div class="ball"><span>01</span></div>
+					<div class="ball"><span>02</span></div>
+					<div class="ball"><span>03</span></div>
+					<div class="ball"><span>04</span></div>
+					<div class="ball"><span>05</span></div>
+					<div class="ball"><span>06</span></div>
+					<div class="ball"><span>07</span></div>
+				</div>
+				<div class="balls blue">
+					<div class="ball"><span>08</span></div>
+					<div class="ball"><span>09</span></div>
+					<div class="ball"><span>10</span></div>
+					<div class="ball"><span>11</span></div>
+					<div class="ball"><span>12</span></div>
+					<div class="ball"><span>13</span></div>
+					<div class="ball"><span>14</span></div>
+				</div>
+				<div class="balls blue">
+					<div class="ball"><span>15</span></div>
+					<div class="ball"><span>16</span></div>
+					<div class="ball btn-reset"><span><i class="fa fa-trash-o"></i></span></div>
+					<div class="ball unvisible"><span>00</span></div>
+					<div class="ball unvisible"><span>00</span></div>
+					<div class="ball unvisible"><span>00</span></div>
+					<div class="ball unvisible"><span>00</span></div>
+				</div>
+				<div class="modal-rule">
+					<div class="inner">
+					开奖时间：每日21：00开奖。<br />
+截止投注时间：每日20：30截止投注；<br />
+玩法规则：6个红球 + 1个蓝球 = 1注（20宝券）。<br />
+下单规则：一经支付，则无法退回支付金额。<br />
+游戏解释权：归『钱宝网』所有。<br />
+奖项设置：<br />
+  i. 一等奖（6个红球+1篮球）的奖励为50万宝券；<br />
+ ii. 二等奖（6个红球）的奖励为10万宝券；<br />
+iii. 三等奖（5个红球+1篮球）的奖励为1万宝券；<br />
+ iv. 四等奖（5个红球）的奖励为1000宝券；四等奖（4个红球+1篮球）的奖励为1000宝券；<br />
+  v. 五等奖（4个红球）的奖励为100宝券；五等奖（3个红球+1篮球）的奖励为100宝券；<br />
+ vi. 六等奖（2个红球+1篮球）的奖励为50宝券；六等奖（1个红球+1篮球）的奖励为50宝券；六等奖（1篮球）的奖励为50宝券；<br />
+					</div>
+					<span class="btn-rule">游戏规则</span>
+				</div>
+			</div>
+		</div>
+		<button class="btn btn-lg btn-play btn-random">随机投一注</button>
+		<span class="sum">共<em data-marklbp="totalBets">0</em>注</span>
+		<div class="foot-nav">
+			<div class="btn-user-nav">
+				<a><img src="img/ico-usd.png">领取奖金</a>
+				<hr>
+				<a class="btn-records"><img src="img/ico-record.png">购彩记录</a>
+			</div>
+			<div class="row row-normal inner">
+				<div class="col-xs-2">
+					<div class="btn-user"></div>
+				</div>
+				<div class="col-xs-5">
+					<a class="btn btn-lg btn-block btn-my-bets">购彩记录</a>
+				</div>
+				<div class="col-xs-5">
+					<a class="btn btn-lg btn-block btn-next">下一步</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cart-page" id="cart_page">
+		<div class="top-nav row row-normal">
+			<div class="col-xs-6">
+				<span class="btn btn-lg btn-block btn-random">随机一注</span>
+			</div>
+			<div class="col-xs-6">
+				<span class="btn btn-lg btn-block btn-hand">手选一注</span>
+			</div>
+		</div>
+		<div class="list"></div>
+		<div class="foot-nav">
+			<div class="row row-normal">
+				<div class="col-xs-6 how-date">
+					<div class="input-group">
+						<span class="input-group-addon">追</span>
+						<input type="text" class="form-control" name="allDatesStr" value="1">
+						<span class="input-group-addon">期</span>
+					</div>
+					<p>需付：<span class="num payCoupon">0</span>宝券</p>
+				</div>
+				<div class="col-xs-6 how-times">
+					<div class="input-group">
+						<span class="input-group-addon">投</span>
+						<input type="text" class="form-control" name="mutiple" value="1">
+						<span class="input-group-addon">倍</span>
+					</div>
+					<p>可用：<span class="num leftCoupon">0</span>宝券</p>
+				</div>
+			</div>
+			<button class="btn btn-lg btn-pay">确认支付</button>
+		</div>
+	</div>
+    @@include("publicFront.app/src/wap.script.html")
+    <script type="text/template" id="item-tpl">
+    	<div class="item">
+			<span class="btn-del"><i class="fa fa-trash-o"></i></span>
+			<div class="balls">
+				<%
+					var outLen = Math.ceil((red.length + blue.length)/7);
+					var arr = red.concat(blue);
+					var arrLen = arr.length - 1;
+					var redLen = red.length -1;
+
+					for(var i = 0; i < outLen; i++){
+				%>
+				<div class="cols">
+				<%
+						for(var j = i*7; j < (i+1)*7; j++){
+				%>
+					<div class="ball <%= j <= redLen ? 'red' : j <= arrLen ? 'blue' : 'unvisible' %>">
+						<span><%= j <= arrLen ? arr[j] : '00' %></span>
+					</div>
+				<%		
+						}
+				%>
+				</div>
+				<%  } %>
+			</div>
+			<span class="btn-go"><i class="fa fa-angle-right"></i></span>
+		</div>
+    </script>
+    <script type="text/template" id="protocol_tpl">
+    	<h4 class='h4 text-center' style="margin-top: 0">宝券彩用户服务协议</h4>
+        <p style="max-height: 20rem;overflow: auto;">
+        宝券彩平台是由上海享娱网络科技有限公司独家运营的宝券增值服务平台。在钱宝网登记注册的用户，并同意以下条款，方有资格享受宝券彩平台（以下简称“本平台”）提供的相关服务，并受本规则条款的约束。用户使用本平台服务即意味着同意本规则，使用前请认真阅读。钱宝网对本规则拥有最终解释权。<br />
+        <br />
+        一、投注服务须知<br />
+        1、本平台所显示的日期与时间均为北京时间，投注时间以本平台服务系统的服务器时间为准。<br />
+        2、为保障用户的合法权益，避免在中奖时因用户注册资料与真实情况不符而发生纠纷，请用户确保其提供的真实姓名、身份证号码及手机号码等的真实、有效及合法性。用户提供的真实准确的个人资料将作为认定其与宝券彩的关联性以及用户身份的唯一证据。如果用户提供的资料包含有不真实的信息，本平台保留终止该用户继续使用服务资格的权利。<br />
+        3、本平台投注订单仅限使用钱宝网赠送的宝券支付，中奖奖励以宝券形式发放到订单支付账号的宝券账户。<br />
+        4、您保证您在使用本服务时已满18周岁，且具有完全的民事行为能力。<br />
+        <br />
+        二、投注服务的流程须知<br />
+        1、本平台不收取任何形式的服务费。委托投注的宝券彩为电子票据，具有完全使用效力。<br />
+        2、因包括但不限于断电、网络通讯故障、超过当期投注截止期、未成功支付、投注倍数限制等原因，未能完成投注的，视为投注失败，以页面显示的订单结果为准。投注失败不会扣除用户宝券，本平台不承担任何责任。<br />
+        3、每期宝券彩开奖完成后，本平台将公布开奖号码情况，开奖号码由服务器在开奖时间内完全随机产生。<br />
+        4、您理解并同意，因本协议产生的任何纠纷，本平台承担的责任仅限于向用户返还受影响订单所对应的投注宝券额。<br />
+        <br />
+        三、追号说明 追号服务指本平台按用户订单，连续多期帮助用户向同一个（组）指定号码提供委托投注的服务。在此服务下，用户可以选择提前预定一个（组）号码进行多期投注，免除重复操作之苦。<br />
+        1、用户在线发出追号订单，提交自选号码、投注期次、倍数等具体服务要求，并根据本平台提供的服务流程进行宝券支付，支付额度为完成该笔追号订单所需的宝券总额。<br />
+        2、本平台将于用户支付成功后开始执行该订单，完成追号的委托投注服务。<br />
+        3、用户使用追号服务的同时，不影响其使用本平台其他服务。<br />
+        <br />
+        四、兑奖流程及结算<br />
+        1、每期彩票开奖完成后，本平台公布中奖号码、并进行兑奖，您使用本平台服务即视为您同意接受系统自动兑奖。<br />
+        2、兑奖后中奖奖励需在【购彩中心】—【奖励领取】中点击“领取”领取。<br />
+        3、中奖奖励超期未领取视为弃奖，不可再领，本平台不承担任何责任。<br />
+        4、中奖奖励（宝券）领取后会自动进入用户钱宝网宝券余额。<br />
+        <br />
+        五、发生下列情况时本平台不予承担任何法律责任：<br />
+        1、由于用户将密码告知他人或与他人共享钱宝网注册账户，由此导致的任何个人资料泄露，以及由此产生的纠纷。<br />
+        2、任何由于黑客攻击、计算机病毒侵入或发作、网络供应商原因、因政府管制而造成的暂时性关闭等影响网络正常经营之不可抗力而造成的个人资料或委托投注指令泄露、丢失、被盗用、被篡改或网络线路中断等，以及由此产生的纠纷。<br />
+        3、由于与本平台链接的其它网站所造成之个人资料泄露及由此而导致的任何争议和后果。<br />
+        4、本平台定期检查，或更新软硬件而造成的服务中断；突发性的软硬件设备与电子通信设备故障产生的纠纷。<br />
+        6、其他非本平台自身原因造成的未能成功投注、兑奖等。<br />
+        <br />
+        六、法律适用与争议解决：<br />
+        1、本协议适用中华人民共和国现行法律。<br />
+        2、本平台根据合理判断对于采取不正当手段（包括但不限于盗用他人钱宝网账户、恶意获取宝券刷单支付等）而购买宝券彩的，有权采取取消宝券彩订单、冻结中奖奖励（若有）等一系列措施。由于本款前述行为的发生而给用户造成损失的，本平台不承担任何责任。<br />
+        3、本平台有权在法律允许的范围内对本协议不定期进行补充修订、调整，以最新公布的内容为准，请各位用户注意及时查看。若用户在本平台进行上述调整、补充和改变后，仍继续使用本平台服务的，则视为接受该等调整、补充和改变；若用户不同意的，用户有权终止本协议并停止使用本平台服务。
+        </p>
+    </script>
+    <!-- build:js js/index.min.js -->
+    <script type="text/javascript" src="js/cfg.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

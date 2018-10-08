@@ -1,0 +1,23 @@
+{
+  "default": "wap/houseMobile.wap",
+  "all": [],
+  "svns": {
+    "devel": {
+      "user": "liaobingpeng",
+      "pass": "111111"
+    },
+    "build": {
+      "user": "liaobingpeng",
+      "pass": "111111"
+    }
+  },
+  "local": {
+    "devel": "",
+    "build": ""
+  },
+  "serve": {
+    "port": "10000",
+    "reload": "false"
+  },
+  "debug": false
+}

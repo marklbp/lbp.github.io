@@ -1,0 +1,11 @@
+{
+    "code": 0, 
+    "message": null, 
+    "data": {
+        "useEasyBuy": true, 	
+		"couponBalance": 5,	
+        "useCoupon": 5,		
+        "raffleCount": 5		
+    }, 
+    "success": true
+}

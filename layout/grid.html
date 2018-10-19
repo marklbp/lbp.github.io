@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>grid demo</title>
+  <style type="text/css">
+    .grid {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-template-rows: 100px 100px;
+    }
+    .grid div:first-child {
+      background: red;
+      /*
+      grid-column-start: 1;
+      grid-column-end: 3;
+      */
+      grid-row: 1 / 3; /* 指从边界线 1->3 纵向跨行*/
+      /*grid-column: <number> / <number>; 同grid-row，指横向跨列*/
+    }
+    .grid div:nth-child(2) {
+      background: green
+    }
+    .grid div:last-child {
+      background: blue
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div>你你你你你</div>
+    <div>wowowo</div>
+    <div>我我我我</div>
+  </div>
+</body>
+</html>

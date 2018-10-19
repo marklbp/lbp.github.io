@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex demo</title>
+  <style type="text/css">
+    .container {
+      width: 500px;
+      height: 500px;
+      background: #000;
+      /*
+      display: inline-flex;
+      */
+      display: flex;
+      /*
+        flex-direction: row|row-reverse|column|column-reverse;
+        flex-wrap: no-wrap|wrap|wrap-verse;
+        flex-flow: <flex-direction> <flex-wrap>;
+      */
+      justify-content: center; /* 水平居中对齐 */
+      align-items: center; /* 垂直居中对齐 */
+    }
+    .child {
+      width: 200px;
+      height: 300px;
+      background: #fff;
+      /*
+      order: <number>;
+      flex-grow: <number>; //定义自身放大比例，默认0
+      flex-shrink: <number>; //定义自身缩小比例，默认1
+      flex-basis: <px> | auto; //定义自身占据主轴空间，默认auto，即自身本来大小
+      flex: none | [<flex-grow> ?[<flex-shrink> <flex-basis>]]; 
+      align-self: flex-start|flex-end|center|space-between|space-around;
+      */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="child"></div>
+  </div>
+</body>
+</html>

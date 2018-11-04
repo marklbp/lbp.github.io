@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
-      <router-link v-for="(r, i) in navs" :to="'/' + r.url" :class="{'focus': activeIndex === r.url || activeIndex === 'project'}">
-        <img :src="r.icons[activeIndex === r.url || activeIndex === 'project' || r.url === 'publish' ? 0 : 1]" />
+      <router-link v-for="(r, i) in navs" :to="'/' + r.url" :class="{'focus': activeIndex === r.url}">
+        <img :src="r.icons[activeIndex === r.url || r.url === 'publish' ? 0 : 1]" />
         <span v-if="r.text">{{r.text}}</span>
       </router-link>
     </div>
@@ -20,9 +20,15 @@
 
   export default {
     name: 'foot',
+    props: {
+      focusIndex: {
+        type: String,
+        default: ''
+      }
+    },
     data () {
       return {
-        activeIndex: 'project',
+        activeIndex: this.focusIndex || 'project',
         prefix_icon: './assets/img/',
         navs: [
           {text: '项目', icons: [IconLProject, IconProject], url: 'project'},
@@ -34,8 +40,7 @@
       }
     },
     created () {
-      // console.log(this.$route.path, 'created')
-      this.activeIndex = this.$route.path.match(/^\/(\w+)\/*.*/)[1]
+      this.activeIndex = this.focusIndex || this.$route.path.match(/^\/(\w+)\/*.*/)[1]
     }
   }
 </script>

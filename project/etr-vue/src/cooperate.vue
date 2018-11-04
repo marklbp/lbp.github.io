@@ -49,7 +49,6 @@
   .page-resource-detail {
     overflow: hidden;
     padding-bottom: 1.08rem;
-    background-color: #E5E5E5;
   }
   .cover {
     height: 3.54rem;

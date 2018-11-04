@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/assets/img/nav-msg.png"],"names":["module","exports","__webpack_require__","p"],"mappings":"+EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"56.bundle.js","sourcesContent":["module.exports = __webpack_public_path__ + \"ac5ae5fef48e49ba4b8adc91bec88ef3.png\";"],"sourceRoot":""}

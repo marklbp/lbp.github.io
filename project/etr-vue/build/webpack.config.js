@@ -106,22 +106,68 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'vue-style-loader', 'css-loader']
+        use: [
+          {loader: 'style-loader'}, 
+          {loader: 'vue-style-loader'}, 
+          {loader: 'css-loader'}, 
+          {
+            loader: 'px2rem-loader',
+            options: {
+              remUnit: 100,
+              remPrecision: 8
+            }
+          },
+          {loader: 'postcss-loader'}
+        ]
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'vue-style-loader', 'css-loader', 'sass-loader']
+        use: [
+          {loader: 'style-loader'}, 
+          {loader: 'vue-style-loader'},  
+          {loader: 'css-loader'}, 
+          {
+            loader: 'px2rem-loader',
+            options: {
+              remUnit: 100,
+              remPrecision: 8
+            }
+          },
+          {loader: 'postcss-loader'},
+          {loader: 'sass-loader'}
+        ]
       },
       {
         test: /\.less$/,
-        use: ['style-loader', 'vue-style-loader', 'css-loader', 'less-loader']
+        use: [
+          {loader: 'style-loader'}, 
+          {loader: 'vue-style-loader'},  
+          {loader: 'css-loader'}, 
+          {
+            loader: 'px2rem-loader',
+            options: {
+              remUnit: 100,
+              remPrecision: 8
+            }
+          },
+          {loader: 'postcss-loader'}, 
+          {loader: 'less-loader'}
+        ]
       },
       {
         test: /\.styl(us)?$/,
         use: [
-          'vue-style-loader',
-          'css-loader',
-          'stylus-loader'
+          {loader: 'vue-style-loader'}, 
+          {loader: 'css-loader'},
+          {
+            loader: 'px2rem-loader',
+            options: {
+              remUnit: 100,
+              remPrecision: 8
+            }
+          },
+          {loader: 'postcss-loader'},
+          {loader: 'stylus-loader'}
         ]
       },
       {

@@ -1,6 +1,6 @@
 <template>
   <div class="page-share">
-    <span class="btn-love">
+    <!-- <span class="btn-love">
       <img src="./assets/img/rd-love.png">
       收藏
     </span>
@@ -8,8 +8,9 @@
       <img src="./assets/img/rd-share.png">
       分享
     </span>
-    <span v-if="showContact" class="btn-contact">联系</span>
-    <span v-if="showAdd" class="btn-add-resource">加入资源库</span>
+ -->    
+    <span v-if="showContact" class="btn-contact">联&nbsp;&nbsp;&nbsp;&nbsp;系</span>
+    <span v-if="showAdd" class="btn-add-resource">入&nbsp;&nbsp;&nbsp;&nbsp;库</span>
   </div>
 </template>
 
@@ -64,7 +65,8 @@
       }
     }
     .btn-add-resource, .btn-contact {
-      width: 3rem;
+      /*width: 3rem;*/
+      width: 100%;
       background-color: #4B9EEA;
       font-size: .32rem;
       color: #fff;

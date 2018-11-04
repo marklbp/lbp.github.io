@@ -1,24 +1,22 @@
 <template>
     <div class="page-resource">
-      <div class="resource">
-        <div class="fixed-top">
-          <search class="search" />
-          <filterx class="filter" @filter-list="getList" />
-        </div>
-        <ul class="list">
-          <router-link tag="li" :to="'/resource/' + item.id" v-for="(item, i) in items" :key="i">
-            <div class="avatar"><img :src="item.avatar"></div>
-            <div class="content">
-              <div class="title">
-                <span>{{item.name}}</span>
-                <span>{{item.brand}}</span>
-              </div>
-              <div class="text">{{item.resource}}</div>
-              <div class="user">{{item.nick}}|{{item.company}}</div>
-            </div>
-          </router-link>
-        </ul>
+      <div class="fixed-top">
+        <search class="search" />
+        <filterx class="filter" @filter-list="getList" />
       </div>
+      <ul class="list">
+        <router-link tag="li" :to="'/resource/' + item.id" v-for="(item, i) in items" :key="i">
+          <div class="avatar"><img :src="item.avatar"></div>
+          <div class="content">
+            <div class="title">
+              <span>{{item.name}}</span>
+              <span>{{item.brand}}</span>
+            </div>
+            <div class="text">{{item.resource}}</div>
+            <div class="user">{{item.nick}}|{{item.company}}</div>
+          </div>
+        </router-link>
+      </ul>
       <foot />
     </div>
 </template>
@@ -48,7 +46,9 @@
       this.parseItems()
     },
     methods: {
-      getList (filterParams) {},
+      getList (filterParams) {
+        console.log(filterParams)
+      },
       parseItems () {
         let i = 0
         while ( i < 10) {

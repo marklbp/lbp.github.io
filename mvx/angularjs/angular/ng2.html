@@ -1,1 +1,22 @@
-<!doctype html><html ng-app><head><script src="angular1228.js"></script></head><body>Your name: <input type="text" name="name" value="World"/><hr>Hello {{name}}!</body></html>
+<!DOCTYPE doctype html>
+<html ng-app="myApp">
+    <head>
+        <script src="angular1228.js">
+        </script>
+    </head>
+    <body>
+        <div ng-controller="aa">
+          Your name:
+          <input name="name" type="text" value="{{name}}"/>
+          <hr>
+              Hello {{name}}!
+          </hr>
+        </div>
+        <script type="text/javascript">
+            var m = angular.module('myApp',[])
+            m.controller('aa',function($scope){
+              $scope.name="world"
+            })
+        </script>
+    </body>
+</html>

@@ -8,9 +8,11 @@
 		function Aaa($scope,$timeout){
 			$scope.name='hello';
 			
-			/*setTimeout(function(){
+			setTimeout(function(){
 				$scope.name='mark';
-			},2000)*/
+				console.log($scope.name) // mark
+			},2000)
+			console.log($scope.name) // hello
 			
 			$timeout(function(){
 				$scope.name="mark";

@@ -12,15 +12,15 @@
       <div class="project">
         <ul class="list">
           <router-link tag="li" v-for="(item, i) in items" :key="i" :to="'/cooperate/' + item.id">
+            <div class="title">
+              <span>【{{item.title}}】</span>
+              <span>{{item.text}}</span>
+            </div>  
             <div class="user">
               <span>{{item.nick}}&nbsp;.&nbsp;</span>
               <span>{{item.company + item.job}}</span>
               <router-link :to="'/contact/' + item.id"><img src="./assets/img/contact.png">联系</router-link>
-            </div>
-            <div class="title">
-              <span>【{{item.title}}】</span>
-              <span>{{item.text}}</span>
-            </div>            
+            </div>          
           </router-link>
         </ul>
       </div>
@@ -41,8 +41,8 @@
   // in ES6 modules
   import { Swipe, SwipeItem } from 'vue-swipe'
   import Filterx from './filter'
-  import Foot from './footer'
   import Search from './search'
+  import Foot from './footer'
   export default {
     name: 'project',
     components: {
@@ -82,7 +82,7 @@
     padding: .14rem 0;
     .search {
       margin-left: .3rem;
-      width: 5.76rem;
+      width: 78%;
     }
     .filter {
       position: absolute;
@@ -134,7 +134,7 @@
       .user {
         position: relative;
         padding-right: .55rem;
-        margin-bottom: .42rem;
+        margin-top: .42rem;
         span:first-child {
           color: #666;
         }

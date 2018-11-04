@@ -1,15 +1,15 @@
 <template>
     <div class="page-me">
-      <router-link v-for="(it, i) in items" :key="i" class="link" :class="{'avatar': i===0}" :to="it.url">
+      <router-link v-for="(it, i) in items" :key="i" class="link" :class="{'avatar': i===0, 'last': i === items.length - 1}" :to="it.url">
         <div class="icon"><img :src="it.icon"></div>
         <div v-if="i < 1" class="user">
           <span class="nick">{{it.nick}}</span>
-          <span>.</span>
+          <span>|</span>
           <span class="job">{{it.job}}</span>
           <div class="company"><img src="./assets/img/me-location.png">{{it.company}}</div>
         </div>
         <div v-else class="text">{{it.text}}</div>
-        <div class="desc">{{it.desc}}</div>
+        <div class="desc"><span>{{it.desc}}</span></div>
       </router-link>
       <Foot />
     </div>
@@ -17,26 +17,32 @@
 
 <script>
   import IconPortrait from './assets/img/me-portrait.png'
-  import IconProject from './assets/img/me-project.png'
+  import IconPublish from './assets/img/me-publish.png'
+  import IconBrand from './assets/img/me-brand.png'
   import IconRelationship from './assets/img/me-relationship.png'
   import IconResource from './assets/img/me-resource.png'
-  import IconLove from './assets/img/me-love.png'
   import IconFeedback from './assets/img/me-feedback.png'
-  import IconCfg from './assets/img/me-cfg.png'
   import Foot from './footer'
+  import {tipText} from './plugins/utils'
   export default {
     name: 'me',
     components: {Foot},
+    beforeRouteEnter (now, prev, next) {
+      if (!localStorage.login) {
+        tipText('请先登录')
+        return setTimeout(()=>next ('/login'), 1000)
+      }
+      next()
+    },
     data () {
       return {
         items: [
-          {icon: IconPortrait, text: '', nick: '张三三', job: '客户经理', company: '北京字节跳动科技有限公司', desc: '', url: ''},
-          {icon: IconProject, text: '项目', desc: '', url: ''},
-          {icon: IconRelationship, text: '人脉', desc: '', url: ''},
-          {icon: IconResource, text: '资源', desc: '', url: ''},
-          {icon: IconLove, text: '收藏', desc: '', url: ''},
+          {icon: IconPortrait, text: '', nick: '张三三', job: '客户经理', company: '北京字节跳动科技有限公司', desc: '', url: '/profile'},
+          {icon: IconPublish, text: '发布', desc: '6条', url: ''},
+          {icon: IconBrand, text: '品牌', desc: '', url: ''},
+          {icon: IconRelationship, text: '人脉', desc: '', url: '/relationship'},
+          {icon: IconResource, text: '资源', desc: '', url: '/my-resource'},
           {icon: IconFeedback, text: '反馈', desc: '', url: ''},
-          {icon: IconCfg, text: '设置', desc: '', url: ''},
         ]
       }
     },
@@ -50,80 +56,93 @@
   }
   .link {
     display: flex;
-    height: .96rem;
-    line-height: .96rem;
-    border-bottom: .01rem solid #EEEEEE;
+    height: 96px;
+    line-height: 96px;
+    border-bottom: 1px solid #EEEEEE;
     text-decoration: none;
     background-color: #fff;
-    font-size: .3rem;
+    font-size: 30px;
+    &.last {
+      margin-top: 20px;
+    }
     &.avatar {
       line-height: normal;
       background-color: #4B9EEA;
-      margin-bottom: .16rem;
+      margin-bottom: 16px;
       color: #fff;
-      padding-top: .27rem;
-      padding-bottom: .4rem;
+      padding-top: 27px;
+      padding-bottom: 40px;
       height: auto;
       .icon {
-        width: 1.42rem;
-        padding-right: .48rem;
+        width: 142px;
+        padding-right: 48px;
         img {
-          width: 100%;
+          margin-top: 16px;
         }
       }
-      .desc:after {
-        border-color: #fff;
+      .desc{
+        flex: none;
+        &:after {
+          border-color: #fff;
+        }
       }
     }
     .icon {
-      width: .5rem;
-      padding-left: .4rem;
-      padding-right: .35rem;
+      width: 40px;
+      padding-left: 40px;
+      padding-right: 21px;
       img {
-        width: 80%;
-        vertical-align: middle;
+        width: 100%;
+        float: left;
+        margin-top: 26px;
       }
     }
     .text, .user {
       flex: 1;
     }
     .user {
-      padding-top: .29rem;
-      font-size: .36rem;
+      padding-top: 29px;
+      font-size: 36px;
+      .job {
+        font-size: 28px;
+      }
       .company {
-        margin-top: .34rem;
-        font-size: .26px;
+        margin-top: 30px;
+        &, .job {
+          font-size: 26px;
+        }
         opacity: .7;
         img {
-          width: .21rem;
-          margin-right: .13rem;
+          width: 21px;
+          margin-right: 13px;
           vertical-align: middle;
         }
       }
     }
     .text {
       color: #333;
-      font-size: .3rem;
+      font-size: 30px;
     }
     .desc {
       position: relative;
-      width: .5rem;
-      padding-right: .4rem;
+      flex: 2;
+      padding-right: 70px;
       color: #808080;
+      text-align: right;
       &:after {
         content: " ";
-        height: .2rem;
-        width: .2rem;
-        border-width: .02rem .02rem 0 0;
+        height: 20px;
+        width: 20px;
+        border-width: 2px 2px 0 0;
         border-color: #8C8C8C;
         border-style: solid;
         -webkit-transform: translateY(-50%) rotate(45deg);
         transform: translateY(-50%) rotate(45deg);
         position: relative;
-        top: -.02rem;
+        top: -2px;
         position: absolute;
         top: 50%;
-        right: .4rem;
+        right: 40px;
       }
     }
   }

@@ -6,7 +6,7 @@
     <div class="item">
       <div class="title">
         <img src="./assets/img/rd-rect.png" >
-        所需资源
+        介绍
       </div>
       <div class="content">
         简介：内容描述内容描述内容描述内容描述内容描述<br>资源：电视媒体、户外媒体、社区资源
@@ -15,50 +15,90 @@
     <div class="item">
       <div class="title">
         <img src="./assets/img/rd-rect.png" >
-        公司成员
+        成员
+        <router-link class="btn-arrow-right" to="/member/0">6人</router-link>
       </div>
       <ul class="list">
-        <li class="content">
+        <router-link tag="li" v-for="(m, i) in members" :key="i" :to="'/bcard/' + m.id" class="content">
           <div class="avatar"></div>
           <div class="text">
-            <span class="nick">张三三</span>
+            <span class="nick">{{m.nick}}</span>
             <span>|</span>
-            <span class="job">客户经理</span>
-            <div class="company">北京字节跳动科技有限公司</div>
+            <span class="job">{{m.job}}</span>
+            <div class="company">{{m.company}}</div>
           </div>
-        </li>
+        </router-link>
       </ul>
     </div>
     <div class="item">
       <div class="title">
         <img src="./assets/img/rd-rect.png" >
-        合作模式
+        项目
+        <router-link class="btn-arrow-right" to="/plist/0">12个</router-link>
       </div>
       <ul class="list-project">
-        <li>
-          <div class="user">
-            <span>章三三&nbsp;.&nbsp;</span>
-            <span>今日头条客户经理</span>
-            <router-link :to="'/contact/0'"><img src="./assets/img/contact.png">联系</router-link>
-          </div>
+        <router-link tag="li" v-for="(p, i) in projects" :key="i" :to="'/cooperate/' + p.id">
           <div class="title">
-            <span>【雪弗兰音乐节】</span>
-            <span>招募媒体合作资源，场地赞助</span>
-          </div>            
-        </li>
+            <span>【{{p.title}}】</span>
+            <span>{{p.text}}</span>
+          </div>  
+          <div class="user">
+            <span>{{p.nick}}&nbsp;.&nbsp;</span>
+            <span>{{p.company + p.job}}</span>
+            <router-link :to="'/contact/' + p.id"><img src="./assets/img/contact.png">联系</router-link>
+          </div>          
+        </router-link>
       </ul>
     </div>
-    <share />
+    <md-button class="fixed-bottom" @click="btnAction">
+      <span v-if="!$route.params.from">入&nbsp;&nbsp;&nbsp;&nbsp;库</span>
+      <span v-else>删&nbsp;&nbsp;&nbsp;&nbsp;除</span>
+    </md-button>
   </div>
 </template>
 
 <script>
   import Share from './share'
+  import {Button, Dialog} from 'mand-mobile'
   export default {
     name: 'resource-detail',
-    components: {Share},
+    components: {Share, [Button.name]: Button},
     data () {
-      return {}
+      return {
+        members: [
+          {
+            id: 0,
+            nick: '里斯本',
+            job: '前端',
+            company: '蚂蚁金服'
+          }
+        ],
+        projects: [
+          {
+            nick: '张三三',
+            company: '北京字节跳动有限公司',
+            job: '客户经理',
+            id: 1,
+            title: '雪弗兰音乐节',
+            text: '招募媒体合作资源，场地赞助'
+          }
+        ]
+      }
+    },
+    methods: {
+      btnAction () {
+        if (!this.$route.params) {
+
+        } else {
+          Dialog.confirm({
+            title: '提示',
+            content: '您确定要删除这个资源吗？',
+            confirmText: '删除',
+            onConfirm: () => this.deleteRes(),
+          })
+        }
+      },
+      deleteRes () {}
     }
   }
 </script>
@@ -67,11 +107,18 @@
   .page-resource-detail {
     overflow: hidden;
     padding-bottom: 1.08rem;
-    background-color: #E5E5E5;
   }
   .cover {
     height: 3.54rem;
     background-color: black;
+  }
+  .fixed-bottom.md-button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 98px;
+    line-height: 98px;
+    background-color: #4B9EEA;
   }
   .item {
     margin-bottom: .1rem;
@@ -79,13 +126,29 @@
     .title {
       padding: .225rem .28rem;
       border-bottom: .01rem solid #E5E5E5;
+      font-size: .28rem;
+      color: #333;
       img {
         width: .04rem;
         margin-right: .18rem;
         vertical-align: top;
       }
-      font-size: .28rem;
-      color: #333
+      .btn-arrow-right {
+        float: right;
+        text-decoration: none;
+        color: #8C8C8C;
+        &:after{
+            content: " ";
+            display: inline-block;
+            height: .2rem;
+            width: .2rem;
+            border-width: .02rem .02rem 0 0;
+            border-color: #8C8C8C;
+            border-style: solid;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+      }
     }
     .list {
       list-style: none;
@@ -140,7 +203,7 @@
         .user {
           position: relative;
           padding-right: .55rem;
-          margin-bottom: .42rem;
+          margin-top: .42rem;
           span:first-child {
             color: #666;
           }

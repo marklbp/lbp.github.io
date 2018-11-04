@@ -1,0 +1,19 @@
+.md-toast {
+  .md-toast-content {
+    padding: .26rem;
+    font-size: .28rem;
+    
+  }
+  .md-icon {
+    left: .26rem;
+    &.lg {
+      width: .42rem;
+      height: .42rem;
+    }
+  }
+  &.has-icon {
+    .md-toast-content {
+      padding-left: .88rem;
+    }
+  }
+}

@@ -1,8 +1,9 @@
 var path = require('path')
+var webpack = require('webpack')
 var CleanWebpackPlugin = require('clean-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var {VueLoaderPlugin} = require('vue-loader')
-
+const NODE_ENV = process.argv.slice(-1)[0].indexOf('build') > -1 ? 'production' : 'development'
 module.exports = {
 
   /**
@@ -10,7 +11,7 @@ module.exports = {
    * context: path.resolve(__dirname, directory)
    */
 
-  entry: path.resolve(__dirname, '../src/app.js'),
+  entry: [path.resolve(__dirname, '../src/app.js')],
 
   /**
    * // 提取第三方库文件单独打包
@@ -90,6 +91,16 @@ module.exports = {
        *   use: 'exports-loader?file,parse=helpers.parse'
        * }
        */
+      {
+        test: /\.(js|vue)$/,
+        // To be safe, you can use enforce: "pre" section to check source files, not modified by other loaders (like babel-loader)
+        enforce: "pre",
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+        options: {
+          // eslint options (if necessary)
+        }
+      },
       {
         test: /\.js?$/,
         loader: 'babel-loader',
@@ -182,6 +193,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify({NODE_ENV: NODE_ENV})
+    }),
     new HtmlWebpackPlugin({
       title: 'ETR',
       // filename: 'a/c.html', // 相对于访问目录（localhost:3000/a/c.html）

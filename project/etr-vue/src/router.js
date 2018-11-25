@@ -50,21 +50,23 @@ const router = {
     name: 'me',
     component: asyncLoad('me'),
     meta: {
-      title: '我的'
+      title: '我的',
+      auth: true
     }
   }, {
     path: '/contact/:id',
     name: 'contact',
     component: asyncLoad('contact'),
     meta: {
-      title: ''
+      title: '',
+      auth: true
     }
   }, {
     path: '/login',
     name: 'login',
     component: asyncLoad('login'),
     meta: {
-      title: ''
+      title: '登录'
     }
   }, {
     path: '/search',
@@ -99,56 +101,64 @@ const router = {
     name: 'relationship',
     component: asyncLoad('relationship'),
     meta: {
-      title: '人脉'
+      title: '人脉',
+      auth: true
     }
   }, {
     path: '/my-resource',
     name: 'my-resource',
     component: asyncLoad('my_resource'),
     meta: {
-      title: '资源'
+      title: '资源',
+      auth: true
     }
   }, {
     path: '/identify',
     name: 'identify',
     component: asyncLoad('identify'),
     meta: {
-      title: '认证'
+      title: '认证',
+      auth: true
     }
   }, {
     path: '/verify',
     name: 'verify',
     component: asyncLoad('verify'),
     meta: {
-      title: '审核'
+      title: '审核',
+      auth: true
     }
   }, {
     path: '/profile',
     name: 'profile',
     component: asyncLoad('profile'),
     meta: {
-      title: '完善资料'
+      title: '完善资料',
+      auth: true
     }
   }, {
     path: '/phone-bind',
     name: 'phone-bind',
     component: asyncLoad('phone_bind'),
     meta: {
-      title: '绑定手机'
+      title: '绑定手机',
+      auth: true
     }
   }, {
     path: '/password',
     name: 'password',
     component: asyncLoad('password'),
     meta: {
-      title: '设置密码'
+      title: '设置密码',
+      auth: true
     }
   }, {
     path: '/my-company',
     name: 'my-company',
     component: asyncLoad('my_company'),
     meta: {
-      title: '公司'
+      title: '公司',
+      auth: true
     }
   }]
 }

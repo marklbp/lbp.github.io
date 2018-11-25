@@ -21,12 +21,12 @@
       </div>
       <div class="input-field input-btns">
         <button class="btn btn-login">登录</button>
-        <span>已阅读并同意<em class="protocol" @click="protocolDialog.open = !protocolDialog.open">《用户服务协议》</em></span>
-        <span class="login-way" @click="toggleWay">{{!loginType ? '密码':'短信'}}登录</span>
+        <span>已阅读并同意<em class="protocol" @touchend.prevent="protocolDialog.open = !protocolDialog.open">《用户服务协议》</em></span>
+        <span class="login-way" @touchend.prevent="toggleWay">{{!loginType ? '密码':'短信'}}登录</span>
       </div>
       <div class="login-wx">
         <div><span>OR</span></div>
-        <div><img src="./assets/img/wx.png"></div>
+        <div><a :href="wxLoginUrl"><img src="./assets/img/wx.png"></a></div>
         <div>微信登录</div>
       </div>
       <md-dialog
@@ -43,8 +43,9 @@
 
 <script>
   import { Dialog } from 'mand-mobile'
+  import {tipErr, tipOK} from './plugins/utils'
   import './plugins/validate'
-  import {post} from './plugins/http'
+  import {post, apis, wxLoginUrl} from './plugins/http'
   export default {
     name: 'login',
     components: {
@@ -60,7 +61,8 @@
         protocolDialog: {
           open: false,
           btns: []
-        }
+        },
+        wxLoginUrl
       }
     },
     methods: {
@@ -73,7 +75,7 @@
         })
       },
       getCode () {
-        if(this.intervalTimes >= 0)return
+        if(this.intervalTimes >= 0 || !this.phone)return
         this.intervalTimes = 60
         this.interval = setInterval(() => {
             if(this.intervalTimes === 0){
@@ -86,7 +88,13 @@
         this.ajaxCode()
       },
       ajaxCode () {
-
+        apis.getCode({tel: this.phone}).then(res=>{
+          tipOK('验证码已发送，请注意查收')
+          console.log(res)
+        }).catch(err=>{
+          tipErr(err.msg)
+          console.log(err)
+        })
       },
       toggleWay () {
         this.loginType = !this.loginType

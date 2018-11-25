@@ -10,11 +10,13 @@ var devServer = {
   host: 'localhost',
   open: true, // 自动开启浏览器访问
   port: 8000, // 指定要监听请求的端口号
-  /**
-   * proxy: { // proxy URLs to backend server
-   *   '/api': 'http://xxx.com'
-   * }
-   */
+  proxy: { // proxy URLs to backend server
+    '/api': {
+      target: 'http://api.etrbd.com',
+      changeOrigin: true
+    }
+  }
+   
   /**
    * 用于提供bundle文件的目录，优先于contentBase
    * publicPath: '/'
@@ -39,9 +41,7 @@ config = merge(config, {
   },
   devServer: devServer,
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
-    }),
+    // 此为热更新必须加载的插件
     new webpack.HotModuleReplacementPlugin()
   ],
   watch: true, // 启用监听文件变化
@@ -57,5 +57,6 @@ config = merge(config, {
     ignored: ['node_modules']
   }
 })
+
 // console.log(config)
 module.exports = config

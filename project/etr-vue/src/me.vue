@@ -27,13 +27,6 @@
   export default {
     name: 'me',
     components: {Foot},
-    beforeRouteEnter (now, prev, next) {
-      if (!localStorage.login) {
-        tipText('请先登录')
-        return setTimeout(()=>next ('/login'), 1000)
-      }
-      next()
-    },
     data () {
       return {
         items: [

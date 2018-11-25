@@ -31,7 +31,8 @@
         :value="phone"
         solid
         align="right"
-        @click="$router.push('/phone-bind')">
+        @click="$router.push('/phone-bind')"
+        @touchend.prevent="$router.push('/phone-bind')">
       </md-field-item>
     </md-field>
     <md-field>

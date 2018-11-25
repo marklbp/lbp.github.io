@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-      <router-link v-for="(r, i) in navs" :to="'/' + r.url" :class="{'focus': activeIndex === r.url}">
+      <router-link v-for="(r, i) in navs" :to="'/' + r.url" :key="r.text" :class="{'focus': activeIndex === r.url}">
         <img :src="r.icons[activeIndex === r.url || r.url === 'publish' ? 0 : 1]" />
         <span v-if="r.text">{{r.text}}</span>
       </router-link>

@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/assets/img/plus.png"],"names":["module","exports","__webpack_require__","p"],"mappings":"+EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"60.bundle.js","sourcesContent":["module.exports = __webpack_public_path__ + \"9c673839e017f7649b81369462e7f830.png\";"],"sourceRoot":""}

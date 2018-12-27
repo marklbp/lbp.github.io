@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{"2TAt":function(t,i,n){"use strict";Object.defineProperty(i,"__esModule",{value:!0}),i.tipOK=o,i.tipErr=r,i.tipLoading=u,i.tipText=p,i.tipX=a;var e=n("uevW");function o(t){return e.Toast.succeed(t)}function r(t){return e.Toast.failed(t)}function u(t){return e.Toast.loading(t)}function p(t){return e.Toast.info(t)}function a(){return e.Toast.hide()}i.default={tipOK:o,tipErr:r,tipLoading:u,tipText:p,tipX:a}}}]);
-//# sourceMappingURL=20.bundle.js.map

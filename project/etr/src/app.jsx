@@ -7,11 +7,11 @@ class App extends Component {
   render () {
     return (
       <Router>
-        <Switch>
-        {
-          routes.map((r, i)=><Route {...r} key={i} />)
+       <Switch>
+        { 
+          routes.map((r, i)=><Route {...r} key={i} />) 
         }
-        </Switch>
+      </Switch>
       </Router>)
   }
 }

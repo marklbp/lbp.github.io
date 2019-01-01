@@ -10,9 +10,13 @@ var devServer = {
   host: 'localhost',
   open: true, // 自动开启浏览器访问
   port: 8000, // 指定要监听请求的端口号
+  historyApiFallback: true
   /**
    * proxy: { // proxy URLs to backend server
-   *   '/api': 'http://xxx.com'
+   *  '/api': {
+   *    target: 'http://xxx.com',
+   *    changeOrigin: true
+   *  }
    * }
    */
   /**
@@ -34,14 +38,9 @@ var devServer = {
 config = merge(config, {
   mode: 'development',
   devtool: 'inline-source-map',
-  output: {
-    publicPath: '/', // for development server address
-  },
   devServer: devServer,
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
-    }),
+    // 此为热更新必须加载的插件
     new webpack.HotModuleReplacementPlugin()
   ],
   watch: true, // 启用监听文件变化

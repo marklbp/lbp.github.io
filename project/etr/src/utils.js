@@ -1,8 +1,8 @@
 export function classnames (...rest) {
   let classn = ''
-  for(let c of rest) {
+  for (let c of rest) {
     if (typeof c === 'boolean' || !c) {
-      classn +=''
+      classn += ''
     } else if (c instanceof Array) {
       classn += ' ' + classnames(...c)
     } else if (typeof c === 'object') {
@@ -10,8 +10,8 @@ export function classnames (...rest) {
         classn += c[k] ? ' ' + String(k) : ''
       }
     } else {
-    classn += ' ' + String(c)
-  }
+      classn += ' ' + String(c)
+    }
   }
   return classn.substring(1)
 }

@@ -1,6 +1,8 @@
 var path = require('path')
+var webpack = require('webpack')
 var CleanWebpackPlugin = require('clean-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+const NODE_ENV = process.argv.slice(-1)[0].indexOf('build') > -1 ? 'production' : 'development'
 
 module.exports = {
 
@@ -9,7 +11,7 @@ module.exports = {
    * context: path.resolve(__dirname, directory)
    */
 
-  entry: path.resolve(__dirname, '../src/app.js'),
+  entry: [path.resolve(__dirname, '../src/app.js')],
 
   /**
    * // 提取第三方库文件单独打包
@@ -41,7 +43,7 @@ module.exports = {
      */
   },
   resolve: {
-    //extensions: ['js', '.jsx', '.css', '.scss', '.less']
+    extensions: ['.js', '.jsx', '.css', '.scss', '.less']
   },
   /**
    * for split code from bunddle by SplitChunksPlugin instead of CommonsChunkPlugin
@@ -89,6 +91,16 @@ module.exports = {
        *   use: 'exports-loader?file,parse=helpers.parse'
        * }
        */
+       {
+        test: /\.jsx?$/,
+        // To be safe, you can use enforce: "pre" section to check source files, not modified by other loaders (like babel-loader)
+        enforce: "pre",
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+        options: {
+          // eslint options (if necessary)
+        }
+      },
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
@@ -101,30 +113,37 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
       },
       {
         test: /\.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader']
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
+      },
+      {
+        test: /\.styl(us)?$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'stylus-loader']
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
-        use: ['file-loader']
+        use: ['url-loader']
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/,
-        use: ['file-loader']
+        use: ['url-loader']
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify({NODE_ENV: NODE_ENV})
+    }),
     new HtmlWebpackPlugin({
-      title: 'ETR',
+      title: 'react-demo',
       // filename: 'a/c.html', // 相对于访问目录（localhost:3000/a/c.html）
       // templateContent: '<div id="app"></div>'
       template: path.resolve(__dirname, '../src/assets/index.html')

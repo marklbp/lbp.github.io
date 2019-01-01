@@ -1,9 +1,5 @@
 import React from 'react'
-import Project from './project.jsx'
-import Resource from './resource.jsx'
 import Publish from './publish.jsx'
-import Messages from './messages.jsx'
-import Me from './me.jsx'
 import Hoc from './hoc.jsx'
 
 export default [

@@ -49,6 +49,12 @@
 					<input class="form-control" type="text" id="input3" readonly>
 				</div>
 			</div>
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon">应税薪资</span>
+          <input class="form-control" type="text" id="input6" readonly>
+        </div>
+      </div>
 			<div class="form-group">
 				<div class="input-group">
 					<span class="input-group-addon">个人税费</span>
@@ -177,6 +183,7 @@
 			$("#input3").val(data.accumulationFund);
 			$("#input4").val(data.personalTaxes);
 			$("#input5").val(data.personalPaid);
+      $("#input6").val(data.personalPrePaid)
 		})
 		var anniversary = {
 			pension: 8/100,
@@ -251,9 +258,12 @@
 			}
 		}
 		function getCalSalary(v){
-			var y = new Date().getFullYear()
-			y = y >= 2018 ? y : 2017
-			y = 'y' + y
+			var _y = new Date().getFullYear()
+			_y = _y >= 2018 ? _y : 2017
+			var y = 'y' + y
+      while (!anniversary[y]) {
+        y = 'y' + _y--;
+      }
 			var yMIN = anniversary[y].min
 			var yMAX = anniversary[y].max
 			var aMIN = anniversary[y].amin
@@ -306,7 +316,7 @@
 			v0 = parseFloat(toFixed(anniversary[y].tax(v - a - (p + m + e) - s), 2))
 
 			data.personalTaxes = v0 > 0 ? v0 : 0;
-
+      data.personalPrePaid = parseFloat(toFixed(v - a - (p + m + e) - s,2));
 			data.personalPaid = parseFloat(toFixed(v - a - (p + m + e) - v0,2));
 
 			return data;

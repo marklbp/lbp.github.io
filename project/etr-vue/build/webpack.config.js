@@ -4,6 +4,9 @@ var CleanWebpackPlugin = require('clean-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var {VueLoaderPlugin} = require('vue-loader')
 const NODE_ENV = process.argv.slice(-1)[0].indexOf('build') > -1 ? 'production' : 'development'
+
+var ValidFolder = require('../plugins/validFolder');
+
 module.exports = {
 
   /**
@@ -91,7 +94,7 @@ module.exports = {
        *   use: 'exports-loader?file,parse=helpers.parse'
        * }
        */
-      {
+      /*{
         test: /\.(js|vue)$/,
         // To be safe, you can use enforce: "pre" section to check source files, not modified by other loaders (like babel-loader)
         enforce: "pre",
@@ -100,7 +103,7 @@ module.exports = {
         options: {
           // eslint options (if necessary)
         }
-      },
+      },*/
       {
         test: /\.js?$/,
         loader: 'babel-loader',
@@ -113,7 +116,10 @@ module.exports = {
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        use:[
+          {loader: 'vue-loader'},
+          {loader: 'test-loader'}
+        ]
       },
       {
         test: /\.css$/,
@@ -191,6 +197,10 @@ module.exports = {
       }
     ]
   },
+  resolveLoader: {
+    // 去哪些目录下寻找 Loader，有先后顺序之分
+    modules: ['node_modules','./loaders/'],
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new webpack.DefinePlugin({
@@ -202,7 +212,8 @@ module.exports = {
       // templateContent: '<div id="app"></div>'
       template: path.resolve(__dirname, '../src/assets/index.html')
     }),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new ValidFolder()
 
     /**
      * ,new webpack.optimize.CommonsChunkPlugin({

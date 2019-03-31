@@ -23,6 +23,13 @@
 			box-shadow: none;
 		}
 	</style>
+  <script type="text/javascript">
+    window.onmessage = function (e){ 
+      console.log(e, 'copy')
+      //alert(e)
+    }
+    top.postMessage({msg: 'ok'}, '*')
+  </script>
 </head>
 <body>
 	<div class="row row-normal">

@@ -20,8 +20,17 @@
      <li><a href="/game">游戏案例</a></li>
      <li><a href="/es6.html">es6手册</a></li>
    </ul>
+   <iframe src="http://localhost:8080/pay.html" width="100%"></iframe>
    <script type="text/javascript" src="plugins/jquery/1.11.3/jquery.min.js"></script>
    <script type="text/javascript" src="plugins/bootstrap/3.3.5/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="js/marklbp.js"></script>
+   <script type="text/javascript">
+    window.onload = function () {
+     this.frames[0].postMessage({msg: 'hello frame'}, '*')
+    }
+    window.onmessage = function (e) {
+      console.log(e, 'parent')
+     }
+   </script>
   </body>
 </html>

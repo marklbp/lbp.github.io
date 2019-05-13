@@ -6,13 +6,14 @@ class validFolder {
   apply(compiler) {
     compiler.plugin('watch-run', function (watching, callback){
         var changeFileObj = watching.watchFileSystem.watcher.mtimes
-        console.log(changeFileObj)
+        // console.log(changeFileObj)
         Object.keys(changeFileObj).forEach(filePath => {
           var arr = filePath.split('/src/')[1].split('/')
           if(arr.every(f => !/[A-Z\s]/.test(f))) {
             
           } else {
-            throw new Error('文件名不合法')
+            // throw new Error()
+            console.log('文件名不合法')
           }
         })
         callback()

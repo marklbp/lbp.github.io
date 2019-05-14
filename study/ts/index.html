@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>typescript | marklbp blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/plugins/fonts/awesome/css/awesome.css">
+  <link rel="stylesheet" type="text/css" href="/plugins/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/markdown.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/es6.css">
+  <style>
+    html, body, .box, .left-side, .right-side, .aside, .content {
+      height: 100%;
+    }
+    .aside, .content {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="left-side">
+      <div class="right-side">
+        <div class="aside">
+          <div class="inner" id="aside_content"></div>
+        </div>
+        <div class="content">
+          <div class="inner" id="main_content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="loading" id="load_text">加载中<span class="text-loading"></span></div>
+  <div class="progress" id="progress"></div>
+  <div class="page-box">
+    <a href="javascript:void(0)" id="btn_menu" title="toggle menu">📚</a>
+    <a href="javascript:void(0)" id="page_prev">上一章</a>
+    <a href="javascript:void(0)" id="page_next">下一章</a>
+    <a href="javascript:void(0)" id="back_top" title="back to top">👆</a>
+  </div>
+  <script type="text/javascript" src="/plugins/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/marklbp.js"></script>
+  <script type="text/javascript" src="/js/marked.js"></script>
+  <script type="text/javascript" src="/js/prism.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

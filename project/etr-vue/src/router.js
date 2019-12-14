@@ -160,6 +160,9 @@ const router = {
       title: '公司',
       auth: true
     }
+  }, {
+    path: '/demo',
+    component: asyncLoad('demo')
   }]
 }
 

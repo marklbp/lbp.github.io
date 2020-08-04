@@ -11,7 +11,7 @@
 </template>
 
 
-<style>
+<style scoped>
 .container {
   padding: 100px;
 }

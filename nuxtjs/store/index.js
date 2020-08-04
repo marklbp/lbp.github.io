@@ -14,7 +14,7 @@ export const actions = {
   // nuxtServerInit is called by Nuxt.js before server-rendering every page
   nuxtServerInit({ commit }, { req }) {
     //debugger;
-    console.log(req.headers.cookie)
+    console.log('req.headers.cookie -> ', req.headers.cookie)
     let cookie, usernameIndex, username;
     if (req.session && req.session.authUser) {
       username = req.session.authUser;

@@ -35,7 +35,7 @@
     "js-base64": "^2.4.3",
     "keymirror": "^0.1.1",
     "moment": "^2.22.2",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.6.1",
     "react-anything-sortable": "^1.7.4",
     "react-dnd": "^2.6.0",

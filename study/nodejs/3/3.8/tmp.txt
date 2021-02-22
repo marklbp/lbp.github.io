@@ -1,6 +1,0 @@
-你已经获得授权。你的授权信息:
-Access token: 637c6a0de253441dbcc79c0d8d52f4f1
-oauth_token_secret: 649cfccf26195808a081cfece9ccae2a
-openid: A243EC65E91FF30E4B31E225620FDFA0
-openkey: 58E594CFFA5552E3A130CED0B46E4187
-http://127.0.0.1/extension/index.php?p={"format":"json","content":"test"}&t={"access_token":"637c6a0de253441dbcc79c0d8d52f4f1","access_token_secret":"649cfccf26195808a081cfece9ccae2a","appkey":"783cfd16e4c6418c854dd208ad58cb70","appsecret":"0388bbc411723d00f30235ff4522f0d9"}

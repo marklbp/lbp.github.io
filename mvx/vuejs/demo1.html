@@ -5,13 +5,28 @@
 	<title>vue demo1</title>
 </head>
 <body>
-	<div id="div1">{{propd}}</div>
-	<script type="text/javascript" src="vue.js"></script>
+	<div id="div1">
+		{{propd}}
+		<p v-if="flag">v-if的运用</p>
+		<!-- <p v-show="flag">v-show的运用</p>
+		<ul>
+			<li v-for="(v, i) in arr" :key="i">v-for循环运用输出{{v}}</li>
+		</ul>
+		<button v-on:click="click">v-on:[event]运用</button> -->
+	</div>
+	<script type="text/javascript" src="vue@2.6.10.js"></script>
 	<script type="text/javascript">
 		new Vue({
 			el:"#div1",
 			data:{
-				propd:"hello Vue!"
+				propd:"hello Vue!",
+				flag: true,
+				arr: [1, 2, 3]
+			},
+			method: {
+				click() {
+					this.flag = !this.flag
+				}
 			}
 		})
 	</script>

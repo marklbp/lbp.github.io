@@ -1,0 +1,140 @@
+.el-input--large {
+  .el-input__inner {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+.el-input-number {
+  &.el-input-number--large {
+    .el-input-number__decrease,
+    .el-input-number__increase {
+      line-height: 38px;
+    }
+
+    &.is-controls-right {
+      .el-input-number__decrease,
+      .el-input-number__increase {
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+// PortalSelect组件选项样式
+.portal-select {
+  .search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 12px;
+    background: #fff;
+  }
+
+  .panel-action {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: #fff;
+    padding: 4px 16px;
+    height: 40px;
+    border-top: 1px solid #e8e8e8;
+    text-align: right;
+  }
+
+  .m__t-44 {
+    margin-top: 44px;
+  }
+
+  .m__b-44 {
+    margin-bottom: 44px;
+  }
+
+  .el-select-dropdown__item {
+    &.selected::after {
+      display: none;
+    }
+  }
+}
+
+.portal__select {
+  width: 100%;
+
+  .el-select__tags {
+    display: none;
+    height: 0;
+  }
+
+  .portal__select-result {
+    display: none;
+    font-size: 14px;
+    color: #333;
+    padding: 9px 42px 9px 12px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+// radio样式
+.el-radio {
+  .el-radio__inner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #d9d9d9;
+    background-color: #f8f8f8;
+
+    &::after {
+      width: 8px;
+      height: 8px;
+      background-color: $portal-blue-6;
+    }
+  }
+
+  &.el-radio--small {
+    .el-radio__inner::after {
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  &.el-radio--mini {
+    .el-radio__inner::after {
+      width: 4px;
+      height: 4px;
+    }
+  }
+
+  .el-radio__input {
+    &.is-checked .el-radio__inner {
+      background: #fff;
+    }
+
+    &.is-disabled .el-radio__inner {
+      background-color: #fff;
+    }
+
+    &.is-checked.is-disabled .el-radio__inner {
+      border-color: $portal-blue-4;
+
+      &::after {
+        background-color: $portal-blue-4;
+      }
+    }
+  }
+}
+
+.el {
+  &-textarea {
+    textarea {
+      min-height: 50px !important;
+    }
+  }
+}

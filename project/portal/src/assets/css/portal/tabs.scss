@@ -1,0 +1,32 @@
+.el-tabs {
+  .el-tabs__item {
+    font-size: 14px;
+    color: #666;
+
+    &.is-active {
+      color: #333;
+      font-weight: 600;
+    }
+  }
+
+  &.tabs-title .el-tabs__item {
+    font-size: 16px;
+  }
+
+  .el-tabs__nav{
+    &.is-top {
+      margin-left: 16px;
+    }
+    .is-top {
+      &.el-tabs__item {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .el-tabs__active-bar {
+    margin: 0 auto;
+    height: 3px;
+  }
+}
+

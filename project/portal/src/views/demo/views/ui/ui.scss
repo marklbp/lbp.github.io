@@ -1,0 +1,33 @@
+.ui-container {
+  height: 100%;
+  position: relative;
+}
+
+.ui-header {
+  margin-top: -24px;
+  padding: 0 32px;
+}
+
+.ui-main {
+  margin-top: 8px;
+}
+
+.ui-section {
+  background-color: #fff;
+}
+
+.ui-section__title {
+  line-height: 32px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #3366FF;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  user-select: none;
+  border: solid 1px #f2f2f2;
+}
+
+.ui-section__body {
+  padding: 16px 32px;
+}
+

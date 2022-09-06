@@ -1,0 +1,240 @@
+.page-init-editor{
+  display: flex;
+  flex-direction: column;
+  height: 99.9%;
+  overflow: hidden;
+}
+.flow-editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  .editor__{
+    &header {
+      height: 56px;
+      background: #fff;
+      box-shadow:0px 0px 8px 0px rgba(0,0,0,0.05);
+      display: flex;
+      .editor__title {
+        flex: 1;
+
+        .editor__brand {
+          float: left;
+          padding: 18px;
+          width: 56px;
+
+          img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+
+        .template__name {
+          float: left;
+          color: #333;
+          font-size: 16px;
+          font-weight: 550;
+          padding: 19px 0;
+        }
+
+        .template__edit {
+          padding: 20px 0;
+          float: left;
+        }
+      }
+
+      .editor__action {
+        flex: 1;
+        text-align: right;
+        padding: 12px 0;
+        margin-right: 20px;
+      }
+    }
+    &body {
+      flex: 1;
+    }
+    &content {
+      height: 100%;
+      /deep/ {
+        .portal {
+          &-shape {
+            height: 38px;
+            margin-bottom: 6px;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          &-start {
+            background-image: url(/static/images/start.png);
+          }
+          &-terminal {
+            background-image: url(/static/images/terminal.png);
+          }
+          &-task {
+            height: 30px;
+            //background-color: #ededed;
+            background-image: url(/static/images/task.png);
+          }
+          &-condition {
+            height: 28px;
+            background-image: url(/static/images/condition.png);
+            background-size: 100% 100%;
+          }
+          &-merge {
+            height: 46px;
+            //background-color: #ededed;
+            background-image: url(/static/images/merge.png);
+          }
+          &-branch {
+            height: 46px;
+            //background-color: #ededed;
+            background-image: url(/static/images/branch.png);
+          }
+          &-flow {
+            height:46px;
+            background-image: url(/static/images/flow.png);
+          }
+          &-robot {
+            height: 46px;
+            background-image: url(/static/images/robot.png);
+          }
+        }
+        .geSidebar .geItem {
+          color: #666;
+          font-size: 12px;
+          text-align: center;
+          &:hover {
+            background-color: transparent;
+            color: $--color-primary;
+            .portal {
+              &-start {
+                background-image: url(/static/images/start-hover.png);
+              }
+              &-terminal {
+                background-image: url(/static/images/terminal-hover.png);
+              }
+              &-task {
+                background-image: url(/static/images/task-hover.png);
+                //background-color: #f0f6ff;
+              }
+              &-condition {
+                background-image: url(/static/images/condition-hover.png);
+              }
+              &-merge {
+                background-image: url(/static/images/merge-hover.png);
+                //background-color: #f0f6ff;
+              }
+              &-branch {
+                background-image: url(/static/images/branch-hover.png);
+                //background-color: #f0f6ff;
+              }
+              &-flow {
+                background-image: url(/static/images/flow-hover.png);
+              }
+              &-robot {
+                background-image: url(/static/images/robot-hover.png);
+              }
+            }
+          }
+        }
+        .quick-menu {
+          position: absolute;
+          cursor: pointer;
+          div {
+            margin-left: auto;
+            margin-right: auto;
+            width: 23px;
+            height: 23px;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            &:first-child {
+              background-image: url(/static/images/start.png);
+            }
+            &:nth-child(2) {
+              background-image: url(/static/images/terminal.png);
+            }
+            &:nth-child(3) {
+              height: 15px;
+              background-image: url(/static/images/task.png);
+            }
+            &:nth-child(4) {
+              height: 13px;
+              background-size: 100% 100%;
+              background-image: url(/static/images/condition.png);
+            }
+            &:nth-child(5) {
+              background-image: url(/static/images/merge.png);
+            }
+            &:nth-child(6) {
+              background-image: url(/static/images/branch.png);
+            }
+            &:nth-child(7) {
+              background-image: url(/static/images/flow.png);
+            }
+            &:nth-child(8) {
+              background-image: url(/static/images/robot.png);
+            }
+            &:last-child {
+              margin-bottom: 0
+            }
+            &:hover {
+              &:first-child {
+                background-image: url(/static/images/start-hover.png);
+              }
+              &:nth-child(2) {
+                background-image: url(/static/images/terminal-hover.png);
+              }
+              &:nth-child(3) {
+                background-image: url(/static/images/task-hover.png);
+              }
+              &:nth-child(4) {
+                background-image: url(/static/images/condition-hover.png);
+              }
+              &:nth-child(5) {
+                background-image: url(/static/images/merge-hover.png);
+              }
+              &:nth-child(6) {
+                background-image: url(/static/images/branch-hover.png);
+              }
+              &:nth-child(7) {
+                background-image: url(/static/images/flow-hover.png);
+              }
+              &:nth-child(8) {
+                background-image: url(/static/images/robot-hover.png);
+              }
+            }
+          }
+          &-north,
+          &-south{
+            width: 194px;
+            div {
+              float: left;
+              margin-right: 6px;
+              &:nth-child(3) {
+                height: 23px;
+                width: 34px;
+              }
+              &:nth-child(4) {
+                height: 23px;
+                width: 38px;
+              }
+              &:last-child {
+                margin-right: 0
+              }
+            }
+          }
+          &-west,
+          &-east {
+            div {
+              margin-bottom: 6px;
+              &:last-child {
+                margin-bottom: 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

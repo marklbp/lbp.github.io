@@ -1,0 +1,62 @@
+$portal-blue-1: #f0f6ff;
+$portal-blue-2: #d6e6ff;
+$portal-blue-3: #adcaff;
+$portal-blue-4: #85abff;
+$portal-blue-5: #5c8aff;
+$portal-blue-6: #3366ff;
+$portal-blue-7: #2148d9;
+$portal-blue-8: #122fb3;
+$portal-blue-9: #071b8c;
+$portal-blue-10: #041066;
+
+$portal-gray-1: #ffffff;
+$portal-gray-2: #fafafa;
+$portal-gray-3: #f5f5f5;
+$portal-gray-4: #e8e8e8;
+$portal-gray-5: #d9d9d9;
+$portal-gray-6: #bfbfbf;
+$portal-gray-7: #999999;
+$portal-gray-8: #666666;
+$portal-gray-9: #333333;
+$portal-gray-10: #000000;
+
+
+// override Element variables
+$--color-primary: $portal-blue-6 !default
+$--color-danger: #ED4040;
+/* Button
+-------------------------- */
+// 默认 -> UNEX small
+$--button-font-size: 14px !default;
+$--button-font-weight: 500 !default;
+$--button-border-radius: 2 !default;
+$--button-padding-vertical: 8px !default;
+$--button-padding-horizontal: 12px !default;
+
+$--button-medium-font-size: 14px !default;
+$--button-medium-border-radius: 2 !default;
+$--button-medium-padding-vertical: 10px !default;
+$--button-medium-padding-horizontal: 16px !default;
+
+$--button-small-font-size: 14px !default;
+$--button-small-border-radius: 2 !default;
+$--button-small-padding-vertical: 8px !default;
+$--button-small-padding-horizontal: 12px !default;
+
+$--button-mini-font-size: 12px !default;
+$--button-mini-border-radius: 2 !default;
+$--button-mini-padding-vertical: 7px !default;
+$--button-mini-padding-horizontal: 8px !default;
+
+/* Input
+-------------------------- */
+$--input-border-radius: 2px !default;
+$--select-option-height: 32px !default;
+
+
+
+
+
+$--input-height: 32px;
+$--main-padding: 24px;
+$--global-bg: #f5f5f5;

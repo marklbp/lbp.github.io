@@ -1,0 +1,138 @@
+
+.container{
+  position:absolute;
+  left:0px;
+  right:0px;
+  bottom:0;
+  top:0;
+  width:auto!important;
+  margin:0 24px;
+  box-sizing:border-box;
+
+  /deep/ {
+    .slider-tab .el-tabs__header.is-left{
+        margin-right:32px;
+    }
+    .slider-tab .el-tabs__nav-wrap.is-left{
+        padding-top:20px;
+    }
+    .el-tabs__item{
+      color:#666666FF;
+    }
+    .el-tabs__item.is-active{
+      color:#3366FFFF;
+      font-weight:normal;
+    }
+    .el-tabs__item{
+      max-width:140px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.title{
+  font-size:20px;
+  padding-left:32px;
+  padding: 26px 0 26px 32px;;
+  margin:0;
+}
+.search{
+  height:56px;
+  background:white;
+  margin-bottom:16px;
+  display:flex;
+  justify-content: flex-end;
+  padding:0 32px;
+  align-items: center;
+  border-radius:2px;
+}
+.slider-tab{
+  height:100%;
+  margin-left:34px;
+}
+.dialog-content {
+    background: white;
+    border-radius: 2px;
+    overflow: hidden;
+    position: absolute;
+    width:100%;
+    bottom:0;
+    top:144px;
+    display:flex;
+    margin-bottom:32px;
+  }
+  .all-items {
+    overflow: auto;
+    flex:1;
+    height: 100%;
+    padding-top:32px;
+    padding-right:30px;
+  }
+  .item-detail {
+    &:before {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    > h4 {
+      font-size: 16px;
+      color: #666;
+      margin: 0 0 16px;
+    }
+    > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      min-width:650px;
+      > li {
+        width: 48%;
+        overflow: hidden;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #d9d9d9;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        padding: 0 16px 0 24px;
+        border-radius: 4px;
+        &:hover{
+          border:1px solid #3366FFFF;
+        }
+        >div{
+          width:60%;
+        }
+      }
+    }
+  }
+  .item-title {
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    margin: 0px;
+    word-wrap: break-word;
+  }
+  .item-instruc {
+    font-size: 12px;
+    color: #999;
+    width: 100%;
+    margin:10px 0 0 0;
+    word-wrap: break-word;
+
+  }
+  .empty-notice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  

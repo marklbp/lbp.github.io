@@ -1,0 +1,118 @@
+@import 'normalize';
+@import 'element-ui';
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$csb-space-property-map: (
+  m: margin,
+  p: padding
+);
+
+$csb-space-css-property-map: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left
+);
+
+$csb-space-map: (
+  n: 0,
+  xs: 4px,
+  s: 8px,
+  m: 16px,
+  l: 24px,
+  xl: 32px
+);
+
+// 根据UNEX间距规范生成通用class
+@each $v, $k in $csb-space-property-map {
+  @each $v2, $k2 in $csb-space-css-property-map {
+    @each $v3, $k3 in $csb-space-map {
+      .#{$v}#{$v2}__#{$v3} {
+        #{$k}-#{$k2}: #{$k3} !important;
+      }
+    }
+  }
+
+  @each $v3, $k3 in $csb-space-map {
+    .#{$v}__#{$v3} {
+      #{$k}: #{$k3} !important;
+    }
+
+    .#{$v}x__#{$v3} {
+      #{$k}-left: #{$k3} !important;
+      #{$k}-right: #{$k3} !important;
+    }
+
+    .#{$v}y__#{$v3} {
+      #{$k}-top: #{$k3} !important;
+      #{$k}-bottom: #{$k3} !important;
+    }
+  }
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.btn-more-action {
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+}
+
+.portal-loading .portal-icon-loading {
+  display: inline-block;
+  width: 64px;
+  height: 16px;
+  background-image: url(../img/loading.gif);
+  background-size: contain;
+}
+.ellipsis-end-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hover-shadow:hover {
+  box-shadow: 0px 0px 10px 0px #3333331a;
+}
+.el-scrollbar__wrap {
+  box-sizing: content-box !important;
+}
+// date-pick 里面的button样式
+button.el-button.el-picker-panel__link-btn.el-button--default.el-button--mini.is-plain {
+  border: 0;
+  color: #36f;
+  margin-left: 0;
+}
+
+button.el-button.el-picker-panel__link-btn.el-button--text.el-button--mini {
+  color: #333;
+}
+
+.custom_class_none_icon {
+  .el-message-box__message {
+    padding-left: 12px;
+  }
+}
+.ross-tag-popper {
+  margin-top: 4px !important;
+  max-height: 257px;
+  padding: 0 0 12px 0 !important;
+  .popper__arrow {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>logo@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="15.1012658%" y1="35.9255357%" x2="16.0937393%" y2="61.5376786%" id="linearGradient-1">
+            <stop stop-color="#1B1F6D" offset="0%"></stop>
+            <stop stop-color="#1B1F6D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="68.8637122%" y1="88.067182%" x2="68.8637122%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#1B1F6D" offset="0%"></stop>
+            <stop stop-color="#1B1F6D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="15.7110178%" y1="73.4491584%" x2="38.4367261%" y2="60.6835343%" id="linearGradient-3">
+            <stop stop-color="#1B1F6D" offset="0%"></stop>
+            <stop stop-color="#1B1F6D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-22.9653989%" y1="-6202.83316%" x2="-4.80106892%" y2="-6203.31584%" id="linearGradient-4">
+            <stop stop-color="#1B1F6D" offset="0%"></stop>
+            <stop stop-color="#1B1F6D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9822632%" y1="3.26481258%" x2="49.9822632%" y2="89.0568319%" id="linearGradient-5">
+            <stop stop-color="#1B1F6D" offset="0%"></stop>
+            <stop stop-color="#1B1F6D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PIM_LOGO" transform="translate(-16.000000, -17.000000)">
+            <g id="logo">
+                <g id="编组" opacity="0">
+                    <g>
+                        <rect id="Rectangle-Copy" fill="#262A39" opacity="0" x="0" y="0" width="56" height="56"></rect>
+                        <g id="logo" transform="translate(17.000000, 16.000000)" fill-rule="nonzero">
+                            <polygon id="路径" fill="#3E3EFF" points="0.486538462 14.1538462 0.486538462 7.07813384 7.56346154 0 7.56346154 14.1538462"></polygon>
+                            <polygon id="路径" fill="#30BDC4" points="22.6019231 7.07692308 0.486538462 7.07692308 7.57461623 0 22.6019231 0"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-1)" opacity="0.4" points="7.56346154 10.5926374 7.56346154 7.07692308 0.486538462 7.08956044 0.486538462 10.6153846"></polygon>
+                            <polygon id="路径" fill="#3E3EFF" points="22.6019231 9.73076923 22.6019231 16.8076923 15.525 23.8846154 15.525 9.73076923"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-2)" opacity="0.4" points="15.525 14.1792014 15.525 17.6923077 22.6019231 17.6782215 22.6019231 14.1538462"></polygon>
+                            <polygon id="路径" fill="#126DFF" points="0.486538462 16.8076923 22.6019231 16.8076923 15.5162702 23.8846154 0.486538462 23.8846154"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="资源-9" transform="translate(16.000000, 17.000000)" fill-rule="nonzero">
+                    <polygon id="路径" fill="#3E3EFF" points="0 0 0 4.255 6.9825 11.505 6.9825 6.9825 16.84 6.9825 16.84 16.84 12.1225 16.84 18.8475 23.825 23.825 23.825 23.825 0"></polygon>
+                    <polygon id="路径" fill="#126DFF" points="23.825 6.9525 23.825 0 0 0 0 4.255 2.5975 6.9525"></polygon>
+                    <polygon id="路径" fill="#32BA4C" points="0 0 0 9.8575 13.9675 23.825 23.825 23.825"></polygon>
+                    <polygon id="路径" fill="url(#linearGradient-3)" opacity="0.3" points="11.9125 6.9825 6.9825 6.9825 0 0 4.92 0"></polygon>
+                    <polygon id="路径" fill="url(#linearGradient-4)" opacity="0.3" points="23.835 18.685 23.835 23.825 16.8525 16.84 16.84 11.9125"></polygon>
+                    <polygon id="路径" fill="#3E3EFF" points="0 17.48 6.3275 23.825 0 23.825"></polygon>
+                    <polygon id="路径" fill="url(#linearGradient-5)" opacity="0.3" points="16.84 6.9825 23.825 6.9825 23.825 11.1175 16.7775 11.1175"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

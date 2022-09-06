@@ -1,0 +1,281 @@
+$menu-unit: 4px;
+$min-width: 56px;
+$max-width: 240px;
+$menu-dynamic-left: $min-width + $menu-unit;
+$menu-dynamic-top: $min-width;
+$menu-dynamic-width: $max-width;
+$menu-dynamic-list-left: $menu-dynamic-width + $menu-unit;
+$menu-bg-color: #262A39;
+$menu-font-size: 14px;
+$menu-arrow-width: $menu-font-size;
+$menu-icon-size: 24px;
+$menu-icon-margin: $menu-font-size + 2;
+$menu-text-width: $max-width - $menu-icon-size - $menu-icon-margin * 2 - $menu-arrow-width - 10px * 2;
+$menu-item-height: 48px;
+$menu-font-color: rgba(255, 255, 255, 1);
+$menu-active-bg-color: #000;
+$menu-active-border-color: #32BA4C;
+.sidebar {
+  width: auto !important;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: $max-width;
+  height: 100%;
+  transition: .25s width;
+  background-color: $menu-bg-color;
+  .text {
+    position: relative;
+    display: inline-block;
+    max-width: $menu-text-width;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    opacity: 1;
+    transition: .15s;
+  }
+  .icon {
+    display: inline-block;
+    margin-left: $menu-icon-margin;
+    margin-right: $menu-icon-margin;
+    vertical-align: middle;
+    width: 22px;
+    height: $menu-icon-size;
+    line-height:$menu-icon-size;
+    text-align: center;
+    >.font-icon {
+      font-size: $menu-font-size + 7;
+    }
+  }
+  .logo {
+    height: $min-width;
+    line-height: $min-width;
+    margin-bottom: 8px;
+    max-width: $max-width;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 1px 10px rgba(0,0,0, .5);
+    font-size: $menu-font-size + 2;
+    font-weight: 600;
+    color: $menu-font-color;
+    white-space: nowrap;
+  }
+  .shop-nav {
+    @extend .logo;
+    box-shadow: none;
+    font-weight: 500;
+    color: #999;
+    .text {
+      width: auto;
+      max-width: none;
+    }
+    .icon {
+      float: left;
+      margin-right: 6px;
+      margin-top: 16px;
+      color: #999;
+      text-decoration: none;
+      
+    }
+    a.icon:hover {
+      color: white;
+    }
+    .line {
+      float: left;
+      width: 2px;
+      height: 17px;
+      margin-top: 21px;
+      margin-right: 12px;
+      background-color: #E8E8E8;
+      vertical-align: middle;
+      opacity: .15;
+    }
+    &-dropdown {
+      width: 168px;
+      color: #fff;
+      /deep/ .el-input__inner {
+        width: 134px;
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        border: 0 none;
+        background-color: transparent;
+      }
+      &-text {
+        float: left;
+        width: 134px;
+        overflow: hidden;
+        font-size: 16px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  &-config {
+    height: $min-width;
+    line-height: $min-width;
+    max-width: $max-width;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: $menu-font-size;
+    font-weight: 500;
+    box-shadow: 0 -1px 10px rgba(0,0,0, .5);
+    color: $menu-font-color;
+  }
+  &-inner {
+    position: relative;
+    flex: 1;
+    overflow: auto;
+  }
+  &-list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: $menu-bg-color;
+    >li {
+      position: relative;
+      >a{
+        position: relative;
+        display: block;
+        height: $menu-item-height;
+        line-height: $menu-item-height;
+        font-size: $menu-font-size;
+        font-weight: 400;
+        white-space: nowrap;
+        text-decoration: none;
+        // color: darken($menu-font-color, 40%);
+        color:hsla(0, 0%, 100%,.6);
+        &:hover {
+          color: $menu-font-color;
+        }
+        &.router-link-exact-active,
+        &.router-link-active {
+          color: $menu-font-color;
+          background-color: $menu-active-bg-color;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $menu-unit;
+            height: 100%;
+            background-color: $menu-active-border-color;
+          }
+        }
+        &.back {
+          margin-bottom: $menu-font-size;
+          // padding-left: $min-width;
+          background-color: transparent;
+          &:before {
+            display: none;
+          }
+          // .icon {
+          //   display: none
+          // }
+          .font-icon {
+            transform: rotate(180deg) !important;
+            // right: auto !important;
+            // left: $menu-unit * 4;
+          }
+        }
+        >.font-icon {
+          position: absolute;
+          height: $menu-font-size;
+          line-height: 1;
+          right: 10px;
+          top: 50%;
+          margin-top: - $menu-font-size / 2;
+          // transform: rotate(-90deg);
+          transition: .25s;
+        }
+      }
+    }
+  }
+  &.collapsed {
+    width: $min-width;
+    .text {
+      display: none;
+      opacity: 0;
+    }
+    .menu-child {
+      position: fixed;
+      top: $min-width + $menu-unit;
+      left: $min-width + $menu-unit;
+      width: $max-width;
+      transition: .25s top;
+      .menu-child {
+        position: absolute;
+        left: $max-width + $menu-unit;
+        top: 0;
+      }
+    }
+    li .menu-list .text {
+        display: inline-block;
+        opacity: 1;
+    }
+    >.menu {
+      &-inner {
+        >.menu {
+          &-list {
+            >li {
+              >a {
+                >.font-icon {
+                  opacity: 0;
+                }
+                &.back {
+                  padding-left: 0;
+                  >.icon {
+                    display: inline-block;
+                  }
+                  >.font-icon {
+                    opacity: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.platform {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 16px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, .6);
+}
+.store-menu-title{
+  margin-bottom:10px;
+  position: relative;
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-decoration: none;
+  padding-left:34px;
+  color:rgba(255, 255, 255, 0.6);
+  &:hover{
+    color:white;
+  }
+  >a{
+    display:inline-block;
+    color:inherit;
+    >.font-icon{
+      margin-right:14px;
+      font-size:16px;
+    }
+  }
+  cursor:pointer;
+}
+.to-parent-page-btn{
+  width:100%;
+}

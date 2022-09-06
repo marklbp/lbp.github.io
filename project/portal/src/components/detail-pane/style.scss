@@ -1,0 +1,344 @@
+.router-back {
+  margin-bottom: 16px;
+  padding-left: 0;
+  /deep/ .text {
+    font-size: 18px;
+  }
+}
+.content {
+  min-height: 32px;
+  word-break: break-word;
+}
+.groups {
+  display: flex;
+  margin-top: 14px;
+  .label-value {
+    margin-top: 0;
+    margin-right: 9px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+.label-value {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #333;
+  .label {
+    color: #999999;
+  }
+  .editable-box {
+    display: flex;
+    align-items: center;
+    &-3 {
+      line-height: 32px;
+    }
+  }
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.pending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid #3366ff;
+  color: #3366ff;
+  background: rgba(51, 102, 255, 0.1);
+  font-size: 12px;
+  height: 20px;
+  border-radius: 20px;
+}
+.persons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+.form {
+  &-pane {
+    padding: 24px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /deep/ .el-tabs {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      &__content {
+        overflow: auto;
+        flex: 1;
+        .el-tab-pane {
+          height: 100%;
+        }
+      }
+      &__header {
+        .el-tabs__item {
+          height: 48px;
+          line-height: 48px;
+        }
+      }
+    }
+    /deep/ .editable-box-2 {
+      height: 100%;
+    }
+  }
+  &-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .router-back {
+      max-width: 300px;
+      margin-bottom: 0;
+      padding-left: 0;
+      /deep/.text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 20px;
+        line-height: 20px;
+        white-space: nowrap;
+      }
+    }
+    &-text {
+      font-weight: 500;
+      font-size: 18px;
+      color: rgba(0, 0, 0, 1);
+    }
+    &-status {
+      padding: 0 8px;
+      font-size: 12px;
+      line-height: 20px;
+      margin-right: 8px;
+      border-radius: 100px;
+      text-align: center;
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      padding: 0 10px;
+      &.statusing {
+        color: #3366ff;
+        background: rgba(51, 102, 255, 0.1);
+      }
+      &.statusto {
+        @extend .statusing;
+        opacity: 0.8;
+      }
+      &.statused {
+        @extend .statusing;
+        background: rgba(51, 102, 255, 0.1);
+        opacity: 0.6;
+      }
+      &.status-cancel {
+        @extend .statusing;
+        color: #999;
+        background: rgba(240, 240, 240, 1);
+        opacity: 0.6;
+      }
+    }
+  }
+}
+.attachments {
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    .file-attrs {
+      display: flex;
+      flex: 1;
+      .file-type {
+        width: 16px;
+        margin-right: 12px;
+      }
+      .file-name {
+        max-width: 340px;
+        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #333;
+      }
+    }
+    .download {
+      display: none;
+    }
+    &:hover {
+      background: rgba(245, 245, 245, 1);
+      .download {
+        display: block;
+      }
+    }
+  }
+}
+.form-block {
+  padding-top: 10px;
+  margin-bottom: 24px;
+  .tit {
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    line-height: 14px;
+  }
+}
+.custom-tabs {
+  /deep/ .el-tabs__nav {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+}
+.check-result {
+  display: flex;
+  margin-top: 16px;
+  font-size: 14px;
+  .check-avatar {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 12px;
+    color: #fff;
+    background-color: #797ad4;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .info {
+    margin-bottom: 8px;
+  }
+  .name,
+  .text {
+    color: #333;
+  }
+  .date {
+    color: #666;
+  }
+}
+.status.editable-box {
+  line-height: 32px;
+}
+.sub-breadcrumb {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #999;
+  span {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  a {
+    display: block;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999;
+    &:hover {
+      color: $--color-primary;
+    }
+  }
+}
+/* /deep/ .el-date-editor--datetime {
+  max-width: 170px !important;;
+  .el-input__inner {
+    padding-right: 0 !important;
+  }
+}
+.cutUp {
+  margin: 0 6px;
+} */
+.show-flow-label {
+  display: inline-block;
+  max-width: 100px;
+  margin-left: 16px;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.form-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #fff;
+}
+@media (max-width: 480px) {
+  .copy2assignee {
+    flex-direction: column;
+    .label-value {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+.subflow-pane {
+  line-height: 32px;
+  font-size: 14px;
+  > span {
+    color: #666;
+  }
+  > p {
+    color: #333;
+    margin: 0;
+  }
+}
+.location {
+  font-size: 14px;
+  > span {
+    cursor: pointer;
+    color: #333;
+    &:hover {
+      color: #3366ff;
+    }
+  }
+}
+.tag-item {
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  margin-right: 16px;
+  position: relative;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #3366ff;
+  }
+}
+.parent-label {
+  margin-left: 15px;
+  display: inline-block;
+  max-width: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+  font-size: 14px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.flow-name {
+  cursor: pointer;
+  &:hover {
+    color: #3366ff;
+  }
+}
+.robotForm-item {
+  display: block; 
+  &:first-child {
+    margin-top: 10px;
+  }
+  span {
+    color: #666;
+  }
+}

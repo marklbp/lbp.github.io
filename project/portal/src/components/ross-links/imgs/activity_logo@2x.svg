@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="30px" viewBox="0 0 34 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>资源 1@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="114.379343%" y1="48.8690144%" x2="79.4520242%" y2="62.2068737%" id="linearGradient-1">
+            <stop stop-color="#1B1F6D" offset="0%"></stop>
+            <stop stop-color="#1B1F6D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="37.5960784%" y1="37.3017971%" x2="55.5438478%" y2="55.3143377%" id="linearGradient-2">
+            <stop stop-color="#1B1F6D" offset="0%"></stop>
+            <stop stop-color="#1B1F6D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.2812888%" y1="42.9210882%" x2="69.3415149%" y2="61.7981263%" id="linearGradient-3">
+            <stop stop-color="#1B1F6D" offset="0%"></stop>
+            <stop stop-color="#1B1F6D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ROSS系列登录" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="活动家登录页" transform="translate(-832.000000, -259.000000)" fill-rule="nonzero">
+            <g id="Group-8" transform="translate(832.000000, 258.000000)">
+                <g id="Group-14">
+                    <g id="资源-1" transform="translate(0.000000, 1.000000)">
+                        <polygon id="Path" fill="#3E3EFF" points="9.77649123 16.49 16.9821053 16.5735088 19.654386 21.1575439 7.05052632 21.1575439"></polygon>
+                        <polygon id="Path" fill="#3E3EFF" points="3.57596491 23.087193 30.3792982 23.0931579 33.967193 29.2698246 0 29.2787719"></polygon>
+                        <polygon id="Path" fill="#155DFF" points="17.0268421 0 33.967193 29.2817544 26.7585965 29.2847368 13.3942105 6.22438596"></polygon>
+                        <polygon id="Path" fill="#E93F5C" points="20.5878947 6.13789474 11.7687719 21.1575439 4.67350877 21.1575439 17.0268421 0"></polygon>
+                        <polygon id="Path" fill="url(#linearGradient-1)" opacity="0.3" points="23.1617544 23.0842105 26.7585965 29.2787719 20.9577193 29.2817544 17.4026316 23.0931579"></polygon>
+                        <polygon id="Path" fill="url(#linearGradient-2)" opacity="0.3" points="20.5849123 6.14087719 16.9463158 12.3414035 20.2807018 18.1064912 23.8298246 11.762807"></polygon>
+                        <polygon id="Path" fill="url(#linearGradient-3)" opacity="0.3" points="14.4738596 16.5496491 11.7687719 21.1575439 16.6510526 21.1575439 17.9782456 18.2824561 16.9821053 16.5735088"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+.el-table {
+  th {
+    background-color: #fafafa;
+  }
+  /deep/ .el-table__body-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+    table {
+      width: auto ;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+// 固定大小
+.btn-fixed {
+  width: 80px;
+}
+
+.el-button {
+  padding: 9px 16px;
+  border-radius: 2px;
+  font-weight: 400;
+  &--primary {
+    border: 0 none;
+  }
+  // 文本按钮
+  &--text {
+    border: 0 none;
+    &:active {
+      color: $portal-blue-8;
+    }
+
+    &.is-disabled {
+      opacity: 0.5;
+      color: $portal-blue-6
+    }
+
+    // 链接按钮
+    &.btn-link {
+      text-decoration: underline;
+    }
+
+    // 灰色文本
+    &.btn-gray {
+      color: $portal-gray-8;
+
+      &:not(.is-disabled):hover {
+        color: $portal-gray-9;
+      }
+
+      &:active {
+        color: $portal-gray-10;
+      }
+    }
+  }
+
+  // 图标按钮
+  &.btn-icon {
+    border: 0 none;
+
+    &:hover {
+      color: $portal-blue-6;
+      background: none;
+    }
+
+    &:active {
+      color: $portal-blue-7;
+      background: none;
+    }
+
+    &.is-disabled {
+      opacity: 0.5;
+      color: $portal-gray-7;
+    }
+
+    // 灰色图标
+    &.btn-gray {
+      color: $portal-gray-8;
+
+      &:not(.is-disabled):hover {
+        color: $portal-gray-9;
+      }
+
+      &:active {
+        color: $portal-gray-10;
+      }
+    }
+  }
+
+  &:not(.is-disabled) {
+    &.el-button--primary:hover {
+      background-color: $portal-blue-7;
+    }
+
+    // outline按钮
+    &.btn-outline {
+      border-color: $portal-gray-5;
+      color: $portal-gray-8;
+    }
+
+    &.el-button--primary.btn-outline {
+      border-color: $portal-blue-6;
+      background-color: transparent;
+      color: $portal-blue-6;
+
+      &:hover {
+        background-color: $portal-blue-6;
+        color: #fff;
+      }
+    }
+  }
+
+  &.btn-outline.is-disabled {
+    background-color: transparent;
+    opacity: 0.5;
+    border-color: $portal-gray-5;
+    color: $portal-gray-8;
+
+    &.el-button--primary {
+      border-color: $portal-blue-6;
+      color: $portal-blue-6;
+    }
+  }
+  &--large {
+    padding: 13px 24px;
+
+    &.btn-fixed {
+      width: 120px;
+    }
+  }
+  &--medium {
+    padding: 11px 16px;
+    &.btn-fixed {
+      width: 104px;
+    }
+  }
+  &--small {
+    padding: 9px 16px;
+    font-size: 14px;
+    &.visited {
+      width: 80px;
+    }
+  }
+  &--mini {
+    padding: 7px 12px;
+    font-size: 12px;
+    &.btn-fixed {
+      width: 64px;
+    }
+    // 在dropdown中的微调
+    &.el-dropdown__caret-button {
+      height: 28px;
+    }
+  }
+  &--micro {
+    padding: 5px 8px;
+    font-size: 12px;
+    &.btn-fixed {
+      width: 56px;
+    }
+
+    &.el-dropdown__caret-button {
+      height: 22px;
+    }
+  }
+}

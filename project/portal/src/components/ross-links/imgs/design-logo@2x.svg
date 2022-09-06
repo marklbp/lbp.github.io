@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>资源 3@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-0.0821692687%" y1="50.0166279%" x2="100%" y2="50.0166279%" id="linearGradient-1">
+            <stop stop-color="#15135A" offset="0%"></stop>
+            <stop stop-color="#15135A" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-4.54020917e-13%" y1="50.0166279%" x2="100%" y2="50.0166279%" id="linearGradient-2">
+            <stop stop-color="#15135A" offset="0%"></stop>
+            <stop stop-color="#15135A" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ROSS系列登录" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="宝尊智能设计平台登录页" transform="translate(-832.000000, -258.000000)" fill-rule="nonzero">
+            <g id="Group-8" transform="translate(832.000000, 258.000000)">
+                <g id="Group-14">
+                    <g id="资源-3">
+                        <polygon id="Path" fill="#3E3EFF" points="0 9.6096 0 29.6416 9.75515152 19.6768 9.65171717 9.6096"></polygon>
+                        <polygon id="Path" fill="#3E3EFF" points="1.66141414 31.7984 10.999596 22.1408 22.1026263 22.1408 22.1026263 31.7984"></polygon>
+                        <polygon id="Path" fill="#EF6737" points="22.1672727 9.6224 0.0452525253 9.6224 9.76484848 0 22.1672727 0"></polygon>
+                        <polygon id="Path" fill="#126DFF" points="22.1672727 31.6064 22.1672727 9.6224 31.890101 9.6224 31.890101 22.0608"></polygon>
+                        <polygon id="Rectangle" fill="url(#linearGradient-1)" opacity="0.3" transform="translate(4.905051, 11.572800) rotate(90.000000) translate(-4.905051, -11.572800) " points="2.95785051 6.71300202 6.85225051 6.71300202 6.85225051 16.432598 2.95785051 16.432598"></polygon>
+                        <rect id="Rectangle" fill="url(#linearGradient-2)" opacity="0.3" transform="translate(20.143838, 26.795200) rotate(180.000000) translate(-20.143838, -26.795200) " x="18.120404" y="21.984" width="4.04686869" height="9.6224"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

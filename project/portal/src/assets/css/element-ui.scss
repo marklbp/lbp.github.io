@@ -1,0 +1,11 @@
+$--font-path: '#/element-ui/lib/theme-chalk/fonts';
+@import '#/element-ui/packages/theme-chalk/src/index';
+
+@import './portal/button';
+@import './portal/dropdown';
+@import './portal/input';
+@import './portal/table';
+@import './portal/dialog';
+@import './portal/messagebox';
+@import './portal/tabs';
+

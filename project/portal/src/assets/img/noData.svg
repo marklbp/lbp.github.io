@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>noData</title>
+    <desc>Created with Sketch.</desc>
+    <g id="⭐️全产线VI空状态阵列" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="暂无数据" transform="translate(-780.000000, -601.000000)">
+            <g id="编组" transform="translate(780.000000, 601.000000)">
+                <g id="资源-15" transform="translate(4.000000, 2.500000)">
+                    <circle id="椭圆形" stroke="#F5F5F5" cx="92.27" cy="20.8" r="2.71"></circle>
+                    <circle id="椭圆形" stroke="#F5F5F5" cx="46.64" cy="27.11" r="1.66"></circle>
+                    <circle id="椭圆形" stroke="#F5F5F5" cx="48.06" cy="5.36" r="4.86"></circle>
+                    <polygon id="路径" stroke="#D9D9D9" fill="#FFFFFF" fill-rule="nonzero" opacity="0.9" stroke-linecap="round" stroke-linejoin="round" points="74.52 42.26 76.93 34.75 84.43 32.35 76.93 29.94 74.52 22.44 72.12 29.94 64.61 32.35 72.12 34.75"></polygon>
+                    <polygon id="路径" fill="#F5F5F5" fill-rule="nonzero" points="74.01 10.75 74.97 7.74 77.98 6.78 74.97 5.82 74.01 2.81 73.05 5.82 70.05 6.78 73.05 7.74"></polygon>
+                    <polygon id="路径" stroke="#E8E8E8" points="23.78 34.25 25.47 28.99 30.73 27.3 25.47 25.62 23.78 20.35 22.09 25.62 16.83 27.3 22.09 28.99"></polygon>
+                    <path d="M97.83,84.67 L107.81,84.67" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M7.21,102.96 L20.43,102.96" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M23.34,102.96 L30.57,102.96" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M0,86.22 L9.01,86.22" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M90.77,100.49 L97.83,100.49" id="路径" stroke="#E8E8E8" opacity="0.85"></path>
+                    <path d="M78.44,108.05 L65.86,108.05" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M63.39,108.05 L59.43,108.05" id="路径" stroke="#E8E8E8"></path>
+                    <rect id="矩形" stroke="#D9D9D9" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" x="18.3" y="61.52" width="73.37" height="34.66"></rect>
+                    <polygon id="路径" stroke="#D9D9D9" fill="#F5F5F5" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="83.35 49.25 26.61 49.25 18.3 61.52 91.67 61.52"></polygon>
+                    <polygon id="路径" stroke="#D9D9D9" stroke-linecap="round" stroke-linejoin="round" points="108.89 75.8 91.67 61.52 83.35 49.25 100.36 63.52"></polygon>
+                    <polygon id="路径" stroke="#D9D9D9" stroke-linecap="round" stroke-linejoin="round" points="1.06 75.8 18.29 61.52 26.61 49.25 9.6 63.52"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

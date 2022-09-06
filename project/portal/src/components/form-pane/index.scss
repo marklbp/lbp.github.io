@@ -1,0 +1,169 @@
+.form-pane-container {
+}
+.form-pane-mask {
+  display: none;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .25);
+  transition: .25s opacity;
+  &.active {
+    display: block;
+    opacity: 1
+  }
+}
+.form-pane {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 10;
+  right: -460px;
+  top: 0;
+  width: 460px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow:-2px 0px 4px 0px rgba(228,228,228,0.5);
+  transition: .5s;
+  &.active {
+    right: 0
+  }
+  .btn-close {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: #9c9c9c;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .p-v, .btn-add-person {
+    float: left;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .p-v {
+    position: relative;
+    margin-left: -12px;
+    margin-right: 6px;
+    border: 1px solid #fff;
+    background-color: #3366FF;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &:first-child {
+      margin-left: 0;
+    }
+    i {
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    &:hover {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .2);
+      }
+      i {
+        display: inline-block;
+      }
+    }
+  }
+  .btn-add-person{
+    position: relative;
+    border: 1px dashed #D9D9D9;
+    color: #999;
+  }
+  .btn-add-person-dropdown {
+    width: 100%;
+    clear: both;
+    margin-top: 12px;
+  }
+  /deep/ .el-tabs__header {
+    margin-bottom: 0;
+  }
+  /deep/ .el-tabs__content {
+    padding: 24px;
+  }
+  /deep/ .el-tabs__item {
+    height: 56px;
+    line-height: 56px;
+    font-size: 16px;
+    color: #666;
+    &.is-active {
+      color: #333;
+    }
+  }
+  /deep/ .el-date-editor.el-input {
+    width: 100%;
+  }
+  /deep/ .el-form-item__label{
+    display: block;
+    float: none;
+    text-align: left;
+  }
+  /deep/ .el-tabs__nav {
+    margin-left: 25px;
+  }
+  /deep/ .el-tabs__active-bar {
+    height: 3px;
+    width: 80px !important;
+    margin-left: -8px;
+  }
+
+  /deep/ .el-input__suffix{
+    height: 90%;
+    overflow: hidden;
+    top: 5%;
+    line-height: 1;
+  }
+  .custom-tabs {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    /deep/ .el-tabs__content {
+      flex: 1;
+      overflow: auto;
+    }
+  }
+  &-footer {
+    height: 56px;
+    background-color: #fafafa;
+    text-align: right;
+    padding: 12px 24px;
+  }
+  .form-knowledge {
+    height: 100%;
+    .rich-text-container {
+      height: 100%;
+    }
+  }
+  .condition {
+    margin-bottom: 24px;
+    color: #666;
+    font-size: 14px;
+  }
+  .inline-block {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+/deep/ .label_box {
+  .el-input__inner {
+    padding-right: 46px;
+  }
+}

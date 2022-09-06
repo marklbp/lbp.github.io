@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>noSearch</title>
+    <desc>Created with Sketch.</desc>
+    <g id="⭐️全产线VI空状态阵列" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="搜索为空" transform="translate(-780.000000, -601.000000)">
+            <g id="编组" transform="translate(780.000000, 601.000000)">
+                <g id="资源-16" transform="translate(2.817264, 23.876834)">
+                    <rect id="矩形" stroke="#D9D9D9" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" x="19.5" y="40.16" width="73.37" height="34.66"></rect>
+                    <polygon id="路径" stroke="#D9D9D9" fill="#F5F5F5" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="84.55 27.88 27.81 27.88 19.5 40.16 92.87 40.16"></polygon>
+                    <polygon id="路径" stroke="#D9D9D9" stroke-linecap="round" stroke-linejoin="round" points="110.09 54.44 92.87 40.16 84.55 27.88 101.56 42.15"></polygon>
+                    <polygon id="路径" stroke="#D9D9D9" stroke-linecap="round" stroke-linejoin="round" points="2.26 54.44 19.49 40.16 27.81 27.88 10.8 42.15"></polygon>
+                    <path d="M0,64.03 L12.14,64.03" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M60.01,85.59 L65.66,85.59" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M68.57,85.59 L84.45,85.59" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M101.05,60.79 L107.9,60.79" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M26.37,80.32 L18.99,80.32" id="路径" stroke="#E8E8E8"></path>
+                    <path d="M16.52,80.32 L12.56,80.32" id="路径" stroke="#E8E8E8"></path>
+                    <polygon id="路径" stroke="#D9D9D9" fill="#F5F5F5" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="72.61 44.25 40.23 44.25 35.14 37.28 31.52 21.2 81.01 21.2 77.7 38.47"></polygon>
+                    <rect id="矩形" stroke="#D9D9D9" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" transform="translate(78.062350, 50.534311) rotate(47.210000) translate(-78.062350, -50.534311) " x="73.6173499" y="47.7993111" width="8.89" height="5.47"></rect>
+                    <path d="M55.09,0.53 C40.0115339,1.26509839 28.3826005,14.0822699 29.1133335,29.1609482 C29.8440665,44.2396266 42.6578708,55.8722701 57.7367601,55.1459025 C72.8156493,54.4195349 84.4520021,41.6090989 83.73,26.53 C83.3804024,19.2841097 80.1664515,12.4739362 74.795297,7.59788817 C69.4241426,2.72184011 62.3358424,0.179411421 55.09,0.53 Z M57.45,49.1 C48.8482657,49.5187856 40.841407,44.7142259 37.1636843,36.9270846 C33.4859617,29.1399433 34.8618021,19.9041085 40.6495375,13.527014 C46.4372728,7.14991961 55.496852,4.88770679 63.6030437,7.79543258 C71.7092354,10.7031584 77.265306,18.2080675 77.68,26.81 C78.246005,38.5505523 69.1902817,48.5284105 57.45,49.1 Z" id="形状" stroke="#D9D9D9" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polygon id="路径" stroke="#D9D9D9" fill="#FAFAFA" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="82.74 48.9 76.33 54.84 79.15 57.89 85.53 51.92"></polygon>
+                    <path d="M110.22,78.59 L85.53,51.92 L79.15,57.92 L103.8,84.52 C105.299908,86.1399688 107.828668,86.2384338 109.45,84.74 L110,84.23 C111.613388,82.7310977 111.711728,80.2100239 110.22,78.59 Z" id="路径" stroke="#D9D9D9" fill="#F5F5F5" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M67.56,17.12 C67.8795939,17.5349646 68.1734772,17.9691104 68.44,18.42" id="路径" stroke="#D9D9D9" stroke-linejoin="round"></path>
+                    <path d="M58.28,12.25 C61.3584992,12.4605534 64.2632278,13.7535118 66.48,15.9" id="路径" stroke="#D9D9D9" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

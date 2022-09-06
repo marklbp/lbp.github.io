@@ -1,0 +1,91 @@
+.rich-text-container {
+  display: flex;
+  position: relative;
+  &.fullscreen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100% !important;
+    /deep/ .ke-edit {
+      max-height: none !important;
+    }
+  }
+  &.hide-statusbar {
+    /deep/ .ke-statusbar {
+      display: none;
+    }
+    /deep/ .ke-toolbar {
+      display: flex !important;
+      justify-content: space-between;
+      background-color: #FAFAFA;
+      border-color: #E8E8E8;
+      .ke-outline {
+        margin: 0;
+        border-color: transparent;
+        &.ke-on {
+          border-color: #5690D2;
+        }
+      }
+    }
+    /deep/ .ke-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      border-color: #E8E8E8;
+    }
+    /deep/ .ke-edit {
+      flex: 1;
+      height: auto !important;
+    }
+    /deep/ .ke-edit-iframe, .ke-edit-textarea {
+      height: 100% !important;
+    }
+  }
+}
+.editor-textarea {
+  width: 100%;
+  visibility:hidden;
+}
+.word-limit {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size:14px;
+  font-weight:400;
+  line-height:14px;
+  color: #BFBFBF;
+}
+/deep/.ke-dialog-content {
+  border: 0 none;
+}
+/deep/.ke-tabs {
+  display: none !important;
+}
+/deep/.ke-icon-portal-add-relation-content {
+  line-height: 1;
+  background-image: none;
+  font-size: 16px;
+  text-align: center;
+  &:before {
+    font-family: ross_portal;
+    content: '\e61d';
+  }
+}
+/deep/.ke-icon-portal-image-upload {
+  //background-position: 0px -496px;
+  background-image: none;
+  width: 16px;
+  height: 16px;
+  line-height: 1;
+  font-family: ross_portal!important;
+  font-size: 1rem;
+  font-style: normal;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:before {
+    content: "\e703";
+  }
+}

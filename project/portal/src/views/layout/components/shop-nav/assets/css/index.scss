@@ -1,0 +1,39 @@
+.shop-nav {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  max-width: 242px;
+}
+.shop-nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  img {
+    max-width: 18px;
+    margin-right: 6px;
+  }
+  div {
+    max-width: 200px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+}
+.el-select {
+  /deep/.el-input {
+    &__prefix {
+      display: flex;
+      align-items: center;
+      left: 0;
+    }
+    &__inner {
+      border: 0 none;
+    }
+  }
+  
+}
+.shop-logo {
+  max-height: 24px;
+}

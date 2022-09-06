@@ -1,0 +1,71 @@
+
+@import "#/element-ui/packages/theme-chalk/src/mixins/mixins";
+@import "#/element-ui/packages/theme-chalk/src/common/var";
+@import "#/element-ui/packages/theme-chalk/src/common/popup";
+$--msgbox-padding-primary: 24px;
+$--messagebox-font-size: 16px;
+$--messagebox-title-color: $portal-gray-9;
+@include b(message-box) {
+  padding-bottom: 0;
+  @include e(header) {
+    padding: $--msgbox-padding-primary;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &:after{ 
+      position: absolute;
+      content: '';
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      background-color: #e8e8e8;
+    }
+  }
+
+  @include e(title) {
+    font-size: $--messagebox-font-size;
+    color: $--messagebox-title-color;
+  }
+
+  @include e(headerbtn) {
+    width: $--msgbox-padding-primary;
+    height: $--msgbox-padding-primary;
+    top: $--messagebox-font-size;
+    right: $--messagebox-font-size;
+
+    .el-message-box__close {
+      color: $--color-info;
+    }
+
+    &:focus, &:hover {
+      .el-message-box__close {
+        color: $--color-primary;
+      }
+    }
+  }
+
+  @include e(status) {
+    position: absolute;
+    top: $--messagebox-font-size;
+    transform: translateY(0);
+  }
+
+  @include e(btns) {
+    padding: 0px $--msgbox-padding-primary $--messagebox-font-size;
+    & button:nth-child(2) {
+      margin-left: 10px;
+    }
+    & .el-button {
+      &--danger{
+        &:hover, &:focus {
+          background: #f16666 !important;
+          border-color: #f16666 !important;
+        }
+      }
+    }
+  }
+
+  @include e(content) {
+    padding: $--messagebox-font-size $--msgbox-padding-primary 2*$--messagebox-font-size;
+  }
+}

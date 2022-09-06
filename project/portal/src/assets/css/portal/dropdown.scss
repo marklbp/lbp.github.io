@@ -1,0 +1,34 @@
+.el-dropdown {
+  .el-dropdown-link {
+    cursor: pointer;
+    &.primary {
+      color: $portal-blue-6;;
+    }
+  }
+
+  &.outline {
+    .el-button--default {
+      border-color: $portal-gray-5;
+      color: $portal-gray-8;
+
+      &.el-dropdown__caret-button::before {
+        background: $portal-gray-5;
+      }
+    }
+
+    .el-button--primary {
+      border-color: $portal-blue-6;
+      background-color: transparent;
+      color: $portal-blue-6;
+
+      &.el-dropdown__caret-button::before {
+        background: $portal-blue-6;
+      }
+
+      &:hover {
+        color: #fff;
+        background: $portal-blue-6;
+      }
+    }
+  }
+}

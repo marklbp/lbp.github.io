@@ -1,0 +1,102 @@
+  <shapes name="mxgraph.portal">
+  <!--任务-->
+  <shape name="task" h="80" w="120" aspect="variable" strokewidth="inherit">
+    <connections>
+      <constraint x="0.5" y="0" perimeter="0" name="N"/>
+      <constraint x="0.5" y="1" perimeter="0" name="S"/>
+      <constraint x="0" y="0.5" perimeter="0" name="W"/>
+      <constraint x="1" y="0.5" perimeter="0" name="E"/>
+    </connections>
+    <background>
+      <rect x="0" y="0" w="120" h="80"/>
+    </background>
+    <foreground>
+      <fillstroke/>
+    </foreground>
+  </shape>
+  <!--开始-->
+  <shape name="start" h="40" w="40" aspect="variable" strokewidth="inherit">
+    <connections>
+      <constraint x="0.5" y="0" perimeter="0" name="N"/>
+      <constraint x="0.5" y="1" perimeter="0" name="S"/>
+      <constraint x="0" y="0.5" perimeter="0" name="W"/>
+      <constraint x="1" y="0.5" perimeter="0" name="E"/>
+    </connections>
+    <background>
+      <ellipse x="0" y="0" w="40" h="40"/>
+      <stroke/>
+      <fillcolor color="#979797"/>
+    </background>
+    <foreground>
+      <path fillColor="#d8d8d8">
+        <move x="15.5" y="12.8304525"/>
+        <line x="15.5" y="27.212109"/>
+        <line x="29.8816565" y="20.4442706"/>
+        <line x="15.5" y="12.8304525"/>
+      </path>
+      <fill color="#d8d8d8"/>
+    </foreground>
+  </shape>
+  <!--结束-->
+  <shape name="terminal" h="40" w="40" aspect="variable" strokewidth="inherit">
+    <connections>
+      <constraint x="0.5" y="0" perimeter="0" name="N"/>
+      <constraint x="0.5" y="1" perimeter="0" name="S"/>
+      <constraint x="0" y="0.5" perimeter="0" name="W"/>
+      <constraint x="1" y="0.5" perimeter="0" name="E"/>
+    </connections>
+    <background>
+      <ellipse x="4.5" y="4.5" w="31" h="31"/>
+      <stroke/>
+      <ellipse x="0" y="0" w="40" h="40"/>
+      <stroke/>
+      <fillcolor color="#979797"/>
+    </background>
+    <foreground>
+      <path>
+        <rect x="15.5" y="15.5" w="10" h="10"/>
+      </path>
+      <fill color="#d8d8d8"/>
+    </foreground>
+  </shape>
+  <!--决策-->
+  <shape name="condition" h="67" w="114" aspect="variable" strokewidth="inherit">
+    <connections>
+      <constraint x="0.5" y="0" perimeter="0" name="N"/>
+      <constraint x="0.5" y="1" perimeter="0" name="S"/>
+      <constraint x="0" y="0.5" perimeter="0" name="W"/>
+      <constraint x="1" y="0.5" perimeter="0" name="E"/>
+    </connections>
+    <background>
+      <path>
+        <move x="0" y="34"/>
+        <line x="54" y="0"/>
+        <line x="114" y="34"/>
+        <line x="57" y="68"/>
+        <close/>
+      </path>
+    </background>
+    <foreground>
+      <fillstroke/>
+    </foreground>
+  </shape>
+    <!--子流程-->
+    <shape name="flow" h="96" w="136" aspect="variable" strokewidth="inherit">
+      <connections>
+        <constraint x="0.5" y="0" perimeter="0" name="N"/>
+        <constraint x="0.44" y="1" perimeter="0" name="S"/>
+        <constraint x="0" y="0.5" perimeter="0" name="W"/>
+        <constraint x="1" y="0.5" perimeter="0" name="E"/>
+      </connections>
+      <background>
+        <rect x="12" y="0" w="120" h="80"/>
+        <stroke/>
+        <rect x="6" y="6" w="120" h="80"/>
+        <fillstroke color="#fff"/>
+      </background>
+      <foreground>
+        <rect x="0" y="12" w="120" h="80"/>
+        <fillstroke/>
+      </foreground>
+    </shape>
+</shapes>
